@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>W.D — Worry Data Trap</title>
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="icon-192.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta name="theme-color" content="#EEF1F4">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="W.D">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=IBM+Plex+Sans+KR:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#EEF1F4; --panel:#FFFFFF; --ink:#17203A; --muted:#5B6478; --line:#D3D9E2;
+  --fun:#F4B400; --pol:#2B59D9; --ad:#C7336F; --up:#D8432B; --down:#7A8396;
+  --display:'Black Han Sans', 'IBM Plex Sans KR', sans-serif;
+  --body:'IBM Plex Sans KR', system-ui, sans-serif;
+}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{background:var(--paper);color:var(--ink);font-family:var(--body);font-size:15px;line-height:1.55;-webkit-font-smoothing:antialiased}
+button{font:inherit;color:inherit}
+:focus-visible{outline:3px solid var(--pol);outline-offset:2px;border-radius:6px}
+.num{font-variant-numeric:tabular-nums}
+
+/* header */
+header{display:flex;flex-wrap:wrap;align-items:center;gap:14px 24px;padding:18px 28px;border-bottom:1px solid var(--line);background:var(--paper);position:sticky;top:0;z-index:5}
+.brand{font-family:var(--display);font-size:30px;letter-spacing:-.5px;line-height:1;display:flex;align-items:center;gap:10px}
+.brand-sub{font-family:var(--body);font-size:11.5px;font-weight:600;line-height:1.3;color:var(--muted);letter-spacing:0;padding-left:10px;border-left:1.5px solid var(--line)}
+.brand i{display:inline-flex;gap:3px}
+.brand i b{display:block;width:7px;height:22px;border-radius:2px}
+.brand i b:nth-child(1){background:var(--fun);height:14px;align-self:flex-end}
+.brand i b:nth-child(2){background:var(--pol)}
+.brand i b:nth-child(3){background:var(--ad);height:18px;align-self:flex-end}
+.tabs{display:flex;gap:6px;flex-wrap:wrap}
+.tab{border:1.5px solid var(--ink);background:transparent;border-radius:999px;padding:6px 14px;font-weight:600;cursor:pointer;font-size:14px}
+.tab[aria-pressed="true"]{background:var(--ink);color:#fff}
+.tab .dot{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:6px;vertical-align:1px}
+.meta{margin-left:auto;font-size:13px;color:var(--muted);display:flex;align-items:center;gap:10px}
+.sample{background:#FFF3C4;color:#6B4E00;border-radius:6px;padding:3px 8px;font-weight:600;font-size:12px}
+
+/* layout */
+main{display:grid;grid-template-columns:minmax(280px,340px) 1fr;gap:20px;padding:20px 28px 40px;max-width:1480px;margin:0 auto}
+.col{display:flex;flex-direction:column;gap:20px;min-width:0}
+section.panel{background:var(--panel);border-radius:16px;padding:18px 20px 20px;border:1px solid var(--line)}
+section.panel[hidden]{display:none}
+.ph{display:flex;flex-wrap:wrap;align-items:baseline;gap:2px 10px;margin-bottom:12px}
+.ph h2{font-family:var(--display);font-weight:400;font-size:22px;margin:0;letter-spacing:-.3px;white-space:nowrap}
+.ph .src{font-size:12px;color:var(--muted);order:3;flex-basis:100%}
+.ph .hide{margin-left:auto;border:none;background:none;color:var(--muted);font-size:13px;cursor:pointer;padding:2px 4px;border-radius:6px;white-space:nowrap}
+.ph .hide:hover{color:var(--ink);text-decoration:underline}
+
+/* keywords — the loud part */
+.kw{list-style:none;margin:0;padding:0}
+.kw li{display:grid;grid-template-columns:28px 1fr auto;align-items:center;gap:4px 10px;padding:9px 0;border-top:1px solid #EEF1F4;cursor:pointer}
+.kw li:first-child{border-top:none}
+.kw li[aria-selected="true"] .w{background:linear-gradient(transparent 58%, #FFE08A 58%)}
+.kw .r{font-family:var(--display);font-size:20px;color:var(--muted)}
+.kw li:nth-child(-n+3) .r{color:var(--ink)}
+.kw .w{font-family:var(--display);font-size:24px;line-height:1.15;letter-spacing:-.4px;word-break:keep-all}
+.kw li:nth-child(n+6) .w{font-size:19px}
+.kw .chg{font-size:13px;font-weight:700;text-align:right;white-space:nowrap}
+.kw .chg.up{color:var(--up)} .kw .chg.down{color:var(--down)} .kw .chg.new{color:#fff;background:var(--up);border-radius:5px;padding:1px 6px}
+.kw .sub{grid-column:2 / 4;display:flex;align-items:center;gap:8px;font-size:12px;color:var(--muted)}
+.kw .sub svg{flex:none}
+.chip{display:inline-block;font-size:11px;font-weight:700;border-radius:4px;padding:0 5px;line-height:18px;color:#fff}
+.chip.N{background:#03A94D} .chip.G{background:#4C6EF5} .chip.Y{background:#E5372B}
+.kwhint{font-size:12px;color:var(--muted);margin:10px 0 0}
+
+/* shorts strip */
+.toolbar{display:flex;gap:6px;flex-wrap:wrap;margin:-2px 0 14px}
+.sort{border:1px solid var(--line);background:#F6F8FA;border-radius:8px;padding:5px 11px;font-size:13px;cursor:pointer}
+.sort[aria-pressed="true"]{border-color:var(--ink);background:#fff;font-weight:700}
+.filterNote{font-size:13px;color:var(--muted);margin-left:auto;align-self:center}
+.filterNote button{border:none;background:none;text-decoration:underline;cursor:pointer;color:var(--ink);padding:0}
+.strip{display:grid;grid-auto-flow:column;grid-auto-columns:minmax(168px,1fr);gap:14px;overflow-x:auto;padding-bottom:6px;scroll-snap-type:x proximity}
+.short{scroll-snap-align:start;text-align:left;border:none;background:none;padding:0;cursor:pointer;min-width:0}
+.thumb{aspect-ratio:9/16;border-radius:12px;position:relative;overflow:hidden;display:flex;flex-direction:column;justify-content:flex-end;padding:12px;color:#fff}
+.thumb .t{font-weight:700;font-size:15px;line-height:1.35;word-break:keep-all;text-shadow:0 1px 2px rgba(0,0,0,.35)}
+.thumb .dur{position:absolute;top:10px;right:10px;background:rgba(0,0,0,.55);border-radius:5px;font-size:12px;padding:1px 6px}
+.thumb .rank{position:absolute;top:6px;left:10px;font-family:var(--display);font-size:34px;line-height:1;opacity:.95}
+.short.dim{opacity:.28}
+.short:hover .thumb{outline:3px solid var(--ink);outline-offset:-3px}
+.stats{padding:8px 2px 0;font-size:13px}
+.stats .ch{color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.stats .big{font-weight:700;font-size:16px}
+.stats .row{display:flex;justify-content:space-between;gap:6px}
+.score{display:flex;align-items:center;gap:6px;margin-top:4px}
+.bar{flex:1;height:6px;background:#E5E9EF;border-radius:3px;overflow:hidden}
+.bar span{display:block;height:100%;background:var(--ink)}
+
+/* underdog table */
+table{width:100%;border-collapse:collapse;font-size:14px}
+th{text-align:left;font-weight:600;color:var(--muted);font-size:12px;padding:0 8px 8px;border-bottom:1px solid var(--line)}
+td{padding:10px 8px;border-bottom:1px solid #EEF1F4;vertical-align:middle}
+td.t{font-weight:600;word-break:keep-all}
+td.n,th.n{text-align:right;white-space:nowrap}
+.mult{font-family:var(--display);font-size:20px;color:var(--up)}
+tr.row-click{cursor:pointer} tr.row-click:hover td{background:#F6F8FA}
+.catbar{display:inline-block;width:4px;height:28px;border-radius:2px;vertical-align:middle}
+
+/* AI + formats */
+.two{display:grid;grid-template-columns:1.25fr 1fr;gap:20px}
+.ai p{margin:0 0 10px;max-width:62ch}
+.ai .lead{font-size:17px;font-weight:600;line-height:1.5}
+.ai ul{margin:4px 0 0;padding-left:18px}
+.ai li{margin:4px 0}
+.fmt{list-style:none;margin:0;padding:0;counter-reset:f}
+.fmt li{display:grid;grid-template-columns:1fr auto;gap:2px 10px;padding:9px 0;border-top:1px solid #EEF1F4}
+.fmt li:first-child{border-top:none}
+.fmt .name{font-weight:700}
+.fmt .lift{font-weight:700;color:var(--up);white-space:nowrap}
+.fmt .ex{grid-column:1/3;font-size:13px;color:var(--muted)}
+
+.subh{font-size:14px;font-weight:700;margin:18px 0 8px;padding-top:14px;border-top:1px solid var(--line)}
+.sugg{display:flex;flex-wrap:wrap;gap:6px}
+.sugg a{font-size:13px;background:#F1F3F7;border-radius:999px;padding:4px 10px;color:var(--ink);text-decoration:none}
+.sugg a:hover{background:#E2E7EF}
+.kw .traffic{font-weight:600;color:var(--ink)}
+.thumb img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.thumb.has-img::after{content:"";position:absolute;inset:0;background:linear-gradient(transparent 45%,rgba(0,0,0,.75))}
+.thumb > span{position:relative;z-index:1}
+.empty{font-size:14px;color:var(--muted);margin:0}
+.sample[hidden]{display:none}
+/* restore bar */
+.restore{grid-column:1/-1;display:flex;gap:8px;flex-wrap:wrap;align-items:center;font-size:13px;color:var(--muted)}
+.restore[hidden]{display:none}
+.restore button{border:1px dashed var(--muted);background:transparent;border-radius:8px;padding:4px 10px;cursor:pointer;font-size:13px}
+
+/* detail drawer */
+dialog{border:none;border-radius:18px;padding:0;max-width:520px;width:calc(100% - 32px);color:var(--ink)}
+dialog::backdrop{background:rgba(23,32,58,.45)}
+.dlg{display:grid;grid-template-columns:150px 1fr;gap:18px;padding:20px}
+.dlg .thumb{border-radius:10px}
+.dlg h3{margin:0 0 4px;font-size:18px;line-height:1.35;word-break:keep-all}
+.dlg dl{display:grid;grid-template-columns:auto 1fr;gap:4px 12px;margin:12px 0 0;font-size:14px}
+.dlg dt{color:var(--muted)} .dlg dd{margin:0;font-weight:600}
+.dlg .why{grid-column:1/-1;background:#F6F8FA;border-radius:10px;padding:12px 14px;font-size:14px}
+.dlg .why b{display:block;margin-bottom:4px}
+.dlg .acts{grid-column:1/-1;display:flex;gap:8px;justify-content:flex-end}
+.btn{border-radius:10px;padding:8px 14px;font-weight:600;cursor:pointer;border:1.5px solid var(--ink);background:#fff;text-decoration:none;font-size:14px}
+.btn.primary{background:var(--ink);color:#fff}
+.help{font-size:12px;color:var(--muted);margin:12px 0 0;max-width:70ch}
+
+@media (max-width:1080px){ .two{grid-template-columns:1fr} }
+@media (max-width:860px){
+  main{grid-template-columns:1fr;padding:14px}
+  header{padding:14px;position:static}
+  .meta{margin-left:0;width:100%}
+  .strip{grid-auto-columns:150px}
+  .hide-sm{display:none}
+  .dlg{grid-template-columns:110px 1fr}
+}
+@media (prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<header>
+  <div class="brand"><i aria-hidden="true"><b></b><b></b><b></b></i><span>W.D</span><span class="brand-sub">Worry Data Trap<br>고민마케팅</span></div>
+  <nav class="tabs" id="tabs" aria-label="분야"></nav>
+  <div class="meta"><span class="sample" id="sampleBadge" hidden>샘플 데이터</span><span id="updated"></span></div>
+</header>
+
+<main>
+  <div class="restore" id="restore" hidden><span>숨긴 섹션:</span></div>
+
+  <div class="col" id="colLeft">
+    <section class="panel" id="sec-kw" data-name="지금 뜨는 검색어">
+      <div class="ph"><h2>지금 뜨는 검색어</h2><span class="src" id="kwSrc">구글 트렌드 · 한국</span><button class="hide" data-hide="sec-kw">숨기기</button></div>
+      <ol class="kw" id="kw"></ol>
+      <p class="kwhint">검색어를 누르면 관련 쇼츠만 강조돼요.</p>
+      <h3 class="subh">유튜브에서 많이 치는 말</h3>
+      <div class="sugg" id="sugg"></div>
+    </section>
+  </div>
+
+  <div class="col">
+    <section class="panel" id="sec-hot" data-name="급상승 쇼츠">
+      <div class="ph"><h2>급상승 쇼츠</h2><span class="src">최근 48시간 업로드</span><button class="hide" data-hide="sec-hot">숨기기</button></div>
+      <div class="toolbar" id="sorts">
+        <button class="sort" data-sort="vph" aria-pressed="true">시간당 조회수</button>
+        <button class="sort" data-sort="score" aria-pressed="false">반응 점수</button>
+        <button class="sort" data-sort="mult" aria-pressed="false">구독자 대비</button>
+        <span class="filterNote" id="filterNote"></span>
+      </div>
+      <div class="strip" id="strip"></div>
+      <p class="empty" id="stripEmpty" hidden>이 분야에서 최근 48시간 안에 올라온 쇼츠를 아직 못 찾았어요. 다음 수집 때 다시 확인해요.</p>
+      <p class="help">반응 점수는 시청지속시간 대신 쓰는 지표예요. 시간당 조회수, 좋아요 비율, 댓글 비율을 합쳐 0–100으로 매겼어요. 남의 영상 시청지속시간은 유튜브가 공개하지 않거든요.</p>
+    </section>
+
+    <section class="panel" id="sec-under" data-name="작은 채널인데 터진 영상">
+      <div class="ph"><h2>작은 채널인데 터진 영상</h2><span class="src">구독자 수의 몇 배가 봤는지</span><button class="hide" data-hide="sec-under">숨기기</button></div>
+      <table>
+        <thead><tr><th></th><th>영상</th><th class="n hide-sm">구독자</th><th class="n">조회수</th><th class="n">배수</th></tr></thead>
+        <tbody id="under"></tbody>
+      </table>
+    </section>
+
+    <div class="two">
+      <section class="panel ai" id="sec-ai" data-name="오늘의 요약">
+        <div class="ph"><h2>오늘의 요약</h2><span class="src" id="aiSrc">수집한 쇼츠 자동 분석</span><button class="hide" data-hide="sec-ai">숨기기</button></div>
+        <div id="ai"></div>
+      </section>
+      <section class="panel" id="sec-fmt" data-name="잘 되는 형식">
+        <div class="ph"><h2>잘 되는 형식</h2><span class="src">평균 대비 조회수</span><button class="hide" data-hide="sec-fmt">숨기기</button></div>
+        <ul class="fmt" id="fmt"></ul>
+      </section>
+    </div>
+  </div>
+</main>
+
+<dialog id="dlg" aria-labelledby="dlgTitle"></dialog>
+
+<script>
+/* 분야별 색 — 분야를 추가하면 여기에도 색을 하나 넣어주세요 */
+const CAT_STYLE={ fun:{color:"#F4B400", ink:"#17203A"}, pol:{color:"#2B59D9", ink:"#fff"}, ad:{color:"#C7336F", ink:"#fff"} };
+const NO_CAT={color:"#8A93A6", ink:"#fff", label:"기타"};
+
+/* 샘플 데이터: data.json을 못 읽을 때만 보여줘요 */
+const SAMPLE = {
+  sample:true, updatedAt:"2026-11-07T15:30+09:00",
+  cats:{fun:{label:"유머"},pol:{label:"정치/시사"},ad:{label:"광고/마케팅"}},
+  keywords:[
+    {word:"예산안 표결",cat:"pol",src:["G"],traffic:"5만+",chg:"new"},
+    {word:"수능 D-6",cat:"pol",src:["G"],traffic:"2만+",chg:2},
+    {word:"빼빼로데이 광고",cat:"ad",src:["G"],traffic:"2만+",chg:5},
+    {word:"회사 단톡방",cat:"fun",src:["G"],traffic:"1만+",chg:1},
+    {word:"첫눈 예보",cat:null,src:["G"],traffic:"1만+",chg:"new"},
+    {word:"편의점 신상",cat:"ad",src:["G"],traffic:"5천+",chg:-2},
+    {word:"AI 면접",cat:"pol",src:["G"],traffic:"5천+",chg:3},
+    {word:"국감 명장면",cat:"pol",src:["G"],traffic:"2천+",chg:-3}
+  ],
+  suggest:{fun:["웃긴 영상","상황극 회사","밈 모음"],pol:["시사 정리","국회 예산안","뉴스 정리 쇼츠"],ad:["광고 비교","마케팅 사례","브랜드 협업"]},
+  videos:[
+    {id:"v1",title:"예산안 표결, 3분 안에 정리해드림",ch:"시사한입",subs:41000,views:612000,hours:9,likes:23100,comments:4120,cat:"pol",dur:58,kw:["예산안 표결"],gain:84000},
+    {id:"v2",title:"회사 단톡방에 꼭 있는 사람 유형 5",ch:"김대리 일상",subs:8200,views:1340000,hours:22,likes:88200,comments:9300,cat:"fun",dur:41,kw:["회사 단톡방"]},
+    {id:"v3",title:"빼빼로데이 광고 3사 비교, 승자는?",ch:"광고읽는남자",subs:23000,views:487000,hours:14,likes:19800,comments:2900,cat:"ad",dur:62,kw:["빼빼로데이 광고"]},
+    {id:"v4",title:"수능 6일 전 수험생 부모 반응",ch:"웃긴집",subs:312000,views:2100000,hours:30,likes:121000,comments:6400,cat:"fun",dur:33,kw:["수능 D-6"]},
+    {id:"v5",title:"편의점 신상 광고, 실제랑 비교해봄",ch:"사봤어요",subs:5100,views:702000,hours:19,likes:31000,comments:3800,cat:"ad",dur:47,kw:["편의점 신상"]},
+    {id:"v6",title:"AI 면접관한테 사투리로 답해봤다",ch:"부산사나이",subs:15600,views:930000,hours:26,likes:52000,comments:7100,cat:"fun",dur:55,kw:["AI 면접"]},
+    {id:"v7",title:"블프 직구 광고 문구, 진짜 싼지 계산",ch:"돈되는마케터",subs:9800,views:410000,hours:18,likes:17600,comments:2600,cat:"ad",dur:59,kw:[]},
+    {id:"v8",title:"국감 명장면 TOP3 (여야 공평하게)",ch:"뉴스클립",subs:540000,views:1250000,hours:40,likes:39000,comments:15800,cat:"pol",dur:72,kw:["국감 명장면"]}
+  ],
+  summary:{lead:"상위 쇼츠 15개 중 6개가 광고/마케팅 분야예요.",paras:["상위권 평균 길이는 52초예요. 제목에 자주 나온 말은 ‘비교’, ‘정리’예요.","구독자 수의 10배 넘게 조회된 영상이 5개 있어요."],tips:["지금 가장 잘 되는 제목 형식: 비교형 (A vs B) (평균보다 +82%)","길이는 42~62초 사이를 노려보세요"],auto:true},
+  formats:[{name:"비교형 (A vs B)",lift:"+82%",n:3,ex:"광고 3사 비교, 광고 vs 실물"},{name:"요약·정리형",lift:"+41%",n:2,ex:"3분 정리"},{name:"실험·반응형",lift:"+18%",n:3,ex:"사투리로 답해봤다"}]
+};
+
+let DATA;
+const state={cat:"all", sort:"vph", kw:null};
+const store={get(k){try{return JSON.parse(localStorage.getItem(k))}catch(e){return null}}, set(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}}};
+let hidden=store.get('wd-hidden')||[];
+
+const $=s=>document.querySelector(s);
+const fmtN=n=>n>=1e8?(n/1e8).toFixed(1)+'억':n>=1e4?(n/1e4).toFixed(n>=1e5?0:1)+'만':n>=1e3?(n/1e3).toFixed(1)+'천':String(Math.round(n));
+const esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const catOf=k=>k&&DATA.cats[k]?{...CAT_STYLE[k]||NO_CAT,label:DATA.cats[k].label}:NO_CAT;
+const inCat=x=>state.cat==="all"||x.cat===state.cat;
+const ytUrl=v=>`https://www.youtube.com/shorts/${encodeURIComponent(v.id)}`;
+function shade(hex,p){const n=parseInt(hex.slice(1),16);let r=n>>16,g=n>>8&255,b=n&255;const f=x=>Math.max(0,Math.min(255,Math.round(x+x*p/100)));return '#'+[f(r),f(g),f(b)].map(x=>x.toString(16).padStart(2,'0')).join('');}
+const thumbBg=v=>{const c=catOf(v.cat).color;return `background:linear-gradient(160deg, ${c} 0%, ${shade(c,-38)} 100%)`;};
+const durTxt=d=>`${Math.floor(d/60)}:${String(d%60).padStart(2,'0')}`;
+
+function prepare(){
+  DATA.videos.forEach(v=>{ v.kw=v.kw||[]; v.title=String(v.title||'').replace(/#\S+/g,'').replace(/\s+/g,' ').trim()||v.title; v.vph=v.views/v.hours; v.mult=v.views/Math.max(v.subs,1); v.likeRate=v.likes/Math.max(v.views,1); v.cmtRate=v.comments/Math.max(v.views,1); });
+  const vs=DATA.videos; if(!vs.length) return;
+  const mx=k=>Math.max(...vs.map(v=>v[k]))||1;
+  const a=mx('vph'), b=mx('likeRate'), c=mx('cmtRate');
+  vs.forEach(v=>{ v.score=Math.round(100*(0.5*v.vph/a+0.3*v.likeRate/b+0.2*v.cmtRate/c)); });
+}
+
+/* ===== 렌더 ===== */
+function renderTabs(){
+  const items=[["all","전체",null],...Object.keys(DATA.cats).map(k=>[k,DATA.cats[k].label,catOf(k).color])];
+  $('#tabs').innerHTML=items.map(([k,l,c])=>`<button class="tab" data-cat="${k}" aria-pressed="${state.cat===k}">${c?`<span class="dot" style="background:${c}"></span>`:''}${esc(l)}</button>`).join('');
+}
+function renderKw(){
+  // 구글 트렌드는 분야 구분이 없어서, 분야 탭에서는 관련 영상이 있는 검색어를 먼저 보여줘요
+  let list=DATA.keywords.slice();
+  if(state.cat!=="all"){ const m=list.filter(k=>k.cat===state.cat); list=m.length?m:list; }
+  $('#kw').innerHTML=list.slice(0,10).map((k,i)=>{
+    const chg=k.chg==="new"?'<span class="chg new">NEW</span>':k.chg>0?`<span class="chg up">▲${k.chg}</span>`:k.chg<0?`<span class="chg down">▼${-k.chg}</span>`:'<span class="chg down">–</span>';
+    const c=catOf(k.cat);
+    return `<li tabindex="0" role="button" data-kw="${esc(k.word)}" aria-selected="${state.kw===k.word}">
+      <span class="r num">${i+1}</span><span class="w">${esc(k.word)}</span>${chg}
+      <span class="sub">${(k.src||[]).map(s=>`<span class="chip ${s}" title="${{N:'네이버',G:'구글',Y:'유튜브'}[s]||s}">${s}</span>`).join('')}${k.traffic?`<span class="traffic">검색 ${esc(k.traffic)}</span>`:''}${k.cat?`<span style="color:${c.color==='#F4B400'?'#A07400':c.color}">${esc(c.label)}</span>`:''}</span>
+    </li>`;}).join('') || '<li>아직 수집된 검색어가 없어요.</li>';
+  const sg=DATA.suggest||{};
+  const words=state.cat==="all"?Object.values(sg).flat():(sg[state.cat]||[]);
+  $('#sugg').innerHTML=words.slice(0,12).map(w=>`<a href="https://www.youtube.com/results?search_query=${encodeURIComponent(w)}" target="_blank" rel="noopener">${esc(w)}</a>`).join('')||'<span class="empty">아직 없어요.</span>';
+}
+function thumbHtml(v,i,small){
+  const c=catOf(v.cat), light=c.ink!=='#fff';
+  const img=v.thumb&&!DATA.sample?`<img src="${esc(v.thumb)}" alt="" loading="lazy" onerror="this.parentNode.classList.remove('has-img');this.remove()">`:'';
+  const txt=img?'#fff':(light?'#17203A':'#fff');
+  return `<div class="thumb${img?' has-img':''}" style="${thumbBg(v)}">${img}
+    ${i!=null?`<span class="rank" style="color:${txt}">${i+1}</span>`:''}${small?'':`<span class="dur num">${durTxt(v.dur)}</span>`}
+    <span class="t" style="color:${txt};${img||!light?'':'text-shadow:none;'}${small?'font-size:13px':''}">${esc(v.title)}</span></div>`;
+}
+function renderStrip(){
+  const list=DATA.videos.filter(inCat).sort((a,b)=>b[state.sort]-a[state.sort]).slice(0,20);
+  $('#filterNote').innerHTML=state.kw?`‘${esc(state.kw)}’ 관련 강조 중 · <button id="clearKw">해제</button>`:'';
+  $('#stripEmpty').hidden=!!list.length;
+  $('#strip').innerHTML=list.map((v,i)=>{
+    const dim=state.kw&&!v.kw.includes(state.kw)?' dim':'';
+    return `<button class="short${dim}" data-id="${esc(v.id)}" aria-label="${esc(v.title)} 자세히 보기">
+      ${thumbHtml(v,i)}
+      <div class="stats">
+        <div class="ch">${esc(v.ch)} · 구독자 ${fmtN(v.subs)}</div>
+        <div class="row"><span class="big num">${fmtN(v.vph)}/시간</span><span class="num">${fmtN(v.views)}회</span></div>
+        <div class="score"><span class="bar"><span style="width:${v.score}%"></span></span><span class="num">${v.score}</span></div>
+      </div></button>`;}).join('');
+}
+function renderUnder(){
+  const list=DATA.videos.filter(inCat).filter(v=>v.subs<100000&&v.mult>=2).sort((a,b)=>b.mult-a.mult).slice(0,6);
+  $('#under').innerHTML=list.map(v=>`<tr class="row-click" data-id="${esc(v.id)}" tabindex="0">
+    <td><span class="catbar" style="background:${catOf(v.cat).color}"></span></td>
+    <td class="t">${esc(v.title)}<div style="font-weight:400;font-size:12px;color:var(--muted)">${esc(v.ch)}</div></td>
+    <td class="n num hide-sm">${fmtN(v.subs)}</td><td class="n num">${fmtN(v.views)}</td>
+    <td class="n"><span class="mult num">×${Math.round(v.mult)}</span></td></tr>`).join('') || '<tr><td colspan="5" class="empty">구독자 10만 이하 채널 중 크게 터진 영상이 아직 없어요.</td></tr>';
+}
+function renderAi(){
+  const s=DATA.summary||{};
+  $('#aiSrc').textContent=s.auto?'수집한 쇼츠 자동 분석 · AI 연결 전':'AI 분석';
+  $('#ai').innerHTML=`<p class="lead">${esc(s.lead)}</p>${(s.paras||[]).map(p=>`<p>${esc(p)}</p>`).join('')}${(s.tips||[]).length?`<p style="margin:12px 0 0;font-weight:700">따라 해볼 만한 것</p><ul>${s.tips.map(t=>`<li>${esc(t)}</li>`).join('')}</ul>`:''}`;
+}
+function renderFmt(){
+  $('#fmt').innerHTML=(DATA.formats||[]).map(f=>`<li><span class="name">${esc(f.name)}${f.n?` <span style="font-weight:400;color:var(--muted);font-size:13px">${f.n}개</span>`:''}</span><span class="lift num">${esc(f.lift)}</span><span class="ex">예: ${esc(f.ex)}</span></li>`).join('')||'<li class="empty">형식을 비교할 만큼 영상이 모이지 않았어요.</li>';
+}
+function renderHidden(){
+  document.querySelectorAll('section.panel').forEach(s=>s.hidden=hidden.includes(s.id));
+  const r=$('#restore');
+  r.hidden=!hidden.length;
+  r.innerHTML='<span>숨긴 섹션:</span>'+hidden.map(id=>`<button data-show="${id}">+ ${esc(document.getElementById(id).dataset.name)} 다시 보기</button>`).join('');
+  const kwHidden=hidden.includes('sec-kw');
+  document.querySelector('main').style.gridTemplateColumns=kwHidden?'1fr':'';
+  document.getElementById('colLeft').style.display=kwHidden?'none':'';
+}
+function renderAll(){ renderTabs(); renderKw(); renderStrip(); renderUnder(); renderAi(); renderFmt(); renderHidden(); }
+
+/* ===== 상세 ===== */
+function openDetail(id){
+  const v=DATA.videos.find(x=>x.id===id), c=catOf(v.cat), d=$('#dlg');
+  const extra=[v.format?`형식: ${esc(v.format)}`:'',v.hook?`훅: ${esc(v.hook)}`:'',`길이: ${v.dur}초`,v.gain!=null?`지난 수집 이후 +${fmtN(v.gain)}회`:''].filter(Boolean).join('<br>');
+  d.innerHTML=`<div class="dlg">
+    ${thumbHtml(v,null,true)}
+    <div><h3 id="dlgTitle">${esc(v.title)}</h3><div style="color:var(--muted);font-size:14px">${esc(v.ch)} · ${esc(c.label)}</div>
+      <dl class="num"><dt>조회수</dt><dd>${fmtN(v.views)}회 (${Math.round(v.hours)}시간)</dd><dt>시간당</dt><dd>${fmtN(v.vph)}회</dd><dt>구독자 대비</dt><dd>×${Math.round(v.mult)}</dd><dt>좋아요율</dt><dd>${(v.likeRate*100).toFixed(1)}%</dd><dt>댓글율</dt><dd>${(v.cmtRate*100).toFixed(2)}%</dd><dt>반응 점수</dt><dd>${v.score}/100</dd></dl></div>
+    <div class="why"><b>참고</b>${extra}</div>
+    <div class="acts"><button class="btn" id="dlgClose">닫기</button>${DATA.sample?'<span class="btn primary" aria-disabled="true" title="실제 데이터에서는 유튜브로 이동해요">유튜브에서 보기</span>':`<a class="btn primary" href="${ytUrl(v)}" target="_blank" rel="noopener">유튜브에서 보기</a>`}</div>
+  </div>`;
+  d.showModal(); $('#dlgClose').focus();
+}
+
+/* ===== 이벤트 ===== */
+document.addEventListener('click',e=>{
+  const t=e.target.closest('[data-cat],[data-sort],[data-kw],[data-id],[data-hide],[data-show],#clearKw,#dlgClose');
+  if(!t){ if(e.target.id==='dlg') $('#dlg').close(); return; }
+  if(t.dataset.cat){ state.cat=t.dataset.cat; state.kw=null; }
+  else if(t.dataset.sort){ state.sort=t.dataset.sort; document.querySelectorAll('.sort').forEach(b=>b.setAttribute('aria-pressed',b===t)); }
+  else if(t.dataset.kw){ state.kw=state.kw===t.dataset.kw?null:t.dataset.kw; }
+  else if(t.dataset.id){ openDetail(t.dataset.id); return; }
+  else if(t.dataset.hide){ hidden.push(t.dataset.hide); store.set('wd-hidden',hidden); }
+  else if(t.dataset.show){ hidden=hidden.filter(x=>x!==t.dataset.show); store.set('wd-hidden',hidden); }
+  else if(t.id==='clearKw'){ state.kw=null; }
+  else if(t.id==='dlgClose'){ $('#dlg').close(); return; }
+  renderAll();
+});
+document.addEventListener('keydown',e=>{
+  if((e.key==='Enter'||e.key===' ')&&e.target.matches('.kw li,tr.row-click')){ e.preventDefault(); e.target.click(); }
+});
+
+/* ===== 시작: data.json 읽기 (없으면 샘플) ===== */
+let lastLoad=0;
+function load(){
+  lastLoad=Date.now();
+  return fetch('data.json?t='+Date.now()).then(r=>{ if(!r.ok) throw 0; return r.json(); }).catch(()=>DATA||SAMPLE).then(d=>{
+    DATA=d; prepare();
+    $('#sampleBadge').hidden=!DATA.sample;
+    const u=new Date(DATA.updatedAt);
+    $('#updated').textContent=isNaN(u)?'':`업데이트 ${u.getMonth()+1}월 ${u.getDate()}일 ${String(u.getHours()).padStart(2,'0')}:${String(u.getMinutes()).padStart(2,'0')}`;
+    renderAll();
+  });
+}
+load();
+// 홈 화면 앱으로 다시 열었을 때 10분 넘었으면 새 데이터 불러오기
+document.addEventListener('visibilitychange',()=>{ if(!document.hidden && Date.now()-lastLoad>10*60*1000) load(); });
+</script>
+</body>
+</html>
