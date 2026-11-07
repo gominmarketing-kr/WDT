@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-07T16:54+09:00",
+ "updatedAt": "2026-11-07T18:03+09:00",
  "cats": {
   "fun": {
    "label": "유머"
@@ -13,7 +13,25 @@
  },
  "keywords": [
   {
-   "word": "롯데 자이언츠",
+   "word": "주권",
+   "src": [
+    "G"
+   ],
+   "traffic": "200+",
+   "chg": "new",
+   "cat": null
+  },
+  {
+   "word": "나탈리 하프",
+   "src": [
+    "G"
+   ],
+   "traffic": "200+",
+   "chg": "new",
+   "cat": null
+  },
+  {
+   "word": "혈당",
    "src": [
     "G"
    ],
@@ -22,16 +40,7 @@
    "cat": null
   },
   {
-   "word": "이재희",
-   "src": [
-    "G"
-   ],
-   "traffic": "1000+",
-   "chg": "new",
-   "cat": null
-  },
-  {
-   "word": "최일언",
+   "word": "김영철",
    "src": [
     "G"
    ],
@@ -40,43 +49,7 @@
    "cat": null
   },
   {
-   "word": "미야지",
-   "src": [
-    "G"
-   ],
-   "traffic": "100+",
-   "chg": "new",
-   "cat": null
-  },
-  {
-   "word": "통장",
-   "src": [
-    "G"
-   ],
-   "traffic": "1000+",
-   "chg": "new",
-   "cat": null
-  },
-  {
-   "word": "tving",
-   "src": [
-    "G"
-   ],
-   "traffic": "200+",
-   "chg": "new",
-   "cat": null
-  },
-  {
-   "word": "lakers vs trail blazers",
-   "src": [
-    "G"
-   ],
-   "traffic": "100+",
-   "chg": "new",
-   "cat": null
-  },
-  {
-   "word": "창원 lg 대 고양 소노",
+   "word": "수원 kt 대 대구 한국가스공사",
    "src": [
     "G"
    ],
@@ -85,7 +58,25 @@
    "cat": null
   },
   {
-   "word": "장진혁",
+   "word": "젠슨황",
+   "src": [
+    "G"
+   ],
+   "traffic": "2000+",
+   "chg": "new",
+   "cat": null
+  },
+  {
+   "word": "우규민",
+   "src": [
+    "G"
+   ],
+   "traffic": "500+",
+   "chg": "new",
+   "cat": null
+  },
+  {
+   "word": "맥도날드",
    "src": [
     "G"
    ],
@@ -94,11 +85,20 @@
    "cat": null
   },
   {
-   "word": "kt vs samsung",
+   "word": "류현인",
    "src": [
     "G"
    ],
-   "traffic": "200+",
+   "traffic": "100+",
+   "chg": "new",
+   "cat": null
+  },
+  {
+   "word": "박승규",
+   "src": [
+    "G"
+   ],
+   "traffic": "1000+",
    "chg": "new",
    "cat": null
   }
@@ -108,11 +108,11 @@
    "웃긴영상",
    "웃긴이야기",
    "웃긴노래",
+   "웃긴 ai 영상",
    "웃긴 고양이 영상",
    "웃긴영상 레전드",
    "웃긴 강아지 영상",
-   "웃긴 아기 영상",
-   "웃긴 커플 장난"
+   "웃긴 아기 영상"
   ],
   "pol": [
    "시사타파",
@@ -121,8 +121,8 @@
    "시사인",
    "시사기획 창",
    "시사포커스",
-   "시사급발진",
-   "시사팩트"
+   "시사팩트",
+   "시사급발진"
   ],
   "ad": [
    "광고없는 노래모음",
@@ -141,153 +141,163 @@
    "title": "'스카프 아저씨' 결국... #shorts / YTN",
    "ch": " YTN",
    "subs": 5430000,
-   "views": 287777,
-   "hours": 7.2,
-   "likes": 5195,
-   "comments": 354,
+   "views": 348579,
+   "hours": 8.4,
+   "likes": 5784,
+   "comments": 377,
    "cat": "pol",
    "dur": 29,
    "thumb": "https://i.ytimg.com/vi/n4PE_UeJKwg/hqdefault.jpg",
-   "kw": []
+   "kw": [],
+   "gain": 60802
   },
   {
    "id": "ZRXdjalLwO0",
    "title": "운전석 손 '삐죽' 내밀더니 '굉음'‥돌진 차량에 행인 '날벼락' #Shorts (MBC뉴스)",
    "ch": "MBCNEWS",
    "subs": 6210000,
-   "views": 1677880,
-   "hours": 42.9,
-   "likes": 8052,
-   "comments": 3102,
+   "views": 1681811,
+   "hours": 44.1,
+   "likes": 8078,
+   "comments": 3107,
    "cat": "pol",
    "dur": 85,
    "thumb": "https://i.ytimg.com/vi/ZRXdjalLwO0/hqdefault.jpg",
-   "kw": []
+   "kw": [],
+   "gain": 3931
   },
   {
    "id": "OGhS-3MAfIw",
    "title": "삿포로 공항 韓승객 대폭발..황당한 결항과정 '경악' #Shorts (MBC뉴스)",
    "ch": "MBCNEWS",
    "subs": 6210000,
-   "views": 1712401,
-   "hours": 46.6,
-   "likes": 15141,
-   "comments": 1730,
+   "views": 1717916,
+   "hours": 47.8,
+   "likes": 15216,
+   "comments": 1739,
    "cat": "pol",
    "dur": 131,
    "thumb": "https://i.ytimg.com/vi/OGhS-3MAfIw/hqdefault.jpg",
-   "kw": []
+   "kw": [],
+   "gain": 5515
   },
   {
    "id": "PQaXvcmW8UY",
    "title": "작업 시간 지키려다‥20대 청소 노동자 참변 #Shorts (MBC뉴스)",
    "ch": "MBCNEWS",
    "subs": 6210000,
-   "views": 496392,
-   "hours": 18.9,
-   "likes": 2906,
-   "comments": 637,
+   "views": 502328,
+   "hours": 20.1,
+   "likes": 2925,
+   "comments": 638,
    "cat": "pol",
    "dur": 81,
    "thumb": "https://i.ytimg.com/vi/PQaXvcmW8UY/hqdefault.jpg",
-   "kw": []
-  },
-  {
-   "id": "aZKJi9517xw",
-   "title": "한식뷔페 무한리필 빌런 가족 #shorts",
-   "ch": "숏플레이",
-   "subs": 649000,
-   "views": 1034150,
-   "hours": 46.9,
-   "likes": 14604,
-   "comments": 89,
-   "cat": "fun",
-   "dur": 61,
-   "thumb": "https://i.ytimg.com/vi/aZKJi9517xw/hqdefault.jpg",
-   "kw": []
+   "kw": [],
+   "gain": 5936
   },
   {
    "id": "zF_c1hMbt6c",
    "title": "\"그 양말 까봐요\" 털숭숭.. 3천 마리 공항 터졌다 #Shorts (MBC뉴스)",
    "ch": "MBCNEWS",
    "subs": 6210000,
-   "views": 478360,
-   "hours": 22.7,
-   "likes": 1921,
-   "comments": 132,
+   "views": 483700,
+   "hours": 23.9,
+   "likes": 1944,
+   "comments": 134,
    "cat": "pol",
    "dur": 36,
    "thumb": "https://i.ytimg.com/vi/zF_c1hMbt6c/hqdefault.jpg",
-   "kw": []
+   "kw": [],
+   "gain": 5340
   },
   {
    "id": "MSqKYWsi8hE",
    "title": "'번쩍 와장창' 식당 박살 낸 차량‥운전자 내려 '어?' 하더니 #Shorts (MBC뉴스)",
    "ch": "MBCNEWS",
    "subs": 6210000,
-   "views": 723020,
-   "hours": 43.1,
-   "likes": 4381,
-   "comments": 1167,
+   "views": 724731,
+   "hours": 44.3,
+   "likes": 4389,
+   "comments": 1168,
    "cat": "pol",
    "dur": 83,
    "thumb": "https://i.ytimg.com/vi/MSqKYWsi8hE/hqdefault.jpg",
-   "kw": []
+   "kw": [],
+   "gain": 1711
   },
   {
    "id": "Yb89KjNUDgo",
    "title": "역대급 개웃긴 스윙스 랭킹 TOP6",
    "ch": "시환",
    "subs": 22100,
-   "views": 751950,
-   "hours": 45.9,
-   "likes": 19932,
-   "comments": 139,
+   "views": 765362,
+   "hours": 47.1,
+   "likes": 20347,
+   "comments": 146,
    "cat": "fun",
    "dur": 118,
    "thumb": "https://i.ytimg.com/vi/Yb89KjNUDgo/hqdefault.jpg",
-   "kw": []
+   "kw": [],
+   "gain": 13412
   },
   {
    "id": "wQCkpEMt1Jo",
    "title": "역대급 This is the end 랭킹 TOP4 #랭킹 #쇼츠 #웃긴영상",
    "ch": "랭킹강",
    "subs": 310000,
-   "views": 301570,
-   "hours": 22.9,
-   "likes": 6867,
-   "comments": 67,
+   "views": 314743,
+   "hours": 24.1,
+   "likes": 7150,
+   "comments": 70,
    "cat": "fun",
    "dur": 26,
    "thumb": "https://i.ytimg.com/vi/wQCkpEMt1Jo/hqdefault.jpg",
-   "kw": []
+   "kw": [],
+   "gain": 13173
   },
   {
    "id": "zqFCvkivsEM",
    "title": "\"아기야 제발.. 엄마 보러 가자..\" #shorts",
    "ch": "SBS 뉴스",
    "subs": 5300000,
-   "views": 267494,
-   "hours": 24.8,
-   "likes": 2375,
-   "comments": 53,
+   "views": 271983,
+   "hours": 26.0,
+   "likes": 2411,
+   "comments": 54,
    "cat": "pol",
    "dur": 39,
    "thumb": "https://i.ytimg.com/vi/zqFCvkivsEM/hqdefault.jpg",
-   "kw": []
+   "kw": [],
+   "gain": 4489
   },
   {
    "id": "sYt3-Yz5tkw",
    "title": "철로 위 트레일러 '멈칫'.. 순간 열차 경적 '발칵' #Shorts (MBC뉴스)",
    "ch": "MBCNEWS",
    "subs": 6210000,
-   "views": 214591,
-   "hours": 22.7,
+   "views": 216586,
+   "hours": 23.9,
    "likes": 431,
-   "comments": 91,
+   "comments": 92,
    "cat": "pol",
    "dur": 30,
    "thumb": "https://i.ytimg.com/vi/sYt3-Yz5tkw/hqdefault.jpg",
+   "kw": [],
+   "gain": 1995
+  },
+  {
+   "id": "8ebNyhArS3I",
+   "title": "서랍장 밀자 '비밀 도주로'…성매매업소 급습 현장 #JTBC #Shorts",
+   "ch": "JTBC News",
+   "subs": 4910000,
+   "views": 393586,
+   "hours": 45.8,
+   "likes": 2730,
+   "comments": 828,
+   "cat": "pol",
+   "dur": 101,
+   "thumb": "https://i.ytimg.com/vi/8ebNyhArS3I/hqdefault.jpg",
    "kw": []
   },
   {
@@ -295,55 +305,58 @@
    "title": "\"빨리 줘\" 재촉한 손님에 커피 가루 들이부어 #Shorts (MBC뉴스)",
    "ch": "MBCNEWS",
    "subs": 6210000,
-   "views": 176650,
-   "hours": 26.6,
-   "likes": 462,
+   "views": 177173,
+   "hours": 27.8,
+   "likes": 464,
    "comments": 151,
    "cat": "pol",
    "dur": 33,
    "thumb": "https://i.ytimg.com/vi/sLVhekmFuW0/hqdefault.jpg",
-   "kw": []
+   "kw": [],
+   "gain": 523
   },
   {
    "id": "fjX1HShiBco",
    "title": "움직이는 검은 봉지..\"이게 뭐야\" 열어보니 #shorts",
    "ch": "SBS 뉴스",
    "subs": 5300000,
-   "views": 264864,
-   "hours": 42.5,
-   "likes": 2366,
-   "comments": 568,
+   "views": 268366,
+   "hours": 43.7,
+   "likes": 2386,
+   "comments": 573,
    "cat": "pol",
    "dur": 71,
    "thumb": "https://i.ytimg.com/vi/fjX1HShiBco/hqdefault.jpg",
-   "kw": []
-  },
-  {
-   "id": "_N6C1uQ1eFk",
-   "title": "#한국바이럴#웃긴영상#코미디#꿀잼#유튜브쇼츠#쇼츠#바이럴#트렌드#재미#웃음#웃긴영상#개그#코미디#웃음#재미#꿀잼#웃겨요#유튜브#유튜브쇼츠#쇼츠#숏츠#영상추천",
-   "ch": "Arif mondal",
-   "subs": 34100,
-   "views": 240321,
-   "hours": 41.5,
-   "likes": 1363,
-   "comments": 2,
-   "cat": "fun",
-   "dur": 128,
-   "thumb": "https://i.ytimg.com/vi/_N6C1uQ1eFk/hqdefault.jpg",
-   "kw": []
+   "kw": [],
+   "gain": 3502
   },
   {
    "id": "MxAxzXxNDAw",
    "title": "어느 안경점의 광고 포스터 ㅋㅋ",
    "ch": "KNOW?",
    "subs": 36300,
-   "views": 156382,
-   "hours": 28.9,
-   "likes": 1523,
+   "views": 161180,
+   "hours": 30.1,
+   "likes": 1560,
    "comments": 10,
    "cat": "ad",
    "dur": 6,
    "thumb": "https://i.ytimg.com/vi/MxAxzXxNDAw/hqdefault.jpg",
+   "kw": [],
+   "gain": 4798
+  },
+  {
+   "id": "_sQNmcEjpQI",
+   "title": "역대급 This is the end 랭킹 TOP5 #랭킹 #쇼츠 #웃긴영상",
+   "ch": "랭킹강",
+   "subs": 310000,
+   "views": 16135,
+   "hours": 3.1,
+   "likes": 837,
+   "comments": 9,
+   "cat": "fun",
+   "dur": 30,
+   "thumb": "https://i.ytimg.com/vi/_sQNmcEjpQI/hqdefault.jpg",
    "kw": []
   },
   {
@@ -351,98 +364,90 @@
    "title": "\"중국 전기차를 왜 사?\" 그랬는데 '반전' #shorts",
    "ch": "SBS 뉴스",
    "subs": 5300000,
-   "views": 209783,
-   "hours": 41.9,
-   "likes": 657,
-   "comments": 694,
+   "views": 210408,
+   "hours": 43.1,
+   "likes": 658,
+   "comments": 695,
    "cat": "pol",
    "dur": 124,
    "thumb": "https://i.ytimg.com/vi/L67kq4Dt_o4/hqdefault.jpg",
-   "kw": []
+   "kw": [],
+   "gain": 625
   },
   {
    "id": "qsGblPA50Cc",
    "title": "MLB 광고 모델은 네 명인데 후드집업이 다섯 벌 나온 이유",
    "ch": "삼촌의 덕질",
    "subs": 7760,
-   "views": 191105,
-   "hours": 42.5,
-   "likes": 3057,
+   "views": 193249,
+   "hours": 43.7,
+   "likes": 3104,
    "comments": 80,
    "cat": "ad",
    "dur": 72,
    "thumb": "https://i.ytimg.com/vi/qsGblPA50Cc/hqdefault.jpg",
-   "kw": []
+   "kw": [],
+   "gain": 2144
   },
   {
    "id": "bqDdqwT6IH0",
    "title": "\"6천억 쏟아붓고도 완패\"‥머스크·밴스, 선거 참패 후폭풍 #Shorts (MBC뉴스)",
    "ch": "MBCNEWS",
    "subs": 6210000,
-   "views": 165453,
-   "hours": 43.9,
-   "likes": 1687,
+   "views": 166529,
+   "hours": 45.1,
+   "likes": 1707,
    "comments": 84,
    "cat": "pol",
    "dur": 108,
    "thumb": "https://i.ytimg.com/vi/bqDdqwT6IH0/hqdefault.jpg",
-   "kw": []
+   "kw": [],
+   "gain": 1076
   },
   {
    "id": "JTmKJuXhrDo",
    "title": "김태규 ‘갈’ / 채널A #shorts #DLAB",
    "ch": "채널A News",
    "subs": 3550000,
-   "views": 150746,
-   "hours": 41.9,
-   "likes": 5648,
-   "comments": 694,
+   "views": 152119,
+   "hours": 43.1,
+   "likes": 5718,
+   "comments": 705,
    "cat": "pol",
    "dur": 79,
    "thumb": "https://i.ytimg.com/vi/JTmKJuXhrDo/hqdefault.jpg",
-   "kw": []
-  },
-  {
-   "id": "mS7-Kyn4SNQ",
-   "title": "'무효 딱 1표'…김태규 제명결의안 통과 순간 #JTBC #Shorts",
-   "ch": "JTBC News",
-   "subs": 4910000,
-   "views": 158795,
-   "hours": 47.6,
-   "likes": 2403,
-   "comments": 335,
-   "cat": "pol",
-   "dur": 29,
-   "thumb": "https://i.ytimg.com/vi/mS7-Kyn4SNQ/hqdefault.jpg",
-   "kw": []
-  },
-  {
-   "id": "E7IWQ_1EyoY",
-   "title": "날 당황하게 만든 길냥이 오늘 외출은 글렀나 봄 #웃긴동물영상 #고양이 #반려동물 #고양이동영상 #웃긴고양이 #고양이쇼츠 #고양이브이로그 #웃긴영상 #반려묘#고양이일상",
-   "ch": "바우테일",
-   "subs": 6990,
-   "views": 134811,
-   "hours": 43.9,
-   "likes": 2318,
-   "comments": 143,
-   "cat": "fun",
-   "dur": 24,
-   "thumb": "https://i.ytimg.com/vi/E7IWQ_1EyoY/hqdefault.jpg",
-   "kw": []
+   "kw": [],
+   "gain": 1373
   },
   {
    "id": "_6GW8F8KtXE",
    "title": "역대급 This is the end 인생 명언 랭킹 TOP5 #랭킹 #쇼츠 #웃긴영상",
    "ch": "랭킹강",
    "subs": 310000,
-   "views": 77724,
-   "hours": 25.9,
-   "likes": 2715,
-   "comments": 29,
+   "views": 86087,
+   "hours": 27.1,
+   "likes": 2865,
+   "comments": 32,
    "cat": "fun",
    "dur": 32,
    "thumb": "https://i.ytimg.com/vi/_6GW8F8KtXE/hqdefault.jpg",
-   "kw": []
+   "kw": [],
+   "gain": 8363
+  },
+  {
+   "id": "E7IWQ_1EyoY",
+   "title": "날 당황하게 만든 길냥이 오늘 외출은 글렀나 봄 #웃긴동물영상 #고양이 #반려동물 #고양이동영상 #웃긴고양이 #고양이쇼츠 #고양이브이로그 #웃긴영상 #반려묘#고양이일상",
+   "ch": "바우테일",
+   "subs": 6990,
+   "views": 135201,
+   "hours": 45.1,
+   "likes": 2338,
+   "comments": 144,
+   "cat": "fun",
+   "dur": 24,
+   "thumb": "https://i.ytimg.com/vi/E7IWQ_1EyoY/hqdefault.jpg",
+   "kw": [],
+   "gain": 390
   },
   {
    "id": "-lfhVkLBuLY",
@@ -450,55 +455,74 @@
    "ch": "Village Entertainment 2.0.2",
    "subs": 678000,
    "views": 46769,
-   "hours": 20.1,
+   "hours": 21.3,
    "likes": 82,
    "comments": 0,
    "cat": "fun",
    "dur": 12,
    "thumb": "https://i.ytimg.com/vi/-lfhVkLBuLY/hqdefault.jpg",
-   "kw": []
+   "kw": [],
+   "gain": 0
   },
   {
    "id": "cB8ra99ql4A",
    "title": "굳이 눈앞까지 와서 삐진 티 내는 강아지 #쇼츠 #공감 #웃긴영상 #유머 #animals #shorts",
    "ch": "빛나는곰튜브",
    "subs": 17100,
-   "views": 57778,
-   "hours": 28.9,
-   "likes": 1218,
+   "views": 59470,
+   "hours": 30.1,
+   "likes": 1258,
    "comments": 21,
    "cat": "fun",
    "dur": 15,
    "thumb": "https://i.ytimg.com/vi/cB8ra99ql4A/hqdefault.jpg",
-   "kw": []
+   "kw": [],
+   "gain": 1692
   },
   {
    "id": "QDd5WH2NaDY",
    "title": "역대급 코털 왁싱 랭킹 TOP5 #랭킹 #쇼츠 #웃긴영상",
    "ch": "@랭킹스낵",
    "subs": 2340,
-   "views": 47020,
-   "hours": 23.9,
+   "views": 47210,
+   "hours": 25.1,
    "likes": 414,
    "comments": 0,
    "cat": "fun",
    "dur": 38,
    "thumb": "https://i.ytimg.com/vi/QDd5WH2NaDY/hqdefault.jpg",
-   "kw": []
+   "kw": [],
+   "gain": 190
   },
   {
    "id": "qJJgrEC27z0",
    "title": "역대급 무술 시범 대참사 랭킹 TOP3 #랭킹 #쇼츠 #웃긴영상",
    "ch": "랭킹강",
    "subs": 310000,
-   "views": 27449,
-   "hours": 19.9,
-   "likes": 126,
+   "views": 27996,
+   "hours": 21.1,
+   "likes": 130,
    "comments": 4,
    "cat": "fun",
    "dur": 9,
    "thumb": "https://i.ytimg.com/vi/qJJgrEC27z0/hqdefault.jpg",
-   "kw": []
+   "kw": [],
+   "gain": 547
+  },
+  {
+   "id": "Pjuwd1QatSk",
+   "title": "#웃긴영상 #대박 #추천 #추천영상 #꿀잼 #ㅋㅋㅋ #릴스 #쇼츠 #재미있는영상 #funny",
+   "ch": "রাজু ভাই ১২০",
+   "subs": 47000,
+   "views": 24363,
+   "hours": 20.6,
+   "likes": 128,
+   "comments": 0,
+   "cat": "fun",
+   "dur": 15,
+   "thumb": "https://i.ytimg.com/vi/Pjuwd1QatSk/hqdefault.jpg",
+   "kw": [],
+   "gain": 4525
   },
   {
    "id": "AugClnyU3Ho",
@@ -506,13 +530,14 @@
    "ch": "funtv@6161",
    "subs": 3300,
    "views": 44832,
-   "hours": 40.4,
+   "hours": 41.6,
    "likes": 87,
    "comments": 0,
    "cat": "fun",
    "dur": 18,
    "thumb": "https://i.ytimg.com/vi/AugClnyU3Ho/hqdefault.jpg",
-   "kw": []
+   "kw": [],
+   "gain": 0
   },
   {
    "id": "TymwBiKIW-E",
@@ -520,26 +545,27 @@
    "ch": "Viral Jahid",
    "subs": 33100,
    "views": 35118,
-   "hours": 31.9,
+   "hours": 33.1,
    "likes": 224,
    "comments": 0,
    "cat": "fun",
    "dur": 20,
    "thumb": "https://i.ytimg.com/vi/TymwBiKIW-E/hqdefault.jpg",
-   "kw": []
+   "kw": [],
+   "gain": 0
   },
   {
-   "id": "Pjuwd1QatSk",
-   "title": "#웃긴영상 #대박 #추천 #추천영상 #꿀잼 #ㅋㅋㅋ #릴스 #쇼츠 #재미있는영상 #funny",
-   "ch": "রাজু ভাই ১২০",
-   "subs": 47000,
-   "views": 19838,
-   "hours": 19.4,
-   "likes": 114,
+   "id": "tlX51Lo-RAY",
+   "title": "#한국바이럴 #웃긴영상 #코미디 #꿀잼 #유튜브쇼츠 #쇼츠 #바이럴 #트렌드 #재미 #웃음 #웃긴영상 #개그 #코미디 #웃음 #재미 #꿀잼 #웃겨요 #유튜브 #유튜브쇼츠 #쇼츠",
+   "ch": "Pranto Official 0.5",
+   "subs": 7730,
+   "views": 20091,
+   "hours": 19.1,
+   "likes": 67,
    "comments": 0,
    "cat": "fun",
-   "dur": 15,
-   "thumb": "https://i.ytimg.com/vi/Pjuwd1QatSk/hqdefault.jpg",
+   "dur": 13,
+   "thumb": "https://i.ytimg.com/vi/tlX51Lo-RAY/hqdefault.jpg",
    "kw": []
   },
   {
@@ -547,28 +573,30 @@
    "title": "#한국바이럴 #웃긴영상 #코미디 #꿀잼 #유튜브쇼츠 #쇼츠 #바이럴 #트렌드 #재미 음#웃긴영상#개그#코미디#웃음#재미#꿀 잼#웃겨요#유튜브#유튜브쇼츠#쇼츠#숏츠 #영상추천",
    "ch": "funny video 009",
    "subs": 132000,
-   "views": 25581,
-   "hours": 25.3,
-   "likes": 83,
+   "views": 25595,
+   "hours": 26.4,
+   "likes": 82,
    "comments": 0,
    "cat": "fun",
    "dur": 16,
    "thumb": "https://i.ytimg.com/vi/AtvqgnIIz2Q/hqdefault.jpg",
-   "kw": []
+   "kw": [],
+   "gain": 14
   },
   {
    "id": "taE-_FkxYBc",
    "title": "아이폰으로 갈아타라는 광고에 삼성의 답변",
    "ch": "나만이래",
-   "subs": 14400,
-   "views": 24044,
-   "hours": 23.9,
-   "likes": 178,
+   "subs": 14500,
+   "views": 24172,
+   "hours": 25.1,
+   "likes": 177,
    "comments": 4,
    "cat": "ad",
    "dur": 6,
    "thumb": "https://i.ytimg.com/vi/taE-_FkxYBc/hqdefault.jpg",
-   "kw": []
+   "kw": [],
+   "gain": 128
   },
   {
    "id": "_bUF-dBdchw",
@@ -576,41 +604,44 @@
    "ch": "Md Shibbir Ahamed Sorker",
    "subs": 88300,
    "views": 30720,
-   "hours": 31.9,
+   "hours": 33.1,
    "likes": 161,
    "comments": 1,
    "cat": "fun",
    "dur": 18,
    "thumb": "https://i.ytimg.com/vi/_bUF-dBdchw/hqdefault.jpg",
-   "kw": []
+   "kw": [],
+   "gain": 0
   },
   {
    "id": "m1qZX95Rd7Y",
    "title": "아빠 이놈 !!!!!!!!!!!! #웃긴영상 #결혼 #웃긴 #엄마 #아빠 #귀여운 #통화쇼츠 #전화쇼츠 #유머 #재미 #개그 #웃긴동영상",
    "ch": "당장들어",
    "subs": 3050,
-   "views": 22114,
-   "hours": 24.4,
+   "views": 22381,
+   "hours": 25.6,
    "likes": 278,
    "comments": 1,
    "cat": "fun",
    "dur": 32,
    "thumb": "https://i.ytimg.com/vi/m1qZX95Rd7Y/hqdefault.jpg",
-   "kw": []
+   "kw": [],
+   "gain": 267
   },
   {
    "id": "XQi09WMSX88",
    "title": "역대급 발차기 연습 반전 랭킹 TOP3 #랭킹 #쇼츠 #웃긴영상",
    "ch": "랭킹강",
    "subs": 310000,
-   "views": 38238,
-   "hours": 43.9,
-   "likes": 204,
+   "views": 38676,
+   "hours": 45.1,
+   "likes": 206,
    "comments": 8,
    "cat": "fun",
    "dur": 6,
    "thumb": "https://i.ytimg.com/vi/XQi09WMSX88/hqdefault.jpg",
-   "kw": []
+   "kw": [],
+   "gain": 438
   },
   {
    "id": "MVKGZ82n52c",
@@ -618,27 +649,29 @@
    "ch": "Fun family 199 \" 1\"",
    "subs": 48700,
    "views": 31061,
-   "hours": 40.8,
+   "hours": 41.9,
    "likes": 154,
    "comments": 0,
    "cat": "fun",
    "dur": 14,
    "thumb": "https://i.ytimg.com/vi/MVKGZ82n52c/hqdefault.jpg",
-   "kw": []
+   "kw": [],
+   "gain": 0
   },
   {
    "id": "dCZzFHgnwcs",
    "title": "비장의 무기 가져왔다가 망해버린 최현석 ㅋㅋ #shorts #냉장고를부탁해 #손종원 #최현석",
    "ch": "예능초이스",
    "subs": 51000,
-   "views": 32505,
-   "hours": 44.9,
-   "likes": 251,
+   "views": 32801,
+   "hours": 46.1,
+   "likes": 256,
    "comments": 17,
    "cat": "fun",
    "dur": 59,
    "thumb": "https://i.ytimg.com/vi/dCZzFHgnwcs/hqdefault.jpg",
-   "kw": []
+   "kw": [],
+   "gain": 296
   },
   {
    "id": "SLqsUY046oA",
@@ -646,55 +679,73 @@
    "ch": "Viral Jahid",
    "subs": 33100,
    "views": 28529,
-   "hours": 41.3,
+   "hours": 42.5,
    "likes": 134,
    "comments": 0,
    "cat": "fun",
    "dur": 17,
    "thumb": "https://i.ytimg.com/vi/SLqsUY046oA/hqdefault.jpg",
-   "kw": []
+   "kw": [],
+   "gain": 0
   },
   {
    "id": "X6l8DSBS4lw",
    "title": "#한국바이럴 #웃긴영상 #코미디 #꿀잼 #유튜브쇼츠 #쇼츠 #바이럴 #트렌드 #재미 #웃음 #웃긴영상 #개그 #코미디 #웃음 #재미 #꿀잼 #웃겨요 #유튜브 #유튜브쇼츠 #쇼츠",
    "ch": "Fun Family 200",
    "subs": 3380,
-   "views": 29293,
-   "hours": 42.7,
+   "views": 29298,
+   "hours": 43.8,
    "likes": 136,
    "comments": 0,
    "cat": "fun",
    "dur": 16,
    "thumb": "https://i.ytimg.com/vi/X6l8DSBS4lw/hqdefault.jpg",
-   "kw": []
+   "kw": [],
+   "gain": 5
   },
   {
-   "id": "xSTnU5QVo2Y",
-   "title": "🤣😂 #웃긴영상 #웃긴쇼츠 #코미디 #유머 #재미있는영상 #대폭소 #웃음폭탄 #꿀잼 #개그 #쇼츠 #유튜브쇼츠 #밈 #한국웃긴영상 #FunnyShorts #Shorts",
-   "ch": "Unlimited Funny Adda",
-   "subs": 44500,
-   "views": 29181,
-   "hours": 43.1,
-   "likes": 52,
+   "id": "Al7WshGidt0",
+   "title": "#숏폼유머 유머동영상 ​#웃음창고#한국바이럴 #웃긴영상 #코미디 #꿀잼 #유튜브쇼츠 #쇼츠 #바이럴 #트렌드 #재미 #웃음 #웃긴영상 #개그 #코미디 #웃음 #재미 #꿀잼",
+   "ch": "Akikul Bro 10",
+   "subs": 10400,
+   "views": 21360,
+   "hours": 32.1,
+   "likes": 127,
    "comments": 0,
    "cat": "fun",
-   "dur": 20,
-   "thumb": "https://i.ytimg.com/vi/xSTnU5QVo2Y/hqdefault.jpg",
+   "dur": 15,
+   "thumb": "https://i.ytimg.com/vi/Al7WshGidt0/hqdefault.jpg",
    "kw": []
   },
   {
    "id": "LDSLryVhimk",
    "title": "의욕만 앞선헛당까미^^ #dogshorts #강아지쇼츠#댕댕이#subscribe#강아지웃긴영상#진똥개까미 #funnyshorts #구독과좋아요",
    "ch": "진똥개까미",
-   "subs": 1860,
-   "views": 21166,
-   "hours": 31.9,
-   "likes": 459,
-   "comments": 15,
+   "subs": 1870,
+   "views": 21910,
+   "hours": 33.1,
+   "likes": 463,
+   "comments": 18,
    "cat": "fun",
    "dur": 11,
    "thumb": "https://i.ytimg.com/vi/LDSLryVhimk/hqdefault.jpg",
-   "kw": []
+   "kw": [],
+   "gain": 744
+  },
+  {
+   "id": "xSTnU5QVo2Y",
+   "title": "🤣😂 #웃긴영상 #웃긴쇼츠 #코미디 #유머 #재미있는영상 #대폭소 #웃음폭탄 #꿀잼 #개그 #쇼츠 #유튜브쇼츠 #밈 #한국웃긴영상 #FunnyShorts #Shorts",
+   "ch": "Unlimited Funny Adda",
+   "subs": 44600,
+   "views": 29181,
+   "hours": 44.3,
+   "likes": 52,
+   "comments": 0,
+   "cat": "fun",
+   "dur": 20,
+   "thumb": "https://i.ytimg.com/vi/xSTnU5QVo2Y/hqdefault.jpg",
+   "kw": [],
+   "gain": 0
   },
   {
    "id": "YkJ02lrF-Sc",
@@ -702,83 +753,104 @@
    "ch": "Md Alamin Islam",
    "subs": 56000,
    "views": 30314,
-   "hours": 46.2,
+   "hours": 47.3,
    "likes": 368,
    "comments": 1,
    "cat": "fun",
    "dur": 14,
    "thumb": "https://i.ytimg.com/vi/YkJ02lrF-Sc/hqdefault.jpg",
-   "kw": []
+   "kw": [],
+   "gain": 0
   },
   {
    "id": "S9O7lNio1Zg",
    "title": "#코미디 #개그 #유머 #웃긴영상 #추천영상 #릴스 #쇼츠 #재미 #대박 #ㅋㅋㅋ #funny#웃긴영상 #코미디 #개그 #유머 #꿀잼 #ㅋㅋㅋ #추천 #추천영상 #릴 #funny😁",
    "ch": "Badsha Official 99",
    "subs": 462000,
-   "views": 15234,
-   "hours": 23.8,
-   "likes": 73,
+   "views": 15965,
+   "hours": 25.0,
+   "likes": 76,
    "comments": 0,
    "cat": "fun",
    "dur": 16,
    "thumb": "https://i.ytimg.com/vi/S9O7lNio1Zg/hqdefault.jpg",
-   "kw": []
-  },
-  {
-   "id": "j2Tx2LAWF9w",
-   "title": "발로 차! 싸커! #shorts #쇼츠 #유튜브쇼츠 #순위매기기 #발순위 #발가락 #발톱 #연애 #이상형월드컵 #남자친구 #웃긴영상 #병맛 #병맛쇼츠 #코미디 #이상형고르기",
-   "ch": "하리 HARI",
-   "subs": 195000,
-   "views": 28532,
-   "hours": 45.2,
-   "likes": 986,
-   "comments": 169,
-   "cat": "fun",
-   "dur": 72,
-   "thumb": "https://i.ytimg.com/vi/j2Tx2LAWF9w/hqdefault.jpg",
-   "kw": []
-  },
-  {
-   "id": "u_uO4qJPboo",
-   "title": "역대급 예상 못 한 숨은 재능 랭킹 TOP5 #랭킹 #쇼츠 #웃긴영상",
-   "ch": "랭킹긁",
-   "subs": 7340,
-   "views": 14245,
-   "hours": 22.9,
-   "likes": 248,
-   "comments": 3,
-   "cat": "fun",
-   "dur": 19,
-   "thumb": "https://i.ytimg.com/vi/u_uO4qJPboo/hqdefault.jpg",
-   "kw": []
-  },
-  {
-   "id": "S-HTFbDmmwU",
-   "title": "역대급 웃긴 이수근 말빨 순간들 TOP4",
-   "ch": "도치랭킹",
-   "subs": 1310,
-   "views": 15661,
-   "hours": 25.9,
-   "likes": 267,
-   "comments": 1,
-   "cat": "fun",
-   "dur": 36,
-   "thumb": "https://i.ytimg.com/vi/S-HTFbDmmwU/hqdefault.jpg",
-   "kw": []
+   "kw": [],
+   "gain": 731
   },
   {
    "id": "VDbZs5kvwCI",
    "title": "해외에서 난리 난 레전드 반응🤣  #해외반응 #방귀레전드 #웃긴영상 #해외레전드 #유머영상 #반응영상 #웃음주의 #황당한순간 #재미있는영상 #쇼츠 #Shorts",
    "ch": "멍다큐",
    "subs": 96900,
-   "views": 9645,
-   "hours": 16.2,
-   "likes": 200,
-   "comments": 2,
+   "views": 10889,
+   "hours": 17.3,
+   "likes": 244,
+   "comments": 3,
    "cat": "fun",
    "dur": 65,
    "thumb": "https://i.ytimg.com/vi/VDbZs5kvwCI/hqdefault.jpg",
-   "kw": []
+   "kw": [],
+   "gain": 1244
+  },
+  {
+   "id": "j2Tx2LAWF9w",
+   "title": "발로 차! 싸커! #shorts #쇼츠 #유튜브쇼츠 #순위매기기 #발순위 #발가락 #발톱 #연애 #이상형월드컵 #남자친구 #웃긴영상 #병맛 #병맛쇼츠 #코미디 #이상형고르기",
+   "ch": "하리 HARI",
+   "subs": 195000,
+   "views": 28892,
+   "hours": 46.4,
+   "likes": 991,
+   "comments": 169,
+   "cat": "fun",
+   "dur": 72,
+   "thumb": "https://i.ytimg.com/vi/j2Tx2LAWF9w/hqdefault.jpg",
+   "kw": [],
+   "gain": 360
+  },
+  {
+   "id": "u_uO4qJPboo",
+   "title": "역대급 예상 못 한 숨은 재능 랭킹 TOP5 #랭킹 #쇼츠 #웃긴영상",
+   "ch": "랭킹긁",
+   "subs": 7340,
+   "views": 14507,
+   "hours": 24.1,
+   "likes": 251,
+   "comments": 3,
+   "cat": "fun",
+   "dur": 19,
+   "thumb": "https://i.ytimg.com/vi/u_uO4qJPboo/hqdefault.jpg",
+   "kw": [],
+   "gain": 262
+  },
+  {
+   "id": "S-HTFbDmmwU",
+   "title": "역대급 웃긴 이수근 말빨 순간들 TOP4",
+   "ch": "도치랭킹",
+   "subs": 1310,
+   "views": 15749,
+   "hours": 27.1,
+   "likes": 267,
+   "comments": 1,
+   "cat": "fun",
+   "dur": 36,
+   "thumb": "https://i.ytimg.com/vi/S-HTFbDmmwU/hqdefault.jpg",
+   "kw": [],
+   "gain": 88
+  },
+  {
+   "id": "yqrbhGY_Bjk",
+   "title": "100만원대 오리젤리 근황 #쇼츠 #먹방 #웃긴영상 #소름주의 #유머",
+   "ch": "제발잠깐만",
+   "subs": 1070,
+   "views": 20405,
+   "hours": 35.8,
+   "likes": 143,
+   "comments": 4,
+   "cat": "fun",
+   "dur": 10,
+   "thumb": "https://i.ytimg.com/vi/yqrbhGY_Bjk/hqdefault.jpg",
+   "kw": [],
+   "gain": 73
   },
   {
    "id": "Un7rOgZ8tSw",
@@ -786,41 +858,44 @@
    "ch": "MD UJJAL HASAN ",
    "subs": 54100,
    "views": 15782,
-   "hours": 26.6,
+   "hours": 27.8,
    "likes": 102,
    "comments": 0,
    "cat": "fun",
    "dur": 13,
    "thumb": "https://i.ytimg.com/vi/Un7rOgZ8tSw/hqdefault.jpg",
-   "kw": []
+   "kw": [],
+   "gain": 0
   },
   {
    "id": "kGmhF0urKig",
    "title": "#한국바이럴#웃긴영상#코미디#꿀잼#×유튜브쇼츠 #쇼츠 #바이럴 #트렌드 #재미음#웃긴영상#개그#코미디#웃음#재미#꿀 잼#웃겨요#유튜브#유튜브쇼츠#쇼츠#숏츠 #영상추천",
    "ch": "Samim khan🫶",
-   "subs": 9070,
+   "subs": 9080,
    "views": 14846,
-   "hours": 25.3,
+   "hours": 26.4,
    "likes": 55,
    "comments": 1,
    "cat": "fun",
    "dur": 16,
    "thumb": "https://i.ytimg.com/vi/kGmhF0urKig/hqdefault.jpg",
-   "kw": []
+   "kw": [],
+   "gain": 0
   },
   {
-   "id": "yqrbhGY_Bjk",
-   "title": "100만원대 오리젤리 근황 #쇼츠 #먹방 #웃긴영상 #소름주의 #유머",
-   "ch": "제발잠깐만",
-   "subs": 1070,
-   "views": 20332,
-   "hours": 34.7,
-   "likes": 142,
-   "comments": 4,
+   "id": "Z8LXtQLZdQE",
+   "title": "#한국바이럴#웃긴영상 #코미디 #꿀잼#유튜브쇼 츠 #쇼츠 #바이럴 #트렌드 #재미 #웃음#웃긴영상 #개그#코미디#웃음#재미#꿀잼#웃겨요#유튜브# 유튜브쇼츠#쇼츠#숏츠#영상추천",
+   "ch": "👑 Lx_Shamim 👑",
+   "subs": 9880,
+   "views": 19875,
+   "hours": 35.6,
+   "likes": 97,
+   "comments": 0,
    "cat": "fun",
-   "dur": 10,
-   "thumb": "https://i.ytimg.com/vi/yqrbhGY_Bjk/hqdefault.jpg",
-   "kw": []
+   "dur": 15,
+   "thumb": "https://i.ytimg.com/vi/Z8LXtQLZdQE/hqdefault.jpg",
+   "kw": [],
+   "gain": 872
   },
   {
    "id": "rD9DodHCHfo",
@@ -828,124 +903,117 @@
    "ch": "Virul Entertainment 2.0",
    "subs": 112000,
    "views": 15969,
-   "hours": 27.8,
+   "hours": 29.0,
    "likes": 42,
    "comments": 0,
    "cat": "fun",
    "dur": 15,
    "thumb": "https://i.ytimg.com/vi/rD9DodHCHfo/hqdefault.jpg",
-   "kw": []
-  },
-  {
-   "id": "Z8LXtQLZdQE",
-   "title": "#한국바이럴#웃긴영상 #코미디 #꿀잼#유튜브쇼 츠 #쇼츠 #바이럴 #트렌드 #재미 #웃음#웃긴영상 #개그#코미디#웃음#재미#꿀잼#웃겨요#유튜브# 유튜브쇼츠#쇼츠#숏츠#영상추천",
-   "ch": "👑 Lx_Shamim 👑",
-   "subs": 9880,
-   "views": 19003,
-   "hours": 34.4,
-   "likes": 97,
-   "comments": 0,
-   "cat": "fun",
-   "dur": 15,
-   "thumb": "https://i.ytimg.com/vi/Z8LXtQLZdQE/hqdefault.jpg",
-   "kw": []
+   "kw": [],
+   "gain": 0
   },
   {
    "id": "KX2sHcQW3FU",
    "title": "#한국바이럴 #웃긴영상 #코미디 #꿀잼 #유튜브쇼츠 #쇼츠 #바이럴 트렌드 #재미 #웃음#웃긴영상#개그#코미디 웃음#재미#꿀잼#웃 겨요#유튜브#유튜브쇼 #쇼츠#수정#숶천",
    "ch": "Md Alamin Islam",
    "subs": 56000,
-   "views": 23833,
-   "hours": 44.1,
+   "views": 23911,
+   "hours": 45.3,
    "likes": 156,
    "comments": 1,
    "cat": "fun",
    "dur": 16,
    "thumb": "https://i.ytimg.com/vi/KX2sHcQW3FU/hqdefault.jpg",
-   "kw": []
+   "kw": [],
+   "gain": 78
   },
   {
    "id": "yvoXq1JQlHY",
    "title": "#한국유머​ #웃긴영상​ #코미디​ #개그​ #꿀잼​ #웃참실패​ #현웃​ #쇼츠​ #유튜브쇼츠​ #바이럴​#쇼츠​#유튜브쇼츠​#쇼츠영상​#짧은영상​#인기영상​#바이럴​#추천영상​",
    "ch": "normal video 0.21",
    "subs": 18800,
-   "views": 18041,
-   "hours": 34.6,
+   "views": 18324,
+   "hours": 35.8,
    "likes": 41,
    "comments": 0,
    "cat": "fun",
    "dur": 18,
    "thumb": "https://i.ytimg.com/vi/yvoXq1JQlHY/hqdefault.jpg",
-   "kw": []
+   "kw": [],
+   "gain": 283
   },
   {
    "id": "W6q2bhn7OW0",
    "title": "#한국바이럴 #웃긴영상 #코미디 #꿀잼 #유튜브쇼츠 #쇼츠 #바이럴 트렌드 #재미 #웃음#웃긴영상#개그#코미디 웃음#재미#꿀잼#웃 겨요#유튜브#유튜브쇼 #쇼츠#수정#숶천",
    "ch": "Sultan Official 99",
    "subs": 30100,
-   "views": 23101,
-   "hours": 45.2,
-   "likes": 145,
+   "views": 23312,
+   "hours": 46.4,
+   "likes": 146,
    "comments": 1,
    "cat": "fun",
    "dur": 16,
    "thumb": "https://i.ytimg.com/vi/W6q2bhn7OW0/hqdefault.jpg",
-   "kw": []
+   "kw": [],
+   "gain": 211
   },
   {
    "id": "TeIbxqNLZRg",
    "title": "자기 스킨 광고 방송에서 실수로 진심 말해버린 페이커",
    "ch": "신의 한 수 ",
    "subs": 1500,
-   "views": 16741,
-   "hours": 32.9,
+   "views": 16889,
+   "hours": 34.1,
    "likes": 45,
    "comments": 0,
    "cat": "ad",
    "dur": 13,
    "thumb": "https://i.ytimg.com/vi/TeIbxqNLZRg/hqdefault.jpg",
-   "kw": []
+   "kw": [],
+   "gain": 148
   },
   {
    "id": "F6npGM9ho74",
    "title": "치와와 앞에서 모두가 조심하는 이유 #반려견 #웃긴 #반전",
    "ch": "동물숏츠",
    "subs": 19200,
-   "views": 19926,
-   "hours": 41.0,
-   "likes": 89,
+   "views": 19972,
+   "hours": 42.1,
+   "likes": 90,
    "comments": 1,
    "cat": "fun",
    "dur": 18,
    "thumb": "https://i.ytimg.com/vi/F6npGM9ho74/hqdefault.jpg",
-   "kw": []
-  },
-  {
-   "id": "5bxepn-Jk-M",
-   "title": "생방송 중에 뒤에서 고양이들이 난리가 남?? #쇼츠 #해외영상 #웃긴영상 #viral #fyp #방송사고 #cat #고양이",
-   "ch": "오정이의세상만사",
-   "subs": 1820,
-   "views": 23030,
-   "hours": 47.9,
-   "likes": 247,
-   "comments": 3,
-   "cat": "fun",
-   "dur": 22,
-   "thumb": "https://i.ytimg.com/vi/5bxepn-Jk-M/hqdefault.jpg",
-   "kw": []
+   "kw": [],
+   "gain": 46
   },
   {
    "id": "U217AZiYx7w",
    "title": "#한국바이럴 #웃긴영상 #코미디 #꿀잼 #개그 #웃음 #재미 #웃겨요 #유튜브쇼츠 #쇼츠 #바이럴 #트렌드 #추천영상 #인기영상 #재밌는영상 #코미디영상 #웃긴쇼츠 #인기쇼츠",
    "ch": "USA Funny tv6794",
    "subs": 24800,
-   "views": 11820,
-   "hours": 24.8,
+   "views": 11821,
+   "hours": 26.0,
    "likes": 99,
    "comments": 2,
    "cat": "fun",
    "dur": 22,
    "thumb": "https://i.ytimg.com/vi/U217AZiYx7w/hqdefault.jpg",
+   "kw": [],
+   "gain": 1
+  },
+  {
+   "id": "huuMrih4lsE",
+   "title": "#한국바이럴 #웃긴영상 #코미디 #꿀잼 #유튜브쇼츠 #쇼츠 #바이럴 트렌드 #재미 #웃음#웃긴영상#개그#코미디 웃음#재미#꿀잼#웃 겨요#유튜브#유튜브쇼 #쇼츠#수정#숶천",
+   "ch": "Md Alamin Islam",
+   "subs": 56000,
+   "views": 13120,
+   "hours": 29.3,
+   "likes": 91,
+   "comments": 1,
+   "cat": "fun",
+   "dur": 19,
+   "thumb": "https://i.ytimg.com/vi/huuMrih4lsE/hqdefault.jpg",
    "kw": []
   },
   {
@@ -953,59 +1021,46 @@
    "title": "쇼츠#유튜브쇼츠#웃긴영상#웃긴동영상#코미디#개그#재미있는영상#웃음참기#웃긴순간#ㅋㅋㅋ#꿀잼",
    "ch": "Md Tufayel400",
    "subs": 172000,
-   "views": 20286,
-   "hours": 45.0,
-   "likes": 113,
+   "views": 20516,
+   "hours": 46.1,
+   "likes": 115,
    "comments": 0,
    "cat": "fun",
    "dur": 128,
    "thumb": "https://i.ytimg.com/vi/v5kaJvhMLeI/hqdefault.jpg",
-   "kw": []
-  },
-  {
-   "id": "hPu_nJARRlc",
-   "title": "#한국바이럴 #웃긴영상 #코미디 #꿀잼 #유튜브쇼츠 #쇼츠 #바이럴 #트렌드 #재미 음#웃긴영상#개그#코미디#웃음#재미#꿀 잼#웃겨요#유튜브#유튜브쇼츠#쇼츠#숏츠 #영상추천",
-   "ch": "funny video 009",
-   "subs": 132000,
-   "views": 20201,
-   "hours": 45.3,
-   "likes": 52,
-   "comments": 0,
-   "cat": "fun",
-   "dur": 17,
-   "thumb": "https://i.ytimg.com/vi/hPu_nJARRlc/hqdefault.jpg",
-   "kw": []
+   "kw": [],
+   "gain": 230
   }
  ],
  "summary": {
-  "lead": "상위 쇼츠 15개 중 10개가 정치/시사 분야예요.",
+  "lead": "상위 쇼츠 15개 중 11개가 정치/시사 분야예요.",
   "paras": [
-   "상위권 평균 길이는 64초예요. 제목에 자주 나온 말은 ‘MBC뉴스’, ‘공항’, ‘역대급’, ‘랭킹’이에요.",
-   "구독자 수의 10배 넘게 조회된 영상이 10개 있어요. ‘작은 채널인데 터진 영상’에서 확인해 보세요."
+   "상위권 평균 길이는 60초예요. 제목에 자주 나온 말은 ‘MBC뉴스’, ‘역대급’, ‘랭킹’, ‘공항’이에요.",
+   "구독자 수의 10배 넘게 조회된 영상이 9개 있어요. ‘작은 채널인데 터진 영상’에서 확인해 보세요."
   ],
   "tips": [
-   "지금 가장 잘 되는 제목 형식: 이슈·속보형 (평균보다 +265%)",
-   "길이는 54~74초 사이를 노려보세요"
+   "지금 가장 잘 되는 제목 형식: 이슈·속보형 (평균보다 +305%)",
+   "길이는 50~70초 사이를 노려보세요"
   ],
   "auto": true
  },
  "formats": [
   {
    "name": "이슈·속보형",
-   "lift": "+265%",
+   "lift": "+305%",
    "n": 2,
    "ex": "'스카프 아저씨' 결국...  / Y, 100만원대 오리젤리 근황"
   },
   {
    "name": "질문형 제목",
-   "lift": "+34%",
-   "n": 3,
+   "lift": "+104%",
+   "n": 2,
    "ex": "'번쩍 와장창' 식당 박살 낸 차량‥, \"중국 전기차를 왜 사?\" 그랬는데 "
   },
   {
    "name": "리스트·유형형",
-   "lift": "-14%",
-   "n": 8,
+   "lift": "-8%",
+   "n": 9,
    "ex": "역대급 개웃긴 스윙스 랭킹 TOP6, 역대급 This is the end "
   }
  ]
