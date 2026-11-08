@@ -1,6 +1,6 @@
 {
- "name": "W.D — Worry Marketing Data Trap",
- "short_name": "W.D",
+ "name": "W.D.T — Worry Data Tracker",
+ "short_name": "W.D.T",
  "start_url": "./",
  "scope": "./",
  "display": "standalone",

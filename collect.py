@@ -1,5 +1,5 @@
 """
-W.D (Worry Marketing Data Trap) 데이터 수집기 v3
+W.D.T (Worry Data Tracker) 데이터 수집기 v3
 - GitHub Actions가 2시간마다 실행해서 data.json(화면용)과 history.json(7일 기록)을 만듭니다.
 - 필요한 비밀값: YOUTUBE_API_KEY (필수), GEMINI_API_KEY (있으면 AI 브리핑·댓글 요약)
 - 바깥 라이브러리 없이 파이썬 기본 기능만 씁니다.
