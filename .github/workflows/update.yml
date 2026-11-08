@@ -15,17 +15,19 @@ concurrency:
 jobs:
   collect:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 15
     steps:
-      - uses: actions/checkout@v4
-      - name: 쇼츠·검색어 수집
+      - uses: actions/checkout@v5
+      - name: 쇼츠·검색어·이슈 수집
         env:
           YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: python3 collect.py
-      - name: data.json 저장
+      - name: 결과 저장
         run: |
           git config user.name "wd-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data.json
+          git add data.json history.json
           git diff --cached --quiet || git commit -m "데이터 업데이트 $(TZ=Asia/Seoul date '+%m-%d %H:%M')"
+          git pull --rebase --quiet || true
           git push
