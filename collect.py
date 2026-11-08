@@ -37,10 +37,11 @@ CATS = {
            "searches": ["광고", "웃긴 광고", "광고 리뷰", "광고 비하인드", "CF 메이킹"],
            "news": ["광고 캠페인 OR 광고모델", "브랜드 캠페인 OR 마케팅 사례"]},
     "edit": {"label": "숏폼 편집",
-             "searches": ["숏폼 편집", "릴스 편집", "쇼츠 꿀팁", "영상 편집 꿀팁", "숏폼 트렌드"],
+             "searches": ["편집", "숏폼", "릴스", "캡컷", "쇼츠 꿀팁", "브이로그"],
              "news": ["숏폼 마케팅 OR 릴스 마케팅", "숏폼 트렌드 OR 크리에이터 마케팅"]},
     "issue": {"label": "이슈 재킹",
-              "searches": [{"q": "#shorts", "videoCategoryId": "25"}, "이슈 정리", "시사 정리", "논란 정리"],
+              "searches": [{"q": "#shorts", "videoCategoryId": "25"}, {"q": "뉴스", "videoCategoryId": "25"},
+                           "이슈", {"q": "속보", "videoCategoryId": "25"}, "논란"],
               "news": ["TOPIC:NATION", "TOP"]},
     "season": {"label": "시즌·캘린더", "searches": [], "news": []},  # 다가오는 날짜로 자동 채움
 }
@@ -340,7 +341,12 @@ def tokens(text, banned=()):
 
 def issue_keywords(issues):
     res = {}
-    for cat, items in issues.items():
+    pool = {}
+    for items in issues.values():
+        for it in items:
+            pool.setdefault(it["title"][:20], it)
+    groups = dict(issues, all=list(pool.values()))
+    for cat, items in groups.items():
         c, srcs = Counter(), defaultdict(set)
         sources = {it.get("source") for it in items}
         for it in items:
@@ -448,17 +454,39 @@ def periods(hist):
 
 
 # ───────── 6. 브리핑 + Gemini ─────────
+def gemini_models():
+    """쓸 수 있는 Gemini 모델 순서 (구글이 모델 이름을 자주 바꿔서 목록에서 직접 찾아요)"""
+    names = ["gemini-flash-latest", "gemini-flash-lite-latest"]
+    try:
+        res = json.loads(get("https://generativelanguage.googleapis.com/v1beta/models",
+                             {"key": GEMINI_KEY, "pageSize": 200}))
+        found = [m["name"].split("/")[-1] for m in res.get("models", [])
+                 if "generateContent" in m.get("supportedGenerationMethods", [])]
+        good = [n for n in found if "flash" in n and not re.search(r"image|tts|live|audio|embed|exp|preview", n)]
+        good.sort(key=lambda n: ("lite" in n, n), reverse=False)
+        names += [n for n in reversed(sorted(good)) if n not in names][:3]
+    except Exception as e:
+        print(f"[경고] Gemini 모델 목록 실패: {e}", file=sys.stderr)
+    return names[:4]
+
+
 def gemini(prompt):
     if not GEMINI_KEY:
         return None
     body = json.dumps({"contents": [{"parts": [{"text": prompt}]}],
                        "generationConfig": {"responseMimeType": "application/json", "temperature": 0.6}}).encode()
-    for model in ("gemini-flash-latest", "gemini-2.5-flash", "gemini-2.0-flash"):
+    for model in gemini_models():
         try:
             raw = get(f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent",
-                      {"key": GEMINI_KEY}, data=body, headers={"Content-Type": "application/json"}, timeout=60)
-            text = json.loads(raw)["candidates"][0]["content"]["parts"][0]["text"]
-            return json.loads(text)
+                      {"key": GEMINI_KEY}, data=body, headers={"Content-Type": "application/json"}, timeout=150)
+            parts = json.loads(raw)["candidates"][0]["content"]["parts"]
+            text = "".join(p.get("text", "") for p in parts if not p.get("thought"))
+            text = re.sub(r"^```(?:json)?|```$", "", text.strip()).strip()
+            out = json.loads(text)
+            if isinstance(out, list) and out:
+                out = out[0]
+            print(f"Gemini 사용 모델: {model}")
+            return out
         except Exception as e:
             print(f"[경고] Gemini {model} 실패: {e}", file=sys.stderr)
     return None
