@@ -18,7 +18,7 @@
 <style>
 :root{
   --paper:#EEF1F4; --panel:#FFFFFF; --ink:#17203A; --muted:#5B6478; --line:#D3D9E2; --soft:#F3F5F8;
-  --fun:#F4B400; --pol:#2B59D9; --ad:#C7336F; --up:#D8432B; --down:#7A8396;
+  --up:#D8432B; --down:#7A8396; --hot:#D8432B; --rise:#E8890C;
   --display:'Black Han Sans', 'IBM Plex Sans KR', sans-serif;
   --body:'IBM Plex Sans KR', system-ui, sans-serif;
 }
@@ -27,29 +27,36 @@ html,body{margin:0}
 body{background:var(--paper);color:var(--ink);font-family:var(--body);font-size:15px;line-height:1.55;-webkit-font-smoothing:antialiased}
 button{font:inherit;color:inherit}
 a{color:inherit}
-:focus-visible{outline:3px solid var(--pol);outline-offset:2px;border-radius:6px}
+:focus-visible{outline:3px solid #2B59D9;outline-offset:2px;border-radius:6px}
 .num{font-variant-numeric:tabular-nums}
 
 /* header */
-header{display:flex;flex-wrap:wrap;align-items:center;gap:12px 24px;padding:16px 28px;border-bottom:1px solid var(--line);background:var(--paper);position:sticky;top:0;z-index:5}
+header{background:var(--paper);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:5}
+.hrow{display:flex;flex-wrap:wrap;align-items:center;gap:10px 22px;padding:14px 28px 10px;max-width:1480px;margin:0 auto}
 .brand{font-family:var(--display);font-size:30px;letter-spacing:-.5px;line-height:1;display:flex;align-items:center;gap:10px}
-.brand-sub{font-family:var(--body);font-size:11px;font-weight:600;line-height:1.3;color:var(--muted);letter-spacing:0;padding-left:10px;border-left:1.5px solid var(--line)}
+.brand-sub{font-family:var(--body);font-size:11px;font-weight:600;line-height:1.3;color:var(--muted);padding-left:10px;border-left:1.5px solid var(--line)}
 .brand i{display:inline-flex;gap:3px}
 .brand i b{display:block;width:7px;height:22px;border-radius:2px}
-.brand i b:nth-child(1){background:var(--fun);height:14px;align-self:flex-end}
-.brand i b:nth-child(2){background:var(--pol)}
-.brand i b:nth-child(3){background:var(--ad);height:18px;align-self:flex-end}
-.tabs{display:flex;gap:6px;flex-wrap:wrap}
-.tab{border:1.5px solid var(--ink);background:transparent;border-radius:999px;padding:6px 14px;font-weight:600;cursor:pointer;font-size:14px}
-.tab[aria-pressed="true"]{background:var(--ink);color:#fff}
-.tab .dot{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:6px;vertical-align:1px}
+.brand i b:nth-child(1){background:#F4B400;height:14px;align-self:flex-end}
+.brand i b:nth-child(2){background:#2B59D9}
+.brand i b:nth-child(3){background:#C7336F;height:18px;align-self:flex-end}
 .meta{margin-left:auto;font-size:13px;color:var(--muted);display:flex;align-items:center;gap:10px}
 .sample{background:#FFF3C4;color:#6B4E00;border-radius:6px;padding:3px 8px;font-weight:600;font-size:12px}
 .sample[hidden]{display:none}
+.tabs{display:flex;gap:6px;overflow-x:auto;padding:0 28px 10px;max-width:1480px;margin:0 auto;scrollbar-width:none}
+.tabs::-webkit-scrollbar{display:none}
+.tab{flex:none;border:1.5px solid var(--ink);background:transparent;border-radius:999px;padding:5px 13px;font-weight:600;cursor:pointer;font-size:14px;white-space:nowrap}
+.tab[aria-pressed="true"]{background:var(--ink);color:#fff}
+.tab .dot{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:6px;vertical-align:1px}
+.ctrl{display:flex;align-items:center;gap:8px;padding:0 28px 12px;max-width:1480px;margin:0 auto;font-size:13px;color:var(--muted);flex-wrap:wrap}
+.seg{display:inline-flex;background:#fff;border:1px solid var(--line);border-radius:10px;padding:2px}
+.seg button{border:none;background:none;padding:4px 11px;border-radius:8px;font-size:13px;font-weight:600;cursor:pointer;color:var(--muted)}
+.seg button[aria-pressed="true"]{background:var(--ink);color:#fff}
 
 /* layout */
-main{display:grid;grid-template-columns:minmax(270px,320px) 1fr;gap:20px;padding:20px 28px 40px;max-width:1480px;margin:0 auto}
-.col{display:flex;flex-direction:column;gap:20px;min-width:0}
+main{display:grid;grid-template-columns:minmax(270px,320px) 1fr;gap:18px;padding:18px 28px 40px;max-width:1480px;margin:0 auto}
+.full{grid-column:1/-1}
+.col{display:flex;flex-direction:column;gap:18px;min-width:0}
 section.panel{background:var(--panel);border-radius:16px;padding:16px 18px 18px;border:1px solid var(--line);min-width:0}
 section.panel[hidden]{display:none}
 .ph{display:flex;flex-wrap:wrap;align-items:baseline;gap:2px 10px;margin-bottom:10px}
@@ -59,8 +66,38 @@ section.panel[hidden]{display:none}
 .ph .hide:hover{color:var(--ink);text-decoration:underline}
 .empty{font-size:14px;color:var(--muted);margin:0}
 .help{font-size:12px;color:var(--muted);margin:10px 0 0;max-width:70ch}
+.lbl{font-size:13px;font-weight:700;color:var(--muted);margin:0 0 6px}
+.badge{display:inline-block;font-size:11px;font-weight:700;border-radius:5px;padding:0 5px;line-height:18px;vertical-align:1px;white-space:nowrap}
+.b-hot{background:var(--hot);color:#fff}
+.b-rise{background:#FFE9C7;color:#8A4B00}
+.b-steady{background:#E3ECFF;color:#1D46B8}
+.b-now{background:#FDE3DE;color:#B4321C}
+.b-chart{background:#17203A;color:#fff}
 
-/* keywords: compact */
+/* briefing */
+.brief{display:grid;grid-template-columns:1.5fr 1fr;gap:22px}
+.brief .head{font-family:var(--display);font-size:28px;line-height:1.25;letter-spacing:-.5px;margin:2px 0 12px;word-break:keep-all}
+.brief ul{margin:0 0 12px;padding-left:18px}
+.brief li{margin:3px 0;word-break:keep-all}
+.brief .ideas li::marker{content:"→ "}
+.brief .mood{background:var(--soft);border-radius:10px;padding:10px 12px;font-size:14px;margin:0}
+.side{display:flex;flex-direction:column;gap:14px;border-left:1px solid var(--line);padding-left:20px}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chipbtn{border:1px solid var(--line);background:var(--soft);border-radius:999px;padding:4px 10px;font-size:13px;font-weight:600;cursor:pointer;display:inline-flex;align-items:center;gap:5px}
+.chipbtn:hover{border-color:var(--ink)}
+.chipbtn .n{font-weight:400;color:var(--muted)}
+.dd{display:flex;flex-direction:column;gap:4px}
+.dd button{display:flex;align-items:center;gap:10px;border:none;background:none;padding:4px 2px;cursor:pointer;text-align:left;border-radius:8px}
+.dd button:hover{background:var(--soft)}
+.dd .d{font-family:var(--display);font-size:17px;color:#E8590C;min-width:52px}
+.rows button{display:grid;grid-template-columns:36px 1fr;gap:10px;align-items:center;width:100%;border:none;background:none;padding:5px 2px;cursor:pointer;text-align:left;border-radius:8px}
+.rows button:hover{background:var(--soft)}
+.rows .mini{width:36px;aspect-ratio:9/16;border-radius:6px;overflow:hidden;position:relative}
+.rows .mini img{width:100%;height:100%;object-fit:cover}
+.rows .tt{font-weight:600;font-size:13.5px;line-height:1.35;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.rows .mm{font-size:12px;color:var(--muted)}
+
+/* keywords */
 .kw{list-style:none;margin:0;padding:0}
 .kw li{border-top:1px solid #EEF1F4}
 .kw li:first-child{border-top:none}
@@ -68,17 +105,13 @@ section.panel[hidden]{display:none}
 .kw button:hover{background:var(--soft)}
 .kw .r{font-family:var(--display);font-size:16px;color:var(--muted)}
 .kw li:nth-child(-n+3) .r{color:var(--ink)}
-.kw .w{font-weight:700;font-size:15px;line-height:1.3;word-break:keep-all;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.kw .w{font-weight:700;font-size:15px;line-height:1.3;word-break:keep-all;min-width:0}
 .kw .w small{display:block;font-weight:400;font-size:12px;color:var(--muted)}
 .kw .chg{font-size:12px;font-weight:700;text-align:right;white-space:nowrap}
 .chg.up{color:var(--up)} .chg.down{color:var(--down)} .chg.new{color:#fff;background:var(--up);border-radius:5px;padding:1px 5px}
 .more{border:none;background:none;color:var(--muted);font-size:13px;cursor:pointer;padding:6px 2px 0;text-decoration:underline}
 
-/* issues */
-.chips{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:12px}
-.chipbtn{border:1px solid var(--line);background:var(--soft);border-radius:999px;padding:4px 10px;font-size:13px;font-weight:600;cursor:pointer}
-.chipbtn:hover{border-color:var(--ink)}
-.chipbtn span{font-weight:400;color:var(--muted);margin-left:3px}
+/* news */
 .news{list-style:none;margin:0;padding:0}
 .news li{border-top:1px solid #EEF1F4}
 .news li:first-child{border-top:none}
@@ -89,12 +122,12 @@ section.panel[hidden]{display:none}
 
 /* shorts strip */
 .toolbar{display:flex;gap:6px;flex-wrap:wrap;align-items:center;margin:0 0 6px}
-.sort{border:1px solid var(--line);background:#F6F8FA;border-radius:8px;padding:5px 11px;font-size:13px;cursor:pointer}
+.sort{border:1px solid var(--line);background:#F6F8FA;border-radius:8px;padding:5px 10px;font-size:13px;cursor:pointer}
 .sort[aria-pressed="true"]{border-color:var(--ink);background:var(--ink);color:#fff;font-weight:700}
 .arrows{margin-left:auto;display:flex;gap:6px}
 .arrows button{width:32px;height:32px;border-radius:50%;border:1px solid var(--line);background:#fff;cursor:pointer;font-size:16px;line-height:1}
 .arrows button:hover{border-color:var(--ink)}
-.sortdesc{font-size:13px;color:var(--muted);margin:0 0 12px}
+.sortdesc{font-size:13px;color:var(--muted);margin:4px 0 12px}
 .sortdesc b{color:var(--ink)}
 .strip{display:grid;grid-auto-flow:column;grid-auto-columns:148px;gap:12px;overflow-x:auto;padding-bottom:8px;scroll-snap-type:x proximity;scroll-behavior:smooth;-webkit-overflow-scrolling:touch}
 .short{scroll-snap-align:start;text-align:left;border:none;background:none;padding:0;cursor:pointer;min-width:0}
@@ -105,7 +138,7 @@ section.panel[hidden]{display:none}
 .thumb .t{font-weight:700;font-size:13.5px;line-height:1.35;word-break:keep-all;text-shadow:0 1px 2px rgba(0,0,0,.35);display:-webkit-box;-webkit-line-clamp:4;-webkit-box-orient:vertical;overflow:hidden}
 .thumb .dur{position:absolute;top:8px;right:8px;background:rgba(0,0,0,.55);border-radius:5px;font-size:11px;padding:1px 5px}
 .thumb .rank{position:absolute;top:4px;left:8px;font-family:var(--display);font-size:28px;line-height:1}
-.short.dim{opacity:.28}
+.thumb .tier{position:absolute;top:34px;left:8px}
 .short:hover .thumb{outline:3px solid var(--ink);outline-offset:-3px}
 .stats{padding:6px 2px 0;font-size:12px}
 .stats .ch{color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
@@ -115,7 +148,19 @@ section.panel[hidden]{display:none}
 .bar span{display:block;height:100%;background:var(--ink)}
 .count{font-size:12px;color:var(--muted);margin:2px 0 0}
 
-/* underdog table */
+/* comments */
+.cmts{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:12px}
+.cm{border:1px solid var(--line);border-radius:12px;padding:12px;display:flex;flex-direction:column;gap:8px;background:#fff}
+.cm .top{display:grid;grid-template-columns:1fr auto;gap:8px;align-items:start}
+.cm .tt{font-weight:700;font-size:14px;line-height:1.35;word-break:keep-all;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.cm .mm{font-size:12px;color:var(--muted)}
+.cm .sum{background:#FFF7E0;border-radius:8px;padding:7px 9px;font-size:13px}
+.cm q{display:block;quotes:none;font-size:13px;line-height:1.45;border-left:3px solid var(--line);padding-left:8px;color:#2A3350;word-break:break-word}
+.cm q span{color:var(--muted);font-size:12px;margin-left:4px}
+.cm .go{align-self:flex-start;border:none;background:none;padding:0;font-size:13px;font-weight:600;text-decoration:underline;cursor:pointer}
+.moodline{font-size:14px;margin:0 0 12px;background:var(--soft);border-radius:10px;padding:9px 12px}
+
+/* tables */
 table{width:100%;border-collapse:collapse;font-size:14px}
 th{text-align:left;font-weight:600;color:var(--muted);font-size:12px;padding:0 8px 8px;border-bottom:1px solid var(--line)}
 td{padding:9px 8px;border-bottom:1px solid #EEF1F4;vertical-align:middle}
@@ -125,19 +170,13 @@ td.n,th.n{text-align:right;white-space:nowrap}
 tr.row-click{cursor:pointer} tr.row-click:hover td{background:#F6F8FA}
 .catbar{display:inline-block;width:4px;height:28px;border-radius:2px;vertical-align:middle}
 
-/* summary + formats */
-.two{display:grid;grid-template-columns:1.2fr 1fr;gap:20px}
-.ai p{margin:0 0 10px;max-width:62ch}
-.ai .lead{font-size:17px;font-weight:600;line-height:1.5}
-.ai ul{margin:4px 0 0;padding-left:18px}
-.ai li{margin:4px 0}
-.ai .lbl{font-weight:700;margin:12px 0 6px}
-.linkbtn{border:1.5px solid var(--ink);background:#fff;border-radius:10px;padding:7px 12px;font-weight:600;font-size:13px;cursor:pointer;margin-top:12px}
-.linkbtn:hover{background:var(--ink);color:#fff}
+/* formats */
+.two{display:grid;grid-template-columns:1fr 1fr;gap:18px}
 .fmt{list-style:none;margin:0;padding:0}
 .fmt li{border-top:1px solid #EEF1F4}
 .fmt li:first-child{border-top:none}
-.fmt button{display:grid;grid-template-columns:1fr auto;gap:2px 10px;width:100%;text-align:left;background:none;border:none;padding:9px 4px;cursor:pointer;border-radius:8px}
+.fmt button,.fmt .row{display:grid;grid-template-columns:1fr auto;gap:2px 10px;width:100%;text-align:left;background:none;border:none;padding:9px 4px;border-radius:8px}
+.fmt button{cursor:pointer}
 .fmt button:hover{background:var(--soft)}
 .fmt .name{font-weight:700}
 .fmt .name span{font-weight:400;color:var(--muted);font-size:13px}
@@ -150,16 +189,16 @@ tr.row-click{cursor:pointer} tr.row-click:hover td{background:#F6F8FA}
 .restore[hidden]{display:none}
 .restore button{border:1px dashed var(--muted);background:transparent;border-radius:8px;padding:4px 10px;cursor:pointer;font-size:13px}
 
-/* sheet (modal) */
-dialog{border:none;border-radius:18px;padding:0;max-width:560px;width:calc(100% - 32px);max-height:86vh;color:var(--ink);overflow:hidden}
+/* sheet */
+dialog{border:none;border-radius:18px;padding:0;max-width:580px;width:calc(100% - 32px);max-height:86vh;color:var(--ink);overflow:hidden}
 dialog[open]{display:flex;flex-direction:column}
 dialog::backdrop{background:rgba(23,32,58,.45)}
 .sh-head{display:flex;align-items:flex-start;gap:12px;padding:18px 20px 12px;border-bottom:1px solid var(--line)}
 .sh-head h3{margin:0;font-size:19px;line-height:1.35;word-break:keep-all}
 .sh-head p{margin:2px 0 0;font-size:13px;color:var(--muted)}
 .sh-x{margin-left:auto;border:none;background:var(--soft);width:34px;height:34px;border-radius:50%;cursor:pointer;font-size:18px;flex:none}
-.sh-body{padding:14px 20px 20px;overflow-y:auto}
-.sh-body h4{font-size:14px;margin:16px 0 6px}
+.sh-body{padding:14px 20px 22px;overflow-y:auto}
+.sh-body h4{font-size:14px;margin:18px 0 6px}
 .sh-body h4:first-child{margin-top:0}
 .golinks{display:flex;flex-wrap:wrap;gap:6px}
 .golinks a{display:inline-flex;align-items:center;gap:6px;border:1px solid var(--line);border-radius:10px;padding:7px 11px;font-size:13px;font-weight:600;text-decoration:none;background:#fff}
@@ -178,13 +217,18 @@ dialog::backdrop{background:rgba(23,32,58,.45)}
 .vd dl{display:grid;grid-template-columns:auto 1fr;gap:4px 12px;margin:0;font-size:14px}
 .vd dt{color:var(--muted)} .vd dd{margin:0;font-weight:600}
 .btn{display:inline-block;border-radius:10px;padding:9px 14px;font-weight:600;cursor:pointer;border:1.5px solid var(--ink);background:var(--ink);color:#fff;text-decoration:none;font-size:14px;margin-top:14px}
+.sh-body .cm{border:none;padding:0}
 
-@media (max-width:1080px){ .two{grid-template-columns:1fr} }
+@media (max-width:1100px){ .two{grid-template-columns:1fr} .brief{grid-template-columns:1fr} .side{border-left:none;padding-left:0;border-top:1px solid var(--line);padding-top:14px} }
 @media (max-width:860px){
   main{grid-template-columns:1fr;padding:12px;gap:14px}
   .col{gap:14px}
-  header{padding:12px 14px;position:static}
+  header{position:static}
+  .hrow{padding:12px 14px 8px}
+  .tabs{padding:0 14px 8px}
+  .ctrl{padding:0 14px 10px}
   .meta{margin-left:0;width:100%}
+  .brief .head{font-size:23px}
   .strip{grid-auto-columns:112px;gap:10px}
   .arrows{display:none}
   .hide-sm{display:none}
@@ -196,42 +240,79 @@ dialog::backdrop{background:rgba(23,32,58,.45)}
 </head>
 <body>
 <header>
-  <div class="brand"><i aria-hidden="true"><b></b><b></b><b></b></i><span>W.D</span><span class="brand-sub">Worry Marketing<br>Data Trap</span></div>
+  <div class="hrow">
+    <div class="brand"><i aria-hidden="true"><b></b><b></b><b></b></i><span>W.D</span><span class="brand-sub">Worry Marketing<br>Data Trap</span></div>
+    <div class="meta"><span class="sample" id="sampleBadge" hidden>샘플 데이터</span><span id="updated"></span></div>
+  </div>
   <nav class="tabs" id="tabs" aria-label="분야"></nav>
-  <div class="meta"><span class="sample" id="sampleBadge" hidden>샘플 데이터</span><span id="updated"></span></div>
+  <div class="ctrl">기간
+    <div class="seg" id="periodSeg">
+      <button data-period="12h" aria-pressed="false">12시간</button><button data-period="24h" aria-pressed="false">24시간</button><button data-period="3d" aria-pressed="true">3일</button><button data-period="7d" aria-pressed="false">7일</button>
+    </div>
+  </div>
 </header>
 
 <main>
   <div class="restore" id="restore" hidden><span>숨긴 섹션:</span></div>
 
+  <section class="panel full" id="sec-brief" data-name="오늘의 브리핑">
+    <div class="ph"><h2>오늘의 브리핑</h2><span class="src" id="briefSrc"></span><button class="hide" data-hide="sec-brief">숨기기</button></div>
+    <div class="brief">
+      <div id="briefMain"></div>
+      <div class="side" id="briefSide"></div>
+    </div>
+  </section>
+
   <div class="col" id="colLeft">
-    <section class="panel" id="sec-kw" data-name="지금 뜨는 검색어">
-      <div class="ph"><h2>지금 뜨는 검색어</h2><span class="src">구글 트렌드 · 누르면 관련 기사</span><button class="hide" data-hide="sec-kw">숨기기</button></div>
+    <section class="panel" id="sec-kw" data-name="뜨는 검색어">
+      <div class="ph"><h2>뜨는 검색어</h2><span class="src" id="kwSrc">구글 트렌드 · 누르면 관련 기사</span><button class="hide" data-hide="sec-kw">숨기기</button></div>
       <ol class="kw" id="kw"></ol>
       <button class="more" id="kwMore" hidden></button>
     </section>
 
-    <section class="panel" id="sec-issue" data-name="요즘 뜨는 이슈">
-      <div class="ph"><h2>요즘 뜨는 이슈</h2><span class="src" id="issueSrc">여러 언론사가 오늘 같이 다룬 주제</span><button class="hide" data-hide="sec-issue">숨기기</button></div>
-      <div class="chips" id="issueWords"></div>
+    <section class="panel" id="sec-issue" data-name="뜨는 이슈">
+      <div class="ph"><h2>뜨는 이슈</h2><span class="src" id="issueSrc"></span><button class="hide" data-hide="sec-issue">숨기기</button></div>
+      <div class="chips" id="issueWords" style="margin-bottom:12px"></div>
       <ul class="news" id="issues"></ul>
       <button class="more" id="issueMore" hidden></button>
     </section>
   </div>
 
   <div class="col">
-    <section class="panel" id="sec-hot" data-name="급상승 쇼츠">
-      <div class="ph"><h2>급상승 쇼츠</h2><span class="src">최근 3일 업로드</span><button class="hide" data-hide="sec-hot">숨기기</button></div>
+    <section class="panel" id="sec-hot" data-name="대세 쇼츠">
+      <div class="ph"><h2>대세 쇼츠</h2><span class="src" id="hotSrc"></span><button class="hide" data-hide="sec-hot">숨기기</button></div>
       <div class="toolbar">
-        <button class="sort" data-sort="vph" aria-pressed="true">시간당 조회수</button>
+        <div class="seg" id="tierSeg">
+          <button data-tier="hot" aria-pressed="false">🔥 대세만</button><button data-tier="rise" aria-pressed="true">📈 떠오르는 이상</button><button data-tier="all" aria-pressed="false">전체</button>
+        </div>
+        <div class="arrows"><button data-scroll="-1" aria-label="이전 쇼츠">‹</button><button data-scroll="1" aria-label="다음 쇼츠">›</button></div>
+      </div>
+      <div class="toolbar">
+        <button class="sort" data-sort="comments" aria-pressed="true">댓글 수</button>
+        <button class="sort" data-sort="vph" aria-pressed="false">시간당 조회수</button>
         <button class="sort" data-sort="score" aria-pressed="false">반응 점수</button>
         <button class="sort" data-sort="mult" aria-pressed="false">구독자 대비</button>
-        <div class="arrows"><button data-scroll="-1" aria-label="이전 쇼츠">‹</button><button data-scroll="1" aria-label="다음 쇼츠">›</button></div>
       </div>
       <p class="sortdesc" id="sortDesc"></p>
       <div class="strip" id="strip"></div>
       <p class="count" id="stripCount"></p>
-      <p class="empty" id="stripEmpty" hidden>이 분야에서 최근 3일 안에 올라온 쇼츠를 아직 못 찾았어요. 다음 수집 때 다시 확인해요.</p>
+      <p class="empty" id="stripEmpty" hidden></p>
+    </section>
+
+    <section class="panel" id="sec-cmt" data-name="댓글 반응">
+      <div class="ph"><h2>댓글 반응</h2><span class="src">댓글 많은 영상의 인기 댓글 · 사람들이 실제로 하는 말</span><button class="hide" data-hide="sec-cmt">숨기기</button></div>
+      <p class="moodline" id="mood" hidden></p>
+      <div class="cmts" id="cmts"></div>
+      <button class="more" id="cmtMore" hidden></button>
+    </section>
+
+    <section class="panel" id="sec-chart" data-name="유튜브 인기 차트">
+      <div class="ph"><h2>유튜브 인기 차트</h2><span class="src">유튜브 한국 인기 급상승 · 긴 영상 포함</span><button class="hide" data-hide="sec-chart">숨기기</button></div>
+      <table>
+        <thead><tr><th class="n">순위</th><th>영상</th><th class="n">조회수</th><th class="n hide-sm">댓글</th></tr></thead>
+        <tbody id="chart"></tbody>
+      </table>
+      <button class="more" id="chartMore" hidden></button>
     </section>
 
     <section class="panel" id="sec-under" data-name="작은 채널인데 터진 영상">
@@ -243,13 +324,13 @@ dialog::backdrop{background:rgba(23,32,58,.45)}
     </section>
 
     <div class="two">
-      <section class="panel ai" id="sec-ai" data-name="오늘의 요약">
-        <div class="ph"><h2>오늘의 요약</h2><span class="src" id="aiSrc">수집한 쇼츠 자동 분석</span><button class="hide" data-hide="sec-ai">숨기기</button></div>
-        <div id="ai"></div>
-      </section>
-      <section class="panel" id="sec-fmt" data-name="잘 되는 형식">
-        <div class="ph"><h2>잘 되는 형식</h2><span class="src">평균 대비 조회 속도 · 누르면 영상 목록</span><button class="hide" data-hide="sec-fmt">숨기기</button></div>
+      <section class="panel" id="sec-fmt" data-name="잘 되는 제목 형식">
+        <div class="ph"><h2>잘 되는 제목 형식</h2><span class="src">평균 대비 조회 속도 · 누르면 영상 목록</span><button class="hide" data-hide="sec-fmt">숨기기</button></div>
         <ul class="fmt" id="fmt"></ul>
+      </section>
+      <section class="panel" id="sec-len" data-name="길이별 성과">
+        <div class="ph"><h2>길이별 성과</h2><span class="src">쇼츠 길이에 따른 평균 대비 조회 속도</span><button class="hide" data-hide="sec-len">숨기기</button></div>
+        <ul class="fmt" id="len"></ul>
       </section>
     </div>
   </div>
@@ -259,60 +340,37 @@ dialog::backdrop{background:rgba(23,32,58,.45)}
 
 <script>
 /* 분야별 색 — 분야를 추가하면 여기에도 색을 하나 넣어주세요 */
-const CAT_STYLE={ fun:{color:"#F4B400", ink:"#17203A"}, pol:{color:"#2B59D9", ink:"#fff"}, ad:{color:"#C7336F", ink:"#fff"} };
-const NO_CAT={color:"#8A93A6", ink:"#fff", label:"기타"};
+const CAT_STYLE={
+  meme:{color:"#F4B400", ink:"#17203A"}, product:{color:"#12A37F", ink:"#fff"}, ad:{color:"#C7336F", ink:"#fff"},
+  edit:{color:"#7B4AE2", ink:"#fff"}, issue:{color:"#2B59D9", ink:"#fff"}, season:{color:"#E8590C", ink:"#fff"}
+};
+const NO_CAT={color:"#5B6478", ink:"#fff", label:"인기 차트"};
+const PERIOD_H={"12h":12,"24h":24,"3d":72,"7d":168};
+const PERIOD_L={"12h":"12시간","24h":"24시간","3d":"3일","7d":"7일"};
 
 /* 샘플 데이터: data.json을 못 읽을 때만 보여줘요 */
-const SAMPLE = {
-  sample:true, updatedAt:"2026-11-08T20:00+09:00",
-  cats:{fun:{label:"유머"},pol:{label:"정치/시사"},ad:{label:"광고/마케팅"}},
-  keywords:[
-    {word:"수능",src:["G"],traffic:"5만+",chg:2,cat:null,news:[{title:"수능 D-5, 수험생 마지막 점검 포인트",url:"https://news.google.com",source:"연합뉴스"},{title:"수능 당일 한파 예보",url:"https://news.google.com",source:"KBS"}]},
-    {word:"빼빼로데이",src:["G"],traffic:"2만+",chg:"new",cat:"ad",news:[{title:"편의점 빼빼로데이 한정판 경쟁",url:"https://news.google.com",source:"매일경제"}]},
-    {word:"예산안",src:["G"],traffic:"1만+",chg:-1,cat:"pol",news:[]},
-    {word:"난방비",src:["G"],traffic:"5천+",chg:3,cat:null,news:[]},
-    {word:"회사 단톡방",src:["G"],traffic:"2천+",chg:0,cat:"fun",news:[]}
-  ],
-  issues:{
-    all:[{title:"여야 예산안 협상 결렬…주말 재협상",url:"https://news.google.com",source:"연합뉴스",time:"2026-11-08T18:00+09:00"},{title:"빼빼로데이 마케팅 경쟁 치열",url:"https://news.google.com",source:"매일경제",time:"2026-11-08T17:00+09:00"},{title:"성수동 팝업스토어 주말 인파",url:"https://news.google.com",source:"한겨레",time:"2026-11-08T15:00+09:00"}],
-    ad:[{title:"빼빼로데이 마케팅 경쟁 치열",url:"https://news.google.com",source:"매일경제",time:"2026-11-08T17:00+09:00"},{title:"브랜드 협업 굿즈 하루 만에 품절",url:"https://news.google.com",source:"조선일보",time:"2026-11-08T14:00+09:00"}],
-    pol:[{title:"여야 예산안 협상 결렬…주말 재협상",url:"https://news.google.com",source:"연합뉴스",time:"2026-11-08T18:00+09:00"}],
-    fun:[{title:"수험생 응원 챌린지 SNS서 화제",url:"https://news.google.com",source:"KBS",time:"2026-11-08T16:00+09:00"}]
-  },
-  issueWords:{all:[{word:"예산안",n:5},{word:"빼빼로데이",n:4},{word:"팝업스토어",n:3},{word:"협업",n:3}],ad:[{word:"빼빼로데이",n:4},{word:"협업",n:3}],pol:[{word:"예산안",n:5}],fun:[{word:"챌린지",n:2}]},
-  videos:[
-    {id:"v1",title:"예산안 표결, 3분 안에 정리해드림",ch:"시사한입",subs:41000,views:612000,hours:9,likes:23100,comments:4120,cat:"pol",dur:58,kw:["예산안"],gain:84000},
-    {id:"v2",title:"회사 단톡방에 꼭 있는 사람 유형 5",ch:"김대리 일상",subs:8200,views:1340000,hours:22,likes:88200,comments:9300,cat:"fun",dur:41,kw:["회사 단톡방"]},
-    {id:"v3",title:"빼빼로데이 광고 3사 비교, 승자는?",ch:"광고읽는남자",subs:23000,views:487000,hours:14,likes:19800,comments:2900,cat:"ad",dur:62,kw:["빼빼로데이"]},
-    {id:"v4",title:"수능 6일 전 수험생 부모 반응",ch:"웃긴집",subs:312000,views:2100000,hours:30,likes:121000,comments:6400,cat:"fun",dur:33,kw:["수능"]},
-    {id:"v5",title:"편의점 신상 광고, 실제랑 비교해봄",ch:"사봤어요",subs:5100,views:702000,hours:19,likes:31000,comments:3800,cat:"ad",dur:47,kw:[]},
-    {id:"v6",title:"AI 면접관한테 사투리로 답해봤다",ch:"부산사나이",subs:15600,views:930000,hours:26,likes:52000,comments:7100,cat:"fun",dur:55,kw:[]},
-    {id:"v7",title:"블프 직구 광고 문구, 진짜 싼지 계산",ch:"돈되는마케터",subs:9800,views:410000,hours:18,likes:17600,comments:2600,cat:"ad",dur:59,kw:[]},
-    {id:"v8",title:"국감 명장면 TOP3 (여야 공평하게)",ch:"뉴스클립",subs:540000,views:1250000,hours:40,likes:39000,comments:15800,cat:"pol",dur:72,kw:[]},
-    {id:"v9",title:"첫눈 예보, 올해 왜 빠른지 40초 설명",ch:"날씨쌤",subs:67000,views:380000,hours:7,likes:12900,comments:1100,cat:"pol",dur:40,kw:[]},
-    {id:"v10",title:"MZ 회의 유형 몰카 반응",ch:"오피스코미디",subs:12000,views:520000,hours:20,likes:30100,comments:2100,cat:"fun",dur:49,kw:[]},
-    {id:"v11",title:"치킨 광고 vs 실물 차이",ch:"리얼리뷰",subs:3300,views:290000,hours:16,likes:14000,comments:1900,cat:"ad",dur:38,kw:[]}
-  ],
-  summary:{lead:"상위 쇼츠 15개 중 5개가 유머 분야예요.",paras:["상위권 평균 길이는 50초예요.","구독자 수의 10배 넘게 조회된 영상이 6개 있어요. ‘작은 채널인데 터진 영상’에서 확인해 보세요."],tips:["지금 가장 잘 되는 제목 형식: 비교형 (A vs B) (평균보다 +82%)","길이는 40~60초 사이를 노려보세요"],words:["광고","비교","반응","유형"],top:["v4","v2","v6","v1","v3","v10","v5","v7","v9","v8","v11"],auto:true},
-  formats:[{name:"비교형 (A vs B)",lift:"+82%",n:4,ex:"광고 3사 비교, 광고 vs 실물",ids:["v3","v5","v11"]},{name:"실험·반응형",lift:"+31%",n:3,ex:"사투리로 답해봤다, 부모 반응",ids:["v4","v6","v10"]},{name:"요약·정리형",lift:"-12%",n:2,ex:"3분 정리, 40초 설명",ids:["v1","v9"]}]
-};
+const SAMPLE = {"updatedAt":"2026-11-08T18:00+09:00","cats":{"meme":{"label":"밈·바이럴"},"product":{"label":"신제품·팝업"},"ad":{"label":"광고·캠페인"},"edit":{"label":"숏폼 편집"},"issue":{"label":"이슈 재킹"},"season":{"label":"시즌·캘린더"}},"thresholds":{"hot":[1000000,1000],"rise":[100000,100]},"briefing":{"issues":[{"word":"빼빼로데이","n":7},{"word":"편의점","n":6},{"word":"한정판","n":6}],"shorts":["id17","id134","id137"],"format":{"name":"이슈·속보형","lift":"+10%","n":15,"ex":"논란 정리 결국 이렇게","ids":["id19","id137","id30","id43","id57","id47","id149","id130","id90","id22","id31","id148","id71","id74","id129"]},"season":[{"name":"빼빼로데이","q":"빼빼로데이","date":"2026-11-11","dday":3},{"name":"수능","q":"수능","date":"2026-11-19","dday":11},{"name":"블랙프라이데이","q":"블랙프라이데이","date":"2026-11-27","dday":19}],"hotCount":47,"riseCount":77,"auto":["오늘 여러 언론이 같이 다룬 주제는 ‘빼빼로데이’, ‘편의점’, ‘한정판’이에요.","댓글 반응이 가장 뜨거운 쇼츠는 ‘수능 D-11 수험생 반응’(댓글 9,981개)예요.","제목 형식은 이슈·속보형이 평균보다 +10% 빨리 퍼지고 있어요.","빼빼로데이까지 3일 남았어요."],"ai":{"headline":"빼빼로데이·수능 겹친 주간, 응원형 콘텐츠가 뜬다","points":["빼빼로데이 한정판 기사 급증","댓글 많은 쇼츠는 공감형 상황극","40초 안팎 길이가 상위권"],"ideas":["수험생 응원 빼빼로 챌린지","광고 vs 실물 비교 숏폼","팝업 현장 30초 투어"],"mood":"전반적으로 공감·재미 반응이 많아요."}},"keywords":[{"word":"수능","traffic":"50000+","news":[{"title":"수능 D-11 마지막 점검","url":"https://example.com/a","source":"연합뉴스"}],"chg":0},{"word":"빼빼로데이","traffic":"20000+","news":[],"chg":0},{"word":"KW3","traffic":"2000+","news":[],"chg":"new"}],"issueWords":{"all":[{"word":"빼빼로데이","n":7},{"word":"편의점","n":6},{"word":"한정판","n":6},{"word":"출시","n":6},{"word":"마케팅","n":5},{"word":"예산","n":4},{"word":"숏폼","n":4}],"meme":[{"word":"예산안","n":2},{"word":"마케팅","n":2},{"word":"빼빼로데이","n":2}],"product":[{"word":"마케팅","n":2},{"word":"예산안","n":2}],"ad":[{"word":"마케팅","n":2},{"word":"빼빼로데이","n":2}],"edit":[{"word":"마케팅","n":2},{"word":"빼빼로데이","n":2},{"word":"예산안","n":2}],"issue":[{"word":"예산안","n":2},{"word":"빼빼로데이","n":2},{"word":"마케팅","n":2}],"season":[{"word":"마케팅","n":2},{"word":"예산안","n":2}]},"formats":[{"name":"이슈·속보형","lift":"+10%","n":15,"ex":"논란 정리 결국 이렇게","ids":["id19","id137","id30","id43","id57"]},{"name":"요약·정리형","lift":"+5%","n":24,"ex":"국회 이슈 정리 3분, 논란 정리 결국 이렇게","ids":["id23","id19","id137","id30","id12","id43","id109","id57"]},{"name":"비교형 (A vs B)","lift":"-1%","n":16,"ex":"웃긴 광고 모음 vs 실제","ids":["id143","id146","id9"]},{"name":"실험·반응형","lift":"-4%","n":24,"ex":"수능 D-11 수험생 반응, 요즘 유행하는 밈 챌린지 해봤다","ids":["id17","id134","id100","id15"]},{"name":"리스트·랭킹형","lift":"-7%","n":25,"ex":"편의점 신상 리뷰 TOP5, 릴스 편집 꿀팁 3가지","ids":["id24","id99","id14","id96"]},{"name":"꿀팁·방법형","lift":"-10%","n":28,"ex":"숏폼 편집 하는 법, 릴스 편집 꿀팁 3가지","ids":["id2","id14","id94"]},{"name":"질문형 제목","lift":"-19%","n":9,"ex":"빼빼로데이 선물 추천?","ids":["id144","id67"]}],"lengths":[{"name":"15초 이하","n":37,"lift":"-7%"},{"name":"16~30초","n":36,"lift":"-6%"},{"name":"31~60초","n":37,"lift":"-3%"},{"name":"61초 이상","n":40,"lift":"+14%"}],"season":[{"name":"빼빼로데이","q":"빼빼로데이","date":"2026-11-11","dday":3},{"name":"수능","q":"수능","date":"2026-11-19","dday":11},{"name":"블랙프라이데이","q":"블랙프라이데이","date":"2026-11-27","dday":19}],"sample":true,"issues":{"all":[{"title":"숏폼 마케팅 예산 확대","url":"https://news.google.com/x181","source":"SBS","time":"2026-11-08T19:00+09:00"},{"title":"편의점 빼빼로데이 한정판 출시","url":"https://news.google.com/x42","source":"SBS","time":"2026-11-08T20:00+09:00"},{"title":"편의점 빼빼로데이 한정판 출시","url":"https://news.google.com/x612","source":"연합뉴스","time":"2026-11-08T21:00+09:00"},{"title":"빼빼로데이 마케팅 경쟁 치열","url":"https://news.google.com/x879","source":"SBS","time":"2026-11-08T22:00+09:00"},{"title":"편의점 빼빼로데이 한정판 출시","url":"https://news.google.com/x204","source":"연합뉴스","time":"2026-11-08T23:00+09:00"},{"title":"수능 응원 챌린지 화제","url":"https://news.google.com/x87","source":"KBS","time":"2026-11-09T00:00+09:00"}],"meme":[{"title":"릴스 광고 효율 상승","url":"https://news.google.com/x873","source":"매일경제","time":"2026-11-09T04:00+09:00"},{"title":"국회 예산안 처리 난항","url":"https://news.google.com/x499","source":"KBS","time":"2026-11-09T02:00+09:00"},{"title":"팝업스토어 성수동 인기","url":"https://news.google.com/x169","source":"조선일보","time":"2026-11-09T00:00+09:00"},{"title":"수능 응원 챌린지 화제","url":"https://news.google.com/x223","source":"한겨레","time":"2026-11-08T23:00+09:00"},{"title":"숏폼 마케팅 예산 확대","url":"https://news.google.com/x86","source":"KBS","time":"2026-11-08T22:00+09:00"},{"title":"편의점 빼빼로데이 한정판 출시","url":"https://news.google.com/x454","source":"SBS","time":"2026-11-08T22:00+09:00"}],"product":[{"title":"브랜드 협업 굿즈 품절","url":"https://news.google.com/x926","source":"KBS","time":"2026-11-09T04:00+09:00"},{"title":"팝업스토어 성수동 인기","url":"https://news.google.com/x565","source":"조선일보","time":"2026-11-09T00:00+09:00"},{"title":"숏폼 마케팅 예산 확대","url":"https://news.google.com/x363","source":"KBS","time":"2026-11-08T23:00+09:00"},{"title":"여야 예산안 협상 결렬","url":"https://news.google.com/x788","source":"SBS","time":"2026-11-08T22:00+09:00"},{"title":"빼빼로데이 마케팅 경쟁 치열","url":"https://news.google.com/x1","source":"조선일보","time":"2026-11-08T21:00+09:00"},{"title":"국회 예산안 처리 난항","url":"https://news.google.com/x972","source":"한겨레","time":"2026-11-08T20:00+09:00"}],"ad":[{"title":"빼빼로데이 마케팅 경쟁 치열","url":"https://news.google.com/x527","source":"KBS","time":"2026-11-09T03:00+09:00"},{"title":"편의점 빼빼로데이 한정판 출시","url":"https://news.google.com/x380","source":"연합뉴스","time":"2026-11-09T02:00+09:00"},{"title":"브랜드 협업 굿즈 품절","url":"https://news.google.com/x684","source":"SBS","time":"2026-11-09T01:00+09:00"},{"title":"숏폼 마케팅 예산 확대","url":"https://news.google.com/x128","source":"조선일보","time":"2026-11-08T22:00+09:00"},{"title":"릴스 광고 효율 상승","url":"https://news.google.com/x118","source":"조선일보","time":"2026-11-08T21:00+09:00"},{"title":"팝업스토어 성수동 인기","url":"https://news.google.com/x588","source":"조선일보","time":"2026-11-08T20:00+09:00"}],"edit":[{"title":"수능 응원 챌린지 화제","url":"https://news.google.com/x129","source":"KBS","time":"2026-11-09T01:00+09:00"},{"title":"빼빼로데이 마케팅 경쟁 치열","url":"https://news.google.com/x287","source":"조선일보","time":"2026-11-08T22:00+09:00"},{"title":"브랜드 협업 굿즈 품절","url":"https://news.google.com/x186","source":"조선일보","time":"2026-11-08T21:00+09:00"},{"title":"편의점 빼빼로데이 한정판 출시","url":"https://news.google.com/x443","source":"매일경제","time":"2026-11-08T20:00+09:00"},{"title":"숏폼 마케팅 예산 확대","url":"https://news.google.com/x251","source":"연합뉴스","time":"2026-11-08T20:00+09:00"},{"title":"국회 예산안 처리 난항","url":"https://news.google.com/x307","source":"연합뉴스","time":"2026-11-08T20:00+09:00"}],"issue":[{"title":"브랜드 협업 굿즈 품절","url":"https://news.google.com/x990","source":"한겨레","time":"2026-11-09T00:00+09:00"},{"title":"여야 예산안 협상 결렬","url":"https://news.google.com/x289","source":"조선일보","time":"2026-11-08T23:00+09:00"},{"title":"편의점 빼빼로데이 한정판 출시","url":"https://news.google.com/x598","source":"조선일보","time":"2026-11-08T23:00+09:00"},{"title":"팝업스토어 성수동 인기","url":"https://news.google.com/x746","source":"KBS","time":"2026-11-08T22:00+09:00"},{"title":"릴스 광고 효율 상승","url":"https://news.google.com/x226","source":"한겨레","time":"2026-11-08T21:00+09:00"},{"title":"국회 예산안 처리 난항","url":"https://news.google.com/x126","source":"KBS","time":"2026-11-08T20:00+09:00"}],"season":[{"title":"브랜드 협업 굿즈 품절","url":"https://news.google.com/x208","source":"연합뉴스","time":"2026-11-09T04:00+09:00"},{"title":"숏폼 마케팅 예산 확대","url":"https://news.google.com/x844","source":"SBS","time":"2026-11-09T04:00+09:00"},{"title":"팝업스토어 성수동 인기","url":"https://news.google.com/x391","source":"SBS","time":"2026-11-09T00:00+09:00"},{"title":"빼빼로데이 마케팅 경쟁 치열","url":"https://news.google.com/x815","source":"매일경제","time":"2026-11-08T23:00+09:00"},{"title":"편의점 빼빼로데이 한정판 출시","url":"https://news.google.com/x441","source":"매일경제","time":"2026-11-08T22:00+09:00"},{"title":"국회 예산안 처리 난항","url":"https://news.google.com/x613","source":"한겨레","time":"2026-11-08T21:00+09:00"}]},"charts":[{"id":"ch0","title":"논란 정리 결국 이렇게 #shorts","ch":"채널7","subs":63618,"views":8636979,"hours":57.0,"likes":215924,"comments":4318,"cat":null,"dur":720,"thumb":"","kw":[],"tier":"hot","chart":1},{"id":"ch1","title":"편의점 신상 리뷰 TOP5 #shorts","ch":"채널4","subs":738613,"views":2330765,"hours":57.0,"likes":58269,"comments":7769,"cat":null,"dur":720,"thumb":"","kw":[],"tier":"hot","chart":2},{"id":"ch2","title":"논란 정리 결국 이렇게 #shorts","ch":"채널4","subs":738613,"views":7353092,"hours":57.0,"likes":183827,"comments":24510,"cat":null,"dur":720,"thumb":"","kw":[],"tier":"hot","chart":3,"topComments":[{"text":"편집 미쳤다","likes":2263},{"text":"이 브랜드 센스 좋네","likes":2472},{"text":"이 브랜드 센스 좋네","likes":2057},{"text":"별로임","likes":2187},{"text":"이거 완전 공감ㅋㅋ","likes":2770}]},{"id":"ch3","title":"팝업스토어 성수 콜라보 다녀옴 #shorts","ch":"채널3","subs":883468,"views":3860522,"hours":57.0,"likes":96513,"comments":482,"cat":null,"dur":720,"thumb":"","kw":[],"tier":"rise","chart":4},{"id":"ch4","title":"논란 정리 결국 이렇게 #shorts","ch":"채널3","subs":883468,"views":3198149,"hours":57.0,"likes":79953,"comments":1599,"cat":null,"dur":720,"thumb":"","kw":[],"tier":"hot","chart":5},{"id":"ch5","title":"광고 비하인드 메이킹 #shorts","ch":"채널5","subs":749682,"views":8840625,"hours":57.0,"likes":221015,"comments":4420,"cat":null,"dur":720,"thumb":"","kw":[],"tier":"hot","chart":6},{"id":"ch7","title":"팝업스토어 성수 콜라보 다녀옴 #shorts","ch":"채널6","subs":24518,"views":7581850,"hours":57.0,"likes":189546,"comments":25272,"cat":null,"dur":720,"thumb":"","kw":[],"tier":"hot","chart":8,"topComments":[{"text":"이 브랜드 센스 좋네","likes":1571},{"text":"광고인데 재밌다","likes":2737},{"text":"별로임","likes":961},{"text":"편집 미쳤다","likes":1025},{"text":"별로임","likes":435}]},{"id":"ch17","title":"팝업스토어 성수 콜라보 다녀옴 #shorts","ch":"채널3","subs":883468,"views":7241240,"hours":57.0,"likes":181031,"comments":24137,"cat":null,"dur":720,"thumb":"","kw":[],"tier":"hot","chart":18,"topComments":[{"text":"편집 미쳤다","likes":2607},{"text":"이거 완전 공감ㅋㅋ","likes":474},{"text":"이 브랜드 센스 좋네","likes":742},{"text":"별로임","likes":39},{"text":"이거 완전 공감ㅋㅋ","likes":258}]},{"id":"ch21","title":"편의점 신상 리뷰 TOP5 #shorts","ch":"채널4","subs":738613,"views":3776582,"hours":57.0,"likes":94414,"comments":12588,"cat":null,"dur":720,"thumb":"","kw":[],"tier":"hot","chart":22,"topComments":[{"text":"광고인데 재밌다","likes":3916},{"text":"편집 미쳤다","likes":3930},{"text":"편집 미쳤다","likes":290},{"text":"이 브랜드 센스 좋네","likes":2506},{"text":"별로임","likes":3240}]},{"id":"ch22","title":"빼빼로데이 선물 추천? #shorts","ch":"채널0","subs":428549,"views":4011260,"hours":57.0,"likes":100281,"comments":13370,"cat":null,"dur":720,"thumb":"","kw":[],"tier":"hot","chart":23,"topComments":[{"text":"이거 완전 공감ㅋㅋ","likes":166},{"text":"광고인데 재밌다","likes":4130},{"text":"이거 완전 공감ㅋㅋ","likes":3957},{"text":"이거 완전 공감ㅋㅋ","likes":1559},{"text":"별로임","likes":2723}]},{"id":"ch29","title":"숏폼 편집 하는 법 #shorts","ch":"채널5","subs":749682,"views":8725452,"hours":57.0,"likes":218136,"comments":29084,"cat":null,"dur":720,"thumb":"","kw":[],"tier":"hot","chart":30,"topComments":[{"text":"광고인데 재밌다","likes":3313},{"text":"이거 완전 공감ㅋㅋ","likes":3259},{"text":"이 브랜드 센스 좋네","likes":228},{"text":"광고인데 재밌다","likes":1988},{"text":"이거 완전 공감ㅋㅋ","likes":3197}]}],"videos":[{"id":"id24","title":"편의점 신상 리뷰 TOP5 #shorts","ch":"채널1","subs":423689,"views":2953095,"hours":57.0,"likes":73827,"comments":1476,"cat":"meme","dur":62,"thumb":"","kw":[],"tier":"hot","gain":647263},{"id":"id99","title":"편의점 신상 리뷰 TOP5 #shorts","ch":"채널4","subs":738613,"views":2947256,"hours":57.0,"likes":73681,"comments":368,"cat":"meme","dur":28,"thumb":"","kw":[],"tier":"rise","gain":1378666},{"id":"id81","title":"광고 비하인드 메이킹 #shorts","ch":"채널5","subs":749682,"views":2921912,"hours":57.0,"likes":73047,"comments":365,"cat":"meme","dur":45,"thumb":"","kw":[],"tier":"rise","gain":2359936},{"id":"id2","title":"숏폼 편집 하는 법 #shorts","ch":"채널9","subs":334296,"views":2916363,"hours":57.0,"likes":72909,"comments":1458,"cat":"meme","dur":62,"thumb":"","kw":[],"tier":"hot","gain":624360},{"id":"id30","title":"논란 정리 결국 이렇게 #shorts","ch":"채널9","subs":334296,"views":2802107,"hours":57.0,"likes":70052,"comments":1401,"cat":"meme","dur":45,"thumb":"","kw":[],"tier":"hot","gain":1853394},{"id":"id125","title":"광고 비하인드 메이킹 #shorts","ch":"채널5","subs":749682,"views":2850534,"hours":57.0,"likes":71263,"comments":1425,"cat":"product","dur":62,"thumb":"","kw":[],"tier":"hot","gain":1867540},{"id":"id94","title":"숏폼 편집 하는 법 #shorts","ch":"채널9","subs":334296,"views":2805291,"hours":57.0,"likes":70132,"comments":1402,"cat":"product","dur":14,"thumb":"","kw":[],"tier":"hot","gain":2478530},{"id":"id100","title":"수능 D-11 수험생 반응 #shorts","ch":"채널6","subs":24518,"views":2707404,"hours":57.0,"likes":67685,"comments":338,"cat":"product","dur":62,"thumb":"","kw":["수능"],"tier":"rise","gain":1638219},{"id":"id140","title":"팝업스토어 성수 콜라보 다녀옴 #shorts","ch":"채널10","subs":54599,"views":2675414,"hours":57.0,"likes":66885,"comments":8918,"cat":"product","dur":62,"thumb":"","kw":[],"tier":"hot","gain":331153,"topComments":[{"text":"별로임","likes":404},{"text":"이 브랜드 센스 좋네","likes":3831},{"text":"편집 미쳤다","likes":3041},{"text":"이거 완전 공감ㅋㅋ","likes":600},{"text":"광고인데 재밌다","likes":3281}]},{"id":"id106","title":"광고 비하인드 메이킹 #shorts","ch":"채널6","subs":24518,"views":2641569,"hours":57.0,"likes":66039,"comments":330,"cat":"product","dur":62,"thumb":"","kw":[],"tier":"rise","gain":0},{"id":"id1","title":"광고 비하인드 메이킹 #shorts","ch":"채널10","subs":54599,"views":2918614,"hours":57.0,"likes":72965,"comments":364,"cat":"ad","dur":28,"thumb":"","kw":[],"tier":"rise","gain":2891266},{"id":"id14","title":"릴스 편집 꿀팁 3가지 #shorts","ch":"채널6","subs":24518,"views":2851019,"hours":57.0,"likes":71275,"comments":356,"cat":"ad","dur":28,"thumb":"","kw":[],"tier":"rise","gain":1926774},{"id":"id143","title":"웃긴 광고 모음 vs 실제 #shorts","ch":"채널3","subs":883468,"views":2820992,"hours":57.0,"likes":70524,"comments":352,"cat":"ad","dur":62,"thumb":"","kw":[],"tier":"rise","gain":1160619},{"id":"id43","title":"논란 정리 결국 이렇게 #shorts","ch":"채널2","subs":470786,"views":2718352,"hours":57.0,"likes":67958,"comments":1359,"cat":"ad","dur":45,"thumb":"","kw":[],"tier":"hot","gain":232164},{"id":"id109","title":"국회 이슈 정리 3분 #shorts","ch":"채널9","subs":334296,"views":2464825,"hours":57.0,"likes":61620,"comments":308,"cat":"ad","dur":28,"thumb":"","kw":[],"tier":"rise","gain":770679},{"id":"id17","title":"수능 D-11 수험생 반응 #shorts","ch":"채널7","subs":63618,"views":2994361,"hours":57.0,"likes":74859,"comments":9981,"cat":"edit","dur":62,"thumb":"","kw":["수능"],"tier":"hot","gain":396518,"topComments":[{"text":"이거 완전 공감ㅋㅋ","likes":2413},{"text":"광고인데 재밌다","likes":3393},{"text":"이거 완전 공감ㅋㅋ","likes":4167},{"text":"이 브랜드 센스 좋네","likes":4493},{"text":"편집 미쳤다","likes":4405}]},{"id":"id23","title":"국회 이슈 정리 3분 #shorts","ch":"채널6","subs":24518,"views":2935304,"hours":57.0,"likes":73382,"comments":366,"cat":"edit","dur":62,"thumb":"","kw":[],"tier":"rise","gain":1235120},{"id":"id137","title":"논란 정리 결국 이렇게 #shorts","ch":"채널6","subs":24518,"views":2804956,"hours":57.0,"likes":70123,"comments":9349,"cat":"edit","dur":45,"thumb":"","kw":[],"tier":"hot","gain":643388,"topComments":[{"text":"이 브랜드 센스 좋네","likes":3947},{"text":"편집 미쳤다","likes":2217},{"text":"광고인데 재밌다","likes":4163},{"text":"별로임","likes":3178},{"text":"이 브랜드 센스 좋네","likes":360}]},{"id":"id80","title":"크리스마스 한정판 언박싱 #shorts","ch":"채널9","subs":334296,"views":2762800,"hours":57.0,"likes":69070,"comments":9209,"cat":"edit","dur":28,"thumb":"","kw":[],"tier":"hot","gain":2555031,"topComments":[{"text":"광고인데 재밌다","likes":1416},{"text":"이거 완전 공감ㅋㅋ","likes":3835},{"text":"이거 완전 공감ㅋㅋ","likes":805},{"text":"편집 미쳤다","likes":1952},{"text":"별로임","likes":472}]},{"id":"id67","title":"빼빼로데이 선물 추천? #shorts","ch":"채널6","subs":24518,"views":2540183,"hours":57.0,"likes":63504,"comments":317,"cat":"edit","dur":62,"thumb":"","kw":["빼빼로데이"],"tier":"rise","gain":191547},{"id":"id134","title":"수능 D-11 수험생 반응 #shorts","ch":"채널9","subs":334296,"views":2863341,"hours":57.0,"likes":71583,"comments":9544,"cat":"issue","dur":14,"thumb":"","kw":["수능"],"tier":"hot","gain":2372774,"topComments":[{"text":"이 브랜드 센스 좋네","likes":1440},{"text":"이 브랜드 센스 좋네","likes":4542},{"text":"편집 미쳤다","likes":1516},{"text":"편집 미쳤다","likes":3407},{"text":"이 브랜드 센스 좋네","likes":1889}]},{"id":"id12","title":"국회 이슈 정리 3분 #shorts","ch":"채널1","subs":423689,"views":2723956,"hours":57.0,"likes":68098,"comments":340,"cat":"issue","dur":14,"thumb":"","kw":[],"tier":"rise","gain":1212468},{"id":"id15","title":"요즘 유행하는 밈 챌린지 해봤다 #shorts","ch":"채널3","subs":883468,"views":2501554,"hours":57.0,"likes":62538,"comments":312,"cat":"issue","dur":45,"thumb":"","kw":[],"tier":"rise","gain":848795},{"id":"id57","title":"논란 정리 결국 이렇게 #shorts","ch":"채널6","subs":24518,"views":2370492,"hours":57.0,"likes":59262,"comments":7901,"cat":"issue","dur":14,"thumb":"","kw":[],"tier":"hot","gain":417034},{"id":"id9","title":"웃긴 광고 모음 vs 실제 #shorts","ch":"채널9","subs":334296,"views":2369932,"hours":57.0,"likes":59248,"comments":296,"cat":"issue","dur":14,"thumb":"","kw":[],"tier":"rise","gain":248192},{"id":"id19","title":"논란 정리 결국 이렇게 #shorts","ch":"채널8","subs":35434,"views":2830009,"hours":57.0,"likes":70750,"comments":1415,"cat":"season","dur":45,"thumb":"","kw":[],"tier":"hot","gain":801433},{"id":"id144","title":"빼빼로데이 선물 추천? #shorts","ch":"채널3","subs":883468,"views":2796028,"hours":57.0,"likes":69900,"comments":1398,"cat":"season","dur":14,"thumb":"","kw":["빼빼로데이"],"tier":"hot","gain":1757211},{"id":"id146","title":"웃긴 광고 모음 vs 실제 #shorts","ch":"채널5","subs":749682,"views":2713825,"hours":57.0,"likes":67845,"comments":339,"cat":"season","dur":28,"thumb":"","kw":[],"tier":"rise","gain":1804956},{"id":"id96","title":"편의점 신상 리뷰 TOP5 #shorts","ch":"채널1","subs":423689,"views":2068062,"hours":57.0,"likes":51701,"comments":6893,"cat":"season","dur":62,"thumb":"","kw":[],"tier":"hot","gain":1782718},{"id":"id83","title":"크리스마스 한정판 언박싱 #shorts","ch":"채널3","subs":883468,"views":1612032,"hours":57.0,"likes":40300,"comments":806,"cat":"season","dur":45,"thumb":"","kw":[],"tier":"rise","gain":1239203}],"commentIds":["ch29","ch7","ch2","ch17","ch22","ch21"],"periods":{"12h":{"runs":3,"keywords":[{"word":"수능","runs":3,"days":1,"steady":true},{"word":"빼빼로데이","runs":3,"days":1,"steady":true},{"word":"KW1","runs":1,"days":1,"steady":false},{"word":"KW2","runs":1,"days":1,"steady":false},{"word":"KW3","runs":1,"days":1,"steady":false}],"issueWords":{"all":[{"word":"빼빼로데이","n":3,"days":1,"steady":true},{"word":"마케팅","n":2,"days":1,"steady":false},{"word":"예산안","n":2,"days":1,"steady":false},{"word":"화제","n":2,"days":1,"steady":false},{"word":"응원","n":2,"days":1,"steady":false},{"word":"챌린지","n":2,"days":1,"steady":false},{"word":"수능","n":2,"days":1,"steady":false},{"word":"상승","n":2,"days":1,"steady":false},{"word":"치열","n":1,"days":1,"steady":false},{"word":"경쟁","n":1,"days":1,"steady":false}],"meme":[{"word":"마케팅","n":3,"days":1,"steady":true},{"word":"빼빼로데이","n":2,"days":1,"steady":false},{"word":"예산안","n":2,"days":1,"steady":false}],"product":[{"word":"예산안","n":2,"days":1,"steady":false},{"word":"빼빼로데이","n":1,"days":1,"steady":false},{"word":"마케팅","n":1,"days":1,"steady":false}],"ad":[{"word":"빼빼로데이","n":3,"days":1,"steady":true},{"word":"마케팅","n":3,"days":1,"steady":true},{"word":"예산안","n":2,"days":1,"steady":false}],"edit":[{"word":"마케팅","n":3,"days":1,"steady":true},{"word":"예산안","n":2,"days":1,"steady":false},{"word":"빼빼로데이","n":2,"days":1,"steady":false}],"issue":[{"word":"마케팅","n":3,"days":1,"steady":true},{"word":"빼빼로데이","n":3,"days":1,"steady":true},{"word":"예산안","n":3,"days":1,"steady":true}],"season":[{"word":"빼빼로데이","n":2,"days":1,"steady":false},{"word":"예산안","n":2,"days":1,"steady":false},{"word":"마케팅","n":2,"days":1,"steady":false}]},"videos":[]},"24h":{"runs":3,"keywords":[{"word":"수능","runs":3,"days":1,"steady":true},{"word":"빼빼로데이","runs":3,"days":1,"steady":true},{"word":"KW1","runs":1,"days":1,"steady":false},{"word":"KW2","runs":1,"days":1,"steady":false},{"word":"KW3","runs":1,"days":1,"steady":false}],"issueWords":{"all":[{"word":"빼빼로데이","n":3,"days":1,"steady":true},{"word":"마케팅","n":2,"days":1,"steady":false},{"word":"예산안","n":2,"days":1,"steady":false},{"word":"화제","n":2,"days":1,"steady":false},{"word":"응원","n":2,"days":1,"steady":false},{"word":"챌린지","n":2,"days":1,"steady":false},{"word":"수능","n":2,"days":1,"steady":false},{"word":"상승","n":2,"days":1,"steady":false},{"word":"치열","n":1,"days":1,"steady":false},{"word":"경쟁","n":1,"days":1,"steady":false}],"meme":[{"word":"마케팅","n":3,"days":1,"steady":true},{"word":"빼빼로데이","n":2,"days":1,"steady":false},{"word":"예산안","n":2,"days":1,"steady":false}],"product":[{"word":"예산안","n":2,"days":1,"steady":false},{"word":"빼빼로데이","n":1,"days":1,"steady":false},{"word":"마케팅","n":1,"days":1,"steady":false}],"ad":[{"word":"빼빼로데이","n":3,"days":1,"steady":true},{"word":"마케팅","n":3,"days":1,"steady":true},{"word":"예산안","n":2,"days":1,"steady":false}],"edit":[{"word":"마케팅","n":3,"days":1,"steady":true},{"word":"예산안","n":2,"days":1,"steady":false},{"word":"빼빼로데이","n":2,"days":1,"steady":false}],"issue":[{"word":"마케팅","n":3,"days":1,"steady":true},{"word":"빼빼로데이","n":3,"days":1,"steady":true},{"word":"예산안","n":3,"days":1,"steady":true}],"season":[{"word":"빼빼로데이","n":2,"days":1,"steady":false},{"word":"예산안","n":2,"days":1,"steady":false},{"word":"마케팅","n":2,"days":1,"steady":false}]},"videos":[]},"3d":{"runs":3,"keywords":[{"word":"수능","runs":3,"days":1,"steady":true},{"word":"빼빼로데이","runs":3,"days":1,"steady":true},{"word":"KW1","runs":1,"days":1,"steady":false},{"word":"KW2","runs":1,"days":1,"steady":false},{"word":"KW3","runs":1,"days":1,"steady":false}],"issueWords":{"all":[{"word":"빼빼로데이","n":3,"days":1,"steady":true},{"word":"마케팅","n":2,"days":1,"steady":false},{"word":"예산안","n":2,"days":1,"steady":false},{"word":"화제","n":2,"days":1,"steady":false},{"word":"응원","n":2,"days":1,"steady":false},{"word":"챌린지","n":2,"days":1,"steady":false},{"word":"수능","n":2,"days":1,"steady":false},{"word":"상승","n":2,"days":1,"steady":false},{"word":"치열","n":1,"days":1,"steady":false},{"word":"경쟁","n":1,"days":1,"steady":false}],"meme":[{"word":"마케팅","n":3,"days":1,"steady":true},{"word":"빼빼로데이","n":2,"days":1,"steady":false},{"word":"예산안","n":2,"days":1,"steady":false}],"product":[{"word":"예산안","n":2,"days":1,"steady":false},{"word":"빼빼로데이","n":1,"days":1,"steady":false},{"word":"마케팅","n":1,"days":1,"steady":false}],"ad":[{"word":"빼빼로데이","n":3,"days":1,"steady":true},{"word":"마케팅","n":3,"days":1,"steady":true},{"word":"예산안","n":2,"days":1,"steady":false}],"edit":[{"word":"마케팅","n":3,"days":1,"steady":true},{"word":"예산안","n":2,"days":1,"steady":false},{"word":"빼빼로데이","n":2,"days":1,"steady":false}],"issue":[{"word":"마케팅","n":3,"days":1,"steady":true},{"word":"빼빼로데이","n":3,"days":1,"steady":true},{"word":"예산안","n":3,"days":1,"steady":true}],"season":[{"word":"빼빼로데이","n":2,"days":1,"steady":false},{"word":"예산안","n":2,"days":1,"steady":false},{"word":"마케팅","n":2,"days":1,"steady":false}]},"videos":[]},"7d":{"runs":3,"keywords":[{"word":"수능","runs":3,"days":1,"steady":true},{"word":"빼빼로데이","runs":3,"days":1,"steady":true},{"word":"KW1","runs":1,"days":1,"steady":false},{"word":"KW2","runs":1,"days":1,"steady":false},{"word":"KW3","runs":1,"days":1,"steady":false}],"issueWords":{"all":[{"word":"빼빼로데이","n":3,"days":1,"steady":true},{"word":"마케팅","n":2,"days":1,"steady":false},{"word":"예산안","n":2,"days":1,"steady":false},{"word":"화제","n":2,"days":1,"steady":false},{"word":"응원","n":2,"days":1,"steady":false},{"word":"챌린지","n":2,"days":1,"steady":false},{"word":"수능","n":2,"days":1,"steady":false},{"word":"상승","n":2,"days":1,"steady":false},{"word":"치열","n":1,"days":1,"steady":false},{"word":"경쟁","n":1,"days":1,"steady":false}],"meme":[{"word":"마케팅","n":3,"days":1,"steady":true},{"word":"빼빼로데이","n":2,"days":1,"steady":false},{"word":"예산안","n":2,"days":1,"steady":false}],"product":[{"word":"예산안","n":2,"days":1,"steady":false},{"word":"빼빼로데이","n":1,"days":1,"steady":false},{"word":"마케팅","n":1,"days":1,"steady":false}],"ad":[{"word":"빼빼로데이","n":3,"days":1,"steady":true},{"word":"마케팅","n":3,"days":1,"steady":true},{"word":"예산안","n":2,"days":1,"steady":false}],"edit":[{"word":"마케팅","n":3,"days":1,"steady":true},{"word":"예산안","n":2,"days":1,"steady":false},{"word":"빼빼로데이","n":2,"days":1,"steady":false}],"issue":[{"word":"마케팅","n":3,"days":1,"steady":true},{"word":"빼빼로데이","n":3,"days":1,"steady":true},{"word":"예산안","n":3,"days":1,"steady":true}],"season":[{"word":"빼빼로데이","n":2,"days":1,"steady":false},{"word":"예산안","n":2,"days":1,"steady":false},{"word":"마케팅","n":2,"days":1,"steady":false}]},"videos":[]}}};
 
 let DATA;
-const state={cat:"all", sort:"vph", kwAll:false, issueAll:false};
 const store={get(k){try{return JSON.parse(localStorage.getItem(k))}catch(e){return null}}, set(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}}};
-let hidden=store.get('wd-hidden')||[];
+const state={cat:"all", sort:"comments", tier:"rise", period:store.get('wd-period')||"3d", kwAll:false, issueAll:false, chartAll:false};
+let hidden=store.get('wd-hidden3')||[];
 
 const $=s=>document.querySelector(s);
 const fmtN=n=>n>=1e8?(n/1e8).toFixed(1)+'억':n>=1e4?(n/1e4).toFixed(n>=1e5?0:1)+'만':n>=1e3?(n/1e3).toFixed(1)+'천':String(Math.round(n));
 const esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const catOf=k=>k&&DATA.cats[k]?{...CAT_STYLE[k]||NO_CAT,label:DATA.cats[k].label}:NO_CAT;
 const inCat=x=>state.cat==="all"||x.cat===state.cat;
-const ytUrl=v=>`https://www.youtube.com/shorts/${encodeURIComponent(v.id)}`;
-const byId=id=>DATA.videos.find(v=>v.id===id);
+const ytUrl=v=>v.dur>180?`https://www.youtube.com/watch?v=${encodeURIComponent(v.id)}`:`https://www.youtube.com/shorts/${encodeURIComponent(v.id)}`;
+const allVids=()=>DATA.videos.concat(DATA.charts||[]);
+const byId=id=>allVids().find(v=>v.id===id);
 function shade(hex,p){const n=parseInt(hex.slice(1),16);let r=n>>16,g=n>>8&255,b=n&255;const f=x=>Math.max(0,Math.min(255,Math.round(x+x*p/100)));return '#'+[f(r),f(g),f(b)].map(x=>x.toString(16).padStart(2,'0')).join('');}
 const thumbBg=v=>{const c=catOf(v.cat).color;return `background:linear-gradient(160deg, ${c} 0%, ${shade(c,-38)} 100%)`;};
 const durTxt=d=>`${Math.floor(d/60)}:${String(d%60).padStart(2,'0')}`;
+const tierBadge=v=>v.tier==='hot'?'<span class="badge b-hot">🔥 대세</span>':v.tier==='rise'?'<span class="badge b-rise">📈 떠오르는</span>':'';
+const miniImg=v=>v.thumb&&!DATA.sample?`<img src="${esc(v.thumb)}" alt="" loading="lazy" onerror="this.remove()">`:'';
 function ago(t){ const d=new Date(t); if(isNaN(d)) return ''; const m=Math.round((Date.now()-d)/60000); return m<60?`${Math.max(m,1)}분 전`:m<1440?`${Math.round(m/60)}시간 전`:`${Math.round(m/1440)}일 전`; }
+const per=()=>((DATA.periods||{})[state.period])||null;
 
 /* 바깥 사이트로 바로 가는 링크 */
 function goLinks(q){
@@ -323,97 +381,151 @@ function goLinks(q){
     <a href="https://news.google.com/search?q=${e}&hl=ko&gl=KR&ceid=KR:ko" target="_blank" rel="noopener"><i style="background:#4C6EF5"></i>구글 뉴스</a>
     <a href="https://www.youtube.com/results?search_query=${e}" target="_blank" rel="noopener"><i style="background:#E5372B"></i>유튜브</a>
     <a href="https://www.instagram.com/explore/tags/${tag}/" target="_blank" rel="noopener"><i style="background:#C7336F"></i>인스타그램</a>
+    <a href="https://www.threads.net/search?q=${e}" target="_blank" rel="noopener"><i style="background:#17203A"></i>스레드</a>
   </div>`;
 }
-const newsList=items=>`<ul class="news">${items.map(n=>`<li><a href="${esc(n.url)}" target="_blank" rel="noopener"><div class="h">${esc(n.title)}</div><div class="s">${esc(n.source||'')}${n.time?` · ${ago(n.time)}`:''}</div></a></li>`).join('')}</ul>`;
+const newsItems=items=>items.map(n=>`<li><a href="${esc(n.url)}" target="_blank" rel="noopener"><div class="h">${esc(n.title)}</div><div class="s">${esc(n.source||'')}${n.time?` · ${ago(n.time)}`:''}</div></a></li>`).join('');
 function vList(vs){
-  if(!vs.length) return '<p class="empty">해당하는 쇼츠가 아직 없어요.</p>';
+  if(!vs.length) return '<p class="empty">해당하는 영상이 아직 없어요.</p>';
   return `<ul class="vlist">${vs.map(v=>`<li><a href="${ytUrl(v)}" target="_blank" rel="noopener">
-    <span class="mini" style="${thumbBg(v)}">${v.thumb&&!DATA.sample?`<img src="${esc(v.thumb)}" alt="" loading="lazy" onerror="this.remove()">`:''}</span>
-    <span><span class="tt">${esc(v.title)}</span><br><span class="mm">${esc(v.ch)} · ${fmtN(v.views)}회 · ${fmtN(v.vph)}/시간 · 반응 ${v.score}점</span></span></a></li>`).join('')}</ul>`;
+    <span class="mini" style="${thumbBg(v)}">${miniImg(v)}</span>
+    <span><span class="tt">${esc(v.title)}</span> ${tierBadge(v)}<br><span class="mm">${esc(v.ch)} · 조회 ${fmtN(v.views)} · 댓글 ${fmtN(v.comments)}</span></span></a></li>`).join('')}</ul>`;
 }
 
 function prepare(){
-  DATA.videos.forEach(v=>{ v.kw=v.kw||[]; v.title=String(v.title||'').replace(/#\S+/g,'').replace(/\s+/g,' ').trim()||v.title; v.vph=v.views/v.hours; v.mult=v.views/Math.max(v.subs,1); v.likeRate=v.likes/Math.max(v.views,1); v.cmtRate=v.comments/Math.max(v.views,1); });
+  const clean=v=>{ v.kw=v.kw||[]; v.title=String(v.title||'').replace(/#\S+/g,'').replace(/\s+/g,' ').trim()||v.title; v.vph=v.views/v.hours; v.mult=v.views/Math.max(v.subs,1); v.likeRate=v.likes/Math.max(v.views,1); v.cmtRate=v.comments/Math.max(v.views,1); };
+  DATA.videos.forEach(clean); (DATA.charts||[]).forEach(clean);
   const vs=DATA.videos; if(!vs.length) return;
   const mx=k=>Math.max(...vs.map(v=>v[k]))||1;
-  const a=mx('vph'), b=mx('likeRate'), c=mx('cmtRate');
-  vs.forEach(v=>{ v.score=Math.round(100*(0.5*v.vph/a+0.3*v.likeRate/b+0.2*v.cmtRate/c)); });
+  const a=mx('vph'), b=mx('likeRate'), c=mx('cmtRate'), lc=Math.log10(mx('comments')+1)||1;
+  // 반응 점수: 댓글을 크게 봐요 (댓글 수 30 + 댓글율 25 + 조회 속도 30 + 좋아요율 15)
+  allVids().forEach(v=>{ v.score=Math.min(100,Math.round(100*(0.3*Math.log10(v.comments+1)/lc+0.25*Math.min(v.cmtRate/c,1)+0.3*Math.min(v.vph/a,1)+0.15*Math.min(v.likeRate/b,1)))); });
 }
 
 /* ===== 렌더 ===== */
 function renderTabs(){
   const items=[["all","전체",null],...Object.keys(DATA.cats).map(k=>[k,DATA.cats[k].label,catOf(k).color])];
   $('#tabs').innerHTML=items.map(([k,l,c])=>`<button class="tab" data-cat="${k}" aria-pressed="${state.cat===k}">${c?`<span class="dot" style="background:${c}"></span>`:''}${esc(l)}</button>`).join('');
+  document.querySelectorAll('#periodSeg button').forEach(b=>b.setAttribute('aria-pressed',b.dataset.period===state.period));
+  document.querySelectorAll('#tierSeg button').forEach(b=>b.setAttribute('aria-pressed',b.dataset.tier===state.tier));
+  document.querySelectorAll('.sort').forEach(b=>b.setAttribute('aria-pressed',b.dataset.sort===state.sort));
+}
+function renderBrief(){
+  const b=DATA.briefing||{}, ai=b.ai;
+  $('#briefSrc').textContent=ai?'AI가 오늘 데이터를 읽고 정리했어요 · 2시간마다 갱신':'자동 요약 · Gemini 연결 전';
+  $('#briefMain').innerHTML=ai?`
+    <p class="head">${esc(ai.headline||'')}</p>
+    ${(ai.points||[]).length?`<p class="lbl">오늘 꼭 알아야 할 것</p><ul>${ai.points.map(p=>`<li>${esc(p)}</li>`).join('')}</ul>`:''}
+    ${(ai.ideas||[]).length?`<p class="lbl">바로 써볼 콘텐츠 아이디어</p><ul class="ideas">${ai.ideas.map(p=>`<li>${esc(p)}</li>`).join('')}</ul>`:''}
+    ${ai.mood?`<p class="mood"><b>댓글 분위기</b> · ${esc(ai.mood)}</p>`:''}`
+  :`<p class="head">${esc((b.auto||[])[0]||'오늘의 데이터를 모으는 중이에요.')}</p><ul>${(b.auto||[]).slice(1).map(p=>`<li>${esc(p)}</li>`).join('')}</ul>
+    <p class="help">Gemini 키를 연결하면 마케팅 관점의 요약과 콘텐츠 아이디어가 여기에 나와요.</p>`;
+  const shorts=(b.shorts||[]).map(byId).filter(Boolean);
+  $('#briefSide').innerHTML=`
+    ${(b.issues||[]).length?`<div><p class="lbl">오늘의 대세 이슈</p><div class="chips">${b.issues.map(w=>`<button class="chipbtn" data-word="${esc(w.word)}">${esc(w.word)}<span class="n">${w.n}</span></button>`).join('')}</div></div>`:''}
+    ${(b.season||[]).length?`<div><p class="lbl">다가오는 시즌</p><div class="dd">${b.season.map(d=>`<button data-season="${esc(d.q)}" data-sname="${esc(d.name)}" data-sday="${d.dday}"><span class="d">${d.dday?`D-${d.dday}`:'D-DAY'}</span><span>${esc(d.name)} <span class="mm" style="color:var(--muted);font-size:12px">${esc(d.date.slice(5).replace('-','/'))}</span></span></button>`).join('')}</div></div>`:''}
+    ${shorts.length?`<div><p class="lbl">댓글 반응 최고 쇼츠</p><div class="rows">${shorts.map(v=>`<button data-id="${esc(v.id)}"><span class="mini" style="${thumbBg(v)}">${miniImg(v)}</span><span><span class="tt">${esc(v.title)}</span><span class="mm">조회 ${fmtN(v.views)} · 댓글 ${fmtN(v.comments)}</span></span></button>`).join('')}</div></div>`:''}
+    <p class="help" style="margin:0">지금 🔥 대세 ${b.hotCount??0}개 · 📈 떠오르는 ${b.riseCount??0}개</p>`;
 }
 function renderKw(){
-  const list=DATA.keywords||[];
-  const show=state.kwAll?list:list.slice(0,7);
+  const cur=DATA.keywords||[], p=per();
+  const curMap=Object.fromEntries(cur.map((k,i)=>[k.word,{...k,i}]));
+  let list;
+  if(p && p.runs>1 && (p.keywords||[]).length){
+    list=p.keywords.map(k=>({...curMap[k.word]||{word:k.word,news:[]}, word:k.word, runs:k.runs, days:k.days, steady:k.steady, now:!!curMap[k.word]}));
+    $('#kwSrc').textContent=`최근 ${PERIOD_L[state.period]} 동안 자주 뜬 순서 · 누르면 관련 기사`;
+  } else { list=cur.map(k=>({...k,now:true})); $('#kwSrc').textContent='구글 트렌드 · 지금 뜨는 순서 · 누르면 관련 기사'; }
+  state._kw=list;
+  const show=state.kwAll?list:list.slice(0,8);
   $('#kw').innerHTML=show.map((k,i)=>{
-    const chg=k.chg==="new"?'<span class="chg new">NEW</span>':k.chg>0?`<span class="chg up">▲${k.chg}</span>`:k.chg<0?`<span class="chg down">▼${-k.chg}</span>`:'<span class="chg down">–</span>';
-    const sub=[k.traffic?`검색 ${k.traffic}`:'', (k.news||[]).length?`기사 ${k.news.length}`:''].filter(Boolean).join(' · ');
+    const chg=k.runs?(k.steady?'<span class="badge b-steady">지속</span>':(k.now?'<span class="badge b-now">지금</span>':'')):
+      (k.chg==="new"?'<span class="chg new">NEW</span>':k.chg>0?`<span class="chg up">▲${k.chg}</span>`:k.chg<0?`<span class="chg down">▼${-k.chg}</span>`:'<span class="chg down">–</span>');
+    const sub=[k.traffic?`검색 ${k.traffic}`:'', k.days>1?`${k.days}일 연속`:'', (k.news||[]).length?`기사 ${k.news.length}`:''].filter(Boolean).join(' · ');
     return `<li><button data-kwi="${i}"><span class="r num">${i+1}</span><span class="w">${esc(k.word)}${sub?`<small>${esc(sub)}</small>`:''}</span>${chg}</button></li>`;}).join('') || '<li class="empty">아직 수집된 검색어가 없어요.</li>';
-  const more=$('#kwMore'); more.hidden=list.length<=7; more.textContent=state.kwAll?'접기':`${list.length-7}개 더 보기`;
+  const more=$('#kwMore'); more.hidden=list.length<=8; more.textContent=state.kwAll?'접기':`${list.length-8}개 더 보기`;
 }
 function renderIssues(){
-  const key=state.cat==="all"?"all":state.cat;
+  const key=state.cat==="all"?"all":state.cat, p=per();
   const items=(DATA.issues||{})[key]||[];
-  const words=(DATA.issueWords||{})[key]||[];
-  $('#issueSrc').textContent=state.cat==="all"?'여러 언론사가 오늘 같이 다룬 주제':`${catOf(state.cat).label} 관련 오늘 기사`;
-  $('#issueWords').innerHTML=words.map((w,i)=>`<button class="chipbtn" data-iw="${i}">${esc(w.word)}<span>${w.n}</span></button>`).join('');
+  let words=(DATA.issueWords||{})[key]||[];
+  if(p && p.runs>1 && (p.issueWords||{})[key]) words=p.issueWords[key];
+  $('#issueSrc').textContent=state.cat==="all"?`여러 언론사가 같이 다룬 주제 · 키워드는 최근 ${PERIOD_L[state.period]} 기준`:`${catOf(state.cat).label} 관련 오늘 기사`;
+  $('#issueWords').innerHTML=words.map(w=>`<button class="chipbtn" data-word="${esc(w.word)}">${esc(w.word)}${w.steady?'<span class="badge b-steady">지속</span>':`<span class="n">${w.n}</span>`}</button>`).join('');
   const show=state.issueAll?items:items.slice(0,6);
-  $('#issues').innerHTML=show.length?newsList(show).replace(/^<ul class="news">|<\/ul>$/g,''):'<li class="empty">아직 수집된 기사가 없어요. 다음 수집 때 채워져요.</li>';
+  $('#issues').innerHTML=show.length?newsItems(show):'<li class="empty">아직 수집된 기사가 없어요. 다음 수집 때 채워져요.</li>';
   const more=$('#issueMore'); more.hidden=items.length<=6; more.textContent=state.issueAll?'접기':`기사 ${items.length-6}개 더 보기`;
 }
 const SORT_INFO={
-  vph:{label:"시간당 조회수", desc:"업로드 후 <b>1시간에 평균 몇 번</b> 조회됐는지. 지금 가장 빨리 퍼지는 순서예요.", val:v=>`${fmtN(v.vph)}/시간`, sub:v=>`총 ${fmtN(v.views)}회`},
-  score:{label:"반응 점수", desc:"조회 속도·좋아요율·댓글율을 합친 <b>몰입도 점수(0–100)</b>. 시청지속시간 대신 쓰는 지표예요.", val:v=>`${v.score}점`, sub:v=>`좋아요 ${(v.likeRate*100).toFixed(1)}% · 댓글 ${(v.cmtRate*100).toFixed(2)}%`},
-  mult:{label:"구독자 대비", desc:"구독자 수의 <b>몇 배가 봤는지</b>. 알고리즘이 구독자 밖으로 퍼뜨린 영상이에요.", val:v=>`구독자의 ×${v.mult>=10?Math.round(v.mult):v.mult.toFixed(1)}`, sub:v=>`구독자 ${fmtN(v.subs)} · ${fmtN(v.views)}회`}
+  comments:{desc:"<b>댓글이 많은 순서</b>예요. 사람들이 의견을 많이 남긴, 이야기가 되는 영상이에요.", val:v=>`댓글 ${fmtN(v.comments)}`, sub:v=>`조회 ${fmtN(v.views)} · 댓글율 ${(v.cmtRate*100).toFixed(2)}%`, key:'comments'},
+  vph:{desc:"업로드 후 <b>1시간에 평균 몇 번</b> 조회됐는지. 지금 가장 빨리 퍼지는 순서예요.", val:v=>`${fmtN(v.vph)}/시간`, sub:v=>`조회 ${fmtN(v.views)} · 댓글 ${fmtN(v.comments)}`, key:'vph'},
+  score:{desc:"댓글 수·댓글율·조회 속도·좋아요율을 합친 <b>반응 점수(0–100)</b>. 댓글 비중을 크게 뒀어요.", val:v=>`${v.score}점`, sub:v=>`댓글 ${fmtN(v.comments)} · 좋아요 ${(v.likeRate*100).toFixed(1)}%`, key:'score'},
+  mult:{desc:"구독자 수의 <b>몇 배가 봤는지</b>. 알고리즘이 구독자 밖으로 퍼뜨린 영상이에요.", val:v=>`구독자의 ×${v.mult>=10?Math.round(v.mult):v.mult.toFixed(1)}`, sub:v=>`구독자 ${fmtN(v.subs)} · 조회 ${fmtN(v.views)}`, key:'mult'}
 };
-function thumbHtml(v,i,cls=''){
+function thumbHtml(v,i){
   const c=catOf(v.cat), light=c.ink!=='#fff';
   const img=v.thumb&&!DATA.sample?`<img src="${esc(v.thumb)}" alt="" loading="lazy" onerror="this.parentNode.classList.remove('has-img');this.remove()">`:'';
   const txt=img?'#fff':(light?'#17203A':'#fff');
-  return `<div class="thumb${img?' has-img':''} ${cls}" style="${thumbBg(v)}">${img}
-    ${i!=null?`<span class="rank" style="color:${txt}">${i+1}</span>`:''}<span class="dur num">${durTxt(v.dur)}</span>
+  return `<div class="thumb${img?' has-img':''}" style="${thumbBg(v)}">${img}
+    ${i!=null?`<span class="rank" style="color:${txt}">${i+1}</span>`:''}<span class="dur num">${durTxt(v.dur)}</span>${v.tier?`<span class="tier">${tierBadge(v)}</span>`:''}
     <span class="t" style="color:${txt};${img||!light?'':'text-shadow:none;'}">${esc(v.title)}</span></div>`;
 }
+function stripList(){
+  const h=PERIOD_H[state.period];
+  return DATA.videos.filter(inCat).filter(v=>v.hours<=h).filter(v=>state.tier==='all'||(state.tier==='hot'?v.tier==='hot':!!v.tier));
+}
 function renderStrip(){
-  const S=SORT_INFO[state.sort];
-  const list=DATA.videos.filter(inCat).sort((a,b)=>b[state.sort]-a[state.sort]).slice(0,30);
-  const top=list.length?list[0][state.sort]:1;
+  const S=SORT_INFO[state.sort], th=DATA.thresholds||{hot:[1e6,1000],rise:[1e5,100]};
+  const list=stripList().sort((a,b)=>b[S.key]-a[S.key]).slice(0,30);
+  const top=list.length?list[0][S.key]:1;
+  $('#hotSrc').textContent=`최근 ${PERIOD_L[state.period]} 업로드 · 🔥 대세 = 조회 ${fmtN(th.hot[0])}+ & 댓글 ${fmtN(th.hot[1])}+ · 📈 떠오르는 = 조회 ${fmtN(th.rise[0])}+ & 댓글 ${fmtN(th.rise[1])}+`;
   $('#sortDesc').innerHTML=S.desc;
-  $('#stripEmpty').hidden=!!list.length;
+  const em=$('#stripEmpty'); em.hidden=!!list.length;
+  em.textContent=state.tier==='hot'?`최근 ${PERIOD_L[state.period]} 안에 대세 기준을 넘은 쇼츠가 없어요. 기간을 늘리거나 ‘떠오르는 이상’을 눌러보세요.`:'조건에 맞는 쇼츠가 아직 없어요. 기간을 늘리거나 ‘전체’를 눌러보세요.';
   $('#stripCount').textContent=list.length?`${list.length}개 · 옆으로 넘겨서 더 보기`:'';
   $('#strip').innerHTML=list.map((v,i)=>`<button class="short" data-id="${esc(v.id)}" aria-label="${esc(v.title)} 자세히 보기">
       ${thumbHtml(v,i)}
       <div class="stats">
         <div class="big num">${S.val(v)}</div>
         <div class="sub num">${S.sub(v)}</div>
-        <div class="bar"><span style="width:${Math.max(4,Math.round(100*v[state.sort]/top))}%"></span></div>
+        <div class="bar"><span style="width:${Math.max(4,Math.round(100*v[S.key]/top))}%"></span></div>
         <div class="ch">${esc(v.ch)}</div>
       </div></button>`).join('');
   $('#strip').scrollLeft=0;
 }
+function renderComments(){
+  const ai=(DATA.briefing||{}).ai;
+  const mood=$('#mood'); mood.hidden=!(ai&&ai.mood); if(ai&&ai.mood) mood.innerHTML=`<b>오늘 댓글 분위기</b> · ${esc(ai.mood)}`;
+  const all=(DATA.commentIds||[]).map(byId).filter(v=>v&&(state.cat==='all'||v.cat===state.cat));
+  const vids=state.cmtAll?all:all.slice(0,6);
+  const cm=$('#cmtMore'); cm.hidden=all.length<=6; cm.textContent=state.cmtAll?'접기':`${all.length-6}개 더 보기`;
+  $('#cmts').innerHTML=vids.map(v=>{
+    const cs=v.topComments||[];
+    return `<div class="cm"><div class="top"><div><div class="tt">${esc(v.title)}</div><div class="mm">${esc(catOf(v.cat).label)} · 조회 ${fmtN(v.views)} · 댓글 ${fmtN(v.comments)}</div></div>${tierBadge(v)}</div>
+      ${v.commentSummary?`<div class="sum">💬 ${esc(v.commentSummary)}</div>`:''}
+      ${cs.slice(0,2).map(c=>`<q>${esc(c.text)}<span>👍 ${fmtN(c.likes)}</span></q>`).join('')}
+      <button class="go" data-cmt="${esc(v.id)}">댓글 ${cs.length}개 모두 보기</button></div>`;}).join('') || '<p class="empty">이 분야에서 댓글을 가져온 영상이 아직 없어요.</p>';
+}
+function renderChart(){
+  const list=(DATA.charts||[]).slice().sort((a,b)=>a.chart-b.chart);
+  const show=state.chartAll?list:list.slice(0,8);
+  $('#chart').innerHTML=show.map(v=>`<tr class="row-click" data-id="${esc(v.id)}" tabindex="0"><td class="n num">${v.chart}</td>
+    <td class="t">${esc(v.title)} ${tierBadge(v)}<div style="font-weight:400;font-size:12px;color:var(--muted)">${esc(v.ch)} · ${durTxt(v.dur)}</div></td>
+    <td class="n num">${fmtN(v.views)}</td><td class="n num hide-sm">${fmtN(v.comments)}</td></tr>`).join('')||'<tr><td colspan="4" class="empty">아직 수집된 차트가 없어요.</td></tr>';
+  const more=$('#chartMore'); more.hidden=list.length<=8; more.textContent=state.chartAll?'접기':`${list.length-8}개 더 보기`;
+}
 function renderUnder(){
-  const list=DATA.videos.filter(inCat).filter(v=>v.subs<100000&&v.mult>=2).sort((a,b)=>b.mult-a.mult).slice(0,6);
+  const h=PERIOD_H[state.period];
+  const list=DATA.videos.filter(inCat).filter(v=>v.hours<=h&&v.subs<100000&&v.mult>=2).sort((a,b)=>b.mult-a.mult).slice(0,6);
   $('#under').innerHTML=list.map(v=>`<tr class="row-click" data-id="${esc(v.id)}" tabindex="0">
     <td><span class="catbar" style="background:${catOf(v.cat).color}"></span></td>
-    <td class="t">${esc(v.title)}<div style="font-weight:400;font-size:12px;color:var(--muted)">${esc(v.ch)}</div></td>
+    <td class="t">${esc(v.title)}<div style="font-weight:400;font-size:12px;color:var(--muted)">${esc(v.ch)} · 댓글 ${fmtN(v.comments)}</div></td>
     <td class="n num hide-sm">${fmtN(v.subs)}</td><td class="n num">${fmtN(v.views)}</td>
     <td class="n"><span class="mult num">×${Math.round(v.mult)}</span></td></tr>`).join('') || '<tr><td colspan="5" class="empty">구독자 10만 이하 채널 중 크게 터진 영상이 아직 없어요.</td></tr>';
 }
-function renderAi(){
-  const s=DATA.summary||{};
-  $('#aiSrc').textContent=s.auto?'수집한 쇼츠 자동 분석 · AI 연결 전':'AI 분석';
-  const words=s.words||[];
-  $('#ai').innerHTML=`<p class="lead">${esc(s.lead)}</p>${(s.paras||[]).map(p=>`<p>${esc(p)}</p>`).join('')}
-    ${words.length?`<p class="lbl">상위 쇼츠 제목에 자주 나온 말</p><div class="chips">${words.map((w,i)=>`<button class="chipbtn" data-sw="${i}">${esc(w)}</button>`).join('')}</div>`:''}
-    ${(s.tips||[]).length?`<p class="lbl">따라 해볼 만한 것</p><ul>${s.tips.map(t=>`<li>${esc(t)}</li>`).join('')}</ul>`:''}
-    ${(s.top||[]).length?`<button class="linkbtn" data-open="top">상위 쇼츠 ${s.top.length}개 자세히 보기</button>`:''}`;
-}
 function renderFmt(){
-  $('#fmt').innerHTML=(DATA.formats||[]).map((f,i)=>`<li><button data-fi="${i}"><span class="name">${esc(f.name)}${f.n?` <span>${f.n}개</span>`:''}</span><span class="lift num${String(f.lift).startsWith('-')?' neg':''}">${esc(f.lift)}</span><span class="ex">예: ${esc(f.ex)}</span></button></li>`).join('')||'<li class="empty">형식을 비교할 만큼 영상이 모이지 않았어요.</li>';
+  const neg=s=>String(s).startsWith('-')?' neg':'';
+  $('#fmt').innerHTML=(DATA.formats||[]).map((f,i)=>`<li><button data-fi="${i}"><span class="name">${esc(f.name)} <span>${f.n}개</span></span><span class="lift num${neg(f.lift)}">${esc(f.lift)}</span><span class="ex">예: ${esc(f.ex)}</span></button></li>`).join('')||'<li class="empty">형식을 비교할 만큼 영상이 모이지 않았어요.</li>';
+  $('#len').innerHTML=(DATA.lengths||[]).map(l=>`<li><div class="row"><span class="name">${esc(l.name)} <span>${l.n}개</span></span><span class="lift num${neg(l.lift)}">${esc(l.lift)}</span></div></li>`).join('')||'<li class="empty">아직 데이터가 없어요.</li>';
 }
 function renderHidden(){
   document.querySelectorAll('section.panel').forEach(s=>s.hidden=hidden.includes(s.id));
@@ -424,7 +536,7 @@ function renderHidden(){
   document.querySelector('main').style.gridTemplateColumns=leftHidden?'1fr':'';
   $('#colLeft').style.display=leftHidden?'none':'';
 }
-function renderAll(){ renderTabs(); renderKw(); renderIssues(); renderStrip(); renderUnder(); renderAi(); renderFmt(); renderHidden(); }
+function renderAll(){ renderTabs(); renderBrief(); renderKw(); renderIssues(); renderStrip(); renderComments(); renderChart(); renderUnder(); renderFmt(); renderHidden(); }
 
 /* ===== 상세 시트 ===== */
 function sheet(title,sub,body){
@@ -433,75 +545,86 @@ function sheet(title,sub,body){
   if(!d.open) d.showModal();
   d.querySelector('.sh-body').scrollTop=0;
 }
-const matchVideos=w=>{const k=w.replace(/\s+/g,'');return DATA.videos.filter(v=>v.title.replace(/\s+/g,'').includes(k)).sort((a,b)=>b.vph-a.vph).slice(0,10);};
+const matchVideos=w=>{const k=w.replace(/\s+/g,'');return allVids().filter(v=>v.title.replace(/\s+/g,'').includes(k)).sort((a,b)=>b.comments-a.comments).slice(0,10);};
+const matchNews=w=>Object.values(DATA.issues||{}).flat().filter((n,i,a)=>a.findIndex(x=>x.url===n.url)===i).filter(n=>n.title.includes(w));
 function openKeyword(k){
-  const vids=DATA.videos.filter(v=>v.kw.includes(k.word)).concat(matchVideos(k.word)).filter((v,i,a)=>a.indexOf(v)===i).slice(0,10);
-  sheet(esc(k.word), [k.traffic?`구글 검색 ${esc(k.traffic)}`:'', '지금 한국에서 검색이 급증한 말'].filter(Boolean).join(' · '),
-    `${(k.news||[]).length?`<h4>관련 기사</h4>${newsList(k.news)}`:''}
+  const vids=allVids().filter(v=>(v.kw||[]).includes(k.word)).concat(matchVideos(k.word)).filter((v,i,a)=>a.indexOf(v)===i).slice(0,10);
+  const news=(k.news||[]).concat(matchNews(k.word)).filter((n,i,a)=>a.findIndex(x=>x.url===n.url)===i);
+  const sub=[k.traffic?`구글 검색 ${esc(k.traffic)}`:'', k.runs?`최근 ${PERIOD_L[state.period]} 중 ${k.runs}번 등장${k.days>1?` (${k.days}일)`:''}`:''].filter(Boolean).join(' · ');
+  sheet(esc(k.word), sub||'지금 한국에서 검색이 급증한 말',
+    `<h4>관련 기사</h4>${news.length?`<ul class="news">${newsItems(news)}</ul>`:'<p class="empty">수집된 기사가 없어요. 아래 바로가기로 찾아보세요.</p>'}
      <h4>더 찾아보기</h4>${goLinks(k.word)}
-     <h4>관련 쇼츠</h4>${vList(vids)}`);
+     <h4>관련 영상</h4>${vList(vids)}`);
 }
-function openIssueWord(w){
-  const key=state.cat==="all"?"all":state.cat;
-  const pool=Object.values(DATA.issues||{}).flat().filter((n,i,a)=>a.findIndex(x=>x.url===n.url)===i);
-  const items=pool.filter(n=>n.title.includes(w.word));
-  sheet(esc(w.word), `오늘 기사 ${w.n}건 이상에서 함께 다룬 주제`,
-    `<h4>관련 기사</h4>${items.length?newsList(items):'<p class="empty">기사가 없어요.</p>'}
-     <h4>더 찾아보기</h4>${goLinks(w.word)}
-     <h4>관련 쇼츠</h4>${vList(matchVideos(w.word))}`);
+function openWord(w,sub){
+  sheet(esc(w), sub||'여러 언론사가 함께 다룬 주제',
+    `<h4>관련 기사</h4>${(()=>{const n=matchNews(w);return n.length?`<ul class="news">${newsItems(n)}</ul>`:'<p class="empty">기사가 없어요.</p>';})()}
+     <h4>더 찾아보기</h4>${goLinks(w)}
+     <h4>관련 영상</h4>${vList(matchVideos(w))}`);
+}
+function commentsHtml(v){
+  const cs=v.topComments||[];
+  if(!cs.length) return '';
+  return `<h4>인기 댓글</h4>${v.commentSummary?`<div class="cm"><div class="sum">💬 ${esc(v.commentSummary)}</div></div>`:''}<div class="cm" style="margin-top:8px">${cs.map(c=>`<q>${esc(c.text)}<span>👍 ${fmtN(c.likes)}</span></q>`).join('')}</div>`;
 }
 function openVideo(v){
   const c=catOf(v.cat);
-  sheet(esc(v.title), `${esc(v.ch)} · ${esc(c.label)}`,
+  sheet(esc(v.title), `${esc(v.ch)} · ${esc(c.label)} ${tierBadge(v)}`,
     `<div class="vd">${thumbHtml(v,null)}
-      <dl class="num"><dt>조회수</dt><dd>${fmtN(v.views)}회</dd><dt>올라온 지</dt><dd>${Math.round(v.hours)}시간</dd><dt>시간당</dt><dd>${fmtN(v.vph)}회</dd><dt>구독자</dt><dd>${fmtN(v.subs)} (×${Math.round(v.mult)})</dd><dt>좋아요율</dt><dd>${(v.likeRate*100).toFixed(1)}%</dd><dt>댓글율</dt><dd>${(v.cmtRate*100).toFixed(2)}%</dd><dt>반응 점수</dt><dd>${v.score}/100</dd><dt>길이</dt><dd>${v.dur}초</dd>${v.gain!=null?`<dt>지난 수집 후</dt><dd>+${fmtN(v.gain)}회</dd>`:''}</dl></div>
+      <dl class="num"><dt>조회수</dt><dd>${fmtN(v.views)}회</dd><dt>댓글</dt><dd>${fmtN(v.comments)}개 (${(v.cmtRate*100).toFixed(2)}%)</dd><dt>올라온 지</dt><dd>${v.hours>=48?Math.round(v.hours/24)+'일':Math.round(v.hours)+'시간'}</dd><dt>시간당</dt><dd>${fmtN(v.vph)}회</dd><dt>구독자</dt><dd>${fmtN(v.subs)} (×${Math.round(v.mult)})</dd><dt>좋아요율</dt><dd>${(v.likeRate*100).toFixed(1)}%</dd><dt>반응 점수</dt><dd>${v.score}/100</dd><dt>길이</dt><dd>${durTxt(v.dur)}</dd>${v.gain!=null?`<dt>지난 수집 후</dt><dd>+${fmtN(v.gain)}회</dd>`:''}</dl></div>
      <a class="btn" href="${ytUrl(v)}" target="_blank" rel="noopener">유튜브에서 보기</a>
-     ${v.kw.length?`<h4>관련 검색어</h4>${goLinks(v.kw[0])}`:''}`);
+     ${commentsHtml(v)}
+     ${(v.kw||[]).length?`<h4>관련 검색어: ${esc(v.kw[0])}</h4>${goLinks(v.kw[0])}`:''}`);
 }
 function openFormat(f){
-  const vids=(f.ids||[]).map(byId).filter(Boolean);
   sheet(esc(f.name), `${f.n}개 영상 · 평균보다 조회 속도 ${esc(f.lift)}`,
-    `<p class="help" style="margin-top:0">제목 패턴으로 분류했어요. 눌러서 유튜브에서 바로 볼 수 있어요.</p>${vList(vids)}`);
+    `<p class="help" style="margin-top:0">제목 패턴으로 분류했어요. 누르면 유튜브에서 바로 볼 수 있어요.</p>${vList((f.ids||[]).map(byId).filter(Boolean))}`);
 }
-function openTop(){
-  const vids=((DATA.summary||{}).top||[]).map(byId).filter(Boolean);
-  sheet('지금 가장 빨리 퍼지는 쇼츠', '시간당 조회수 기준 상위', vList(vids));
-}
-function openSummaryWord(w){
-  sheet(esc(w), '상위 쇼츠 제목에 자주 나온 말', `<h4>이 말이 들어간 쇼츠</h4>${vList(matchVideos(w))}<h4>더 찾아보기</h4>${goLinks(w)}`);
+function openSeason(q,name,dday){
+  sheet(esc(name), +dday?`D-${dday} · 미리 준비할 시즌`:'오늘이에요',
+    `<h4>관련 기사</h4>${(()=>{const n=((DATA.issues||{}).season||[]).filter(x=>x.title.includes(q));return n.length?`<ul class="news">${newsItems(n)}</ul>`:'<p class="empty">아직 기사가 많지 않아요.</p>';})()}
+     <h4>더 찾아보기</h4>${goLinks(q)}${goLinks(q+' 마케팅').replace('golinks','golinks" style="margin-top:6px')}
+     <h4>관련 영상</h4>${vList(matchVideos(q))}`);
 }
 
 /* ===== 이벤트 ===== */
 document.addEventListener('click',e=>{
-  const t=e.target.closest('[data-cat],[data-sort],[data-kwi],[data-iw],[data-sw],[data-fi],[data-open],[data-id],[data-hide],[data-show],[data-scroll],[data-close],#kwMore,#issueMore');
+  const t=e.target.closest('[data-cat],[data-sort],[data-tier],[data-period],[data-kwi],[data-word],[data-season],[data-fi],[data-cmt],[data-id],[data-hide],[data-show],[data-scroll],[data-close],#kwMore,#issueMore,#chartMore,#cmtMore');
   if(!t){ if(e.target.id==='dlg') $('#dlg').close(); return; }
   const ds=t.dataset;
   if(ds.close!==undefined){ $('#dlg').close(); return; }
   if(ds.scroll){ const s=$('#strip'); s.scrollBy({left:ds.scroll*s.clientWidth*0.85}); return; }
-  if(ds.kwi){ openKeyword(DATA.keywords[+ds.kwi]); return; }
-  if(ds.iw){ openIssueWord(((DATA.issueWords||{})[state.cat==="all"?"all":state.cat]||[])[+ds.iw]); return; }
-  if(ds.sw){ openSummaryWord(DATA.summary.words[+ds.sw]); return; }
+  if(ds.kwi){ openKeyword(state._kw[+ds.kwi]); return; }
+  if(ds.word){ openWord(ds.word); return; }
+  if(ds.season){ openSeason(ds.season,ds.sname,ds.sday); return; }
   if(ds.fi){ openFormat(DATA.formats[+ds.fi]); return; }
-  if(ds.open==='top'){ openTop(); return; }
+  if(ds.cmt){ openVideo(byId(ds.cmt)); return; }
   if(ds.id){ openVideo(byId(ds.id)); return; }
   if(ds.cat){ state.cat=ds.cat; state.issueAll=false; }
-  else if(ds.sort){ state.sort=ds.sort; document.querySelectorAll('.sort').forEach(b=>b.setAttribute('aria-pressed',b===t)); }
-  else if(ds.hide){ hidden.push(ds.hide); store.set('wd-hidden',hidden); }
-  else if(ds.show){ hidden=hidden.filter(x=>x!==ds.show); store.set('wd-hidden',hidden); }
+  else if(ds.sort){ state.sort=ds.sort; }
+  else if(ds.tier){ state.tier=ds.tier; }
+  else if(ds.period){ state.period=ds.period; store.set('wd-period',ds.period); }
+  else if(ds.hide){ hidden.push(ds.hide); store.set('wd-hidden3',hidden); }
+  else if(ds.show){ hidden=hidden.filter(x=>x!==ds.show); store.set('wd-hidden3',hidden); }
   else if(t.id==='kwMore'){ state.kwAll=!state.kwAll; }
   else if(t.id==='issueMore'){ state.issueAll=!state.issueAll; }
+  else if(t.id==='chartMore'){ state.chartAll=!state.chartAll; }
+  else if(t.id==='cmtMore'){ state.cmtAll=!state.cmtAll; }
   renderAll();
 });
 document.addEventListener('keydown',e=>{
   if((e.key==='Enter'||e.key===' ')&&e.target.matches('tr.row-click')){ e.preventDefault(); e.target.click(); }
 });
 
-/* ===== 시작: data.json 읽기 (없으면 샘플) ===== */
+/* ===== 시작: data.json 읽기 (없거나 예전 형식이면 샘플) ===== */
 let lastLoad=0;
 function load(){
   lastLoad=Date.now();
-  return fetch('data.json?t='+Date.now()).then(r=>{ if(!r.ok) throw 0; return r.json(); }).catch(()=>DATA||SAMPLE).then(d=>{
-    DATA=d; DATA.keywords=DATA.keywords||[]; prepare();
+  return fetch('data.json?t='+Date.now()).then(r=>{ if(!r.ok) throw 0; return r.json(); })
+    .then(d=>{ if(!d.cats||!d.cats.meme) throw 0; return d; })   // 새 수집기가 돌기 전엔 샘플
+    .catch(()=>DATA||SAMPLE).then(d=>{
+    DATA=d; DATA.keywords=DATA.keywords||[]; DATA.videos=DATA.videos||[]; prepare();
+    if(!DATA.cats[state.cat]) state.cat='all';
     $('#sampleBadge').hidden=!DATA.sample;
     const u=new Date(DATA.updatedAt);
     $('#updated').textContent=isNaN(u)?'':`업데이트 ${u.getMonth()+1}월 ${u.getDate()}일 ${String(u.getHours()).padStart(2,'0')}:${String(u.getMinutes()).padStart(2,'0')}`;
@@ -509,7 +632,6 @@ function load(){
   });
 }
 load();
-// 홈 화면 앱으로 다시 열었을 때 10분 넘었으면 새 데이터 불러오기
 document.addEventListener('visibilitychange',()=>{ if(!document.hidden && Date.now()-lastLoad>10*60*1000) load(); });
 </script>
 </body>
