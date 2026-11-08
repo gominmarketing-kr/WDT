@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-08T22:48+09:00",
+ "updatedAt": "2026-11-08T22:56+09:00",
  "cats": {
   "meme": {
    "label": "밈·바이럴"
@@ -31,15 +31,28 @@
   ]
  },
  "briefing": {
-  "issues": [],
+  "issues": [
+   {
+    "word": "챌린지",
+    "n": 6
+   },
+   {
+    "word": "팝업스토어",
+    "n": 6
+   },
+   {
+    "word": "화제",
+    "n": 4
+   }
+  ],
   "shorts": [
    "wmfCGc1fxpQ",
-   "DSMXlMkBmjI",
-   "lNbqV0smZlE"
+   "OGhS-3MAfIw",
+   "dVsOFqhilbw"
   ],
   "format": {
    "name": "실험·반응형",
-   "lift": "+374%",
+   "lift": "+196%",
    "n": 2,
    "ex": "반응터진 이준 NEON 챌린지 풀버전, 맘마의 릴스 편집 도전,응원 한마디 ",
    "ids": [
@@ -67,15 +80,52 @@
     "dday": 19
    }
   ],
-  "hotCount": 1,
-  "riseCount": 25,
+  "hotCount": 19,
+  "riseCount": 49,
   "auto": [
+   "오늘 여러 언론이 같이 다룬 주제는 ‘챌린지’, ‘팝업스토어’, ‘화제’이에요.",
    "댓글 반응이 가장 뜨거운 쇼츠는 ‘혼자 노래방에서 챌린지 연습하는 이준’(댓글 1,355개)예요.",
-   "제목 형식은 실험·반응형이 평균보다 +374% 빨리 퍼지고 있어요.",
+   "제목 형식은 실험·반응형이 평균보다 +196% 빨리 퍼지고 있어요.",
    "빼빼로데이까지 3일 남았어요."
-  ]
+  ],
+  "ai": {
+   "headline": "실험·반응형 콘텐츠가 강세인 오늘, 다가오는 빼빼로데이를 준비해요.",
+   "points": [
+    "실험·반응형 제목 형식이 평균 대비 +196%로 조회 성과가 가장 좋아요.",
+    "다가오는 빼빼로데이가 3일 앞으로 다가와 관련 마케팅 준비가 필요해요.",
+    "밈·바이럴 분야에서는 챌린지와 SNS 키워드가 꾸준히 화제예요."
+   ],
+   "ideas": [
+    "실험·반응형 제목을 활용해 신제품 팝업스토어 방문기를 제작해보세요.",
+    "빼빼로데이 D-3을 맞아 관련 혜택을 담은 숏폼 콘텐츠를 만들어보세요.",
+    "SNS에서 인기인 챌린지 요소를 브랜드 캠페인에 가볍게 녹여보세요."
+   ],
+   "mood": "사법부 판결, 행정 처리, 사건 사고 및 후속 조치 미흡에 대한 대중의 분노와 비판적인 반응이 지배적이에요."
+  }
  },
  "keywords": [
+  {
+   "word": "tvn",
+   "traffic": "100+",
+   "news": [
+    {
+     "title": "TVP zmienia ramówkę na czas żałoby narodowej. Zobaczymy „Rolnika”?",
+     "url": "https://telemagazyn.pl/tvp-zmienia-ramowke-na-czas-zaloby-narodowej-zobaczymy-rolnik-szuka-zony-zmiany-w-programie-tv/ar/c13p2-29509413",
+     "source": "Telemagazyn"
+    },
+    {
+     "title": "Flagi przed instytucjami UE opuszczone do połowy masztu na znak solidarności z Polską",
+     "url": "https://www.pap.pl/aktualnosci/flagi-przed-instytucjami-ue-opuszczone-do-polowy-masztu-na-znak-solidarnosci-z-polska",
+     "source": "Polska Agencja Prasowa SA"
+    },
+    {
+     "title": "Kolejni artyści odwołują występy po tragedii w Krakowie. Wśród nich Krzysztof Cugowski i Ralph Kaminski",
+     "url": "https://muzyka.interia.pl/pop/news-kolejni-artysci-odwoluja-wystepy-po-tragedii-w-krakowie-wsro,nId,23570749",
+     "source": "Interia Muzyka"
+    }
+   ],
+   "chg": "new"
+  },
   {
    "word": "철도망",
    "traffic": "200+",
@@ -96,7 +146,7 @@
      "source": "국제신문"
     }
    ],
-   "chg": "new"
+   "chg": -1
   },
   {
    "word": "제주항공",
@@ -118,7 +168,7 @@
      "source": "Daum"
     }
    ],
-   "chg": "new"
+   "chg": -1
   },
   {
    "word": "malut united vs persib bandung",
@@ -135,11 +185,11 @@
      "source": "Aktualita.co"
     }
    ],
-   "chg": -2
+   "chg": -1
   },
   {
    "word": "국민 총소득",
-   "traffic": "1000+",
+   "traffic": "2000+",
    "news": [
     {
      "title": "4인가구 소득 2억이라고?…'부자 한국' 속 서민의 한숨",
@@ -157,7 +207,7 @@
      "source": "한스경제"
     }
    ],
-   "chg": -2
+   "chg": -1
   },
   {
    "word": "최해천 교수",
@@ -179,35 +229,13 @@
      "source": "연합뉴스"
     }
    ],
-   "chg": -2
+   "chg": -1
   },
   {
    "word": "김세레나",
    "traffic": "200+",
    "news": [],
-   "chg": -2
-  },
-  {
-   "word": "박한이",
-   "traffic": "100+",
-   "news": [
-    {
-     "title": "[포토] 디아즈, 어쩌다 타격감 상 - 머니투데이",
-     "url": "https://www.mt.co.kr/sports/2026/11/08/2026110817500911158",
-     "source": "머니투데이"
-    },
-    {
-     "title": "[사진]부상으로 실려나가는 권동진",
-     "url": "https://www.chosun.com/sports/sports_photo/2026/11/08/MEYDONZSMJQTIOLDMIZDIZJTGY/",
-     "source": "조선일보"
-    },
-    {
-     "title": "'좌타 라인 무섭네' 삼성, 3회 2사 후 구자욱-디아즈-최형우-김영웅 4연속 안타 폭발...3-1 역전 [KS5]",
-     "url": "https://www.osen.co.kr/article/G1112906427",
-     "source": "OSEN"
-    }
-   ],
-   "chg": "new"
+   "chg": -1
   },
   {
    "word": "wec",
@@ -229,11 +257,33 @@
      "source": "WEC"
     }
    ],
-   "chg": -3
+   "chg": 0
+  },
+  {
+   "word": "박한이",
+   "traffic": "100+",
+   "news": [
+    {
+     "title": "[포토] 디아즈, 어쩌다 타격감 상 - 머니투데이",
+     "url": "https://www.mt.co.kr/sports/2026/11/08/2026110817500911158",
+     "source": "머니투데이"
+    },
+    {
+     "title": "[사진]부상으로 실려나가는 권동진",
+     "url": "https://www.chosun.com/sports/sports_photo/2026/11/08/MEYDONZSMJQTIOLDMIZDIZJTGY/",
+     "source": "조선일보"
+    },
+    {
+     "title": "'좌타 라인 무섭네' 삼성, 3회 2사 후 구자욱-디아즈-최형우-김영웅 4연속 안타 폭발...3-1 역전 [KS5]",
+     "url": "https://www.osen.co.kr/article/G1112906427",
+     "source": "OSEN"
+    }
+   ],
+   "chg": -2
   },
   {
    "word": "생계",
-   "traffic": "2000+",
+   "traffic": "5000+",
    "news": [
     {
      "title": "내년에 25조 쏟아붓는 기초연금…생계급여 깎여 노인빈곤 개선 '헛바퀴'",
@@ -251,29 +301,7 @@
      "source": "동아일보"
     }
    ],
-   "chg": -3
-  },
-  {
-   "word": "광안리해수욕장",
-   "traffic": "200+",
-   "news": [
-    {
-     "title": "광안리 해변에 돗자리 깔아두고 ‘10만 원’…중학생까지 자릿세 장사",
-     "url": "https://www.segye.com/newsView/20261108507475",
-     "source": "세계일보"
-    },
-    {
-     "title": "100만 인파 몰렸다‥부산불꽃축제",
-     "url": "https://imnews.imbc.com/replay/2026/nwdesk/article/6863938_37004.html",
-     "source": "MBC 뉴스"
-    },
-    {
-     "title": "\"암표 20만원에 범칙금 고작\"…여전한 불법 상행위에 시민들 '분통'",
-     "url": "https://www.newsis.com/view/NISX20261108_0003859370",
-     "source": "뉴시스"
-    }
-   ],
-   "chg": -3
+   "chg": -1
   }
  ],
  "issues": {
@@ -315,28 +343,28 @@
     "time": "2026-11-08T10:35+09:00"
    },
    {
-    "title": "12년 만에 ‘우렁찬 사자후’···삼성 라이온즈, 통산 9번째 KS 우승",
-    "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBIU2g1UE9TQjRZcXE1cW9lMm5RZTZPUmQ4UnZIVHVMaExJUklmdW9UOFlJNm0yb1hFQzEzVzNKd3FUZG5JMlVRdmt5OEYwV2UwcFpPSkVyWlcwUdIBX0FVX3lxTFBQcVV5QklOZXhWMUNwOTA2UjFYSElnUktJMXVpckZ2aU5PeDVXOXpiR08wOFFidFJkU0Vvbm9hV2ZiRXFLMTVFNWJXVVBZNGQyRDZsai1TcVZtY0U3RjVV?oc=5",
-    "source": "경향신문",
-    "time": "2026-11-08T18:09+09:00"
+    "title": "\"삼성 우승 세일이죠?\"…삼전 개미들 '웃픈 반응' 터졌다",
+    "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9oQkhYalZFUy1icWZabzVvaTZ4dVpUME12NEdiUHpuUzlzMEdNN0dndTlKRFk1ODBrMGwxQWU5OG11UTFxY2FOQ29udTgyWEZIWHV4akZRVFdHUQ?oc=5",
+    "source": "한국경제",
+    "time": "2026-11-08T17:47+09:00"
    },
    {
-    "title": "장동혁, 한동훈 복당론에 “한 사람 온다고 중도 확장 안 돼…비전 제시할 때”",
-    "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE53dHNiTHVqSTl0WV9nWHNKTUNDeDY0YkljaHRCdzdWa3BCNjQ0c3JIcjFTVk56dU1WNXdVQ3Q0MzE3d3FOS1VSVjlhR0YtUlpjMDFDR0VSN3BuX0U?oc=5",
-    "source": "KBS 뉴스",
-    "time": "2026-11-08T14:13+09:00"
+    "title": "청주서 여자친구 흉기로 살해한 20대 남성 체포",
+    "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1LUzY4d2s3LVl1M2N1bDhQeGNhTzQ0Q2ZOUDFuZkxXeHdOMVpYSHVVMEhLZUttV1VpMktlNlVIWVk5Tlo4dVlrVjhNaDZCUkFheVdrS0FXWXo3c2VJMU5yRzRNLVM3OFU?oc=5",
+    "source": "연합뉴스TV",
+    "time": "2026-11-08T20:25+09:00"
    },
    {
-    "title": "광안리 해변 자리 선점 뒤 “불꽃축제 명당 13만 원 팔아요”···부산경찰, 암표상 등 8명 적발",
-    "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE4zRkpHM0ttR2JpOS1GZFhjWGhoZmd0ZVNPZVNoM1pDbzB5SVhReU92ZDlvWUNrZ1dQTGF3eUJXeFBtQjRrcFBoMloyeDR0UWJ0YnBBQUk5NDBfZ9IBX0FVX3lxTE1lLWd2SlNqR3JZcHpVaGFsNk4wTGxCV3FGUjlYZlVReGxBanRDMmMzU3dJcS00TzRtNzRBc2NNVGNCYkhKNlUxaktJeC1zVk9YS3VBdlJ6dHUtMHhtVXFj?oc=5",
-    "source": "경향신문",
-    "time": "2026-11-08T14:19+09:00"
+    "title": "OECD, 한국 저출생 진단… \"지원 늘어도 직장 문화는 제자리\"",
+    "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOd2dqR2FDR3NLNXhVU0p0WDVSbnBwYkNDeEludXB2OFRTVXBYUUtoZkRLR2lKUDV3a3J1RURRaE45bTJHbG00WXpuVXdyakxCWHE2R2ZrMnRieDhBZGxIaWhzT3BPWnFfUHROR2pMSjBUNnRqekdTWlJrUE9VVmVhczNETm1aTENlZW9nQTlfWQ?oc=5",
+    "source": "조선일보",
+    "time": "2026-11-08T18:42+09:00"
    },
    {
-    "title": "필버 등 혼돈 속 내년 예산안 심사 본격화…충청권 동력 확보 배수진",
-    "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9DUWdJTzlUSENSNnNwMllzQmtIdndfRzM2LWktSWxnRGs3aEhNQ0dGUl90MUlGVzNQZzgwOGM5VXZ5b1dSRGI0SFQtMXFIQkZFdWVhcjhBVkl0bnZJMGRjUjRlcDBockIwQm8zNl9PWdIBc0FVX3lxTE95SnlMRnNObGpaRnNPaXhnTVl2bERodXplX0dzQ2dDZGZibThLWEd5ZmhEX1NnMkFzZDE1dnJXNThnTVYtM2h1NTgyd04zTTJxSHRRRmxhbWo1Rjd3QXVuN0V1VnAxN3pyU19NRGNOM3hna0E?oc=5",
-    "source": "대전일보",
-    "time": "2026-11-08T17:32+09:00"
+    "title": "장동혁 \"당내 문제 갖고 분란 만들면 단호히 조치\"",
+    "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTFB1dFNJaVJ5aVdfbjZ5SWgtdzBGQ0ZjenZTTjJVaVRBNDNKa2EtUzItXzRoQlRRQ1kwVXNyRjdYajZnSVFROXB1S1JuZktVRkptZ1ljcm92VHRqSk14Qkc4R19vQnZpcVA1akdtY0p0c2tOTlpodDVtb9IBeEFVX3lxTE5kaTVzWW83SmdHMmhsNFVFSWlHS0VVeGxMWTM5SW5ITWhlTnlaakF1SWdxOXhhWDQxNDdrT1Z2UmtCNmN4LUdndTZGeTgxck16WG5WQl9TQ1lYcHlxS3RkdFhBZTYza0YxTFVYMlZGVWM0Ml9JMkpvaA?oc=5",
+    "source": "MBC 뉴스",
+    "time": "2026-11-08T14:59+09:00"
    },
    {
     "title": "사우디 '심장부' 금융지구 피격…\"후티 공격에 아람코타워 파손\"(종합)",
@@ -345,10 +373,10 @@
     "time": "2026-11-08T20:35+09:00"
    },
    {
-    "title": "이란 강경파 \"美선거는 우리 승리\"…종전협상 요구 높여",
-    "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1UenhZaWZYSTY4dk5Xc0FoRFpxOHJDX2dDbjVhVnRnV1ZIMElTaXhEdk1IMEdlUEEybWZLRm1SbC04d0ptaGdTNExCeFp1U1lET180dEVfQXZfbHo5ZnJqZFlncW5Kc1E?oc=5",
-    "source": "연합뉴스TV",
-    "time": "2026-11-08T15:40+09:00"
+    "title": "‘탄핵 위기’ 헤그세스 “4년 임기 채울 것”…정면돌파 의지",
+    "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5heEFjMlQ3X2U4MEhhOC1VTFpCZUc0bi1YOUh0YmZUdUFiSnREUlVmN2ZVWXY1VEtxeExDX2trMnRxQTU5LXltX3YyVGhRdE1WeS1IRE1KZ2VpOGttcDNJSGJpS1lxNkVjTGFCQXFMRjVrLU3SAWZBVV95cUxNQkwyNXZUM3llS3VtaUtwTU5XLW00MW5OTU1vWE5hUW9ET3F5aHlZUXVLMFBaTkNIZzBVbmxveDdFcFVFVVJnZlE0YVFIeGxiSWJyVGU1Y1pqZDYyeUNVQjBxckk0cGc?oc=5",
+    "source": "동아일보",
+    "time": "2026-11-08T09:02+09:00"
    },
    {
     "title": "미 의회 장악한 민주당, 20조원 우크라 지원·러 제재 강화 추진",
@@ -357,10 +385,10 @@
     "time": "2026-11-08T18:40+09:00"
    },
    {
-    "title": "이스라엘 야권 지도자 아이젠코트, 연정 구성 작업에···‘네타냐후 장기집권’ 끝낼까",
-    "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE8wRGhxdFFhekJPeXlMZUE1WWlNdkE1dlBFNDdPeXl3VWpXc2ZDTnR0bkFmOHdrVnF4RW16WVBoN2ZQZ3l0TGl4XzNTV1BzS3pWMHp0LW16OV9lQdIBX0FVX3lxTE9tdUg4RWlVbXg3QXlXVGdJR1QtaDloWUR6MU1MSFJuR200ZUItOGlkZWJfWE5Ib0dhRl9WNExyUW5wTjBkejRsb3J1clIzR3RzYWhrRk5PNF9CVXhiM3hJ?oc=5",
-    "source": "경향신문",
-    "time": "2026-11-08T16:42+09:00"
+    "title": "폴란드 크라쿠프서 총기난사로 사상자 수십명 발생...'용의자는 극단적 민족주의자'",
+    "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBMSUZqN3pHZy1zbXhVbWl5ejNzYjBoREx4WmtyOS1mYnFPWFppZ0N3S3BBUDdINlBjVHhQZHRzbUZpVEFGRnVoWEVrRTVoTWVZN01HTlVha1ZKTVl5c0HSAWNBVV95cUxNd0VoaGpNQ2tBZ0FRcEkyajZtbGpsVHJ4LVBSbVBib2ZZRmpXX1plY09hYmRwMk5JTlNJT1lhVWJ0elFnZHlJUXN2endvYjlMMEtFeHl2MUdtQmdLY21ad2xOSVU?oc=5",
+    "source": "BBC",
+    "time": "2026-11-08T10:46+09:00"
    },
    {
     "title": "외인 조단위 순매도 속 코스피 급락…증권가 주목 업종은",
@@ -401,10 +429,10 @@
   ],
   "meme": [
    {
-    "title": "[포토] '제10회 루키브코 챌린지' 화보2",
-    "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE50TWVoWXFDNzJrb0JiTVpob2hHczhrWG03Rjc5a2ZQWjVoZF9TcHFhSDl2NVhfeFJsclp2Y1hyTE0zUFVfZTZKbExKOGlydHYwZFpyTk9IUXZIclZoZTg3UC1ucEdERF9zSGc?oc=5",
+    "title": "[포토] '제10회 루키브코 챌린지' 화보5",
+    "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1rcnFRYmxPaDgtNlZMcVN1TnlXU2dBVEdfR2lPT0dROTMzdDlmc3BNUEN6M3JKTzBNOGJaUFFRRzRnaTN1N2dvXzdVYTdNcWJ2Y0VHNHRqNVVsX3hfZmlkX2hZN3QtaERwMFE?oc=5",
     "source": "루키",
-    "time": "2026-11-08T22:36+09:00"
+    "time": "2026-11-08T22:51+09:00"
    },
    {
     "title": "‘레알 마드리드 에이스의 여자친구가 이렇게 유명했다니!’…벨링엄, 속옷 광고로 화제→110만 팔로워 모델 연인까지 재조명",
@@ -560,9 +588,9 @@
    },
    {
     "title": "현대차, 서울·대구서 ‘N 모먼트 팝업스토어’ 오픈",
-    "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBjaUtlMVF0RjVpTjktZUFiejREQzVqUHExSjJvVXF3eXpTUEs5VDhwNzQzR3l1aGljRVVQcFRGel9FM3ZUU00tUE9MLXdMcEZmOFQ4Ty1ra3EycWhFNjNwellXc3VGZ0kwSHB1M0dkcV9DX2tL0gF0QVVfeXFMUGNpS2UxUXRGNWlOOS1lQWJ6NERDNWpQcTFKMm9VcXd5elNQSzlUOHA3NDNHeXVoaWNFVVBwVEZ6X0UzdlRTTS1QT0wtd0xwRmY4VDhPLWtrcTJxaEU2M3B6WVdzdUZnSTBIcHUzR2RxX0Nfa0s?oc=5",
+    "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE9ELUVPMjBLLXdCdE80QUNfVDlDYk0tSVowOTdFYm5kS2dxWUFZQUZOYlFZSG5CXzRiTllaMm05TGpRcWpjMFB3VlNMYklhNEpsVFp0VUljSGFoOV9pWkdxWTJadjVCYkF1c3BPU1JtajZDQdIBdEFVX3lxTFBjaUtlMVF0RjVpTjktZUFiejREQzVqUHExSjJvVXF3eXpTUEs5VDhwNzQzR3l1aGljRVVQcFRGel9FM3ZUU00tUE9MLXdMcEZmOFQ4Ty1ra3EycWhFNjNwellXc3VGZ0kwSHB1M0dkcV9DX2tL?oc=5",
     "source": "이뉴스투데이",
-    "time": "2026-11-08T13:49+09:00"
+    "time": "2026-11-08T13:35+09:00"
    },
    {
     "title": "수출 전문 공장까지…농심 '신라면' 해외 공략 가속",
@@ -745,16 +773,28 @@
     "time": "2026-11-08T20:35+09:00"
    },
    {
-    "title": "12년 만에 정상에서 토해낸 ‘사자후’···삼성 라이온즈, 통산 9번째 KS 우승",
-    "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBIU2g1UE9TQjRZcXE1cW9lMm5RZTZPUmQ4UnZIVHVMaExJUklmdW9UOFlJNm0yb1hFQzEzVzNKd3FUZG5JMlVRdmt5OEYwV2UwcFpPSkVyWlcwUdIBX0FVX3lxTFBQcVV5QklOZXhWMUNwOTA2UjFYSElnUktJMXVpckZ2aU5PeDVXOXpiR08wOFFidFJkU0Vvbm9hV2ZiRXFLMTVFNWJXVVBZNGQyRDZsai1TcVZtY0U3RjVV?oc=5",
-    "source": "경향신문",
-    "time": "2026-11-08T18:09+09:00"
+    "title": "청주서 여자친구 흉기로 살해한 20대 남성 체포",
+    "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1LUzY4d2s3LVl1M2N1bDhQeGNhTzQ0Q2ZOUDFuZkxXeHdOMVpYSHVVMEhLZUttV1VpMktlNlVIWVk5Tlo4dVlrVjhNaDZCUkFheVdrS0FXWXo3c2VJMU5yRzRNLVM3OFU?oc=5",
+    "source": "연합뉴스TV",
+    "time": "2026-11-08T20:25+09:00"
    },
    {
-    "title": "12년 만에 ‘우렁찬 사자후’···삼성 라이온즈, 통산 9번째 KS 우승",
-    "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBIU2g1UE9TQjRZcXE1cW9lMm5RZTZPUmQ4UnZIVHVMaExJUklmdW9UOFlJNm0yb1hFQzEzVzNKd3FUZG5JMlVRdmt5OEYwV2UwcFpPSkVyWlcwUdIBX0FVX3lxTFBQcVV5QklOZXhWMUNwOTA2UjFYSElnUktJMXVpckZ2aU5PeDVXOXpiR08wOFFidFJkU0Vvbm9hV2ZiRXFLMTVFNWJXVVBZNGQyRDZsai1TcVZtY0U3RjVV?oc=5",
-    "source": "경향신문",
-    "time": "2026-11-08T18:09+09:00"
+    "title": "OECD, 한국 저출생 진단… \"지원 늘어도 직장 문화는 제자리\"",
+    "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOd2dqR2FDR3NLNXhVU0p0WDVSbnBwYkNDeEludXB2OFRTVXBYUUtoZkRLR2lKUDV3a3J1RURRaE45bTJHbG00WXpuVXdyakxCWHE2R2ZrMnRieDhBZGxIaWhzT3BPWnFfUHROR2pMSjBUNnRqekdTWlJrUE9VVmVhczNETm1aTENlZW9nQTlfWQ?oc=5",
+    "source": "조선일보",
+    "time": "2026-11-08T18:42+09:00"
+   },
+   {
+    "title": "이용철 법무장관 후보자 “공소취소 논란, 천천히 답할 것…대장동 사업 잘 몰라”",
+    "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1jdEhpc2xFVk81Mm9KbGFhUV9YejBUYTN6bVA1dks4SldNUWNUMnhFbDJMVTJFN2s5SmUwM2Z6TExOUG5HXy1oU1NzZFlTUWVxRFNhdFI4TGY2cDdycHZ3dG1oSVVwUDduX0E?oc=5",
+    "source": "한겨레",
+    "time": "2026-11-08T17:48+09:00"
+   },
+   {
+    "title": "\"삼성 우승 세일이죠?\"…삼전 개미들 '웃픈 반응' 터졌다",
+    "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9oQkhYalZFUy1icWZabzVvaTZ4dVpUME12NEdiUHpuUzlzMEdNN0dndTlKRFk1ODBrMGwxQWU5OG11UTFxY2FOQ29udTgyWEZIWHV4akZRVFdHUQ?oc=5",
+    "source": "한국경제",
+    "time": "2026-11-08T17:47+09:00"
    },
    {
     "title": "필버 등 혼돈 속 내년 예산안 심사 본격화…충청권 동력 확보 배수진",
@@ -775,34 +815,22 @@
     "time": "2026-11-08T16:57+09:00"
    },
    {
-    "title": "임광현 \"소방재원 확보에 미래대응기금 활용, 국회와 긴밀 협의\"",
-    "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBUZGtZYTJCaDdRVXNSVmpxaWxITnM4dnhuSVZVemh5OXFZYWp0UFRTeEJ5cndoeXI0UTMzalI1cElyUWxybU00eENlZEllMjBzRVlBZzExcmpBaU3SAWBBVV95cUxPSDdRUlIyYWFLai1oSHkzcUVPcE5IMGRwQmVQV3FGSndFcC1IbTN2RlJMektyakRuWDVjMUZGUGV0RDZRZlFKeGNrQjdaTkdCMTFmLTFaVllMYUVuczdKcnI?oc=5",
-    "source": "연합뉴스",
-    "time": "2026-11-08T16:56+09:00"
-   },
-   {
-    "title": "이용철 법무장관 후보자 인사청문 준비단 구성‥목요일 첫 출근",
-    "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE53SGNJMmdHNkxuMGI4UnBNVWdURjRKcHJxRjJnemVuYUx1REdBdTJma2pwWTlvVHViRGE0bmtTMlppTEk3a2o4OWprV1Bua2dSQmpRdVo2MkYzQmlkNDRnY3ZOWHlpRmdfVGF2ZUhJak4xMEkxYW5J0gF3QVVfeXFMT2VQbUdCVVNIQVpjNTJ6TUI2V0F6RmtzQzhLNVJqTGkzSG4ySnZpN1NyQTNYT1NrRjJ2X251eGxiTzhWb0xoVUhSWW5DUnhaZGNWTFBpQ19GYUZUdVRwUjFFMVBvU1B6X0VJdXJBVUU0XzRodXdROUU?oc=5",
+    "title": "김민석 \"소방 재정 확충은 선택 아닌 필수‥미래기금 활용 협의\"",
+    "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE13cW53eXJ4OGpPXzg2eVctVHhkcURsSE1TV0haNEhMcmZDQUxUSUktMHQ1SVlkX0tpTlNxX1lhSU0yZDZvN2tpa0xQd2VXaWIwY2lnd2NwNnpBVW1qaEVBZGhLSDJDS0tZRzlWbHFVdGhaTGpBMXk4WNIBeEFVX3lxTE1LTXRJZXdvQ0Q2VTBqOTRsMzVIQnlFbzhpVkszN0stQjJPMVVXV0FYbG8yc0U5MW43ZVFOSTc3b0RmOEJ2RmY3bmRyX0J2aWFxVDJ3QzFXRkhjdW5UU1hlVXZOV0prX1RaVDRuRERMNTlOVjJPVFF6UA?oc=5",
     "source": "MBC 뉴스",
-    "time": "2026-11-08T15:53+09:00"
+    "time": "2026-11-08T16:46+09:00"
    },
    {
-    "title": "이란 강경파 \"美선거는 우리 승리\"…종전협상 요구 높여",
-    "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1UenhZaWZYSTY4dk5Xc0FoRFpxOHJDX2dDbjVhVnRnV1ZIMElTaXhEdk1IMEdlUEEybWZLRm1SbC04d0ptaGdTNExCeFp1U1lET180dEVfQXZfbHo5ZnJqZFlncW5Kc1E?oc=5",
-    "source": "연합뉴스TV",
-    "time": "2026-11-08T15:40+09:00"
+    "title": "장동혁 \"당내 문제 갖고 분란 만들면 단호히 조치\"",
+    "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTFB1dFNJaVJ5aVdfbjZ5SWgtdzBGQ0ZjenZTTjJVaVRBNDNKa2EtUzItXzRoQlRRQ1kwVXNyRjdYajZnSVFROXB1S1JuZktVRkptZ1ljcm92VHRqSk14Qkc4R19vQnZpcVA1akdtY0p0c2tOTlpodDVtb9IBeEFVX3lxTE5kaTVzWW83SmdHMmhsNFVFSWlHS0VVeGxMWTM5SW5ITWhlTnlaakF1SWdxOXhhWDQxNDdrT1Z2UmtCNmN4LUdndTZGeTgxck16WG5WQl9TQ1lYcHlxS3RkdFhBZTYza0YxTFVYMlZGVWM0Ml9JMkpvaA?oc=5",
+    "source": "MBC 뉴스",
+    "time": "2026-11-08T14:59+09:00"
    },
    {
     "title": "\"우리가 걸배이가? 맛은 있네...\" 거리가 식탁 된 구미 라면 축제 가보니",
     "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQSjE2Q3dIUkpZd2ZwR05lRVV2cTBrMnpvV2tIdkFrSXRObDkwb2VyMHVabU03WEMybWdmMDFDNkh1ZVIxNFMtb3J1X3VDdXllSmY4V0lsbW5TMTU5Tjk0TjlRWFUwbFpUZ3lWb2ZsUGV2MnAyZ2d5Tk1kVjFQUlVFa3gxYXlLTXJqa1RxQUh4Yw?oc=5",
     "source": "조선일보",
     "time": "2026-11-08T14:23+09:00"
-   },
-   {
-    "title": "광안리 해변 자리 선점 뒤 “불꽃축제 명당 13만 원 팔아요”···부산경찰, 암표상 등 8명 적발",
-    "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE4zRkpHM0ttR2JpOS1GZFhjWGhoZmd0ZVNPZVNoM1pDbzB5SVhReU92ZDlvWUNrZ1dQTGF3eUJXeFBtQjRrcFBoMloyeDR0UWJ0YnBBQUk5NDBfZ9IBX0FVX3lxTE1lLWd2SlNqR3JZcHpVaGFsNk4wTGxCV3FGUjlYZlVReGxBanRDMmMzU3dJcS00TzRtNzRBc2NNVGNCYkhKNlUxaktJeC1zVk9YS3VBdlJ6dHUtMHhtVXFj?oc=5",
-    "source": "경향신문",
-    "time": "2026-11-08T14:19+09:00"
    }
   ],
   "season": [
@@ -839,7 +867,48 @@
   ]
  },
  "issueWords": {
-  "all": [],
+  "all": [
+   {
+    "word": "챌린지",
+    "n": 6
+   },
+   {
+    "word": "팝업스토어",
+    "n": 6
+   },
+   {
+    "word": "화제",
+    "n": 4
+   },
+   {
+    "word": "마케팅",
+    "n": 4
+   },
+   {
+    "word": "공소취소",
+    "n": 3
+   },
+   {
+    "word": "SNS",
+    "n": 3
+   },
+   {
+    "word": "운영",
+    "n": 3
+   },
+   {
+    "word": "대구서",
+    "n": 3
+   },
+   {
+    "word": "캠페인",
+    "n": 3
+   },
+   {
+    "word": "재정",
+    "n": 2
+   }
+  ],
   "meme": [
    {
     "word": "챌린지",
@@ -854,11 +923,11 @@
     "n": 3
    },
    {
-    "word": "유성국화축제",
+    "word": "만들었다고",
     "n": 2
    },
    {
-    "word": "만들었다고",
+    "word": "유성국화축제",
     "n": 2
    },
    {
@@ -888,11 +957,11 @@
     "n": 2
    },
    {
-    "word": "출시",
+    "word": "삼립",
     "n": 2
    },
    {
-    "word": "삼립",
+    "word": "출시",
     "n": 2
    },
    {
@@ -925,15 +994,15 @@
   "edit": [],
   "issue": [
    {
-    "word": "미래대응기금",
-    "n": 2
-   },
-   {
-    "word": "확보",
-    "n": 2
-   },
-   {
     "word": "공소취소",
+    "n": 3
+   },
+   {
+    "word": "재정",
+    "n": 2
+   },
+   {
+    "word": "소방",
     "n": 2
    },
    {
@@ -947,75 +1016,81 @@
     "n": 2
    },
    {
-    "word": "수능",
+    "word": "시즌",
     "n": 2
    },
    {
-    "word": "시즌",
+    "word": "수능",
     "n": 2
    }
   ]
  },
  "periods": {
   "12h": {
-   "runs": 1,
+   "runs": 2,
    "keywords": [
     {
      "word": "철도망",
-     "runs": 1,
+     "runs": 2,
      "days": 1,
      "steady": false
     },
     {
      "word": "제주항공",
-     "runs": 1,
+     "runs": 2,
      "days": 1,
      "steady": false
     },
     {
      "word": "malut united vs persib bandung",
-     "runs": 1,
+     "runs": 2,
      "days": 1,
      "steady": false
     },
     {
      "word": "국민 총소득",
-     "runs": 1,
+     "runs": 2,
      "days": 1,
      "steady": false
     },
     {
      "word": "최해천 교수",
-     "runs": 1,
+     "runs": 2,
      "days": 1,
      "steady": false
     },
     {
      "word": "김세레나",
-     "runs": 1,
+     "runs": 2,
      "days": 1,
      "steady": false
     },
     {
      "word": "박한이",
-     "runs": 1,
+     "runs": 2,
      "days": 1,
      "steady": false
     },
     {
      "word": "wec",
-     "runs": 1,
+     "runs": 2,
      "days": 1,
      "steady": false
     },
     {
      "word": "생계",
-     "runs": 1,
+     "runs": 2,
      "days": 1,
      "steady": false
     },
     {
      "word": "광안리해수욕장",
+     "runs": 1,
+     "days": 1,
+     "steady": false
+    },
+    {
+     "word": "tvn",
      "runs": 1,
      "days": 1,
      "steady": false
@@ -1025,43 +1100,43 @@
     "meme": [
      {
       "word": "챌린지",
-      "n": 1,
+      "n": 2,
       "days": 1,
       "steady": false
      },
      {
       "word": "화제",
-      "n": 1,
+      "n": 2,
       "days": 1,
       "steady": false
      },
      {
       "word": "SNS",
-      "n": 1,
+      "n": 2,
       "days": 1,
       "steady": false
      },
      {
       "word": "유성국화축제",
-      "n": 1,
+      "n": 2,
       "days": 1,
       "steady": false
      },
      {
       "word": "만들었다고",
-      "n": 1,
+      "n": 2,
       "days": 1,
       "steady": false
      },
      {
       "word": "직원들이",
-      "n": 1,
+      "n": 2,
       "days": 1,
       "steady": false
      },
      {
       "word": "성료",
-      "n": 1,
+      "n": 2,
       "days": 1,
       "steady": false
      }
@@ -1069,61 +1144,61 @@
     "product": [
      {
       "word": "팝업스토어",
-      "n": 1,
+      "n": 2,
       "days": 1,
       "steady": false
      },
      {
       "word": "대구서",
-      "n": 1,
+      "n": 2,
       "days": 1,
       "steady": false
      },
      {
       "word": "매출",
-      "n": 1,
+      "n": 2,
       "days": 1,
       "steady": false
      },
      {
       "word": "누네띠네",
-      "n": 1,
+      "n": 2,
       "days": 1,
       "steady": false
      },
      {
       "word": "출시",
-      "n": 1,
+      "n": 2,
       "days": 1,
       "steady": false
      },
      {
       "word": "삼립",
-      "n": 1,
+      "n": 2,
       "days": 1,
       "steady": false
      },
      {
       "word": "현대",
-      "n": 1,
+      "n": 2,
       "days": 1,
       "steady": false
      },
      {
       "word": "운영",
-      "n": 1,
+      "n": 2,
       "days": 1,
       "steady": false
      },
      {
       "word": "공략",
-      "n": 1,
+      "n": 2,
       "days": 1,
       "steady": false
      },
      {
       "word": "농심",
-      "n": 1,
+      "n": 2,
       "days": 1,
       "steady": false
      }
@@ -1131,18 +1206,30 @@
     "ad": [
      {
       "word": "마케팅",
-      "n": 1,
+      "n": 2,
       "days": 1,
       "steady": false
      },
      {
       "word": "캠페인",
-      "n": 1,
+      "n": 2,
       "days": 1,
       "steady": false
      }
     ],
     "issue": [
+     {
+      "word": "공소취소",
+      "n": 2,
+      "days": 1,
+      "steady": false
+     },
+     {
+      "word": "이용철",
+      "n": 2,
+      "days": 1,
+      "steady": false
+     },
      {
       "word": "미래대응기금",
       "n": 1,
@@ -1156,13 +1243,13 @@
       "steady": false
      },
      {
-      "word": "공소취소",
+      "word": "재정",
       "n": 1,
       "days": 1,
       "steady": false
      },
      {
-      "word": "이용철",
+      "word": "소방",
       "n": 1,
       "days": 1,
       "steady": false
@@ -1171,18 +1258,80 @@
     "season": [
      {
       "word": "혜택",
-      "n": 1,
+      "n": 2,
       "days": 1,
       "steady": false
      },
      {
       "word": "수능",
-      "n": 1,
+      "n": 2,
       "days": 1,
       "steady": false
      },
      {
       "word": "시즌",
+      "n": 2,
+      "days": 1,
+      "steady": false
+     }
+    ],
+    "all": [
+     {
+      "word": "챌린지",
+      "n": 1,
+      "days": 1,
+      "steady": false
+     },
+     {
+      "word": "팝업스토어",
+      "n": 1,
+      "days": 1,
+      "steady": false
+     },
+     {
+      "word": "화제",
+      "n": 1,
+      "days": 1,
+      "steady": false
+     },
+     {
+      "word": "마케팅",
+      "n": 1,
+      "days": 1,
+      "steady": false
+     },
+     {
+      "word": "공소취소",
+      "n": 1,
+      "days": 1,
+      "steady": false
+     },
+     {
+      "word": "SNS",
+      "n": 1,
+      "days": 1,
+      "steady": false
+     },
+     {
+      "word": "운영",
+      "n": 1,
+      "days": 1,
+      "steady": false
+     },
+     {
+      "word": "대구서",
+      "n": 1,
+      "days": 1,
+      "steady": false
+     },
+     {
+      "word": "캠페인",
+      "n": 1,
+      "days": 1,
+      "steady": false
+     },
+     {
+      "word": "재정",
       "n": 1,
       "days": 1,
       "steady": false
@@ -1192,7 +1341,7 @@
    "videos": [
     {
      "id": "wmfCGc1fxpQ",
-     "views": 6690961,
+     "views": 6698977,
      "comments": 1355,
      "cat": "meme",
      "title": "혼자 노래방에서 챌린지 연습하는 이준 #idol #아이돌 #kpop #케이팝 #이준 #a2olite #챌린지 #노래방 #neon #shorts",
@@ -1202,7 +1351,7 @@
     },
     {
      "id": "JwGKVntjznQ",
-     "views": 3684083,
+     "views": 3685813,
      "comments": 17,
      "cat": "meme",
      "title": "승우를 꽉잡아🤣 바치바치 😅#춤추는소정 #춤추는곰돌 #춤추는곰돌의랜덤댄스 #댄스 #쇼츠 #챌린지 #춤추는곰돌의타이머댄스 #shorts #danc",
@@ -1212,7 +1361,7 @@
     },
     {
      "id": "lNbqV0smZlE",
-     "views": 3066240,
+     "views": 3066971,
      "comments": 169,
      "cat": "meme",
      "title": "요즘 난리 난 댄스 챌린지 중 지켜보던 시민이 갑자기 난입했다고?! 😂",
@@ -1221,8 +1370,48 @@
      "dur": 10
     },
     {
+     "id": "6LBfugqJgWU",
+     "views": 2993015,
+     "comments": 1082,
+     "cat": "issue",
+     "title": "갤폴드8 펼치자 금이 쩍?…천만 조회수 영상의 반전 결말｜지금 이 뉴스",
+     "ch": "JTBC News",
+     "thumb": "https://i.ytimg.com/vi/6LBfugqJgWU/hqdefault.jpg",
+     "dur": 81
+    },
+    {
+     "id": "QzwQ2jkktOw",
+     "views": 2950688,
+     "comments": 2637,
+     "cat": "issue",
+     "title": "[뉴스 '꾹'] 구속된 金 자리 앉은 은현장, 가세연 직원에 손 내밀자 (2026.11.02/MBC뉴스)",
+     "ch": "MBCNEWS",
+     "thumb": "https://i.ytimg.com/vi/QzwQ2jkktOw/hqdefault.jpg",
+     "dur": 148
+    },
+    {
+     "id": "dVsOFqhilbw",
+     "views": 2642609,
+     "comments": 2221,
+     "cat": "issue",
+     "title": "[자막뉴스] 삿포로 공항 韓승객 대폭발..황당한 결항과정 '경악' (2026.11.05/MBC뉴스)",
+     "ch": "MBCNEWS",
+     "thumb": "https://i.ytimg.com/vi/dVsOFqhilbw/hqdefault.jpg",
+     "dur": 143
+    },
+    {
+     "id": "OGhS-3MAfIw",
+     "views": 2551666,
+     "comments": 2594,
+     "cat": "issue",
+     "title": "삿포로 공항 韓승객 대폭발..황당한 결항과정 '경악' #Shorts (MBC뉴스)",
+     "ch": "MBCNEWS",
+     "thumb": "https://i.ytimg.com/vi/OGhS-3MAfIw/hqdefault.jpg",
+     "dur": 131
+    },
+    {
      "id": "8bIAfvOjK2o",
-     "views": 2367175,
+     "views": 2372324,
      "comments": 53,
      "cat": "meme",
      "title": "스페셜티 가족의 연기 챌린지(with 삼양그룹)",
@@ -1232,8 +1421,8 @@
     },
     {
      "id": "wsJgLiriygs",
-     "views": 2293917,
-     "comments": 7,
+     "views": 2293942,
+     "comments": 8,
      "cat": null,
      "title": "261107 전설 무한의 계단",
      "ch": "전설",
@@ -1242,7 +1431,7 @@
     },
     {
      "id": "9-dgMb2EPKo",
-     "views": 2245681,
+     "views": 2246292,
      "comments": 151,
      "cat": null,
      "title": "GEN vs IG | 녹아웃 스테이지 4강 Day5 | 2026 월드 챔피언십",
@@ -1252,8 +1441,8 @@
     },
     {
      "id": "JTWLWrwFwAo",
-     "views": 2151836,
-     "comments": 699,
+     "views": 2157933,
+     "comments": 700,
      "cat": "meme",
      "title": "반응터진 이준 NEON 챌린지 풀버전.mp4",
      "ch": "워크맨-Workman",
@@ -1261,14 +1450,44 @@
      "dur": 25
     },
     {
+     "id": "7oNbWJEDMPg",
+     "views": 2097273,
+     "comments": 7390,
+     "cat": "issue",
+     "title": "세 살배기도 강제 인도‥아동이 '물건'인가 #Shorts (MBC뉴스)",
+     "ch": "MBCNEWS",
+     "thumb": "https://i.ytimg.com/vi/7oNbWJEDMPg/hqdefault.jpg",
+     "dur": 116
+    },
+    {
+     "id": "vlZjsJn2VXg",
+     "views": 1992393,
+     "comments": 6847,
+     "cat": "issue",
+     "title": "\"팔면 끝?\" '가성비' 중국 전기차의 반전..광주서 부산까지 '수리 난민' 된 BYD 차주들 (자막뉴스) / SBS",
+     "ch": "SBS 뉴스",
+     "thumb": "https://i.ytimg.com/vi/vlZjsJn2VXg/hqdefault.jpg",
+     "dur": 125
+    },
+    {
      "id": "nd3hpJ4oMpU",
-     "views": 1856567,
+     "views": 1865933,
      "comments": 1866,
      "cat": null,
      "title": "back number - 히로인 [ヒロイン] 🎵\"저 가수 입니다🎤\" by 강남",
      "ch": "동네친구 강나미 [Kangnami]",
      "thumb": "https://i.ytimg.com/vi/nd3hpJ4oMpU/hqdefault.jpg",
      "dur": 271
+    },
+    {
+     "id": "ZRXdjalLwO0",
+     "views": 1859802,
+     "comments": 3398,
+     "cat": "issue",
+     "title": "운전석 손 '삐죽' 내밀더니 '굉음'‥돌진 차량에 행인 '날벼락' #Shorts (MBC뉴스)",
+     "ch": "MBCNEWS",
+     "thumb": "https://i.ytimg.com/vi/ZRXdjalLwO0/hqdefault.jpg",
+     "dur": 85
     },
     {
      "id": "cQtp1RFJK84",
@@ -1281,176 +1500,112 @@
      "dur": 14
     },
     {
-     "id": "lyphlyNeFLA",
-     "views": 1337258,
-     "comments": 91,
-     "cat": "meme",
-     "title": "소정우 샤넬챌린지 오랜만이죠?🥰#춤추는소정 #춤추는곰돌 #춤추는곰돌의랜덤댄스 #댄스 #쇼츠 #챌린지#춤추는곰돌의타이머댄스 #shorts #dan",
-     "ch": "춤추는 소정 爱跳舞的晶晶",
-     "thumb": "https://i.ytimg.com/vi/lyphlyNeFLA/hqdefault.jpg",
-     "dur": 19
+     "id": "HVcau5wVSRg",
+     "views": 1718544,
+     "comments": 1037,
+     "cat": "issue",
+     "title": "[이 시각 세계] \"공 쫓다 골키퍼와 '쾅'\"‥병원 이송 이튿날 사망 (2026.11.04/뉴스투데이/MBC)",
+     "ch": "MBCNEWS",
+     "thumb": "https://i.ytimg.com/vi/HVcau5wVSRg/hqdefault.jpg",
+     "dur": 47
     },
     {
-     "id": "DSMXlMkBmjI",
-     "views": 1268676,
-     "comments": 281,
-     "cat": "meme",
-     "title": "축구 레전드들 전부 무너진 10m 드론 트래핑 챌린지 결과 ㄷㄷ#축구",
-     "ch": "숏포츠",
-     "thumb": "https://i.ytimg.com/vi/DSMXlMkBmjI/hqdefault.jpg",
-     "dur": 53
+     "id": "yxNJ9DIKTMw",
+     "views": 1618808,
+     "comments": 915,
+     "cat": "issue",
+     "title": "[자막뉴스] \"담배 하나 피우고 있을게!!\" 반말 찍찍…충격 영상 떴다 / JTBC News",
+     "ch": "JTBC News",
+     "thumb": "https://i.ytimg.com/vi/yxNJ9DIKTMw/hqdefault.jpg",
+     "dur": 107
     },
     {
-     "id": "chX0Z7gx-mg",
-     "views": 1230605,
-     "comments": 430,
-     "cat": "meme",
-     "title": "웃참 절대 불가능한 초등학생 답안지 ㅋㅋㅋ",
-     "ch": "벙구",
-     "thumb": "https://i.ytimg.com/vi/chX0Z7gx-mg/hqdefault.jpg",
-     "dur": 52
+     "id": "RhuYOg-vnTU",
+     "views": 1458727,
+     "comments": 830,
+     "cat": "issue",
+     "title": "[뉴스 '꾹'] \"와 28표 차? 이래서 투표가\"..공화 텃밭 미시시피 '대반전' (2026.11.05/MBC뉴스)",
+     "ch": "MBCNEWS",
+     "thumb": "https://i.ytimg.com/vi/RhuYOg-vnTU/hqdefault.jpg",
+     "dur": 154
     },
     {
-     "id": "6mz1F1o2TLg",
-     "views": 1152487,
-     "comments": 43,
-     "cat": "meme",
-     "title": "하이디라오 춤추는줄 알았는데…neon챌린지 죄송합니다#스디파 #neon",
-     "ch": "리즈시절찾기",
-     "thumb": "https://i.ytimg.com/vi/6mz1F1o2TLg/hqdefault.jpg",
-     "dur": 17
-    },
-    {
-     "id": "yRYjxcBHCzI",
-     "views": 978886,
-     "comments": 354,
-     "cat": "meme",
-     "title": "POV: 이준 다음 챌린지 유출",
-     "ch": "워크맨-Workman",
-     "thumb": "https://i.ytimg.com/vi/yRYjxcBHCzI/hqdefault.jpg",
-     "dur": 25
-    },
-    {
-     "id": "qFJZOMEM0vc",
-     "views": 871072,
-     "comments": 67,
-     "cat": "meme",
-     "title": "원더재빈 곶감챌린지 #왜요쌤 #dance #윤정아 #challenge #fyp",
-     "ch": "왜요쌤",
-     "thumb": "https://i.ytimg.com/vi/qFJZOMEM0vc/hqdefault.jpg",
-     "dur": 15
-    },
-    {
-     "id": "jx28RyWwi7k",
-     "views": 766148,
-     "comments": 1206,
-     "cat": null,
-     "title": "🤣혜안져스 대환장 성대모사 게임🤣 20분 동안 웃겨드립니닼ㅋㅋㅋㅋㅋㅋㅋㅋㅋ",
-     "ch": "혜안",
-     "thumb": "https://i.ytimg.com/vi/jx28RyWwi7k/hqdefault.jpg",
-     "dur": 1454
-    },
-    {
-     "id": "ebZ3V4R0T3w",
-     "views": 736277,
-     "comments": 129,
-     "cat": "meme",
-     "title": "3번의 챌린지에 모두 번복됩니다",
-     "ch": "스타포츠",
-     "thumb": "https://i.ytimg.com/vi/ebZ3V4R0T3w/hqdefault.jpg",
-     "dur": 29
-    },
-    {
-     "id": "ISiz0BVud0U",
-     "views": 602347,
-     "comments": 456,
-     "cat": "meme",
-     "title": "호기심 환장 RPG 댄스 챌린지 녜힁",
-     "ch": "김동희 세계관",
-     "thumb": "https://i.ytimg.com/vi/ISiz0BVud0U/hqdefault.jpg",
-     "dur": 14
-    },
-    {
-     "id": "Eo_7emRrCkI",
-     "views": 599858,
-     "comments": 254,
-     "cat": null,
-     "title": "💖200만 대형유튜버들을 설레게한 커플 소개팅 리뷰 [결말포함ㅋㅋㅋ]",
-     "ch": "김블루",
-     "thumb": "https://i.ytimg.com/vi/Eo_7emRrCkI/hqdefault.jpg",
-     "dur": 2434
-    },
-    {
-     "id": "pjh7DrYRLe8",
-     "views": 585323,
-     "comments": 242,
-     "cat": null,
-     "title": "렁가",
-     "ch": "괴물쥐 유튜브",
-     "thumb": "https://i.ytimg.com/vi/pjh7DrYRLe8/hqdefault.jpg",
-     "dur": 1378
+     "id": "eayeQgmkuvI",
+     "views": 1452887,
+     "comments": 5449,
+     "cat": "issue",
+     "title": "결국 북한 유산이 된 태권도…유네스코 '등재' 권고 받았다 [MBN 뉴스7]",
+     "ch": "MBN News",
+     "thumb": "https://i.ytimg.com/vi/eayeQgmkuvI/hqdefault.jpg",
+     "dur": 152
     }
    ]
   },
   "24h": {
-   "runs": 1,
+   "runs": 2,
    "keywords": [
     {
      "word": "철도망",
-     "runs": 1,
+     "runs": 2,
      "days": 1,
      "steady": false
     },
     {
      "word": "제주항공",
-     "runs": 1,
+     "runs": 2,
      "days": 1,
      "steady": false
     },
     {
      "word": "malut united vs persib bandung",
-     "runs": 1,
+     "runs": 2,
      "days": 1,
      "steady": false
     },
     {
      "word": "국민 총소득",
-     "runs": 1,
+     "runs": 2,
      "days": 1,
      "steady": false
     },
     {
      "word": "최해천 교수",
-     "runs": 1,
+     "runs": 2,
      "days": 1,
      "steady": false
     },
     {
      "word": "김세레나",
-     "runs": 1,
+     "runs": 2,
      "days": 1,
      "steady": false
     },
     {
      "word": "박한이",
-     "runs": 1,
+     "runs": 2,
      "days": 1,
      "steady": false
     },
     {
      "word": "wec",
-     "runs": 1,
+     "runs": 2,
      "days": 1,
      "steady": false
     },
     {
      "word": "생계",
-     "runs": 1,
+     "runs": 2,
      "days": 1,
      "steady": false
     },
     {
      "word": "광안리해수욕장",
+     "runs": 1,
+     "days": 1,
+     "steady": false
+    },
+    {
+     "word": "tvn",
      "runs": 1,
      "days": 1,
      "steady": false
@@ -1460,43 +1615,43 @@
     "meme": [
      {
       "word": "챌린지",
-      "n": 1,
+      "n": 2,
       "days": 1,
       "steady": false
      },
      {
       "word": "화제",
-      "n": 1,
+      "n": 2,
       "days": 1,
       "steady": false
      },
      {
       "word": "SNS",
-      "n": 1,
+      "n": 2,
       "days": 1,
       "steady": false
      },
      {
       "word": "유성국화축제",
-      "n": 1,
+      "n": 2,
       "days": 1,
       "steady": false
      },
      {
       "word": "만들었다고",
-      "n": 1,
+      "n": 2,
       "days": 1,
       "steady": false
      },
      {
       "word": "직원들이",
-      "n": 1,
+      "n": 2,
       "days": 1,
       "steady": false
      },
      {
       "word": "성료",
-      "n": 1,
+      "n": 2,
       "days": 1,
       "steady": false
      }
@@ -1504,61 +1659,61 @@
     "product": [
      {
       "word": "팝업스토어",
-      "n": 1,
+      "n": 2,
       "days": 1,
       "steady": false
      },
      {
       "word": "대구서",
-      "n": 1,
+      "n": 2,
       "days": 1,
       "steady": false
      },
      {
       "word": "매출",
-      "n": 1,
+      "n": 2,
       "days": 1,
       "steady": false
      },
      {
       "word": "누네띠네",
-      "n": 1,
+      "n": 2,
       "days": 1,
       "steady": false
      },
      {
       "word": "출시",
-      "n": 1,
+      "n": 2,
       "days": 1,
       "steady": false
      },
      {
       "word": "삼립",
-      "n": 1,
+      "n": 2,
       "days": 1,
       "steady": false
      },
      {
       "word": "현대",
-      "n": 1,
+      "n": 2,
       "days": 1,
       "steady": false
      },
      {
       "word": "운영",
-      "n": 1,
+      "n": 2,
       "days": 1,
       "steady": false
      },
      {
       "word": "공략",
-      "n": 1,
+      "n": 2,
       "days": 1,
       "steady": false
      },
      {
       "word": "농심",
-      "n": 1,
+      "n": 2,
       "days": 1,
       "steady": false
      }
@@ -1566,18 +1721,30 @@
     "ad": [
      {
       "word": "마케팅",
-      "n": 1,
+      "n": 2,
       "days": 1,
       "steady": false
      },
      {
       "word": "캠페인",
-      "n": 1,
+      "n": 2,
       "days": 1,
       "steady": false
      }
     ],
     "issue": [
+     {
+      "word": "공소취소",
+      "n": 2,
+      "days": 1,
+      "steady": false
+     },
+     {
+      "word": "이용철",
+      "n": 2,
+      "days": 1,
+      "steady": false
+     },
      {
       "word": "미래대응기금",
       "n": 1,
@@ -1591,13 +1758,13 @@
       "steady": false
      },
      {
-      "word": "공소취소",
+      "word": "재정",
       "n": 1,
       "days": 1,
       "steady": false
      },
      {
-      "word": "이용철",
+      "word": "소방",
       "n": 1,
       "days": 1,
       "steady": false
@@ -1606,18 +1773,80 @@
     "season": [
      {
       "word": "혜택",
-      "n": 1,
+      "n": 2,
       "days": 1,
       "steady": false
      },
      {
       "word": "수능",
-      "n": 1,
+      "n": 2,
       "days": 1,
       "steady": false
      },
      {
       "word": "시즌",
+      "n": 2,
+      "days": 1,
+      "steady": false
+     }
+    ],
+    "all": [
+     {
+      "word": "챌린지",
+      "n": 1,
+      "days": 1,
+      "steady": false
+     },
+     {
+      "word": "팝업스토어",
+      "n": 1,
+      "days": 1,
+      "steady": false
+     },
+     {
+      "word": "화제",
+      "n": 1,
+      "days": 1,
+      "steady": false
+     },
+     {
+      "word": "마케팅",
+      "n": 1,
+      "days": 1,
+      "steady": false
+     },
+     {
+      "word": "공소취소",
+      "n": 1,
+      "days": 1,
+      "steady": false
+     },
+     {
+      "word": "SNS",
+      "n": 1,
+      "days": 1,
+      "steady": false
+     },
+     {
+      "word": "운영",
+      "n": 1,
+      "days": 1,
+      "steady": false
+     },
+     {
+      "word": "대구서",
+      "n": 1,
+      "days": 1,
+      "steady": false
+     },
+     {
+      "word": "캠페인",
+      "n": 1,
+      "days": 1,
+      "steady": false
+     },
+     {
+      "word": "재정",
       "n": 1,
       "days": 1,
       "steady": false
@@ -1627,7 +1856,7 @@
    "videos": [
     {
      "id": "wmfCGc1fxpQ",
-     "views": 6690961,
+     "views": 6698977,
      "comments": 1355,
      "cat": "meme",
      "title": "혼자 노래방에서 챌린지 연습하는 이준 #idol #아이돌 #kpop #케이팝 #이준 #a2olite #챌린지 #노래방 #neon #shorts",
@@ -1637,7 +1866,7 @@
     },
     {
      "id": "JwGKVntjznQ",
-     "views": 3684083,
+     "views": 3685813,
      "comments": 17,
      "cat": "meme",
      "title": "승우를 꽉잡아🤣 바치바치 😅#춤추는소정 #춤추는곰돌 #춤추는곰돌의랜덤댄스 #댄스 #쇼츠 #챌린지 #춤추는곰돌의타이머댄스 #shorts #danc",
@@ -1647,7 +1876,7 @@
     },
     {
      "id": "lNbqV0smZlE",
-     "views": 3066240,
+     "views": 3066971,
      "comments": 169,
      "cat": "meme",
      "title": "요즘 난리 난 댄스 챌린지 중 지켜보던 시민이 갑자기 난입했다고?! 😂",
@@ -1656,8 +1885,48 @@
      "dur": 10
     },
     {
+     "id": "6LBfugqJgWU",
+     "views": 2993015,
+     "comments": 1082,
+     "cat": "issue",
+     "title": "갤폴드8 펼치자 금이 쩍?…천만 조회수 영상의 반전 결말｜지금 이 뉴스",
+     "ch": "JTBC News",
+     "thumb": "https://i.ytimg.com/vi/6LBfugqJgWU/hqdefault.jpg",
+     "dur": 81
+    },
+    {
+     "id": "QzwQ2jkktOw",
+     "views": 2950688,
+     "comments": 2637,
+     "cat": "issue",
+     "title": "[뉴스 '꾹'] 구속된 金 자리 앉은 은현장, 가세연 직원에 손 내밀자 (2026.11.02/MBC뉴스)",
+     "ch": "MBCNEWS",
+     "thumb": "https://i.ytimg.com/vi/QzwQ2jkktOw/hqdefault.jpg",
+     "dur": 148
+    },
+    {
+     "id": "dVsOFqhilbw",
+     "views": 2642609,
+     "comments": 2221,
+     "cat": "issue",
+     "title": "[자막뉴스] 삿포로 공항 韓승객 대폭발..황당한 결항과정 '경악' (2026.11.05/MBC뉴스)",
+     "ch": "MBCNEWS",
+     "thumb": "https://i.ytimg.com/vi/dVsOFqhilbw/hqdefault.jpg",
+     "dur": 143
+    },
+    {
+     "id": "OGhS-3MAfIw",
+     "views": 2551666,
+     "comments": 2594,
+     "cat": "issue",
+     "title": "삿포로 공항 韓승객 대폭발..황당한 결항과정 '경악' #Shorts (MBC뉴스)",
+     "ch": "MBCNEWS",
+     "thumb": "https://i.ytimg.com/vi/OGhS-3MAfIw/hqdefault.jpg",
+     "dur": 131
+    },
+    {
      "id": "8bIAfvOjK2o",
-     "views": 2367175,
+     "views": 2372324,
      "comments": 53,
      "cat": "meme",
      "title": "스페셜티 가족의 연기 챌린지(with 삼양그룹)",
@@ -1667,8 +1936,8 @@
     },
     {
      "id": "wsJgLiriygs",
-     "views": 2293917,
-     "comments": 7,
+     "views": 2293942,
+     "comments": 8,
      "cat": null,
      "title": "261107 전설 무한의 계단",
      "ch": "전설",
@@ -1677,7 +1946,7 @@
     },
     {
      "id": "9-dgMb2EPKo",
-     "views": 2245681,
+     "views": 2246292,
      "comments": 151,
      "cat": null,
      "title": "GEN vs IG | 녹아웃 스테이지 4강 Day5 | 2026 월드 챔피언십",
@@ -1687,8 +1956,8 @@
     },
     {
      "id": "JTWLWrwFwAo",
-     "views": 2151836,
-     "comments": 699,
+     "views": 2157933,
+     "comments": 700,
      "cat": "meme",
      "title": "반응터진 이준 NEON 챌린지 풀버전.mp4",
      "ch": "워크맨-Workman",
@@ -1696,14 +1965,44 @@
      "dur": 25
     },
     {
+     "id": "7oNbWJEDMPg",
+     "views": 2097273,
+     "comments": 7390,
+     "cat": "issue",
+     "title": "세 살배기도 강제 인도‥아동이 '물건'인가 #Shorts (MBC뉴스)",
+     "ch": "MBCNEWS",
+     "thumb": "https://i.ytimg.com/vi/7oNbWJEDMPg/hqdefault.jpg",
+     "dur": 116
+    },
+    {
+     "id": "vlZjsJn2VXg",
+     "views": 1992393,
+     "comments": 6847,
+     "cat": "issue",
+     "title": "\"팔면 끝?\" '가성비' 중국 전기차의 반전..광주서 부산까지 '수리 난민' 된 BYD 차주들 (자막뉴스) / SBS",
+     "ch": "SBS 뉴스",
+     "thumb": "https://i.ytimg.com/vi/vlZjsJn2VXg/hqdefault.jpg",
+     "dur": 125
+    },
+    {
      "id": "nd3hpJ4oMpU",
-     "views": 1856567,
+     "views": 1865933,
      "comments": 1866,
      "cat": null,
      "title": "back number - 히로인 [ヒロイン] 🎵\"저 가수 입니다🎤\" by 강남",
      "ch": "동네친구 강나미 [Kangnami]",
      "thumb": "https://i.ytimg.com/vi/nd3hpJ4oMpU/hqdefault.jpg",
      "dur": 271
+    },
+    {
+     "id": "ZRXdjalLwO0",
+     "views": 1859802,
+     "comments": 3398,
+     "cat": "issue",
+     "title": "운전석 손 '삐죽' 내밀더니 '굉음'‥돌진 차량에 행인 '날벼락' #Shorts (MBC뉴스)",
+     "ch": "MBCNEWS",
+     "thumb": "https://i.ytimg.com/vi/ZRXdjalLwO0/hqdefault.jpg",
+     "dur": 85
     },
     {
      "id": "cQtp1RFJK84",
@@ -1716,176 +2015,112 @@
      "dur": 14
     },
     {
-     "id": "lyphlyNeFLA",
-     "views": 1337258,
-     "comments": 91,
-     "cat": "meme",
-     "title": "소정우 샤넬챌린지 오랜만이죠?🥰#춤추는소정 #춤추는곰돌 #춤추는곰돌의랜덤댄스 #댄스 #쇼츠 #챌린지#춤추는곰돌의타이머댄스 #shorts #dan",
-     "ch": "춤추는 소정 爱跳舞的晶晶",
-     "thumb": "https://i.ytimg.com/vi/lyphlyNeFLA/hqdefault.jpg",
-     "dur": 19
+     "id": "HVcau5wVSRg",
+     "views": 1718544,
+     "comments": 1037,
+     "cat": "issue",
+     "title": "[이 시각 세계] \"공 쫓다 골키퍼와 '쾅'\"‥병원 이송 이튿날 사망 (2026.11.04/뉴스투데이/MBC)",
+     "ch": "MBCNEWS",
+     "thumb": "https://i.ytimg.com/vi/HVcau5wVSRg/hqdefault.jpg",
+     "dur": 47
     },
     {
-     "id": "DSMXlMkBmjI",
-     "views": 1268676,
-     "comments": 281,
-     "cat": "meme",
-     "title": "축구 레전드들 전부 무너진 10m 드론 트래핑 챌린지 결과 ㄷㄷ#축구",
-     "ch": "숏포츠",
-     "thumb": "https://i.ytimg.com/vi/DSMXlMkBmjI/hqdefault.jpg",
-     "dur": 53
+     "id": "yxNJ9DIKTMw",
+     "views": 1618808,
+     "comments": 915,
+     "cat": "issue",
+     "title": "[자막뉴스] \"담배 하나 피우고 있을게!!\" 반말 찍찍…충격 영상 떴다 / JTBC News",
+     "ch": "JTBC News",
+     "thumb": "https://i.ytimg.com/vi/yxNJ9DIKTMw/hqdefault.jpg",
+     "dur": 107
     },
     {
-     "id": "chX0Z7gx-mg",
-     "views": 1230605,
-     "comments": 430,
-     "cat": "meme",
-     "title": "웃참 절대 불가능한 초등학생 답안지 ㅋㅋㅋ",
-     "ch": "벙구",
-     "thumb": "https://i.ytimg.com/vi/chX0Z7gx-mg/hqdefault.jpg",
-     "dur": 52
+     "id": "RhuYOg-vnTU",
+     "views": 1458727,
+     "comments": 830,
+     "cat": "issue",
+     "title": "[뉴스 '꾹'] \"와 28표 차? 이래서 투표가\"..공화 텃밭 미시시피 '대반전' (2026.11.05/MBC뉴스)",
+     "ch": "MBCNEWS",
+     "thumb": "https://i.ytimg.com/vi/RhuYOg-vnTU/hqdefault.jpg",
+     "dur": 154
     },
     {
-     "id": "6mz1F1o2TLg",
-     "views": 1152487,
-     "comments": 43,
-     "cat": "meme",
-     "title": "하이디라오 춤추는줄 알았는데…neon챌린지 죄송합니다#스디파 #neon",
-     "ch": "리즈시절찾기",
-     "thumb": "https://i.ytimg.com/vi/6mz1F1o2TLg/hqdefault.jpg",
-     "dur": 17
-    },
-    {
-     "id": "yRYjxcBHCzI",
-     "views": 978886,
-     "comments": 354,
-     "cat": "meme",
-     "title": "POV: 이준 다음 챌린지 유출",
-     "ch": "워크맨-Workman",
-     "thumb": "https://i.ytimg.com/vi/yRYjxcBHCzI/hqdefault.jpg",
-     "dur": 25
-    },
-    {
-     "id": "qFJZOMEM0vc",
-     "views": 871072,
-     "comments": 67,
-     "cat": "meme",
-     "title": "원더재빈 곶감챌린지 #왜요쌤 #dance #윤정아 #challenge #fyp",
-     "ch": "왜요쌤",
-     "thumb": "https://i.ytimg.com/vi/qFJZOMEM0vc/hqdefault.jpg",
-     "dur": 15
-    },
-    {
-     "id": "jx28RyWwi7k",
-     "views": 766148,
-     "comments": 1206,
-     "cat": null,
-     "title": "🤣혜안져스 대환장 성대모사 게임🤣 20분 동안 웃겨드립니닼ㅋㅋㅋㅋㅋㅋㅋㅋㅋ",
-     "ch": "혜안",
-     "thumb": "https://i.ytimg.com/vi/jx28RyWwi7k/hqdefault.jpg",
-     "dur": 1454
-    },
-    {
-     "id": "ebZ3V4R0T3w",
-     "views": 736277,
-     "comments": 129,
-     "cat": "meme",
-     "title": "3번의 챌린지에 모두 번복됩니다",
-     "ch": "스타포츠",
-     "thumb": "https://i.ytimg.com/vi/ebZ3V4R0T3w/hqdefault.jpg",
-     "dur": 29
-    },
-    {
-     "id": "ISiz0BVud0U",
-     "views": 602347,
-     "comments": 456,
-     "cat": "meme",
-     "title": "호기심 환장 RPG 댄스 챌린지 녜힁",
-     "ch": "김동희 세계관",
-     "thumb": "https://i.ytimg.com/vi/ISiz0BVud0U/hqdefault.jpg",
-     "dur": 14
-    },
-    {
-     "id": "Eo_7emRrCkI",
-     "views": 599858,
-     "comments": 254,
-     "cat": null,
-     "title": "💖200만 대형유튜버들을 설레게한 커플 소개팅 리뷰 [결말포함ㅋㅋㅋ]",
-     "ch": "김블루",
-     "thumb": "https://i.ytimg.com/vi/Eo_7emRrCkI/hqdefault.jpg",
-     "dur": 2434
-    },
-    {
-     "id": "pjh7DrYRLe8",
-     "views": 585323,
-     "comments": 242,
-     "cat": null,
-     "title": "렁가",
-     "ch": "괴물쥐 유튜브",
-     "thumb": "https://i.ytimg.com/vi/pjh7DrYRLe8/hqdefault.jpg",
-     "dur": 1378
+     "id": "eayeQgmkuvI",
+     "views": 1452887,
+     "comments": 5449,
+     "cat": "issue",
+     "title": "결국 북한 유산이 된 태권도…유네스코 '등재' 권고 받았다 [MBN 뉴스7]",
+     "ch": "MBN News",
+     "thumb": "https://i.ytimg.com/vi/eayeQgmkuvI/hqdefault.jpg",
+     "dur": 152
     }
    ]
   },
   "3d": {
-   "runs": 1,
+   "runs": 2,
    "keywords": [
     {
      "word": "철도망",
-     "runs": 1,
+     "runs": 2,
      "days": 1,
      "steady": false
     },
     {
      "word": "제주항공",
-     "runs": 1,
+     "runs": 2,
      "days": 1,
      "steady": false
     },
     {
      "word": "malut united vs persib bandung",
-     "runs": 1,
+     "runs": 2,
      "days": 1,
      "steady": false
     },
     {
      "word": "국민 총소득",
-     "runs": 1,
+     "runs": 2,
      "days": 1,
      "steady": false
     },
     {
      "word": "최해천 교수",
-     "runs": 1,
+     "runs": 2,
      "days": 1,
      "steady": false
     },
     {
      "word": "김세레나",
-     "runs": 1,
+     "runs": 2,
      "days": 1,
      "steady": false
     },
     {
      "word": "박한이",
-     "runs": 1,
+     "runs": 2,
      "days": 1,
      "steady": false
     },
     {
      "word": "wec",
-     "runs": 1,
+     "runs": 2,
      "days": 1,
      "steady": false
     },
     {
      "word": "생계",
-     "runs": 1,
+     "runs": 2,
      "days": 1,
      "steady": false
     },
     {
      "word": "광안리해수욕장",
+     "runs": 1,
+     "days": 1,
+     "steady": false
+    },
+    {
+     "word": "tvn",
      "runs": 1,
      "days": 1,
      "steady": false
@@ -1895,43 +2130,43 @@
     "meme": [
      {
       "word": "챌린지",
-      "n": 1,
+      "n": 2,
       "days": 1,
       "steady": false
      },
      {
       "word": "화제",
-      "n": 1,
+      "n": 2,
       "days": 1,
       "steady": false
      },
      {
       "word": "SNS",
-      "n": 1,
+      "n": 2,
       "days": 1,
       "steady": false
      },
      {
       "word": "유성국화축제",
-      "n": 1,
+      "n": 2,
       "days": 1,
       "steady": false
      },
      {
       "word": "만들었다고",
-      "n": 1,
+      "n": 2,
       "days": 1,
       "steady": false
      },
      {
       "word": "직원들이",
-      "n": 1,
+      "n": 2,
       "days": 1,
       "steady": false
      },
      {
       "word": "성료",
-      "n": 1,
+      "n": 2,
       "days": 1,
       "steady": false
      }
@@ -1939,61 +2174,61 @@
     "product": [
      {
       "word": "팝업스토어",
-      "n": 1,
+      "n": 2,
       "days": 1,
       "steady": false
      },
      {
       "word": "대구서",
-      "n": 1,
+      "n": 2,
       "days": 1,
       "steady": false
      },
      {
       "word": "매출",
-      "n": 1,
+      "n": 2,
       "days": 1,
       "steady": false
      },
      {
       "word": "누네띠네",
-      "n": 1,
+      "n": 2,
       "days": 1,
       "steady": false
      },
      {
       "word": "출시",
-      "n": 1,
+      "n": 2,
       "days": 1,
       "steady": false
      },
      {
       "word": "삼립",
-      "n": 1,
+      "n": 2,
       "days": 1,
       "steady": false
      },
      {
       "word": "현대",
-      "n": 1,
+      "n": 2,
       "days": 1,
       "steady": false
      },
      {
       "word": "운영",
-      "n": 1,
+      "n": 2,
       "days": 1,
       "steady": false
      },
      {
       "word": "공략",
-      "n": 1,
+      "n": 2,
       "days": 1,
       "steady": false
      },
      {
       "word": "농심",
-      "n": 1,
+      "n": 2,
       "days": 1,
       "steady": false
      }
@@ -2001,18 +2236,30 @@
     "ad": [
      {
       "word": "마케팅",
-      "n": 1,
+      "n": 2,
       "days": 1,
       "steady": false
      },
      {
       "word": "캠페인",
-      "n": 1,
+      "n": 2,
       "days": 1,
       "steady": false
      }
     ],
     "issue": [
+     {
+      "word": "공소취소",
+      "n": 2,
+      "days": 1,
+      "steady": false
+     },
+     {
+      "word": "이용철",
+      "n": 2,
+      "days": 1,
+      "steady": false
+     },
      {
       "word": "미래대응기금",
       "n": 1,
@@ -2026,13 +2273,13 @@
       "steady": false
      },
      {
-      "word": "공소취소",
+      "word": "재정",
       "n": 1,
       "days": 1,
       "steady": false
      },
      {
-      "word": "이용철",
+      "word": "소방",
       "n": 1,
       "days": 1,
       "steady": false
@@ -2041,18 +2288,80 @@
     "season": [
      {
       "word": "혜택",
-      "n": 1,
+      "n": 2,
       "days": 1,
       "steady": false
      },
      {
       "word": "수능",
-      "n": 1,
+      "n": 2,
       "days": 1,
       "steady": false
      },
      {
       "word": "시즌",
+      "n": 2,
+      "days": 1,
+      "steady": false
+     }
+    ],
+    "all": [
+     {
+      "word": "챌린지",
+      "n": 1,
+      "days": 1,
+      "steady": false
+     },
+     {
+      "word": "팝업스토어",
+      "n": 1,
+      "days": 1,
+      "steady": false
+     },
+     {
+      "word": "화제",
+      "n": 1,
+      "days": 1,
+      "steady": false
+     },
+     {
+      "word": "마케팅",
+      "n": 1,
+      "days": 1,
+      "steady": false
+     },
+     {
+      "word": "공소취소",
+      "n": 1,
+      "days": 1,
+      "steady": false
+     },
+     {
+      "word": "SNS",
+      "n": 1,
+      "days": 1,
+      "steady": false
+     },
+     {
+      "word": "운영",
+      "n": 1,
+      "days": 1,
+      "steady": false
+     },
+     {
+      "word": "대구서",
+      "n": 1,
+      "days": 1,
+      "steady": false
+     },
+     {
+      "word": "캠페인",
+      "n": 1,
+      "days": 1,
+      "steady": false
+     },
+     {
+      "word": "재정",
       "n": 1,
       "days": 1,
       "steady": false
@@ -2062,7 +2371,7 @@
    "videos": [
     {
      "id": "wmfCGc1fxpQ",
-     "views": 6690961,
+     "views": 6698977,
      "comments": 1355,
      "cat": "meme",
      "title": "혼자 노래방에서 챌린지 연습하는 이준 #idol #아이돌 #kpop #케이팝 #이준 #a2olite #챌린지 #노래방 #neon #shorts",
@@ -2072,7 +2381,7 @@
     },
     {
      "id": "JwGKVntjznQ",
-     "views": 3684083,
+     "views": 3685813,
      "comments": 17,
      "cat": "meme",
      "title": "승우를 꽉잡아🤣 바치바치 😅#춤추는소정 #춤추는곰돌 #춤추는곰돌의랜덤댄스 #댄스 #쇼츠 #챌린지 #춤추는곰돌의타이머댄스 #shorts #danc",
@@ -2082,7 +2391,7 @@
     },
     {
      "id": "lNbqV0smZlE",
-     "views": 3066240,
+     "views": 3066971,
      "comments": 169,
      "cat": "meme",
      "title": "요즘 난리 난 댄스 챌린지 중 지켜보던 시민이 갑자기 난입했다고?! 😂",
@@ -2091,8 +2400,48 @@
      "dur": 10
     },
     {
+     "id": "6LBfugqJgWU",
+     "views": 2993015,
+     "comments": 1082,
+     "cat": "issue",
+     "title": "갤폴드8 펼치자 금이 쩍?…천만 조회수 영상의 반전 결말｜지금 이 뉴스",
+     "ch": "JTBC News",
+     "thumb": "https://i.ytimg.com/vi/6LBfugqJgWU/hqdefault.jpg",
+     "dur": 81
+    },
+    {
+     "id": "QzwQ2jkktOw",
+     "views": 2950688,
+     "comments": 2637,
+     "cat": "issue",
+     "title": "[뉴스 '꾹'] 구속된 金 자리 앉은 은현장, 가세연 직원에 손 내밀자 (2026.11.02/MBC뉴스)",
+     "ch": "MBCNEWS",
+     "thumb": "https://i.ytimg.com/vi/QzwQ2jkktOw/hqdefault.jpg",
+     "dur": 148
+    },
+    {
+     "id": "dVsOFqhilbw",
+     "views": 2642609,
+     "comments": 2221,
+     "cat": "issue",
+     "title": "[자막뉴스] 삿포로 공항 韓승객 대폭발..황당한 결항과정 '경악' (2026.11.05/MBC뉴스)",
+     "ch": "MBCNEWS",
+     "thumb": "https://i.ytimg.com/vi/dVsOFqhilbw/hqdefault.jpg",
+     "dur": 143
+    },
+    {
+     "id": "OGhS-3MAfIw",
+     "views": 2551666,
+     "comments": 2594,
+     "cat": "issue",
+     "title": "삿포로 공항 韓승객 대폭발..황당한 결항과정 '경악' #Shorts (MBC뉴스)",
+     "ch": "MBCNEWS",
+     "thumb": "https://i.ytimg.com/vi/OGhS-3MAfIw/hqdefault.jpg",
+     "dur": 131
+    },
+    {
      "id": "8bIAfvOjK2o",
-     "views": 2367175,
+     "views": 2372324,
      "comments": 53,
      "cat": "meme",
      "title": "스페셜티 가족의 연기 챌린지(with 삼양그룹)",
@@ -2102,8 +2451,8 @@
     },
     {
      "id": "wsJgLiriygs",
-     "views": 2293917,
-     "comments": 7,
+     "views": 2293942,
+     "comments": 8,
      "cat": null,
      "title": "261107 전설 무한의 계단",
      "ch": "전설",
@@ -2112,7 +2461,7 @@
     },
     {
      "id": "9-dgMb2EPKo",
-     "views": 2245681,
+     "views": 2246292,
      "comments": 151,
      "cat": null,
      "title": "GEN vs IG | 녹아웃 스테이지 4강 Day5 | 2026 월드 챔피언십",
@@ -2122,8 +2471,8 @@
     },
     {
      "id": "JTWLWrwFwAo",
-     "views": 2151836,
-     "comments": 699,
+     "views": 2157933,
+     "comments": 700,
      "cat": "meme",
      "title": "반응터진 이준 NEON 챌린지 풀버전.mp4",
      "ch": "워크맨-Workman",
@@ -2131,14 +2480,44 @@
      "dur": 25
     },
     {
+     "id": "7oNbWJEDMPg",
+     "views": 2097273,
+     "comments": 7390,
+     "cat": "issue",
+     "title": "세 살배기도 강제 인도‥아동이 '물건'인가 #Shorts (MBC뉴스)",
+     "ch": "MBCNEWS",
+     "thumb": "https://i.ytimg.com/vi/7oNbWJEDMPg/hqdefault.jpg",
+     "dur": 116
+    },
+    {
+     "id": "vlZjsJn2VXg",
+     "views": 1992393,
+     "comments": 6847,
+     "cat": "issue",
+     "title": "\"팔면 끝?\" '가성비' 중국 전기차의 반전..광주서 부산까지 '수리 난민' 된 BYD 차주들 (자막뉴스) / SBS",
+     "ch": "SBS 뉴스",
+     "thumb": "https://i.ytimg.com/vi/vlZjsJn2VXg/hqdefault.jpg",
+     "dur": 125
+    },
+    {
      "id": "nd3hpJ4oMpU",
-     "views": 1856567,
+     "views": 1865933,
      "comments": 1866,
      "cat": null,
      "title": "back number - 히로인 [ヒロイン] 🎵\"저 가수 입니다🎤\" by 강남",
      "ch": "동네친구 강나미 [Kangnami]",
      "thumb": "https://i.ytimg.com/vi/nd3hpJ4oMpU/hqdefault.jpg",
      "dur": 271
+    },
+    {
+     "id": "ZRXdjalLwO0",
+     "views": 1859802,
+     "comments": 3398,
+     "cat": "issue",
+     "title": "운전석 손 '삐죽' 내밀더니 '굉음'‥돌진 차량에 행인 '날벼락' #Shorts (MBC뉴스)",
+     "ch": "MBCNEWS",
+     "thumb": "https://i.ytimg.com/vi/ZRXdjalLwO0/hqdefault.jpg",
+     "dur": 85
     },
     {
      "id": "cQtp1RFJK84",
@@ -2151,176 +2530,112 @@
      "dur": 14
     },
     {
-     "id": "lyphlyNeFLA",
-     "views": 1337258,
-     "comments": 91,
-     "cat": "meme",
-     "title": "소정우 샤넬챌린지 오랜만이죠?🥰#춤추는소정 #춤추는곰돌 #춤추는곰돌의랜덤댄스 #댄스 #쇼츠 #챌린지#춤추는곰돌의타이머댄스 #shorts #dan",
-     "ch": "춤추는 소정 爱跳舞的晶晶",
-     "thumb": "https://i.ytimg.com/vi/lyphlyNeFLA/hqdefault.jpg",
-     "dur": 19
+     "id": "HVcau5wVSRg",
+     "views": 1718544,
+     "comments": 1037,
+     "cat": "issue",
+     "title": "[이 시각 세계] \"공 쫓다 골키퍼와 '쾅'\"‥병원 이송 이튿날 사망 (2026.11.04/뉴스투데이/MBC)",
+     "ch": "MBCNEWS",
+     "thumb": "https://i.ytimg.com/vi/HVcau5wVSRg/hqdefault.jpg",
+     "dur": 47
     },
     {
-     "id": "DSMXlMkBmjI",
-     "views": 1268676,
-     "comments": 281,
-     "cat": "meme",
-     "title": "축구 레전드들 전부 무너진 10m 드론 트래핑 챌린지 결과 ㄷㄷ#축구",
-     "ch": "숏포츠",
-     "thumb": "https://i.ytimg.com/vi/DSMXlMkBmjI/hqdefault.jpg",
-     "dur": 53
+     "id": "yxNJ9DIKTMw",
+     "views": 1618808,
+     "comments": 915,
+     "cat": "issue",
+     "title": "[자막뉴스] \"담배 하나 피우고 있을게!!\" 반말 찍찍…충격 영상 떴다 / JTBC News",
+     "ch": "JTBC News",
+     "thumb": "https://i.ytimg.com/vi/yxNJ9DIKTMw/hqdefault.jpg",
+     "dur": 107
     },
     {
-     "id": "chX0Z7gx-mg",
-     "views": 1230605,
-     "comments": 430,
-     "cat": "meme",
-     "title": "웃참 절대 불가능한 초등학생 답안지 ㅋㅋㅋ",
-     "ch": "벙구",
-     "thumb": "https://i.ytimg.com/vi/chX0Z7gx-mg/hqdefault.jpg",
-     "dur": 52
+     "id": "RhuYOg-vnTU",
+     "views": 1458727,
+     "comments": 830,
+     "cat": "issue",
+     "title": "[뉴스 '꾹'] \"와 28표 차? 이래서 투표가\"..공화 텃밭 미시시피 '대반전' (2026.11.05/MBC뉴스)",
+     "ch": "MBCNEWS",
+     "thumb": "https://i.ytimg.com/vi/RhuYOg-vnTU/hqdefault.jpg",
+     "dur": 154
     },
     {
-     "id": "6mz1F1o2TLg",
-     "views": 1152487,
-     "comments": 43,
-     "cat": "meme",
-     "title": "하이디라오 춤추는줄 알았는데…neon챌린지 죄송합니다#스디파 #neon",
-     "ch": "리즈시절찾기",
-     "thumb": "https://i.ytimg.com/vi/6mz1F1o2TLg/hqdefault.jpg",
-     "dur": 17
-    },
-    {
-     "id": "yRYjxcBHCzI",
-     "views": 978886,
-     "comments": 354,
-     "cat": "meme",
-     "title": "POV: 이준 다음 챌린지 유출",
-     "ch": "워크맨-Workman",
-     "thumb": "https://i.ytimg.com/vi/yRYjxcBHCzI/hqdefault.jpg",
-     "dur": 25
-    },
-    {
-     "id": "qFJZOMEM0vc",
-     "views": 871072,
-     "comments": 67,
-     "cat": "meme",
-     "title": "원더재빈 곶감챌린지 #왜요쌤 #dance #윤정아 #challenge #fyp",
-     "ch": "왜요쌤",
-     "thumb": "https://i.ytimg.com/vi/qFJZOMEM0vc/hqdefault.jpg",
-     "dur": 15
-    },
-    {
-     "id": "jx28RyWwi7k",
-     "views": 766148,
-     "comments": 1206,
-     "cat": null,
-     "title": "🤣혜안져스 대환장 성대모사 게임🤣 20분 동안 웃겨드립니닼ㅋㅋㅋㅋㅋㅋㅋㅋㅋ",
-     "ch": "혜안",
-     "thumb": "https://i.ytimg.com/vi/jx28RyWwi7k/hqdefault.jpg",
-     "dur": 1454
-    },
-    {
-     "id": "ebZ3V4R0T3w",
-     "views": 736277,
-     "comments": 129,
-     "cat": "meme",
-     "title": "3번의 챌린지에 모두 번복됩니다",
-     "ch": "스타포츠",
-     "thumb": "https://i.ytimg.com/vi/ebZ3V4R0T3w/hqdefault.jpg",
-     "dur": 29
-    },
-    {
-     "id": "ISiz0BVud0U",
-     "views": 602347,
-     "comments": 456,
-     "cat": "meme",
-     "title": "호기심 환장 RPG 댄스 챌린지 녜힁",
-     "ch": "김동희 세계관",
-     "thumb": "https://i.ytimg.com/vi/ISiz0BVud0U/hqdefault.jpg",
-     "dur": 14
-    },
-    {
-     "id": "Eo_7emRrCkI",
-     "views": 599858,
-     "comments": 254,
-     "cat": null,
-     "title": "💖200만 대형유튜버들을 설레게한 커플 소개팅 리뷰 [결말포함ㅋㅋㅋ]",
-     "ch": "김블루",
-     "thumb": "https://i.ytimg.com/vi/Eo_7emRrCkI/hqdefault.jpg",
-     "dur": 2434
-    },
-    {
-     "id": "pjh7DrYRLe8",
-     "views": 585323,
-     "comments": 242,
-     "cat": null,
-     "title": "렁가",
-     "ch": "괴물쥐 유튜브",
-     "thumb": "https://i.ytimg.com/vi/pjh7DrYRLe8/hqdefault.jpg",
-     "dur": 1378
+     "id": "eayeQgmkuvI",
+     "views": 1452887,
+     "comments": 5449,
+     "cat": "issue",
+     "title": "결국 북한 유산이 된 태권도…유네스코 '등재' 권고 받았다 [MBN 뉴스7]",
+     "ch": "MBN News",
+     "thumb": "https://i.ytimg.com/vi/eayeQgmkuvI/hqdefault.jpg",
+     "dur": 152
     }
    ]
   },
   "7d": {
-   "runs": 1,
+   "runs": 2,
    "keywords": [
     {
      "word": "철도망",
-     "runs": 1,
+     "runs": 2,
      "days": 1,
      "steady": false
     },
     {
      "word": "제주항공",
-     "runs": 1,
+     "runs": 2,
      "days": 1,
      "steady": false
     },
     {
      "word": "malut united vs persib bandung",
-     "runs": 1,
+     "runs": 2,
      "days": 1,
      "steady": false
     },
     {
      "word": "국민 총소득",
-     "runs": 1,
+     "runs": 2,
      "days": 1,
      "steady": false
     },
     {
      "word": "최해천 교수",
-     "runs": 1,
+     "runs": 2,
      "days": 1,
      "steady": false
     },
     {
      "word": "김세레나",
-     "runs": 1,
+     "runs": 2,
      "days": 1,
      "steady": false
     },
     {
      "word": "박한이",
-     "runs": 1,
+     "runs": 2,
      "days": 1,
      "steady": false
     },
     {
      "word": "wec",
-     "runs": 1,
+     "runs": 2,
      "days": 1,
      "steady": false
     },
     {
      "word": "생계",
-     "runs": 1,
+     "runs": 2,
      "days": 1,
      "steady": false
     },
     {
      "word": "광안리해수욕장",
+     "runs": 1,
+     "days": 1,
+     "steady": false
+    },
+    {
+     "word": "tvn",
      "runs": 1,
      "days": 1,
      "steady": false
@@ -2330,43 +2645,43 @@
     "meme": [
      {
       "word": "챌린지",
-      "n": 1,
+      "n": 2,
       "days": 1,
       "steady": false
      },
      {
       "word": "화제",
-      "n": 1,
+      "n": 2,
       "days": 1,
       "steady": false
      },
      {
       "word": "SNS",
-      "n": 1,
+      "n": 2,
       "days": 1,
       "steady": false
      },
      {
       "word": "유성국화축제",
-      "n": 1,
+      "n": 2,
       "days": 1,
       "steady": false
      },
      {
       "word": "만들었다고",
-      "n": 1,
+      "n": 2,
       "days": 1,
       "steady": false
      },
      {
       "word": "직원들이",
-      "n": 1,
+      "n": 2,
       "days": 1,
       "steady": false
      },
      {
       "word": "성료",
-      "n": 1,
+      "n": 2,
       "days": 1,
       "steady": false
      }
@@ -2374,61 +2689,61 @@
     "product": [
      {
       "word": "팝업스토어",
-      "n": 1,
+      "n": 2,
       "days": 1,
       "steady": false
      },
      {
       "word": "대구서",
-      "n": 1,
+      "n": 2,
       "days": 1,
       "steady": false
      },
      {
       "word": "매출",
-      "n": 1,
+      "n": 2,
       "days": 1,
       "steady": false
      },
      {
       "word": "누네띠네",
-      "n": 1,
+      "n": 2,
       "days": 1,
       "steady": false
      },
      {
       "word": "출시",
-      "n": 1,
+      "n": 2,
       "days": 1,
       "steady": false
      },
      {
       "word": "삼립",
-      "n": 1,
+      "n": 2,
       "days": 1,
       "steady": false
      },
      {
       "word": "현대",
-      "n": 1,
+      "n": 2,
       "days": 1,
       "steady": false
      },
      {
       "word": "운영",
-      "n": 1,
+      "n": 2,
       "days": 1,
       "steady": false
      },
      {
       "word": "공략",
-      "n": 1,
+      "n": 2,
       "days": 1,
       "steady": false
      },
      {
       "word": "농심",
-      "n": 1,
+      "n": 2,
       "days": 1,
       "steady": false
      }
@@ -2436,18 +2751,30 @@
     "ad": [
      {
       "word": "마케팅",
-      "n": 1,
+      "n": 2,
       "days": 1,
       "steady": false
      },
      {
       "word": "캠페인",
-      "n": 1,
+      "n": 2,
       "days": 1,
       "steady": false
      }
     ],
     "issue": [
+     {
+      "word": "공소취소",
+      "n": 2,
+      "days": 1,
+      "steady": false
+     },
+     {
+      "word": "이용철",
+      "n": 2,
+      "days": 1,
+      "steady": false
+     },
      {
       "word": "미래대응기금",
       "n": 1,
@@ -2461,13 +2788,13 @@
       "steady": false
      },
      {
-      "word": "공소취소",
+      "word": "재정",
       "n": 1,
       "days": 1,
       "steady": false
      },
      {
-      "word": "이용철",
+      "word": "소방",
       "n": 1,
       "days": 1,
       "steady": false
@@ -2476,18 +2803,80 @@
     "season": [
      {
       "word": "혜택",
-      "n": 1,
+      "n": 2,
       "days": 1,
       "steady": false
      },
      {
       "word": "수능",
-      "n": 1,
+      "n": 2,
       "days": 1,
       "steady": false
      },
      {
       "word": "시즌",
+      "n": 2,
+      "days": 1,
+      "steady": false
+     }
+    ],
+    "all": [
+     {
+      "word": "챌린지",
+      "n": 1,
+      "days": 1,
+      "steady": false
+     },
+     {
+      "word": "팝업스토어",
+      "n": 1,
+      "days": 1,
+      "steady": false
+     },
+     {
+      "word": "화제",
+      "n": 1,
+      "days": 1,
+      "steady": false
+     },
+     {
+      "word": "마케팅",
+      "n": 1,
+      "days": 1,
+      "steady": false
+     },
+     {
+      "word": "공소취소",
+      "n": 1,
+      "days": 1,
+      "steady": false
+     },
+     {
+      "word": "SNS",
+      "n": 1,
+      "days": 1,
+      "steady": false
+     },
+     {
+      "word": "운영",
+      "n": 1,
+      "days": 1,
+      "steady": false
+     },
+     {
+      "word": "대구서",
+      "n": 1,
+      "days": 1,
+      "steady": false
+     },
+     {
+      "word": "캠페인",
+      "n": 1,
+      "days": 1,
+      "steady": false
+     },
+     {
+      "word": "재정",
       "n": 1,
       "days": 1,
       "steady": false
@@ -2497,7 +2886,7 @@
    "videos": [
     {
      "id": "wmfCGc1fxpQ",
-     "views": 6690961,
+     "views": 6698977,
      "comments": 1355,
      "cat": "meme",
      "title": "혼자 노래방에서 챌린지 연습하는 이준 #idol #아이돌 #kpop #케이팝 #이준 #a2olite #챌린지 #노래방 #neon #shorts",
@@ -2507,7 +2896,7 @@
     },
     {
      "id": "JwGKVntjznQ",
-     "views": 3684083,
+     "views": 3685813,
      "comments": 17,
      "cat": "meme",
      "title": "승우를 꽉잡아🤣 바치바치 😅#춤추는소정 #춤추는곰돌 #춤추는곰돌의랜덤댄스 #댄스 #쇼츠 #챌린지 #춤추는곰돌의타이머댄스 #shorts #danc",
@@ -2517,7 +2906,7 @@
     },
     {
      "id": "lNbqV0smZlE",
-     "views": 3066240,
+     "views": 3066971,
      "comments": 169,
      "cat": "meme",
      "title": "요즘 난리 난 댄스 챌린지 중 지켜보던 시민이 갑자기 난입했다고?! 😂",
@@ -2526,8 +2915,48 @@
      "dur": 10
     },
     {
+     "id": "6LBfugqJgWU",
+     "views": 2993015,
+     "comments": 1082,
+     "cat": "issue",
+     "title": "갤폴드8 펼치자 금이 쩍?…천만 조회수 영상의 반전 결말｜지금 이 뉴스",
+     "ch": "JTBC News",
+     "thumb": "https://i.ytimg.com/vi/6LBfugqJgWU/hqdefault.jpg",
+     "dur": 81
+    },
+    {
+     "id": "QzwQ2jkktOw",
+     "views": 2950688,
+     "comments": 2637,
+     "cat": "issue",
+     "title": "[뉴스 '꾹'] 구속된 金 자리 앉은 은현장, 가세연 직원에 손 내밀자 (2026.11.02/MBC뉴스)",
+     "ch": "MBCNEWS",
+     "thumb": "https://i.ytimg.com/vi/QzwQ2jkktOw/hqdefault.jpg",
+     "dur": 148
+    },
+    {
+     "id": "dVsOFqhilbw",
+     "views": 2642609,
+     "comments": 2221,
+     "cat": "issue",
+     "title": "[자막뉴스] 삿포로 공항 韓승객 대폭발..황당한 결항과정 '경악' (2026.11.05/MBC뉴스)",
+     "ch": "MBCNEWS",
+     "thumb": "https://i.ytimg.com/vi/dVsOFqhilbw/hqdefault.jpg",
+     "dur": 143
+    },
+    {
+     "id": "OGhS-3MAfIw",
+     "views": 2551666,
+     "comments": 2594,
+     "cat": "issue",
+     "title": "삿포로 공항 韓승객 대폭발..황당한 결항과정 '경악' #Shorts (MBC뉴스)",
+     "ch": "MBCNEWS",
+     "thumb": "https://i.ytimg.com/vi/OGhS-3MAfIw/hqdefault.jpg",
+     "dur": 131
+    },
+    {
      "id": "8bIAfvOjK2o",
-     "views": 2367175,
+     "views": 2372324,
      "comments": 53,
      "cat": "meme",
      "title": "스페셜티 가족의 연기 챌린지(with 삼양그룹)",
@@ -2537,8 +2966,8 @@
     },
     {
      "id": "wsJgLiriygs",
-     "views": 2293917,
-     "comments": 7,
+     "views": 2293942,
+     "comments": 8,
      "cat": null,
      "title": "261107 전설 무한의 계단",
      "ch": "전설",
@@ -2547,7 +2976,7 @@
     },
     {
      "id": "9-dgMb2EPKo",
-     "views": 2245681,
+     "views": 2246292,
      "comments": 151,
      "cat": null,
      "title": "GEN vs IG | 녹아웃 스테이지 4강 Day5 | 2026 월드 챔피언십",
@@ -2557,8 +2986,8 @@
     },
     {
      "id": "JTWLWrwFwAo",
-     "views": 2151836,
-     "comments": 699,
+     "views": 2157933,
+     "comments": 700,
      "cat": "meme",
      "title": "반응터진 이준 NEON 챌린지 풀버전.mp4",
      "ch": "워크맨-Workman",
@@ -2566,14 +2995,44 @@
      "dur": 25
     },
     {
+     "id": "7oNbWJEDMPg",
+     "views": 2097273,
+     "comments": 7390,
+     "cat": "issue",
+     "title": "세 살배기도 강제 인도‥아동이 '물건'인가 #Shorts (MBC뉴스)",
+     "ch": "MBCNEWS",
+     "thumb": "https://i.ytimg.com/vi/7oNbWJEDMPg/hqdefault.jpg",
+     "dur": 116
+    },
+    {
+     "id": "vlZjsJn2VXg",
+     "views": 1992393,
+     "comments": 6847,
+     "cat": "issue",
+     "title": "\"팔면 끝?\" '가성비' 중국 전기차의 반전..광주서 부산까지 '수리 난민' 된 BYD 차주들 (자막뉴스) / SBS",
+     "ch": "SBS 뉴스",
+     "thumb": "https://i.ytimg.com/vi/vlZjsJn2VXg/hqdefault.jpg",
+     "dur": 125
+    },
+    {
      "id": "nd3hpJ4oMpU",
-     "views": 1856567,
+     "views": 1865933,
      "comments": 1866,
      "cat": null,
      "title": "back number - 히로인 [ヒロイン] 🎵\"저 가수 입니다🎤\" by 강남",
      "ch": "동네친구 강나미 [Kangnami]",
      "thumb": "https://i.ytimg.com/vi/nd3hpJ4oMpU/hqdefault.jpg",
      "dur": 271
+    },
+    {
+     "id": "ZRXdjalLwO0",
+     "views": 1859802,
+     "comments": 3398,
+     "cat": "issue",
+     "title": "운전석 손 '삐죽' 내밀더니 '굉음'‥돌진 차량에 행인 '날벼락' #Shorts (MBC뉴스)",
+     "ch": "MBCNEWS",
+     "thumb": "https://i.ytimg.com/vi/ZRXdjalLwO0/hqdefault.jpg",
+     "dur": 85
     },
     {
      "id": "cQtp1RFJK84",
@@ -2586,265 +3045,437 @@
      "dur": 14
     },
     {
-     "id": "lyphlyNeFLA",
-     "views": 1337258,
-     "comments": 91,
-     "cat": "meme",
-     "title": "소정우 샤넬챌린지 오랜만이죠?🥰#춤추는소정 #춤추는곰돌 #춤추는곰돌의랜덤댄스 #댄스 #쇼츠 #챌린지#춤추는곰돌의타이머댄스 #shorts #dan",
-     "ch": "춤추는 소정 爱跳舞的晶晶",
-     "thumb": "https://i.ytimg.com/vi/lyphlyNeFLA/hqdefault.jpg",
-     "dur": 19
+     "id": "HVcau5wVSRg",
+     "views": 1718544,
+     "comments": 1037,
+     "cat": "issue",
+     "title": "[이 시각 세계] \"공 쫓다 골키퍼와 '쾅'\"‥병원 이송 이튿날 사망 (2026.11.04/뉴스투데이/MBC)",
+     "ch": "MBCNEWS",
+     "thumb": "https://i.ytimg.com/vi/HVcau5wVSRg/hqdefault.jpg",
+     "dur": 47
     },
     {
-     "id": "DSMXlMkBmjI",
-     "views": 1268676,
-     "comments": 281,
-     "cat": "meme",
-     "title": "축구 레전드들 전부 무너진 10m 드론 트래핑 챌린지 결과 ㄷㄷ#축구",
-     "ch": "숏포츠",
-     "thumb": "https://i.ytimg.com/vi/DSMXlMkBmjI/hqdefault.jpg",
-     "dur": 53
+     "id": "yxNJ9DIKTMw",
+     "views": 1618808,
+     "comments": 915,
+     "cat": "issue",
+     "title": "[자막뉴스] \"담배 하나 피우고 있을게!!\" 반말 찍찍…충격 영상 떴다 / JTBC News",
+     "ch": "JTBC News",
+     "thumb": "https://i.ytimg.com/vi/yxNJ9DIKTMw/hqdefault.jpg",
+     "dur": 107
     },
     {
-     "id": "chX0Z7gx-mg",
-     "views": 1230605,
-     "comments": 430,
-     "cat": "meme",
-     "title": "웃참 절대 불가능한 초등학생 답안지 ㅋㅋㅋ",
-     "ch": "벙구",
-     "thumb": "https://i.ytimg.com/vi/chX0Z7gx-mg/hqdefault.jpg",
-     "dur": 52
+     "id": "RhuYOg-vnTU",
+     "views": 1458727,
+     "comments": 830,
+     "cat": "issue",
+     "title": "[뉴스 '꾹'] \"와 28표 차? 이래서 투표가\"..공화 텃밭 미시시피 '대반전' (2026.11.05/MBC뉴스)",
+     "ch": "MBCNEWS",
+     "thumb": "https://i.ytimg.com/vi/RhuYOg-vnTU/hqdefault.jpg",
+     "dur": 154
     },
     {
-     "id": "6mz1F1o2TLg",
-     "views": 1152487,
-     "comments": 43,
-     "cat": "meme",
-     "title": "하이디라오 춤추는줄 알았는데…neon챌린지 죄송합니다#스디파 #neon",
-     "ch": "리즈시절찾기",
-     "thumb": "https://i.ytimg.com/vi/6mz1F1o2TLg/hqdefault.jpg",
-     "dur": 17
-    },
-    {
-     "id": "yRYjxcBHCzI",
-     "views": 978886,
-     "comments": 354,
-     "cat": "meme",
-     "title": "POV: 이준 다음 챌린지 유출",
-     "ch": "워크맨-Workman",
-     "thumb": "https://i.ytimg.com/vi/yRYjxcBHCzI/hqdefault.jpg",
-     "dur": 25
-    },
-    {
-     "id": "qFJZOMEM0vc",
-     "views": 871072,
-     "comments": 67,
-     "cat": "meme",
-     "title": "원더재빈 곶감챌린지 #왜요쌤 #dance #윤정아 #challenge #fyp",
-     "ch": "왜요쌤",
-     "thumb": "https://i.ytimg.com/vi/qFJZOMEM0vc/hqdefault.jpg",
-     "dur": 15
-    },
-    {
-     "id": "jx28RyWwi7k",
-     "views": 766148,
-     "comments": 1206,
-     "cat": null,
-     "title": "🤣혜안져스 대환장 성대모사 게임🤣 20분 동안 웃겨드립니닼ㅋㅋㅋㅋㅋㅋㅋㅋㅋ",
-     "ch": "혜안",
-     "thumb": "https://i.ytimg.com/vi/jx28RyWwi7k/hqdefault.jpg",
-     "dur": 1454
-    },
-    {
-     "id": "ebZ3V4R0T3w",
-     "views": 736277,
-     "comments": 129,
-     "cat": "meme",
-     "title": "3번의 챌린지에 모두 번복됩니다",
-     "ch": "스타포츠",
-     "thumb": "https://i.ytimg.com/vi/ebZ3V4R0T3w/hqdefault.jpg",
-     "dur": 29
-    },
-    {
-     "id": "ISiz0BVud0U",
-     "views": 602347,
-     "comments": 456,
-     "cat": "meme",
-     "title": "호기심 환장 RPG 댄스 챌린지 녜힁",
-     "ch": "김동희 세계관",
-     "thumb": "https://i.ytimg.com/vi/ISiz0BVud0U/hqdefault.jpg",
-     "dur": 14
-    },
-    {
-     "id": "Eo_7emRrCkI",
-     "views": 599858,
-     "comments": 254,
-     "cat": null,
-     "title": "💖200만 대형유튜버들을 설레게한 커플 소개팅 리뷰 [결말포함ㅋㅋㅋ]",
-     "ch": "김블루",
-     "thumb": "https://i.ytimg.com/vi/Eo_7emRrCkI/hqdefault.jpg",
-     "dur": 2434
-    },
-    {
-     "id": "pjh7DrYRLe8",
-     "views": 585323,
-     "comments": 242,
-     "cat": null,
-     "title": "렁가",
-     "ch": "괴물쥐 유튜브",
-     "thumb": "https://i.ytimg.com/vi/pjh7DrYRLe8/hqdefault.jpg",
-     "dur": 1378
+     "id": "eayeQgmkuvI",
+     "views": 1452887,
+     "comments": 5449,
+     "cat": "issue",
+     "title": "결국 북한 유산이 된 태권도…유네스코 '등재' 권고 받았다 [MBN 뉴스7]",
+     "ch": "MBN News",
+     "thumb": "https://i.ytimg.com/vi/eayeQgmkuvI/hqdefault.jpg",
+     "dur": 152
     }
    ]
   }
  },
  "videos": [
   {
+   "id": "wK-639ct61Q",
+   "title": "[자막뉴스] \"전기 수상해\" 배전반 까자 '걸렸다'..업주들 29억 폭탄 (전주MBC 뉴스)",
+   "ch": "MBCNEWS",
+   "subs": 6210000,
+   "views": 1028420,
+   "hours": 10.4,
+   "likes": 2652,
+   "comments": 704,
+   "cat": "issue",
+   "dur": 140,
+   "thumb": "https://i.ytimg.com/vi/wK-639ct61Q/hqdefault.jpg",
+   "kw": [],
+   "tier": "rise"
+  },
+  {
+   "id": "TC3L7_jnKII",
+   "title": "[오늘 이 뉴스] 총 맞고 일어선 폴란드 경찰..난사범 제압 순간 무릎 털썩 (2026.11.08/MBC뉴스)",
+   "ch": "MBCNEWS",
+   "subs": 6210000,
+   "views": 867878,
+   "hours": 9.4,
+   "likes": 3483,
+   "comments": 1234,
+   "cat": "issue",
+   "dur": 107,
+   "thumb": "https://i.ytimg.com/vi/TC3L7_jnKII/hqdefault.jpg",
+   "kw": [],
+   "tier": "rise"
+  },
+  {
    "id": "DSMXlMkBmjI",
    "title": "축구 레전드들 전부 무너진 10m 드론 트래핑 챌린지 결과 ㄷㄷ#축구",
    "ch": "숏포츠",
    "subs": 65200,
-   "views": 1268676,
-   "hours": 15.8,
-   "likes": 9003,
-   "comments": 281,
+   "views": 1283129,
+   "hours": 15.9,
+   "likes": 9092,
+   "comments": 282,
    "cat": "meme",
    "dur": 53,
    "thumb": "https://i.ytimg.com/vi/DSMXlMkBmjI/hqdefault.jpg",
    "kw": [],
-   "tier": "rise"
+   "tier": "rise",
+   "gain": 14453
   },
   {
    "id": "wmfCGc1fxpQ",
    "title": "혼자 노래방에서 챌린지 연습하는 이준 #idol #아이돌 #kpop #케이팝 #이준 #a2olite #챌린지 #노래방 #neon #shorts",
    "ch": "죄와돌",
    "subs": 3510,
-   "views": 6690961,
-   "hours": 95.0,
-   "likes": 55554,
+   "views": 6698977,
+   "hours": 95.1,
+   "likes": 55620,
    "comments": 1355,
    "cat": "meme",
    "dur": 13,
    "thumb": "https://i.ytimg.com/vi/wmfCGc1fxpQ/hqdefault.jpg",
    "kw": [],
    "tier": "hot",
-   "topComments": [
-    {
-     "text": "저 다 뚫린 노래방을 갔다는 건 연습실이 없는게 아니라 그냥 사람들에게 자신의 춤실력을 보여주고 싶었음 청년.",
-     "likes": 14975
-    },
-    {
-     "text": "춤 연습하러 갔는데 밖에 사람들이 모여서 구경하니까 급발진한 거 같은데 ㅋㅋㅋㅋㅋ동작이 진짜 이준느낌임ㅋㅋ",
-     "likes": 6175
-    },
-    {
-     "text": "현대무용해서 킥 동작 겁나 우아하네 ㅋㅋㅋㅋㅋㅋㅋ",
-     "likes": 24238
-    },
-    {
-     "text": "아니 다좋은데 갑자기 급발진 뭔데 ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ",
-     "likes": 11929
-    },
-    {
-     "text": "진짜 뭘 해도 존나 열심히 사는구나 ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ",
-     "likes": 4956
-    }
-   ]
+   "gain": 8016
   },
   {
    "id": "lNbqV0smZlE",
    "title": "요즘 난리 난 댄스 챌린지 중 지켜보던 시민이 갑자기 난입했다고?! 😂",
    "ch": "민서율 seoyool",
    "subs": 523000,
-   "views": 3066240,
-   "hours": 47.3,
-   "likes": 23579,
+   "views": 3066971,
+   "hours": 47.4,
+   "likes": 23597,
    "comments": 169,
    "cat": "meme",
    "dur": 10,
    "thumb": "https://i.ytimg.com/vi/lNbqV0smZlE/hqdefault.jpg",
    "kw": [],
-   "tier": "rise"
+   "tier": "rise",
+   "gain": 731
   },
   {
    "id": "JTWLWrwFwAo",
    "title": "반응터진 이준 NEON 챌린지 풀버전.mp4",
    "ch": "워크맨-Workman",
    "subs": 4310000,
-   "views": 2151836,
-   "hours": 56.8,
-   "likes": 32872,
-   "comments": 699,
+   "views": 2157933,
+   "hours": 56.9,
+   "likes": 32965,
+   "comments": 700,
    "cat": "meme",
    "dur": 25,
    "thumb": "https://i.ytimg.com/vi/JTWLWrwFwAo/hqdefault.jpg",
    "kw": [],
    "tier": "rise",
+   "gain": 6097
+  },
+  {
+   "id": "F-emokVb1Is",
+   "title": "백제자객이 안원잘부에서 편집돼서 아쉽다는 장면",
+   "ch": "꾸센느",
+   "subs": 11100,
+   "views": 137093,
+   "hours": 3.9,
+   "likes": 2971,
+   "comments": 292,
+   "cat": "edit",
+   "dur": 36,
+   "thumb": "https://i.ytimg.com/vi/F-emokVb1Is/hqdefault.jpg",
+   "kw": [],
+   "tier": "rise"
+  },
+  {
+   "id": "dVsOFqhilbw",
+   "title": "[자막뉴스] 삿포로 공항 韓승객 대폭발..황당한 결항과정 '경악' (2026.11.05/MBC뉴스)",
+   "ch": "MBCNEWS",
+   "subs": 6210000,
+   "views": 2642609,
+   "hours": 78.1,
+   "likes": 6512,
+   "comments": 2221,
+   "cat": "issue",
+   "dur": 143,
+   "thumb": "https://i.ytimg.com/vi/dVsOFqhilbw/hqdefault.jpg",
+   "kw": [],
+   "tier": "hot"
+  },
+  {
+   "id": "OGhS-3MAfIw",
+   "title": "삿포로 공항 韓승객 대폭발..황당한 결항과정 '경악' #Shorts (MBC뉴스)",
+   "ch": "MBCNEWS",
+   "subs": 6210000,
+   "views": 2551666,
+   "hours": 76.6,
+   "likes": 23350,
+   "comments": 2594,
+   "cat": "issue",
+   "dur": 131,
+   "thumb": "https://i.ytimg.com/vi/OGhS-3MAfIw/hqdefault.jpg",
+   "kw": [],
+   "tier": "hot",
    "topComments": [
     {
-     "text": "워크맨에서 공개하기 전에 벌써 유포된 영상 겁나 웃기네 ㅋㅋㅋㅋ",
-     "likes": 10867
+     "text": "고장날 수는 있지. 근데 후속처리가 개판이잖아.",
+     "likes": 3028
     },
     {
-     "text": "밖에서 찍은 영상보고 헐레벌떡 업로드한 워크맨ㅋ",
-     "likes": 7932
+     "text": "저 와중에 일본말로 한모양이네\n진짜 화났겠다",
+     "likes": 3621
     },
     {
-     "text": "왜 잘하다가 갑자기 야랄라는거야 ㅋㅋㅋ 그래서 좋음 ㅋ",
-     "likes": 2270
+     "text": "사과는 보통 돈으로 하셔야죠",
+     "likes": 4738
     },
     {
-     "text": "밖에 사람들이 다 쳐다 보고 있엌ㅋㅋㅋ",
-     "likes": 2271
+     "text": "승무원들의 근무시간이 초과됫다는 말에 황당하네\n하루종일 고생한 승객들이 있는데 승무원 근무초과로 결항은 아니지  ㅜㅜ",
+     "likes": 489
     },
     {
-     "text": "아이돌댄스가 현대무용같아 보임ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ역시 숨길수 없네",
-     "likes": 4385
+     "text": "고장나거 문제있으면 결항해야지 목숨이 두개는 아니구 \n하지만 후속조치를 잘해야됨",
+     "likes": 199
     }
-   ]
+   ],
+   "commentSummary": "항공기 결항 이후 후속 조치가 엉망이었다는 승객들의 공분"
+  },
+  {
+   "id": "ZRXdjalLwO0",
+   "title": "운전석 손 '삐죽' 내밀더니 '굉음'‥돌진 차량에 행인 '날벼락' #Shorts (MBC뉴스)",
+   "ch": "MBCNEWS",
+   "subs": 6210000,
+   "views": 1859802,
+   "hours": 72.9,
+   "likes": 8913,
+   "comments": 3398,
+   "cat": "issue",
+   "dur": 85,
+   "thumb": "https://i.ytimg.com/vi/ZRXdjalLwO0/hqdefault.jpg",
+   "kw": [],
+   "tier": "hot",
+   "topComments": [
+    {
+     "text": "팔이 짧아서 못빼면 파킹을 놓고 해야지 인간아 감방가서 정말 누군가에게 소중한 어머니였을분께 사죄하면 속죄해라",
+     "likes": 1200
+    },
+    {
+     "text": "팔이 짧으면 제발 기어 파킹으로 하고 안전하게 카드 결제 좀 하시오",
+     "likes": 2816
+    },
+    {
+     "text": "항상 P 파킹 놓고 결제하세요",
+     "likes": 255
+    },
+    {
+     "text": "가해자는 정말 멍청한 사고였고\n피해자는 허망한 죽음이였네 ㅠ",
+     "likes": 902
+    },
+    {
+     "text": "브레이크 엑셀 구분도 못하는것들이 운전면허증을 가지고 댕기는게 더큰문제다",
+     "likes": 1411
+    }
+   ],
+   "commentSummary": "운전 중 부주의한 행동과 브레이크·엑셀 오조작에 대한 거센 질타"
   },
   {
    "id": "JwGKVntjznQ",
    "title": "승우를 꽉잡아🤣 바치바치 😅#춤추는소정 #춤추는곰돌 #춤추는곰돌의랜덤댄스 #댄스 #쇼츠 #챌린지 #춤추는곰돌의타이머댄스 #shorts #dance #music #challenge",
    "ch": "춤추는 소정 爱跳舞的晶晶",
    "subs": 1140000,
-   "views": 3684083,
-   "hours": 146.8,
-   "likes": 16383,
+   "views": 3685813,
+   "hours": 146.9,
+   "likes": 16391,
    "comments": 17,
    "cat": "meme",
    "dur": 15,
    "thumb": "https://i.ytimg.com/vi/JwGKVntjznQ/hqdefault.jpg",
    "kw": [],
-   "tier": ""
+   "tier": "",
+   "gain": 1730
+  },
+  {
+   "id": "2UpokGZBHEU",
+   "title": "황우석, 아랍에미리트 국적 취득…'대한민국 국적 상실'｜지금 이 뉴스",
+   "ch": "JTBC News",
+   "subs": 4910000,
+   "views": 1217632,
+   "hours": 52.6,
+   "likes": 2788,
+   "comments": 2517,
+   "cat": "issue",
+   "dur": 77,
+   "thumb": "https://i.ytimg.com/vi/2UpokGZBHEU/hqdefault.jpg",
+   "kw": [],
+   "tier": "hot",
+   "topComments": [
+    {
+     "text": "황우석 입장에선 당연한 선택이지...존중",
+     "likes": 2989
+    },
+    {
+     "text": "자국민이랑 결혼해도 국적을 안주는 데가 UAE인데 대단하네",
+     "likes": 2056
+    },
+    {
+     "text": "연구원으로서는 최고의 인생일듯",
+     "likes": 271
+    },
+    {
+     "text": "아랍에서 하고싶은 연구 마음껏 하시길......",
+     "likes": 198
+    },
+    {
+     "text": "사람은 자신을 알아주는 자에 충성하는 것이 순리다.",
+     "likes": 557
+    }
+   ]
   },
   {
    "id": "chX0Z7gx-mg",
    "title": "웃참 절대 불가능한 초등학생 답안지 ㅋㅋㅋ",
    "ch": "벙구",
    "subs": 744000,
-   "views": 1230605,
-   "hours": 54.8,
-   "likes": 22510,
+   "views": 1232770,
+   "hours": 54.9,
+   "likes": 22518,
    "comments": 430,
    "cat": "meme",
    "dur": 52,
    "thumb": "https://i.ytimg.com/vi/chX0Z7gx-mg/hqdefault.jpg",
    "kw": [],
-   "tier": "rise"
+   "tier": "rise",
+   "gain": 2165
   },
   {
    "id": "ISiz0BVud0U",
    "title": "호기심 환장 RPG 댄스 챌린지 녜힁",
    "ch": "김동희 세계관",
    "subs": 779000,
-   "views": 602347,
-   "hours": 27.3,
-   "likes": 8439,
+   "views": 603831,
+   "hours": 27.4,
+   "likes": 8448,
    "comments": 456,
    "cat": "meme",
    "dur": 14,
    "thumb": "https://i.ytimg.com/vi/ISiz0BVud0U/hqdefault.jpg",
+   "kw": [],
+   "tier": "rise",
+   "gain": 1484
+  },
+  {
+   "id": "6LBfugqJgWU",
+   "title": "갤폴드8 펼치자 금이 쩍?…천만 조회수 영상의 반전 결말｜지금 이 뉴스",
+   "ch": "JTBC News",
+   "subs": 4910000,
+   "views": 2993015,
+   "hours": 150.4,
+   "likes": 3240,
+   "comments": 1082,
+   "cat": "issue",
+   "dur": 81,
+   "thumb": "https://i.ytimg.com/vi/6LBfugqJgWU/hqdefault.jpg",
+   "kw": [],
+   "tier": "hot"
+  },
+  {
+   "id": "QzwQ2jkktOw",
+   "title": "[뉴스 '꾹'] 구속된 金 자리 앉은 은현장, 가세연 직원에 손 내밀자 (2026.11.02/MBC뉴스)",
+   "ch": "MBCNEWS",
+   "subs": 6210000,
+   "views": 2950688,
+   "hours": 150.5,
+   "likes": 13085,
+   "comments": 2637,
+   "cat": "issue",
+   "dur": 148,
+   "thumb": "https://i.ytimg.com/vi/QzwQ2jkktOw/hqdefault.jpg",
+   "kw": [],
+   "tier": "hot",
+   "topComments": [
+    {
+     "text": "진짜 “참.교.육” ㅋㅋ",
+     "likes": 5721
+    },
+    {
+     "text": "그간 사법부가 얼마나 직무유기했던지, \n은현장 씨 개인의 정의구현이 위로가 되냐...",
+     "likes": 4266
+    },
+    {
+     "text": "약자들만 상대하다가 \n진짜 한테 걸린 케이스",
+     "likes": 3905
+    },
+    {
+     "text": "여러명 죽인 가세연 꼭 무기징역",
+     "likes": 171
+    },
+    {
+     "text": "진짜 저런분이 무서운 사람 입니다~ 쓰레기가 막판에 사람 잘못 건드린 참 교육을 제대로 받네요~ 복수는 저렇게 하는 겁니다~ 멋 집니다~ 화이팅!!!",
+     "likes": 108
+    }
+   ],
+   "commentSummary": "사법부의 직무유기를 비판하며 은현장의 행보를 '참교육'이라며 반기는 반응"
+  },
+  {
+   "id": "eayeQgmkuvI",
+   "title": "결국 북한 유산이 된 태권도…유네스코 '등재' 권고 받았다 [MBN 뉴스7]",
+   "ch": "MBN News",
+   "subs": 2600000,
+   "views": 1452887,
+   "hours": 75.3,
+   "likes": 6504,
+   "comments": 5449,
+   "cat": "issue",
+   "dur": 152,
+   "thumb": "https://i.ytimg.com/vi/eayeQgmkuvI/hqdefault.jpg",
+   "kw": [],
+   "tier": "hot",
+   "topComments": [
+    {
+     "text": "이젠 하다하다 행정력에서도 북한한테 밀리냐?ㅋㅋ 대한민국 진짜 형편 없어졌네 ㅋㅋ",
+     "likes": 7719
+    },
+    {
+     "text": "공문 보냈다고 거짓말이나치고 이건 그냥 간첩아닌가? 보냈다고한 공무원 조사해야한다",
+     "likes": 2657
+    },
+    {
+     "text": "국가유산 직원들 맨 위에 책임자들 다 잘라야 된다고 생각합니다",
+     "likes": 7889
+    },
+    {
+     "text": "태권도를 못지켰으면 조직의 존재 의미가 없지 \n전직원 파면 및 구속 수사 진행하라\n국가유산청 해체하라",
+     "likes": 623
+    },
+    {
+     "text": "백번 양보해서 북한한테 태권도 뺏긴건 어떻게 못한거라 치자, 청을 안 보냈는데 보냈다고 한거는 어떻게 설명할거냐",
+     "likes": 1694
+    }
+   ],
+   "commentSummary": "태권도 유네스코 등재 관련 행정력 부재와 담당자 처벌을 요구하는 분노"
+  },
+  {
+   "id": "yxNJ9DIKTMw",
+   "title": "[자막뉴스] \"담배 하나 피우고 있을게!!\" 반말 찍찍…충격 영상 떴다 / JTBC News",
+   "ch": "JTBC News",
+   "subs": 4910000,
+   "views": 1618808,
+   "hours": 88.9,
+   "likes": 2600,
+   "comments": 915,
+   "cat": "issue",
+   "dur": 107,
+   "thumb": "https://i.ytimg.com/vi/yxNJ9DIKTMw/hqdefault.jpg",
    "kw": [],
    "tier": "rise"
   },
@@ -2853,43 +3484,204 @@
    "title": "스페셜티 가족의 연기 챌린지(with 삼양그룹)",
    "ch": "삼양그룹",
    "subs": 7400,
-   "views": 2367175,
-   "hours": 133.1,
+   "views": 2372324,
+   "hours": 133.3,
    "likes": 1389,
    "comments": 53,
    "cat": "meme",
    "dur": 33,
    "thumb": "https://i.ytimg.com/vi/8bIAfvOjK2o/hqdefault.jpg",
    "kw": [],
-   "tier": ""
+   "tier": "",
+   "gain": 5149
+  },
+  {
+   "id": "RhuYOg-vnTU",
+   "title": "[뉴스 '꾹'] \"와 28표 차? 이래서 투표가\"..공화 텃밭 미시시피 '대반전' (2026.11.05/MBC뉴스)",
+   "ch": "MBCNEWS",
+   "subs": 6210000,
+   "views": 1458727,
+   "hours": 83.6,
+   "likes": 5273,
+   "comments": 830,
+   "cat": "issue",
+   "dur": 154,
+   "thumb": "https://i.ytimg.com/vi/RhuYOg-vnTU/hqdefault.jpg",
+   "kw": [],
+   "tier": "rise"
   },
   {
    "id": "6mz1F1o2TLg",
    "title": "하이디라오 춤추는줄 알았는데…neon챌린지 죄송합니다#스디파 #neon",
    "ch": "리즈시절찾기",
    "subs": 11100,
-   "views": 1152487,
-   "hours": 72.4,
-   "likes": 10244,
+   "views": 1155321,
+   "hours": 72.6,
+   "likes": 10264,
    "comments": 43,
    "cat": "meme",
    "dur": 17,
    "thumb": "https://i.ytimg.com/vi/6mz1F1o2TLg/hqdefault.jpg",
    "kw": [],
-   "tier": ""
+   "tier": "",
+   "gain": 2834
   },
   {
-   "id": "_MAu0Wz4bLU",
-   "title": "안경척의 빼빼로 데이",
-   "ch": "짤툰",
-   "subs": 3250000,
-   "views": 462173,
-   "hours": 34.8,
-   "likes": 10254,
-   "comments": 234,
-   "cat": "season",
-   "dur": 46,
-   "thumb": "https://i.ytimg.com/vi/_MAu0Wz4bLU/hqdefault.jpg",
+   "id": "7oNbWJEDMPg",
+   "title": "세 살배기도 강제 인도‥아동이 '물건'인가 #Shorts (MBC뉴스)",
+   "ch": "MBCNEWS",
+   "subs": 6210000,
+   "views": 2097273,
+   "hours": 132.2,
+   "likes": 21211,
+   "comments": 7390,
+   "cat": "issue",
+   "dur": 116,
+   "thumb": "https://i.ytimg.com/vi/7oNbWJEDMPg/hqdefault.jpg",
+   "kw": [],
+   "tier": "hot",
+   "topComments": [
+    {
+     "text": "미쳤구나.. \n정말 할 말이 없다.\n아..정말 2026년에 말이 되는 상황인가?",
+     "likes": 7651
+    },
+    {
+     "text": "대한민국 판사들은 아직도 1970년대 수준인듯.",
+     "likes": 8185
+    },
+    {
+     "text": "아이고 엄마나 외할아버지가 어떤 마음이었을지..영상만 봐도 가슴이 아프네 ㅠㅠ",
+     "likes": 4287
+    },
+    {
+     "text": "어느쪽이 잘못되었든 아이에겐 저 순간이 지옥같고 트라우마로 남을거같네요....어릴때 충격적인 기억은 성인되서도 잊혀지지 않더라구요 부디 건강하고 무탈없이 잘 크길바래요..",
+     "likes": 300
+    },
+    {
+     "text": "나라는 발전하는데 그것을 따라가지 못하는 사법부 이제는 바꾸자 더 늦기전에",
+     "likes": 6291
+    }
+   ],
+   "commentSummary": "사법부의 안일한 태도와 아동 관련 사건 처리에 대한 강한 분노와 비판"
+  },
+  {
+   "id": "HVcau5wVSRg",
+   "title": "[이 시각 세계] \"공 쫓다 골키퍼와 '쾅'\"‥병원 이송 이튿날 사망 (2026.11.04/뉴스투데이/MBC)",
+   "ch": "MBCNEWS",
+   "subs": 6210000,
+   "views": 1718544,
+   "hours": 110.8,
+   "likes": 2584,
+   "comments": 1037,
+   "cat": "issue",
+   "dur": 47,
+   "thumb": "https://i.ytimg.com/vi/HVcau5wVSRg/hqdefault.jpg",
+   "kw": [],
+   "tier": "hot"
+  },
+  {
+   "id": "vlZjsJn2VXg",
+   "title": "\"팔면 끝?\" '가성비' 중국 전기차의 반전..광주서 부산까지 '수리 난민' 된 BYD 차주들 (자막뉴스) / SBS",
+   "ch": "SBS 뉴스",
+   "subs": 5310000,
+   "views": 1992393,
+   "hours": 131.6,
+   "likes": 3355,
+   "comments": 6847,
+   "cat": "issue",
+   "dur": 125,
+   "thumb": "https://i.ytimg.com/vi/vlZjsJn2VXg/hqdefault.jpg",
+   "kw": [],
+   "tier": "hot",
+   "topComments": [
+    {
+     "text": "알고 샀을테니 신경쓸거 없다.",
+     "likes": 4573
+    },
+    {
+     "text": "니가 선택한 자동차다. 악으로 깡으로 버텨라",
+     "likes": 894
+    },
+    {
+     "text": "아니 중국 제품은 AS 안 되는 거 모르고 샀음?????",
+     "likes": 1842
+    },
+    {
+     "text": "그러든지 말든지",
+     "likes": 32
+    },
+    {
+     "text": "천만원 싸게샀으니  냅둬라\n정신승리 중이니까",
+     "likes": 1158
+    }
+   ],
+   "commentSummary": "중국 전기차 구매와 AS 문제에 대한 자업자득이라는 냉소적 반응"
+  },
+  {
+   "id": "eURQOtMOEuw",
+   "title": "25살 차이 극복…슈퍼모델 김자연, 전 삼성전자 사장 손영권과 결혼 [자막뉴스] / 채널A",
+   "ch": "채널A News",
+   "subs": 3550000,
+   "views": 1855441,
+   "hours": 127.4,
+   "likes": 2993,
+   "comments": 4041,
+   "cat": "issue",
+   "dur": 81,
+   "thumb": "https://i.ytimg.com/vi/eURQOtMOEuw/hqdefault.jpg",
+   "kw": [],
+   "tier": "hot",
+   "topComments": [
+    {
+     "text": "남편 경력을 주구절절 나열하는게..\n기괴하긴하다 ㅋㅋ",
+     "likes": 5704
+    },
+    {
+     "text": "역시 돈은 모든걸 초월하는구나",
+     "likes": 4431
+    },
+    {
+     "text": "돈으로 안 된다면 그건 돈이 부족한거다\n명언이네",
+     "likes": 2682
+    },
+    {
+     "text": "돈의 위력은 대단함",
+     "likes": 187
+    },
+    {
+     "text": "서로 원하는걸 얻었으니 됐다",
+     "likes": 1043
+    }
+   ],
+   "commentSummary": "나이 차이와 결혼에 대해 돈의 위력을 언급하는 냉소적 반응"
+  },
+  {
+   "id": "mUCeVKhfjis",
+   "title": "찰스 국왕은 비 '흠뻑'‥왕비는 우산 #Shorts (MBC뉴스)",
+   "ch": "MBCNEWS",
+   "subs": 6210000,
+   "views": 1479919,
+   "hours": 102.1,
+   "likes": 5056,
+   "comments": 700,
+   "cat": "issue",
+   "dur": 48,
+   "thumb": "https://i.ytimg.com/vi/mUCeVKhfjis/hqdefault.jpg",
+   "kw": [],
+   "tier": "rise"
+  },
+  {
+   "id": "f0lKrxVSXYM",
+   "title": "[잇슈#태그] AI 판치는데 순수 체급으로 승부…충주시 ‘C2O LITE’ 화제 / KBS 2026.11.04.",
+   "ch": "KBS News",
+   "subs": 3730000,
+   "views": 1410674,
+   "hours": 101.6,
+   "likes": 2628,
+   "comments": 710,
+   "cat": "issue",
+   "dur": 88,
+   "thumb": "https://i.ytimg.com/vi/f0lKrxVSXYM/hqdefault.jpg",
    "kw": [],
    "tier": "rise"
   },
@@ -2898,28 +3690,61 @@
    "title": "여친 나잇대별로 빼빼로 선물을 다르게 줘야하는 이유",
    "ch": "이상한 과자가게  weird sweets shop",
    "subs": 1650000,
-   "views": 107496,
-   "hours": 8.1,
-   "likes": 3187,
+   "views": 110254,
+   "hours": 8.3,
+   "likes": 3225,
    "comments": 87,
    "cat": "season",
    "dur": 73,
    "thumb": "https://i.ytimg.com/vi/glI8fThKkNM/hqdefault.jpg",
    "kw": [],
-   "tier": ""
+   "tier": "",
+   "gain": 2758
+  },
+  {
+   "id": "_MAu0Wz4bLU",
+   "title": "안경척의 빼빼로 데이",
+   "ch": "짤툰",
+   "subs": 3250000,
+   "views": 463089,
+   "hours": 34.9,
+   "likes": 10267,
+   "comments": 234,
+   "cat": "season",
+   "dur": 46,
+   "thumb": "https://i.ytimg.com/vi/_MAu0Wz4bLU/hqdefault.jpg",
+   "kw": [],
+   "tier": "rise",
+   "gain": 916
   },
   {
    "id": "yRYjxcBHCzI",
    "title": "POV: 이준 다음 챌린지 유출",
    "ch": "워크맨-Workman",
    "subs": 4310000,
-   "views": 978886,
-   "hours": 75.8,
-   "likes": 12046,
+   "views": 980276,
+   "hours": 75.9,
+   "likes": 12073,
    "comments": 354,
    "cat": "meme",
    "dur": 25,
    "thumb": "https://i.ytimg.com/vi/yRYjxcBHCzI/hqdefault.jpg",
+   "kw": [],
+   "tier": "rise",
+   "gain": 1390
+  },
+  {
+   "id": "7yt3yazbzIk",
+   "title": "\"초당 100미터 추락!\"..탑승자 9명 전원 사망 / SBS 8뉴스",
+   "ch": "SBS 뉴스",
+   "subs": 5310000,
+   "views": 1808867,
+   "hours": 145.6,
+   "likes": 2321,
+   "comments": 835,
+   "cat": "issue",
+   "dur": 123,
+   "thumb": "https://i.ytimg.com/vi/7yt3yazbzIk/hqdefault.jpg",
    "kw": [],
    "tier": "rise"
   },
@@ -2928,103 +3753,494 @@
    "title": "다솔이를 꽉잡아라🤣 바치바치 #춤추는소정 #춤추는곰돌 #춤추는곰돌의랜덤댄스 #댄스 #쇼츠 #챌린지 #춤추는곰돌의타이머댄스 #shorts #dance #music #challenge",
    "ch": "춤추는 소정 爱跳舞的晶晶",
    "subs": 1140000,
-   "views": 1773838,
-   "hours": 146.3,
-   "likes": 7131,
+   "views": 1774757,
+   "hours": 146.4,
+   "likes": 7135,
    "comments": 6,
    "cat": "meme",
    "dur": 14,
    "thumb": "https://i.ytimg.com/vi/cQtp1RFJK84/hqdefault.jpg",
    "kw": [],
-   "tier": ""
+   "tier": "",
+   "gain": 919
+  },
+  {
+   "id": "HJLUErfYv8Q",
+   "title": "50대 여성 현행범 체포...신촌 세브란스에서 '충격 사건' [자막뉴스] / YTN",
+   "ch": " YTN",
+   "subs": 5430000,
+   "views": 1046756,
+   "hours": 86.6,
+   "likes": 2074,
+   "comments": 507,
+   "cat": "issue",
+   "dur": 85,
+   "thumb": "https://i.ytimg.com/vi/HJLUErfYv8Q/hqdefault.jpg",
+   "kw": [],
+   "tier": "rise"
+  },
+  {
+   "id": "UB4TsJ9YDR0",
+   "title": "[뉴스 '꾹'] '뭐지?' 핸들 위로 '세모 불쑥'.. 렌터카 탔다 소름 터진 순간 (2026.11.02/MBC뉴스)",
+   "ch": "MBCNEWS",
+   "subs": 6210000,
+   "views": 1866207,
+   "hours": 155.7,
+   "likes": 2903,
+   "comments": 873,
+   "cat": "issue",
+   "dur": 96,
+   "thumb": "https://i.ytimg.com/vi/UB4TsJ9YDR0/hqdefault.jpg",
+   "kw": [],
+   "tier": "rise"
+  },
+  {
+   "id": "vGASj4KmKEs",
+   "title": "\"내란 우두머리와 뭐가 달라\"…'전국 판사들 모이자'며 격앙 / JTBC 뉴스룸",
+   "ch": "JTBC News",
+   "subs": 4910000,
+   "views": 1386682,
+   "hours": 122.7,
+   "likes": 7549,
+   "comments": 5152,
+   "cat": "issue",
+   "dur": 109,
+   "thumb": "https://i.ytimg.com/vi/vGASj4KmKEs/hqdefault.jpg",
+   "kw": [],
+   "tier": "hot",
+   "topComments": [
+    {
+     "text": "희대 악의 연대기! 누가 끊어 낼 것인가?",
+     "likes": 469
+    },
+    {
+     "text": "계엄 터지고나서..유난히 이상하리만치 조용하고 .. 평화롭던곳\n대법원이였지 ..",
+     "likes": 1040
+    },
+    {
+     "text": "판사 퇴임후 변호사 개업 금지\n법으로 못박자",
+     "likes": 2694
+    },
+    {
+     "text": "내란 우두머리를 옹호한 법원이 그런 말을 하는것은 염치가 없는거지...  나는 법원,검사,판사를 불신한다.",
+     "likes": 53
+    },
+    {
+     "text": "판사가 권력자라는 판사놈들 개혁해라,  AI로 빨리 가야하지 않을까?",
+     "likes": 2725
+    }
+   ],
+   "commentSummary": "사법부와 법조계를 향한 불신과 개혁을 촉구하는 목소리"
+  },
+  {
+   "id": "w05iQ8aTR0g",
+   "title": "[자막뉴스] \"담뱃값 올려도 상관없는데\" 흡연자 깜짝…뼈 때린 일침 / JTBC News",
+   "ch": "JTBC News",
+   "subs": 4910000,
+   "views": 1443810,
+   "hours": 128.9,
+   "likes": 2224,
+   "comments": 4447,
+   "cat": "issue",
+   "dur": 118,
+   "thumb": "https://i.ytimg.com/vi/w05iQ8aTR0g/hqdefault.jpg",
+   "kw": [],
+   "tier": "hot",
+   "topComments": [
+    {
+     "text": "국회의원 돈줄이나 줄여라",
+     "likes": 196
+    },
+    {
+     "text": "아니 ㅋㅋㅋㅋㅋ 담배값을 올리는거 보다 국개의원, 쓸데없는 세금 도둑들 이나 털어라 장난 하는것도 아니고 ㅋㅋㅋ",
+     "likes": 343
+    },
+    {
+     "text": "국회의원 월급부터 줄여야",
+     "likes": 984
+    },
+    {
+     "text": "'그냥 세금 뽑아먹고 싶어요'라고 대놓고 말을 해라",
+     "likes": 90
+    },
+    {
+     "text": "줄담배를 펴줘야 소방관님 장비를 업그레이드 시킬수있다는게...누구 머리에서 나온 법안이냐??",
+     "likes": 1089
+    }
+   ],
+   "commentSummary": "담뱃값 인상 논란에 국회의원 세금 및 월급 삭감을 요구하는 반응"
   },
   {
    "id": "qFJZOMEM0vc",
    "title": "원더재빈 곶감챌린지 #왜요쌤 #dance #윤정아 #challenge #fyp",
    "ch": "왜요쌤",
    "subs": 93100,
-   "views": 871072,
-   "hours": 78.1,
-   "likes": 6242,
+   "views": 872019,
+   "hours": 78.3,
+   "likes": 6248,
    "comments": 67,
    "cat": "meme",
    "dur": 15,
    "thumb": "https://i.ytimg.com/vi/qFJZOMEM0vc/hqdefault.jpg",
    "kw": [],
-   "tier": ""
+   "tier": "",
+   "gain": 947
+  },
+  {
+   "id": "Y_2emzOLDzw",
+   "title": "[자막뉴스] \"곧 지면 충돌\" 교신 뒤 수직 주택가에.. '플로리다 충격' (2026.11.02/MBC뉴스)",
+   "ch": "MBCNEWS",
+   "subs": 6210000,
+   "views": 1731302,
+   "hours": 155.9,
+   "likes": 3021,
+   "comments": 894,
+   "cat": "issue",
+   "dur": 114,
+   "thumb": "https://i.ytimg.com/vi/Y_2emzOLDzw/hqdefault.jpg",
+   "kw": [],
+   "tier": "rise"
+  },
+  {
+   "id": "MSqKYWsi8hE",
+   "title": "'번쩍 와장창' 식당 박살 낸 차량‥운전자 내려 '어?' 하더니 #Shorts (MBC뉴스)",
+   "ch": "MBCNEWS",
+   "subs": 6210000,
+   "views": 776723,
+   "hours": 73.2,
+   "likes": 4735,
+   "comments": 1251,
+   "cat": "issue",
+   "dur": 83,
+   "thumb": "https://i.ytimg.com/vi/MSqKYWsi8hE/hqdefault.jpg",
+   "kw": [],
+   "tier": "rise"
+  },
+  {
+   "id": "w5cjlk-whKo",
+   "title": "[오늘 이 뉴스] 韓 관광객 턴 '필리핀 강도'..돌연 '총격' 현지 경찰 발칵 (2026.11.02/MBC뉴스)",
+   "ch": "MBCNEWS",
+   "subs": 6210000,
+   "views": 1594124,
+   "hours": 151.8,
+   "likes": 5146,
+   "comments": 1852,
+   "cat": "issue",
+   "dur": 83,
+   "thumb": "https://i.ytimg.com/vi/w5cjlk-whKo/hqdefault.jpg",
+   "kw": [],
+   "tier": "hot"
+  },
+  {
+   "id": "ByHWDLm3_xk",
+   "title": "[문화연예 플러스] BTS 제이홉 '모나리자' 1억 회 돌파 (2026.11.02/뉴스투데이/MBC)",
+   "ch": "MBCNEWS",
+   "subs": 6210000,
+   "views": 1646984,
+   "hours": 159.4,
+   "likes": 3677,
+   "comments": 232,
+   "cat": "issue",
+   "dur": 33,
+   "thumb": "https://i.ytimg.com/vi/ByHWDLm3_xk/hqdefault.jpg",
+   "kw": [],
+   "tier": "rise"
+  },
+  {
+   "id": "SLfWOELjx4c",
+   "title": "\"치노?\" 눈 찢고 '낄낄~'…망할 인종차별주의자 가족 / JTBC 사건반장",
+   "ch": "JTBC News",
+   "subs": 4910000,
+   "views": 1124789,
+   "hours": 113.3,
+   "likes": 4071,
+   "comments": 2351,
+   "cat": "issue",
+   "dur": 136,
+   "thumb": "https://i.ytimg.com/vi/SLfWOELjx4c/hqdefault.jpg",
+   "kw": [],
+   "tier": "hot"
+  },
+  {
+   "id": "wC8cBcX86cw",
+   "title": "태국 경찰, 출입문 열어젖히자...24명 무더기 검거 [자막뉴스] / YTN",
+   "ch": " YTN",
+   "subs": 5430000,
+   "views": 1278011,
+   "hours": 130.5,
+   "likes": 1244,
+   "comments": 546,
+   "cat": "issue",
+   "dur": 69,
+   "thumb": "https://i.ytimg.com/vi/wC8cBcX86cw/hqdefault.jpg",
+   "kw": [],
+   "tier": "rise"
   },
   {
    "id": "ebZ3V4R0T3w",
    "title": "3번의 챌린지에 모두 번복됩니다",
    "ch": "스타포츠",
    "subs": 29300,
-   "views": 736277,
-   "hours": 76.1,
-   "likes": 4066,
+   "views": 737572,
+   "hours": 76.2,
+   "likes": 4076,
    "comments": 129,
    "cat": "meme",
    "dur": 29,
    "thumb": "https://i.ytimg.com/vi/ebZ3V4R0T3w/hqdefault.jpg",
    "kw": [],
-   "tier": "rise"
+   "tier": "rise",
+   "gain": 1295
   },
   {
    "id": "lyphlyNeFLA",
    "title": "소정우 샤넬챌린지 오랜만이죠?🥰#춤추는소정 #춤추는곰돌 #춤추는곰돌의랜덤댄스 #댄스 #쇼츠 #챌린지#춤추는곰돌의타이머댄스 #shorts #dance #music #challenge",
    "ch": "춤추는 소정 爱跳舞的晶晶",
    "subs": 1140000,
-   "views": 1337258,
-   "hours": 139.8,
-   "likes": 14806,
+   "views": 1340637,
+   "hours": 139.9,
+   "likes": 14830,
    "comments": 91,
    "cat": "meme",
    "dur": 19,
    "thumb": "https://i.ytimg.com/vi/lyphlyNeFLA/hqdefault.jpg",
    "kw": [],
-   "tier": ""
+   "tier": "",
+   "gain": 3379
+  },
+  {
+   "id": "EnLxw5Jxqqc",
+   "title": "[자막뉴스] 청주서 코브라에 물린 중학생, 병원 갔다가 경찰에 붙잡힌 이유 / KBS 2026.11.02.",
+   "ch": "KBS News",
+   "subs": 3730000,
+   "views": 1443115,
+   "hours": 152.9,
+   "likes": 2283,
+   "comments": 883,
+   "cat": "issue",
+   "dur": 90,
+   "thumb": "https://i.ytimg.com/vi/EnLxw5Jxqqc/hqdefault.jpg",
+   "kw": [],
+   "tier": "rise"
+  },
+  {
+   "id": "jK1pxRbMBpE",
+   "title": "[오늘 이 뉴스] \"돌볼 아이 셋..\" 피멍 버티던 특수교사 \"또\" 무너진 순간 (2026.11.04/MBC뉴스)",
+   "ch": "MBCNEWS",
+   "subs": 6210000,
+   "views": 961196,
+   "hours": 101.9,
+   "likes": 3792,
+   "comments": 1982,
+   "cat": "issue",
+   "dur": 179,
+   "thumb": "https://i.ytimg.com/vi/jK1pxRbMBpE/hqdefault.jpg",
+   "kw": [],
+   "tier": "rise"
   },
   {
    "id": "158xyupG1mM",
    "title": "딸이랑 챌린지 찍지마세요..",
    "ch": "연피디",
    "subs": 428000,
-   "views": 271791,
-   "hours": 29.0,
-   "likes": 2913,
-   "comments": 148,
+   "views": 273260,
+   "hours": 29.2,
+   "likes": 2918,
+   "comments": 149,
    "cat": "meme",
    "dur": 16,
    "thumb": "https://i.ytimg.com/vi/158xyupG1mM/hqdefault.jpg",
    "kw": [],
-   "tier": "rise"
+   "tier": "rise",
+   "gain": 1469
+  },
+  {
+   "id": "ocH5RX3C91s",
+   "title": "[자막뉴스] \"심각한 거 같은데\" 파주시민 식겁..한국서 카메라 줌인하자",
+   "ch": "OBS뉴스",
+   "subs": 442000,
+   "views": 1334093,
+   "hours": 148.9,
+   "likes": 2761,
+   "comments": 1393,
+   "cat": "issue",
+   "dur": 108,
+   "thumb": "https://i.ytimg.com/vi/ocH5RX3C91s/hqdefault.jpg",
+   "kw": [],
+   "tier": "hot"
   },
   {
    "id": "PJsAMhKcZ-8",
    "title": "빼빼로데이, 쌍둥이에게 하나씩만 먹으라고 했더니…😂",
    "ch": "소소담다 Little Happiness",
    "subs": 126000,
-   "views": 459082,
-   "hours": 51.8,
-   "likes": 3943,
+   "views": 460064,
+   "hours": 51.9,
+   "likes": 3946,
    "comments": 19,
    "cat": "season",
    "dur": 57,
    "thumb": "https://i.ytimg.com/vi/PJsAMhKcZ-8/hqdefault.jpg",
    "kw": [],
-   "tier": ""
+   "tier": "",
+   "gain": 982
+  },
+  {
+   "id": "8YkecmrRjfQ",
+   "title": "말레이 도착한 韓 경공격기 FA-50M…2028년까지 총 18대 인도 / 연합뉴스 (Yonhapnews)",
+   "ch": "연합뉴스 Yonhapnews",
+   "subs": 1130000,
+   "views": 1145311,
+   "hours": 131.9,
+   "likes": 1794,
+   "comments": 182,
+   "cat": "issue",
+   "dur": 129,
+   "thumb": "https://i.ytimg.com/vi/8YkecmrRjfQ/hqdefault.jpg",
+   "kw": [],
+   "tier": "rise"
+  },
+  {
+   "id": "SUsYlgv8Y6Y",
+   "title": "[뉴스'픽'] '마라톤 끝난 잠실역 근처 상태' 올라온 사진..서울시민들 '부글'",
+   "ch": "OBS뉴스",
+   "subs": 442000,
+   "views": 1336979,
+   "hours": 154.7,
+   "likes": 4457,
+   "comments": 6012,
+   "cat": "issue",
+   "dur": 110,
+   "thumb": "https://i.ytimg.com/vi/SUsYlgv8Y6Y/hqdefault.jpg",
+   "kw": [],
+   "tier": "hot",
+   "topComments": [
+    {
+     "text": "당연히 주최측에서 책임을 져야지.",
+     "likes": 6042
+    },
+    {
+     "text": "주최측 돈벌이에 왜 서울 시민이 불편을 겪고  청소와 차량 통제로 세금을 써야하나? 누가 허용한것인가?  허용한 자와 주최한 자는 책임을 져야한다.",
+     "likes": 404
+    },
+    {
+     "text": "마라톤대회를 이래서 극혐하는거야 극심한 교통체증만들고 시끄럽고 짜증나 그냥 한강쳐 뛰어 피해주지말고",
+     "likes": 1015
+    },
+    {
+     "text": "뭐 우리나라가 언제부터 이렇게 마라톤 하던 나라라고ㅋㅋㅋ 다 인스타용 분위기따라서 한번 해보는애들이 90%지",
+     "likes": 40
+    },
+    {
+     "text": "기본도 해결 못하면서 꼭 도심에서 마라톤해야되나, 쉬는 날 일하는 차량들도 많은데...",
+     "likes": 307
+    }
+   ],
+   "commentSummary": "도심 마라톤 개최로 인한 교통 체증과 민폐에 대한 시민들의 강한 불만"
+  },
+  {
+   "id": "uSDBv8y5HaU",
+   "title": "[뉴스 '꾹'] 총 중무장 '방콕 빌라' 대급습..\"엎드려\" 불호령 韓남성 '벌벌' (2026.11.03/MBC뉴스)",
+   "ch": "MBCNEWS",
+   "subs": 6210000,
+   "views": 1079851,
+   "hours": 126.4,
+   "likes": 3966,
+   "comments": 943,
+   "cat": "issue",
+   "dur": 127,
+   "thumb": "https://i.ytimg.com/vi/uSDBv8y5HaU/hqdefault.jpg",
+   "kw": [],
+   "tier": "rise"
+  },
+  {
+   "id": "dscOdcTEBuw",
+   "title": "계량기선 잘라 전기 절도‥9억 5천만 원 피해 #Shorts (MBC뉴스)",
+   "ch": "MBCNEWS",
+   "subs": 6210000,
+   "views": 723536,
+   "hours": 85.0,
+   "likes": 4959,
+   "comments": 548,
+   "cat": "issue",
+   "dur": 109,
+   "thumb": "https://i.ytimg.com/vi/dscOdcTEBuw/hqdefault.jpg",
+   "kw": [],
+   "tier": "rise"
   },
   {
    "id": "sITo4UPgJl4",
    "title": "절대로 누르면 안되는 버튼💀",
    "ch": "벙구",
    "subs": 744000,
-   "views": 668356,
-   "hours": 78.8,
-   "likes": 12957,
+   "views": 668783,
+   "hours": 78.9,
+   "likes": 12960,
    "comments": 377,
    "cat": "meme",
    "dur": 37,
    "thumb": "https://i.ytimg.com/vi/sITo4UPgJl4/hqdefault.jpg",
+   "kw": [],
+   "tier": "rise",
+   "gain": 427
+  },
+  {
+   "id": "R9UmklkzSR4",
+   "title": "파타야 화장실 앞 '난투극'.. 中관광객 사용 뒤 터졌다 #Shorts (MBC뉴스)",
+   "ch": "MBCNEWS",
+   "subs": 6210000,
+   "views": 885306,
+   "hours": 106.2,
+   "likes": 8658,
+   "comments": 1369,
+   "cat": "issue",
+   "dur": 83,
+   "thumb": "https://i.ytimg.com/vi/R9UmklkzSR4/hqdefault.jpg",
+   "kw": [],
+   "tier": "rise"
+  },
+  {
+   "id": "40U_VAHpQo8",
+   "title": "[오늘 이 뉴스] 비 내린 무등산 울린 \"어머니!\"..가시 박히며 \"더 찾자\" 순간 (2026.11.03/MBC뉴스)",
+   "ch": "MBCNEWS",
+   "subs": 6210000,
+   "views": 1080444,
+   "hours": 130.4,
+   "likes": 7964,
+   "comments": 1021,
+   "cat": "issue",
+   "dur": 177,
+   "thumb": "https://i.ytimg.com/vi/40U_VAHpQo8/hqdefault.jpg",
+   "kw": [],
+   "tier": "hot"
+  },
+  {
+   "id": "umTczXXcamc",
+   "title": "33살 자전거 여행 유튜버가 떠나기 전 편집해 둔 마지막 영상 #감동 #자전거세계여행",
+   "ch": "한스푼사연",
+   "subs": 163,
+   "views": 431072,
+   "hours": 52.2,
+   "likes": 6160,
+   "comments": 573,
+   "cat": "edit",
+   "dur": 81,
+   "thumb": "https://i.ytimg.com/vi/umTczXXcamc/hqdefault.jpg",
+   "kw": [],
+   "tier": "rise"
+  },
+  {
+   "id": "8kjOwBx6Q7I",
+   "title": "볼리비아 등 남미 국가 국가 비상사태 선포…왜? [자막뉴스] / 채널A",
+   "ch": "채널A News",
+   "subs": 3550000,
+   "views": 1241883,
+   "hours": 151.5,
+   "likes": 2691,
+   "comments": 726,
+   "cat": "issue",
+   "dur": 66,
+   "thumb": "https://i.ytimg.com/vi/8kjOwBx6Q7I/hqdefault.jpg",
    "kw": [],
    "tier": "rise"
   },
@@ -3033,43 +4249,61 @@
    "title": "다이소 틴케이스 뽕뽑는 법",
    "ch": "아끼리",
    "subs": 116000,
-   "views": 207191,
-   "hours": 26.2,
-   "likes": 3185,
+   "views": 207578,
+   "hours": 26.4,
+   "likes": 3194,
    "comments": 30,
    "cat": "season",
    "dur": 36,
    "thumb": "https://i.ytimg.com/vi/DvBzSd8fzXw/hqdefault.jpg",
    "kw": [],
-   "tier": ""
+   "tier": "",
+   "gain": 387
   },
   {
    "id": "uhNfaEV4ofE",
    "title": "1시간 대기 줄 😂💜 | CU 팝업스토어 방문기",
    "ch": "mj_choi",
    "subs": 62,
-   "views": 265289,
-   "hours": 34.5,
-   "likes": 4691,
+   "views": 265707,
+   "hours": 34.6,
+   "likes": 4698,
    "comments": 639,
    "cat": "product",
    "dur": 16,
    "thumb": "https://i.ytimg.com/vi/uhNfaEV4ofE/hqdefault.jpg",
    "kw": [],
-   "tier": "rise"
+   "tier": "rise",
+   "gain": 418
   },
   {
    "id": "6PcI-GPwIH4",
    "title": "던 X 제이블랙 A20 LITE - NEON 챌린지",
    "ch": "던워리비햇님",
    "subs": 106000,
-   "views": 632208,
-   "hours": 83.7,
-   "likes": 10369,
+   "views": 633411,
+   "hours": 83.8,
+   "likes": 10378,
    "comments": 281,
    "cat": "meme",
    "dur": 24,
    "thumb": "https://i.ytimg.com/vi/6PcI-GPwIH4/hqdefault.jpg",
+   "kw": [],
+   "tier": "rise",
+   "gain": 1203
+  },
+  {
+   "id": "7ItukYujcHg",
+   "title": "혼자 우산 쓰고 가버린 커밀라 왕비…비 뒤집어쓴 찰스 3세 / 연합뉴스 (Yonhapnews)",
+   "ch": "연합뉴스 Yonhapnews",
+   "subs": 1130000,
+   "views": 951159,
+   "hours": 127.1,
+   "likes": 905,
+   "comments": 519,
+   "cat": "issue",
+   "dur": 115,
+   "thumb": "https://i.ytimg.com/vi/7ItukYujcHg/hqdefault.jpg",
    "kw": [],
    "tier": "rise"
   },
@@ -3078,13 +4312,29 @@
    "title": "창자 빠지게 웃긴 역대급 흑역사들 ㅋㅋㅋㅋ",
    "ch": "벙구",
    "subs": 744000,
-   "views": 763997,
-   "hours": 102.8,
-   "likes": 14703,
+   "views": 764690,
+   "hours": 102.9,
+   "likes": 14708,
    "comments": 200,
    "cat": "meme",
    "dur": 34,
    "thumb": "https://i.ytimg.com/vi/0d-q7k1MySg/hqdefault.jpg",
+   "kw": [],
+   "tier": "rise",
+   "gain": 693
+  },
+  {
+   "id": "lkXVu8LZ2Wo",
+   "title": "[뉴스 '꾹'] '한방' 기대한 트 마지막 연설, 사진 번쩍 \"아..\" 美 공화 좌절 (2026.11.03/MBC뉴스)",
+   "ch": "MBCNEWS",
+   "subs": 6210000,
+   "views": 925370,
+   "hours": 126.8,
+   "likes": 2427,
+   "comments": 924,
+   "cat": "issue",
+   "dur": 122,
+   "thumb": "https://i.ytimg.com/vi/lkXVu8LZ2Wo/hqdefault.jpg",
    "kw": [],
    "tier": "rise"
   },
@@ -3093,140 +4343,156 @@
    "title": "민규 덕분에(?) 모두 날아간 챌린지",
    "ch": "스타는별",
    "subs": 19800,
-   "views": 933103,
-   "hours": 130.6,
-   "likes": 17219,
+   "views": 934308,
+   "hours": 130.7,
+   "likes": 17236,
    "comments": 13,
    "cat": "meme",
    "dur": 19,
    "thumb": "https://i.ytimg.com/vi/hUsNMMDNwnQ/hqdefault.jpg",
    "kw": [],
-   "tier": ""
+   "tier": "",
+   "gain": 1205
   },
   {
    "id": "DdFbzaYM0y0",
    "title": "호기심 환장 RPG 댄스 챌린지 마검사랑",
    "ch": "김동희 세계관",
    "subs": 779000,
-   "views": 536475,
-   "hours": 75.3,
-   "likes": 7365,
+   "views": 537080,
+   "hours": 75.4,
+   "likes": 7369,
    "comments": 355,
    "cat": "meme",
    "dur": 14,
    "thumb": "https://i.ytimg.com/vi/DdFbzaYM0y0/hqdefault.jpg",
    "kw": [],
-   "tier": "rise"
+   "tier": "rise",
+   "gain": 605
   },
   {
    "id": "Nm36pGCAbj0",
    "title": "챌린지 찍었다 하면 판도를 바꿔버리는 정국",
    "ch": "쿨냥냥",
-   "subs": 7380,
-   "views": 677566,
-   "hours": 101.3,
-   "likes": 12887,
+   "subs": 7390,
+   "views": 679959,
+   "hours": 101.4,
+   "likes": 12928,
    "comments": 68,
    "cat": "meme",
    "dur": 56,
    "thumb": "https://i.ytimg.com/vi/Nm36pGCAbj0/hqdefault.jpg",
    "kw": [],
-   "tier": ""
+   "tier": "",
+   "gain": 2393
   },
   {
    "id": "GT-S0179hG4",
    "title": "호기심 환장 RPG 댄스 챌린지 솥뚜껑 버전",
    "ch": "김동희 세계관",
    "subs": 779000,
-   "views": 644342,
-   "hours": 99.3,
-   "likes": 8909,
+   "views": 644733,
+   "hours": 99.4,
+   "likes": 8912,
    "comments": 436,
    "cat": "meme",
    "dur": 14,
    "thumb": "https://i.ytimg.com/vi/GT-S0179hG4/hqdefault.jpg",
    "kw": [],
-   "tier": "rise"
+   "tier": "rise",
+   "gain": 391
   },
   {
    "id": "2ydUIhjkeoU",
    "title": "리제와 4기생의 옷 바꿔입기 챌린지! #vtuber #shorts",
    "ch": "아카네 리제 AKANE LIZE",
    "subs": 378000,
-   "views": 809149,
-   "hours": 128.3,
-   "likes": 29801,
+   "views": 809531,
+   "hours": 128.4,
+   "likes": 29810,
    "comments": 674,
    "cat": "meme",
    "dur": 19,
    "thumb": "https://i.ytimg.com/vi/2ydUIhjkeoU/hqdefault.jpg",
    "kw": [],
    "tier": "rise",
-   "topComments": [
-    {
-     "text": "4기생들한테 뺏긴 거 아니죠?",
-     "likes": 3031
-    },
-    {
-     "text": "리제 보호기간 끝 ㅋㅋㅋㅋㅋ",
-     "likes": 2262
-    },
-    {
-     "text": "강제로 뺏긴건가요 뺏은건가요?ㅋㅋ",
-     "likes": 2244
-    },
-    {
-     "text": "어흐 랑아 고맙다",
-     "likes": 1186
-    },
-    {
-     "text": "부끄러워하는 요리라니 어흐어흐",
-     "likes": 447
-    }
-   ]
-  },
-  {
-   "id": "1AGS8f23Yh4",
-   "title": "레고 축구 광고에서 누가 빠졌는지 물었더니",
-   "ch": "KNOW?",
-   "subs": 37900,
-   "views": 181125,
-   "hours": 30.3,
-   "likes": 896,
-   "comments": 45,
-   "cat": "ad",
-   "dur": 5,
-   "thumb": "https://i.ytimg.com/vi/1AGS8f23Yh4/hqdefault.jpg",
-   "kw": [],
-   "tier": ""
+   "gain": 382
   },
   {
    "id": "UJSSHeSddLM",
    "title": "웃음참기 절대 불가능한 댄스 챌린지 3탄 ㅋㅋㅋㅋ",
    "ch": "벙구",
    "subs": 744000,
-   "views": 756536,
-   "hours": 126.8,
-   "likes": 18592,
+   "views": 757304,
+   "hours": 126.9,
+   "likes": 18599,
    "comments": 579,
    "cat": "meme",
    "dur": 42,
    "thumb": "https://i.ytimg.com/vi/UJSSHeSddLM/hqdefault.jpg",
    "kw": [],
-   "tier": "rise"
+   "tier": "rise",
+   "gain": 768
+  },
+  {
+   "id": "1AGS8f23Yh4",
+   "title": "레고 축구 광고에서 누가 빠졌는지 물었더니",
+   "ch": "KNOW?",
+   "subs": 37900,
+   "views": 181157,
+   "hours": 30.4,
+   "likes": 896,
+   "comments": 45,
+   "cat": "ad",
+   "dur": 5,
+   "thumb": "https://i.ytimg.com/vi/1AGS8f23Yh4/hqdefault.jpg",
+   "kw": [],
+   "tier": "",
+   "gain": 32
   },
   {
    "id": "eD3QPnQaTQ8",
    "title": "민소매 입으면 춤의 악령이 온다 이준 패딩 벗은 이유",
    "ch": "되감냥이",
    "subs": 2720,
-   "views": 242886,
-   "hours": 40.8,
-   "likes": 1613,
+   "views": 243483,
+   "hours": 40.9,
+   "likes": 1619,
    "comments": 49,
    "cat": "meme",
    "dur": 22,
    "thumb": "https://i.ytimg.com/vi/eD3QPnQaTQ8/hqdefault.jpg",
+   "kw": [],
+   "tier": "",
+   "gain": 597
+  },
+  {
+   "id": "D9a-gUmOfg0",
+   "title": "맥어보이가 찐으로 빵 터져서 통편집된 엑스맨 전설의 삭제씬 ㅋㅋㅋ #xmen",
+   "ch": "어쩌다 스파이(Accidental SPY)",
+   "subs": 6410,
+   "views": 707468,
+   "hours": 124.4,
+   "likes": 2758,
+   "comments": 54,
+   "cat": "edit",
+   "dur": 24,
+   "thumb": "https://i.ytimg.com/vi/D9a-gUmOfg0/hqdefault.jpg",
+   "kw": [],
+   "tier": ""
+  },
+  {
+   "id": "GYtBynXYWlU",
+   "title": "나솔사계 1기 영호 통편집 논란! 방송도 전에 공개된 폭로글이 충격적인 이유#이슈#핫이슈#나는솔로#나솔사계#1기영호#나솔사계 외국인특집#몽골 장미",
+   "ch": "초록연예소식",
+   "subs": 2420,
+   "views": 175640,
+   "hours": 30.9,
+   "likes": 564,
+   "comments": 88,
+   "cat": "edit",
+   "dur": 76,
+   "thumb": "https://i.ytimg.com/vi/GYtBynXYWlU/hqdefault.jpg",
    "kw": [],
    "tier": ""
   },
@@ -3235,90 +4501,96 @@
    "title": "던 X 제이블랙 A20 LITE - NEON 안무 챌린지",
    "ch": "던워리비햇님",
    "subs": 106000,
-   "views": 456885,
-   "hours": 83.7,
-   "likes": 7589,
+   "views": 457393,
+   "hours": 83.8,
+   "likes": 7600,
    "comments": 217,
    "cat": "meme",
    "dur": 24,
    "thumb": "https://i.ytimg.com/vi/hnOme9mGrTY/hqdefault.jpg",
    "kw": [],
-   "tier": "rise"
+   "tier": "rise",
+   "gain": 508
   },
   {
    "id": "2fk9aNlQS1E",
    "title": "JYP 춤선 버전이라는 네온 챌린지 #킥플립 #KickFlip #동화 #NEON",
    "ch": "무대뭐볼래",
    "subs": 3080,
-   "views": 785583,
-   "hours": 147.1,
-   "likes": 6009,
+   "views": 789021,
+   "hours": 147.2,
+   "likes": 6031,
    "comments": 34,
    "cat": "meme",
    "dur": 25,
    "thumb": "https://i.ytimg.com/vi/2fk9aNlQS1E/hqdefault.jpg",
    "kw": [],
-   "tier": ""
+   "tier": "",
+   "gain": 3438
   },
   {
    "id": "MxAxzXxNDAw",
    "title": "어느 안경점의 광고 포스터 ㅋㅋ",
    "ch": "KNOW?",
    "subs": 37900,
-   "views": 285925,
-   "hours": 58.8,
+   "views": 286845,
+   "hours": 58.9,
    "likes": 2139,
    "comments": 12,
    "cat": "ad",
    "dur": 6,
    "thumb": "https://i.ytimg.com/vi/MxAxzXxNDAw/hqdefault.jpg",
    "kw": [],
-   "tier": ""
+   "tier": "",
+   "gain": 920
   },
   {
    "id": "W8eRnCvBnkE",
    "title": "내 심장을 뛰게 한 리센느🪽 [With] 챌린지",
    "ch": "KBS Kpop",
    "subs": 10400000,
-   "views": 235861,
-   "hours": 49.9,
-   "likes": 4961,
+   "views": 236170,
+   "hours": 50.0,
+   "likes": 4965,
    "comments": 180,
    "cat": "meme",
    "dur": 25,
    "thumb": "https://i.ytimg.com/vi/W8eRnCvBnkE/hqdefault.jpg",
    "kw": [],
-   "tier": "rise"
+   "tier": "rise",
+   "gain": 309
   },
   {
    "id": "V_DVvoUk2Ts",
    "title": "빼빼로데이 보내는 애들 특징!",
    "ch": "항상해맑음",
    "subs": 123000,
-   "views": 42901,
-   "hours": 10.8,
-   "likes": 1405,
+   "views": 43413,
+   "hours": 10.9,
+   "likes": 1408,
    "comments": 23,
    "cat": "season",
    "dur": 40,
    "thumb": "https://i.ytimg.com/vi/V_DVvoUk2Ts/hqdefault.jpg",
    "kw": [],
-   "tier": ""
+   "tier": "",
+   "gain": 512
   },
   {
    "id": "kgppWo607uo",
    "title": "팔로우 서열 (춤 챌린지)",
    "ch": "종타쿠",
    "subs": 109000,
-   "views": 396972,
-   "hours": 100.8,
-   "likes": 7468,
+   "views": 397111,
+   "hours": 100.9,
+   "likes": 7471,
    "comments": 59,
    "cat": "meme",
    "dur": 64,
    "thumb": "https://i.ytimg.com/vi/kgppWo607uo/hqdefault.jpg",
    "kw": [],
-   "tier": ""
+   "tier": "",
+   "gain": 139
   },
   {
    "id": "DU3bREgEieM",
@@ -3326,42 +4598,60 @@
    "ch": "돌핀",
    "subs": 55800,
    "views": 54283,
-   "hours": 13.8,
+   "hours": 13.9,
    "likes": 824,
    "comments": 10,
    "cat": "ad",
    "dur": 32,
    "thumb": "https://i.ytimg.com/vi/DU3bREgEieM/hqdefault.jpg",
    "kw": [],
-   "tier": ""
+   "tier": "",
+   "gain": 0
   },
   {
    "id": "u8LnGlXcU8o",
    "title": "SM 남돌 NEON 챌린지",
    "ch": "해달꽃",
    "subs": 247,
-   "views": 517222,
-   "hours": 144.8,
-   "likes": 7248,
+   "views": 517493,
+   "hours": 145.0,
+   "likes": 7252,
    "comments": 58,
    "cat": "meme",
    "dur": 27,
    "thumb": "https://i.ytimg.com/vi/u8LnGlXcU8o/hqdefault.jpg",
    "kw": [],
-   "tier": ""
+   "tier": "",
+   "gain": 271
   },
   {
    "id": "QF-tWR6J5F8",
    "title": "지수가 틱톡에만 올려준 챌린지 영상",
    "ch": "얼미새도 새라우",
    "subs": 256,
-   "views": 520366,
-   "hours": 147.8,
-   "likes": 7996,
+   "views": 520431,
+   "hours": 147.9,
+   "likes": 7998,
    "comments": 81,
    "cat": "meme",
    "dur": 14,
    "thumb": "https://i.ytimg.com/vi/QF-tWR6J5F8/hqdefault.jpg",
+   "kw": [],
+   "tier": "",
+   "gain": 65
+  },
+  {
+   "id": "dWUS_BgI_Qo",
+   "title": "마이크 터트리기 챌린지 편집하면서 제일 웃겼던 친궄ㅋ",
+   "ch": "마니마니 아저씨",
+   "subs": 46600,
+   "views": 184903,
+   "hours": 52.9,
+   "likes": 2563,
+   "comments": 19,
+   "cat": "edit",
+   "dur": 39,
+   "thumb": "https://i.ytimg.com/vi/dWUS_BgI_Qo/hqdefault.jpg",
    "kw": [],
    "tier": ""
   },
@@ -3370,103 +4660,125 @@
    "title": "팀장님이 '빼빼로데이 금지에용~'",
    "ch": "썰구리",
    "subs": 60700,
-   "views": 291526,
-   "hours": 84.7,
-   "likes": 3395,
+   "views": 291768,
+   "hours": 84.9,
+   "likes": 3396,
    "comments": 13,
    "cat": "season",
    "dur": 65,
    "thumb": "https://i.ytimg.com/vi/NUxBytbbIM0/hqdefault.jpg",
    "kw": [],
-   "tier": ""
+   "tier": "",
+   "gain": 242
   },
   {
    "id": "wEnXw4SCTAM",
    "title": "🎵#춤추는은채 #춤추는곰돌 #afstarz #댄스 #music #kpop #dance #tiktok #challenge #뮤직 #rpm #쇼츠 #fyp",
    "ch": "춤추는은채",
    "subs": 598000,
-   "views": 471162,
-   "hours": 142.7,
-   "likes": 6878,
+   "views": 472062,
+   "hours": 142.9,
+   "likes": 6914,
    "comments": 28,
    "cat": "meme",
    "dur": 18,
    "thumb": "https://i.ytimg.com/vi/wEnXw4SCTAM/hqdefault.jpg",
    "kw": [],
-   "tier": ""
+   "tier": "",
+   "gain": 900
   },
   {
    "id": "n5FRz4aHzss",
    "title": "여자 아이돌이 춘 권루트 챌린지! L을 가저가!",
    "ch": "권루트 로블록스",
    "subs": 236000,
-   "views": 334382,
-   "hours": 102.8,
-   "likes": 5354,
+   "views": 334929,
+   "hours": 102.9,
+   "likes": 5357,
    "comments": 156,
    "cat": "meme",
    "dur": 17,
    "thumb": "https://i.ytimg.com/vi/n5FRz4aHzss/hqdefault.jpg",
    "kw": [],
-   "tier": "rise"
+   "tier": "rise",
+   "gain": 547
+  },
+  {
+   "id": "U8AkEvolEac",
+   "title": "부장님은 빼빼로데이마다 가래떡 200개를 돌린다",
+   "ch": "하루썰",
+   "subs": 1190,
+   "views": 31160,
+   "hours": 9.9,
+   "likes": 382,
+   "comments": 6,
+   "cat": "season",
+   "dur": 84,
+   "thumb": "https://i.ytimg.com/vi/U8AkEvolEac/hqdefault.jpg",
+   "kw": [],
+   "tier": "",
+   "gain": 667
   },
   {
    "id": "TRztCq6Xpn0",
    "title": "[아이브] 콘서트에서 다시 돌아온 안유진 성 빼! 챌린지 ㅋㅋ #아이브 #ive #안유진 #가을 #레이 #장원영 #리즈 #이서 #룩스캔킬",
    "ch": "1201 아이브",
    "subs": 18200,
-   "views": 310010,
-   "hours": 98.8,
-   "likes": 2424,
+   "views": 310478,
+   "hours": 98.9,
+   "likes": 2425,
    "comments": 22,
    "cat": "meme",
    "dur": 17,
    "thumb": "https://i.ytimg.com/vi/TRztCq6Xpn0/hqdefault.jpg",
    "kw": [],
-   "tier": ""
-  },
-  {
-   "id": "U8AkEvolEac",
-   "title": "부장님은 빼빼로데이마다 가래떡 200개를 돌린다",
-   "ch": "하루썰",
-   "subs": 1180,
-   "views": 30493,
-   "hours": 9.8,
-   "likes": 380,
-   "comments": 6,
-   "cat": "season",
-   "dur": 84,
-   "thumb": "https://i.ytimg.com/vi/U8AkEvolEac/hqdefault.jpg",
-   "kw": [],
-   "tier": ""
+   "tier": "",
+   "gain": 468
   },
   {
    "id": "JxMAn_GWZU8",
    "title": "정우야😅 니들 모야?🤣 #춤추는소정 #춤추는곰돌 #춤추는곰돌의랜덤댄스 #댄스 #쇼츠 #챌린지 #춤추는곰돌의타이머댄스 #shorts #dance #music #challenge",
    "ch": "춤추는 소정 爱跳舞的晶晶",
    "subs": 1140000,
-   "views": 402850,
-   "hours": 134.8,
+   "views": 402964,
+   "hours": 134.9,
    "likes": 1820,
    "comments": 8,
    "cat": "meme",
    "dur": 11,
    "thumb": "https://i.ytimg.com/vi/JxMAn_GWZU8/hqdefault.jpg",
    "kw": [],
-   "tier": ""
+   "tier": "",
+   "gain": 114
   },
   {
    "id": "kWJmjGVg9sA",
    "title": "승우야🤣🤣🤣괜찮겟지? #춤추는소정 #춤추는곰돌 #춤추는곰돌의랜덤댄스 #댄스 #쇼츠 #챌린지 #춤추는곰돌의타이머댄스 #shorts #dance #music #challenge",
    "ch": "춤추는 소정 爱跳舞的晶晶",
    "subs": 1140000,
-   "views": 362610,
-   "hours": 122.3,
-   "likes": 1686,
+   "views": 362707,
+   "hours": 122.4,
+   "likes": 1687,
    "comments": 6,
    "cat": "meme",
    "dur": 15,
    "thumb": "https://i.ytimg.com/vi/kWJmjGVg9sA/hqdefault.jpg",
+   "kw": [],
+   "tier": "",
+   "gain": 97
+  },
+  {
+   "id": "d5VQMz_wXfY",
+   "title": "피디님이 편집하다 울었다는 장면\r#안원잘부 #리센느 #원이 #리브 #미나미 #메이 #제나 #프리티걸 #러브어택",
+   "ch": "뮤드숏",
+   "subs": 3580,
+   "views": 355591,
+   "hours": 121.0,
+   "likes": 3947,
+   "comments": 92,
+   "cat": "edit",
+   "dur": 23,
+   "thumb": "https://i.ytimg.com/vi/d5VQMz_wXfY/hqdefault.jpg",
    "kw": [],
    "tier": ""
   },
@@ -3475,68 +4787,56 @@
    "title": "'13년 전 노래' 역주행시킨 챌린지",
    "ch": "털어드림",
    "subs": 172000,
-   "views": 325668,
-   "hours": 127.3,
-   "likes": 4679,
+   "views": 326291,
+   "hours": 127.4,
+   "likes": 4681,
    "comments": 96,
    "cat": "meme",
    "dur": 49,
    "thumb": "https://i.ytimg.com/vi/zZaAAwukneQ/hqdefault.jpg",
    "kw": [],
-   "tier": ""
+   "tier": "",
+   "gain": 623
   },
   {
    "id": "UK7lOPOru2U",
    "title": "길에서 여학생에게 챌린지를 제안해 보았다.#힙포챌린지 #치즈불닭반쎄오 #베트남음식",
    "ch": "힙포 본사",
    "subs": 22000,
-   "views": 298025,
-   "hours": 123.8,
-   "likes": 4837,
-   "comments": 200,
+   "views": 298458,
+   "hours": 123.9,
+   "likes": 4849,
+   "comments": 201,
    "cat": "meme",
    "dur": 66,
    "thumb": "https://i.ytimg.com/vi/UK7lOPOru2U/hqdefault.jpg",
    "kw": [],
-   "tier": "rise"
+   "tier": "rise",
+   "gain": 433
   },
   {
    "id": "iEYR4h7gzoQ",
    "title": "광기가 보인다는 리센느 CU 팝업",
    "ch": "이것만",
    "subs": 9150,
-   "views": 240167,
-   "hours": 100.8,
-   "likes": 4195,
-   "comments": 435,
+   "views": 240437,
+   "hours": 100.9,
+   "likes": 4200,
+   "comments": 434,
    "cat": "product",
    "dur": 45,
    "thumb": "https://i.ytimg.com/vi/iEYR4h7gzoQ/hqdefault.jpg",
    "kw": [],
-   "tier": "rise"
-  },
-  {
-   "id": "lklDYRrQDTQ",
-   "title": "대통령 돼서 싹 다 정리한다는 시사타파 이종원",
-   "ch": "민주발사대",
-   "subs": 42200,
-   "views": 18046,
-   "hours": 8.6,
-   "likes": 978,
-   "comments": 264,
-   "cat": "issue",
-   "dur": 45,
-   "thumb": "https://i.ytimg.com/vi/lklDYRrQDTQ/hqdefault.jpg",
-   "kw": [],
-   "tier": ""
+   "tier": "rise",
+   "gain": 270
   },
   {
    "id": "vT-gCU3lKGw",
    "title": "리센느 × CU 편의점 콜라보 팝업 올림픽광장점 실시간 재고 현황 리센느빵 & 덕연이딸 원이 도시락 RESCENE × CU COLLAB POP-UP",
    "ch": "와쿠더쿠TV [WakuTaku]",
    "subs": 8690,
-   "views": 274330,
-   "hours": 131.8,
+   "views": 274410,
+   "hours": 132.0,
    "likes": 4703,
    "comments": 1098,
    "cat": "product",
@@ -3544,41 +4844,36 @@
    "thumb": "https://i.ytimg.com/vi/vT-gCU3lKGw/hqdefault.jpg",
    "kw": [],
    "tier": "rise",
-   "topComments": [
-    {
-     "text": "앨범 판매는 오후 6시부터 시작된다고 하니, 방문하실 분들은 참고 바랍니다!",
-     "likes": 179
-    },
-    {
-     "text": "세상에 빵 봐라... 서울 사람들 개부럽다😢😢",
-     "likes": 354
-    },
-    {
-     "text": "내 빵이 저기 다 있네 지방으로도 내놔라 이넘들아 ㅠㅠ",
-     "likes": 255
-    },
-    {
-     "text": "전설속의 빵이  저렇게나 많다고??",
-     "likes": 75
-    },
-    {
-     "text": "와... 빵만 봐도 마음이 웅장해진다",
-     "likes": 250
-    }
-   ]
+   "gain": 80
   },
   {
    "id": "NU7AAjEKWSc",
    "title": "최산의 Drip  무의식 챌린지 ㅋㅋㅋ (feat. 종호)",
    "ch": "돌판잇슈",
    "subs": 348,
-   "views": 292934,
-   "hours": 146.5,
-   "likes": 7094,
+   "views": 294458,
+   "hours": 146.7,
+   "likes": 7110,
    "comments": 39,
    "cat": "meme",
    "dur": 19,
    "thumb": "https://i.ytimg.com/vi/NU7AAjEKWSc/hqdefault.jpg",
+   "kw": [],
+   "tier": "",
+   "gain": 1524
+  },
+  {
+   "id": "JYMpEiXIOBw",
+   "title": "부모님 한테 원하는거 있지? 다 하면 학교 빠짐! #kpop #챌린지 #편집 #추천 #관리자님추천뜨게해주세요 #리센느#신곡#리브#행운#유행",
+   "ch": "ꔫ 리윷뽀ꔫ ,,🤍",
+   "subs": 43100,
+   "views": 50525,
+   "hours": 26.2,
+   "likes": 2627,
+   "comments": 38,
+   "cat": "edit",
+   "dur": 15,
+   "thumb": "https://i.ytimg.com/vi/JYMpEiXIOBw/hqdefault.jpg",
    "kw": [],
    "tier": ""
   },
@@ -3587,39 +4882,40 @@
    "title": "11월 광고모델 브랜드평판 TOP10 #리센느",
    "ch": "필소굿",
    "subs": 19200,
-   "views": 97039,
-   "hours": 53.0,
-   "likes": 2188,
-   "comments": 110,
+   "views": 98012,
+   "hours": 53.2,
+   "likes": 2197,
+   "comments": 111,
    "cat": "ad",
    "dur": 31,
    "thumb": "https://i.ytimg.com/vi/N6zhmeLYrpw/hqdefault.jpg",
    "kw": [],
    "tier": "",
-   "gain": 3044
+   "gain": 973
   },
   {
    "id": "2o_riLip8Os",
    "title": "커튼 뒤에서 띠용 하다 딱 걸린 산이ㅋㅋㅋ #shorts",
    "ch": "김몽블랑",
    "subs": 8290,
-   "views": 221965,
-   "hours": 128.5,
+   "views": 221946,
+   "hours": 128.7,
    "likes": 2555,
    "comments": 14,
    "cat": "meme",
    "dur": 21,
    "thumb": "https://i.ytimg.com/vi/2o_riLip8Os/hqdefault.jpg",
    "kw": [],
-   "tier": ""
+   "tier": "",
+   "gain": 0
   },
   {
    "id": "cS397SCW6aE",
    "title": "신발 광고 찍은 멤버가 결국 바닥에 엎드린 이유",
    "ch": "삼촌의 덕질",
    "subs": 7840,
-   "views": 49768,
-   "hours": 29.8,
+   "views": 50088,
+   "hours": 29.9,
    "likes": 870,
    "comments": 22,
    "cat": "ad",
@@ -3627,20 +4923,36 @@
    "thumb": "https://i.ytimg.com/vi/cS397SCW6aE/hqdefault.jpg",
    "kw": [],
    "tier": "",
-   "gain": 744
+   "gain": 320
   },
   {
    "id": "JZZMYo1ivpE",
    "title": "광고 노래 가사에 단체로 웃참 실패한 하츠투하츠",
    "ch": "반짝꿀칩",
    "subs": 1660,
-   "views": 12051,
-   "hours": 7.7,
-   "likes": 410,
+   "views": 12352,
+   "hours": 7.8,
+   "likes": 420,
    "comments": 3,
    "cat": "ad",
    "dur": 19,
    "thumb": "https://i.ytimg.com/vi/JZZMYo1ivpE/hqdefault.jpg",
+   "kw": [],
+   "tier": "",
+   "gain": 301
+  },
+  {
+   "id": "hbUZIxU828A",
+   "title": "활동 빡세게 해준 에이티즈 🎵Drip #교차편집 #ATEEZ",
+   "ch": "K덕톡",
+   "subs": 47400,
+   "views": 265248,
+   "hours": 167.9,
+   "likes": 5415,
+   "comments": 64,
+   "cat": "edit",
+   "dur": 60,
+   "thumb": "https://i.ytimg.com/vi/hbUZIxU828A/hqdefault.jpg",
    "kw": [],
    "tier": ""
   },
@@ -3649,28 +4961,45 @@
    "title": "역대급 캐스팅으로 개웃긴 하나은행 광고 #아이브 #안유진 #지드래곤 #임영웅 #손흥민",
    "ch": "레전드온에어",
    "subs": 1470,
-   "views": 198565,
-   "hours": 126.9,
-   "likes": 1493,
+   "views": 198888,
+   "hours": 127.0,
+   "likes": 1494,
    "comments": 26,
    "cat": "ad",
    "dur": 28,
    "thumb": "https://i.ytimg.com/vi/KcHSIeyUw_I/hqdefault.jpg",
    "kw": [],
-   "tier": ""
+   "tier": "",
+   "gain": 323
   },
   {
    "id": "fqfpB33Aask",
    "title": "🚨 아일릿 체포하겠어🚨호루라기 주는 팝업?🚨  근데 호루라기를 40초나 불라고요?! 😂📢 @Disney @ILLIT_official",
    "ch": "HobbyDuck 하비덕",
    "subs": 1150,
-   "views": 194594,
-   "hours": 130.1,
-   "likes": 3289,
+   "views": 194934,
+   "hours": 130.3,
+   "likes": 3301,
    "comments": 19,
    "cat": "product",
    "dur": 27,
    "thumb": "https://i.ytimg.com/vi/fqfpB33Aask/hqdefault.jpg",
+   "kw": [],
+   "tier": "",
+   "gain": 340
+  },
+  {
+   "id": "LaDyvV7Q5SY",
+   "title": "탁재훈에게 바비킴이 통편집 요청한 이유ㅋㅋ🤣#탁재훈 #예능레전드 #예능 #유머",
+   "ch": "드라마보는 남자",
+   "subs": 167000,
+   "views": 73751,
+   "hours": 49.5,
+   "likes": 704,
+   "comments": 13,
+   "cat": "edit",
+   "dur": 78,
+   "thumb": "https://i.ytimg.com/vi/LaDyvV7Q5SY/hqdefault.jpg",
    "kw": [],
    "tier": ""
   },
@@ -3679,13 +5008,44 @@
    "title": "기획자 연봉 올려주라고 난리난 삼성 갤럭시 광고ㅋ",
    "ch": "찌생수",
    "subs": 24300,
-   "views": 18282,
-   "hours": 12.8,
-   "likes": 189,
+   "views": 18411,
+   "hours": 12.9,
+   "likes": 192,
    "comments": 8,
    "cat": "ad",
    "dur": 48,
    "thumb": "https://i.ytimg.com/vi/2Qs1UXIfJdk/hqdefault.jpg",
+   "kw": [],
+   "tier": "",
+   "gain": 129
+  },
+  {
+   "id": "J7Fgr4XKp4E",
+   "title": "707 특임단 사격훈련 편집 없이 틀어봤더니",
+   "ch": "생존컷",
+   "subs": 9170,
+   "views": 76851,
+   "hours": 55.2,
+   "likes": 528,
+   "comments": 77,
+   "cat": "edit",
+   "dur": 15,
+   "thumb": "https://i.ytimg.com/vi/J7Fgr4XKp4E/hqdefault.jpg",
+   "kw": [],
+   "tier": ""
+  },
+  {
+   "id": "RRgkkAVzUXA",
+   "title": "미미미누 길거리 수학 챌린지 체육 입시생이 편집 부탁한 이유는?",
+   "ch": "아싸이드",
+   "subs": 2340,
+   "views": 40543,
+   "hours": 29.4,
+   "likes": 362,
+   "comments": 2,
+   "cat": "edit",
+   "dur": 37,
+   "thumb": "https://i.ytimg.com/vi/RRgkkAVzUXA/hqdefault.jpg",
    "kw": [],
    "tier": ""
   },
@@ -3694,43 +5054,61 @@
    "title": "빼빼로데이에 딱인 초간단 먼작귀 빼빼로(+얼굴 망하지 않고 그리는 법!)",
    "ch": "지현쿡",
    "subs": 224000,
-   "views": 66933,
-   "hours": 49.1,
-   "likes": 1360,
+   "views": 67185,
+   "hours": 49.3,
+   "likes": 1361,
    "comments": 28,
    "cat": "season",
    "dur": 29,
    "thumb": "https://i.ytimg.com/vi/6HIjq2tlkcM/hqdefault.jpg",
    "kw": [],
-   "tier": ""
-  },
-  {
-   "id": "FXhRVQWsH5A",
-   "title": "#44교시생존수업 #사생수 #빼빼로데이 #빼빼로 소한지은 키스 빼빼로게임",
-   "ch": "yeoubi",
-   "subs": 6600,
-   "views": 8771,
-   "hours": 6.8,
-   "likes": 526,
-   "comments": 58,
-   "cat": "season",
-   "dur": 43,
-   "thumb": "https://i.ytimg.com/vi/FXhRVQWsH5A/hqdefault.jpg",
-   "kw": [],
-   "tier": ""
+   "tier": "",
+   "gain": 252
   },
   {
    "id": "901m3uht2t8",
    "title": "빼빼로데이 때문에 현타 온 남자친구ㅋㅋ #shorts",
    "ch": "학교종",
    "subs": 55300,
-   "views": 70248,
-   "hours": 54.8,
+   "views": 70404,
+   "hours": 55.0,
    "likes": 841,
    "comments": 18,
    "cat": "season",
    "dur": 7,
    "thumb": "https://i.ytimg.com/vi/901m3uht2t8/hqdefault.jpg",
+   "kw": [],
+   "tier": "",
+   "gain": 156
+  },
+  {
+   "id": "FXhRVQWsH5A",
+   "title": "#44교시생존수업 #사생수 #빼빼로데이 #빼빼로 소한지은 키스 빼빼로게임",
+   "ch": "yeoubi",
+   "subs": 6600,
+   "views": 8913,
+   "hours": 7.0,
+   "likes": 530,
+   "comments": 58,
+   "cat": "season",
+   "dur": 43,
+   "thumb": "https://i.ytimg.com/vi/FXhRVQWsH5A/hqdefault.jpg",
+   "kw": [],
+   "tier": "",
+   "gain": 142
+  },
+  {
+   "id": "iqKjMkxmVuU",
+   "title": "편집하다가 눈물난 피디니무 ㅋㅋ #RESCENE #리센느",
+   "ch": "리센느어택",
+   "subs": 5380,
+   "views": 142566,
+   "hours": 120.5,
+   "likes": 1817,
+   "comments": 45,
+   "cat": "edit",
+   "dur": 31,
+   "thumb": "https://i.ytimg.com/vi/iqKjMkxmVuU/hqdefault.jpg",
    "kw": [],
    "tier": ""
   },
@@ -3739,29 +5117,60 @@
    "title": "광고 백 건 몰린 리센느 때문에 놀란 광고주들",
    "ch": "센느로그",
    "subs": 2090,
-   "views": 23926,
-   "hours": 22.3,
-   "likes": 544,
+   "views": 24472,
+   "hours": 22.4,
+   "likes": 548,
    "comments": 5,
    "cat": "ad",
    "dur": 34,
    "thumb": "https://i.ytimg.com/vi/SKvbCkg_cSw/hqdefault.jpg",
    "kw": [],
    "tier": "",
-   "gain": 1755
+   "gain": 546
+  },
+  {
+   "id": "Xa-Xv8AzGJI",
+   "title": "명곡의 재발견, 이즈나 🎵SIGN #교차편집 #댓글모음 #IZNA",
+   "ch": "K덕톡",
+   "subs": 47400,
+   "views": 31464,
+   "hours": 28.9,
+   "likes": 520,
+   "comments": 23,
+   "cat": "edit",
+   "dur": 33,
+   "thumb": "https://i.ytimg.com/vi/Xa-Xv8AzGJI/hqdefault.jpg",
+   "kw": [],
+   "tier": ""
   },
   {
    "id": "Vt9trlZe444",
    "title": "빼빼로데이 줄 섰는데 할머니 머리가 가게 문을 가림ㅋㅋ #shorts",
    "ch": "갸루엄마 | 서아맘",
    "subs": 319,
-   "views": 29138,
-   "hours": 27.3,
-   "likes": 198,
+   "views": 29598,
+   "hours": 27.4,
+   "likes": 201,
    "comments": 3,
    "cat": "season",
    "dur": 16,
    "thumb": "https://i.ytimg.com/vi/Vt9trlZe444/hqdefault.jpg",
+   "kw": [],
+   "tier": "",
+   "gain": 460
+  },
+  {
+   "id": "-rIGic7xkOs",
+   "title": "🩵IVE(아이브)🩵Looks Can Kill🩵_Stage Mix(교차 편집)  #IVE #Looks Can Kill #아이브 #룩스캔킬 #Stage Mix #교차 편집",
+   "ch": "엔믹스기특해",
+   "subs": 9410,
+   "views": 161019,
+   "hours": 150.0,
+   "likes": 3619,
+   "comments": 10,
+   "cat": "edit",
+   "dur": 44,
+   "thumb": "https://i.ytimg.com/vi/-rIGic7xkOs/hqdefault.jpg",
    "kw": [],
    "tier": ""
   },
@@ -3770,38 +5179,40 @@
    "title": "리센느 PULSE 발매 기념 CU 팝업스토어 매장 모습 in CU 올림픽광장점",
    "ch": "나미의 관심, 사고, 생활",
    "subs": 2240,
-   "views": 129875,
-   "hours": 123.5,
+   "views": 129891,
+   "hours": 123.7,
    "likes": 2178,
    "comments": 406,
    "cat": "product",
    "dur": 16,
    "thumb": "https://i.ytimg.com/vi/yj4YVYbfffY/hqdefault.jpg",
    "kw": [],
-   "tier": "rise"
+   "tier": "rise",
+   "gain": 16
   },
   {
    "id": "TkdGbL5KMow",
    "title": "CU 올림픽광장점 리센느 POP-UP OPEN!💜",
    "ch": "CU [씨유튜브]",
    "subs": 1040000,
-   "views": 53284,
-   "hours": 52.8,
-   "likes": 2355,
+   "views": 53321,
+   "hours": 52.9,
+   "likes": 2356,
    "comments": 191,
    "cat": "product",
    "dur": 55,
    "thumb": "https://i.ytimg.com/vi/TkdGbL5KMow/hqdefault.jpg",
    "kw": [],
-   "tier": ""
+   "tier": "",
+   "gain": 37
   },
   {
    "id": "t211qDkHI2w",
    "title": "자동차 브랜드 신뢰도 1위는 렉서스… 만족도 1위는?",
    "ch": "하루세번지식쌓기",
    "subs": 42100,
-   "views": 26279,
-   "hours": 26.2,
+   "views": 26447,
+   "hours": 26.3,
    "likes": 12,
    "comments": 2,
    "cat": "ad",
@@ -3809,35 +5220,52 @@
    "thumb": "https://i.ytimg.com/vi/t211qDkHI2w/hqdefault.jpg",
    "kw": [],
    "tier": "",
-   "gain": 605
-  },
-  {
-   "id": "svEuTY_ZXfA",
-   "title": "#리센느 팝업매장에서 #원이도시락 샀어요 #CU올림픽광장점",
-   "ch": "포덕 리마인 카즈키",
-   "subs": 51,
-   "views": 121056,
-   "hours": 121.3,
-   "likes": 1672,
-   "comments": 220,
-   "cat": "product",
-   "dur": 19,
-   "thumb": "https://i.ytimg.com/vi/svEuTY_ZXfA/hqdefault.jpg",
-   "kw": [],
-   "tier": "rise"
+   "gain": 168
   },
   {
    "id": "NqFNR_Lm_zU",
    "title": "31기 경수 순자 안경수 팝업 스토어 데이트 ♡♡",
    "ch": "나솔그후",
    "subs": 5260,
-   "views": 26771,
-   "hours": 27.0,
+   "views": 27129,
+   "hours": 27.1,
    "likes": 586,
    "comments": 65,
    "cat": "product",
    "dur": 35,
    "thumb": "https://i.ytimg.com/vi/NqFNR_Lm_zU/hqdefault.jpg",
+   "kw": [],
+   "tier": "",
+   "gain": 358
+  },
+  {
+   "id": "svEuTY_ZXfA",
+   "title": "#리센느 팝업매장에서 #원이도시락 샀어요 #CU올림픽광장점",
+   "ch": "포덕 리마인 카즈키",
+   "subs": 51,
+   "views": 121137,
+   "hours": 121.4,
+   "likes": 1672,
+   "comments": 220,
+   "cat": "product",
+   "dur": 19,
+   "thumb": "https://i.ytimg.com/vi/svEuTY_ZXfA/hqdefault.jpg",
+   "kw": [],
+   "tier": "rise",
+   "gain": 81
+  },
+  {
+   "id": "1cRbmSYf4Tg",
+   "title": "[시즌18] 통편집",
+   "ch": "리병현",
+   "subs": 75300,
+   "views": 49537,
+   "hours": 51.9,
+   "likes": 427,
+   "comments": 6,
+   "cat": "edit",
+   "dur": 47,
+   "thumb": "https://i.ytimg.com/vi/1cRbmSYf4Tg/hqdefault.jpg",
    "kw": [],
    "tier": ""
   },
@@ -3846,43 +5274,121 @@
    "title": "빼빼로데이 선물 깡",
    "ch": "백수가 꿈💸Baekkum💸",
    "subs": 3450000,
-   "views": 44924,
-   "hours": 47.3,
+   "views": 44997,
+   "hours": 47.4,
    "likes": 1416,
    "comments": 24,
    "cat": "season",
    "dur": 46,
    "thumb": "https://i.ytimg.com/vi/OHJeK25wnWA/hqdefault.jpg",
    "kw": [],
-   "tier": ""
+   "tier": "",
+   "gain": 73
   },
   {
    "id": "Uze3it8k8pE",
    "title": "트릭컬 빼빼로데이!",
    "ch": "남의집 복실이",
    "subs": 2230,
-   "views": 9542,
-   "hours": 10.8,
+   "views": 9659,
+   "hours": 10.9,
    "likes": 672,
    "comments": 90,
    "cat": "season",
    "dur": 46,
    "thumb": "https://i.ytimg.com/vi/Uze3it8k8pE/hqdefault.jpg",
    "kw": [],
-   "tier": ""
+   "tier": "",
+   "gain": 117
   },
   {
    "id": "6UCpe4_W7J0",
    "title": "먼작귀 빼빼로 만들기♥",
    "ch": "징니의 조각",
    "subs": 1970,
-   "views": 117918,
-   "hours": 134.8,
-   "likes": 2287,
+   "views": 118040,
+   "hours": 134.9,
+   "likes": 2289,
    "comments": 20,
    "cat": "season",
    "dur": 61,
    "thumb": "https://i.ytimg.com/vi/6UCpe4_W7J0/hqdefault.jpg",
+   "kw": [],
+   "tier": "",
+   "gain": 122
+  },
+  {
+   "id": "pwa_O9ux7BY",
+   "title": "IVE (아이브) - Looks Can Kill | Stage Mix (교차편집) highlight 02",
+   "ch": "Gomdoleader",
+   "subs": 1830,
+   "views": 34388,
+   "hours": 39.9,
+   "likes": 1192,
+   "comments": 2,
+   "cat": "edit",
+   "dur": 31,
+   "thumb": "https://i.ytimg.com/vi/pwa_O9ux7BY/hqdefault.jpg",
+   "kw": [],
+   "tier": ""
+  },
+  {
+   "id": "vvDvvzBYnpI",
+   "title": "IVE (아이브) - Looks Can Kill | Stage Mix (교차편집) highlight 01",
+   "ch": "Gomdoleader",
+   "subs": 1830,
+   "views": 40791,
+   "hours": 48.6,
+   "likes": 1159,
+   "comments": 10,
+   "cat": "edit",
+   "dur": 30,
+   "thumb": "https://i.ytimg.com/vi/vvDvvzBYnpI/hqdefault.jpg",
+   "kw": [],
+   "tier": ""
+  },
+  {
+   "id": "kFTz4imSlJI",
+   "title": "[에이티즈/산] 해 쩌는 짓😎| Drip 산 교차편집 | #에이티즈 #최산 #ateez #san",
+   "ch": "떵별공주와 산덕여왕",
+   "subs": 3650,
+   "views": 109488,
+   "hours": 136.9,
+   "likes": 4158,
+   "comments": 34,
+   "cat": "edit",
+   "dur": 26,
+   "thumb": "https://i.ytimg.com/vi/kFTz4imSlJI/hqdefault.jpg",
+   "kw": [],
+   "tier": ""
+  },
+  {
+   "id": "0y-Kec3wMDA",
+   "title": "마스크 쓰고 얼공.. #캡컷 #roblox #편집대결",
+   "ch": "수꾸미",
+   "subs": 1640,
+   "views": 77991,
+   "hours": 100.1,
+   "likes": 2095,
+   "comments": 0,
+   "cat": "edit",
+   "dur": 24,
+   "thumb": "https://i.ytimg.com/vi/0y-Kec3wMDA/hqdefault.jpg",
+   "kw": [],
+   "tier": ""
+  },
+  {
+   "id": "M7CXZ1h2znY",
+   "title": "새벽 5시에 일어나서 편집하고 아기 둘 육아하는 VLOG",
+   "ch": "아영하세영",
+   "subs": 43900,
+   "views": 37898,
+   "hours": 52.4,
+   "likes": 589,
+   "comments": 10,
+   "cat": "edit",
+   "dur": 46,
+   "thumb": "https://i.ytimg.com/vi/M7CXZ1h2znY/hqdefault.jpg",
    "kw": [],
    "tier": ""
   },
@@ -3891,8 +5397,8 @@
    "title": "#광고 홈헬스케어 브랜드 1위 세라젬을 이제이쿡에서 최초로 소개합니다 #New파우제M4 #리플렉스쇼파베드 #세라젬기획전",
    "ch": "오늘도이제이쿡",
    "subs": 294000,
-   "views": 20393,
-   "hours": 29.5,
+   "views": 20436,
+   "hours": 29.7,
    "likes": 211,
    "comments": 38,
    "cat": "ad",
@@ -3900,7 +5406,7 @@
    "thumb": "https://i.ytimg.com/vi/F3RA9xqoDOc/hqdefault.jpg",
    "kw": [],
    "tier": "",
-   "gain": 315
+   "gain": 43
   },
   {
    "id": "MpC1APr6m38",
@@ -3908,12 +5414,28 @@
    "ch": "율라키친",
    "subs": 3370,
    "views": 83095,
-   "hours": 123.8,
+   "hours": 123.9,
    "likes": 1015,
    "comments": 14,
    "cat": "season",
    "dur": 24,
    "thumb": "https://i.ytimg.com/vi/MpC1APr6m38/hqdefault.jpg",
+   "kw": [],
+   "tier": "",
+   "gain": 0
+  },
+  {
+   "id": "_XPMza7E0A8",
+   "title": "베스티 연애의 조건 2026 교차편집",
+   "ch": "덕후의쉼터",
+   "subs": 2670,
+   "views": 84325,
+   "hours": 126.1,
+   "likes": 1309,
+   "comments": 47,
+   "cat": "edit",
+   "dur": 56,
+   "thumb": "https://i.ytimg.com/vi/_XPMza7E0A8/hqdefault.jpg",
    "kw": [],
    "tier": ""
   },
@@ -3922,83 +5444,88 @@
    "title": "테슬라 4대 걸린 알리가차쏜다 이벤트? 성수 팝업 스토어 다녀옴!",
    "ch": "꿀단지PD",
    "subs": 247000,
-   "views": 52063,
-   "hours": 78.0,
+   "views": 52061,
+   "hours": 78.2,
    "likes": 485,
    "comments": 3,
    "cat": "product",
    "dur": 46,
    "thumb": "https://i.ytimg.com/vi/cdrWB_ZR_WM/hqdefault.jpg",
    "kw": [],
-   "tier": ""
+   "tier": "",
+   "gain": 0
   },
   {
    "id": "mSsTXCuv3VQ",
    "title": "편의점 통째로 털어버린 리센느 팝업스토어 대란 #리센느 #RESCENE",
    "ch": "센느콩",
    "subs": 1010,
-   "views": 101030,
-   "hours": 153.6,
+   "views": 101007,
+   "hours": 153.7,
    "likes": 1883,
    "comments": 86,
    "cat": "product",
    "dur": 20,
    "thumb": "https://i.ytimg.com/vi/mSsTXCuv3VQ/hqdefault.jpg",
    "kw": [],
-   "tier": ""
+   "tier": "",
+   "gain": 0
   },
   {
    "id": "QesRKLtT3nY",
    "title": "편의점 통째로 털어버린 역대급 팝업 #리센느 #RESCENE",
    "ch": "핫큐",
    "subs": 2880,
-   "views": 94896,
-   "hours": 153.5,
+   "views": 94913,
+   "hours": 153.7,
    "likes": 1714,
    "comments": 77,
    "cat": "product",
    "dur": 23,
    "thumb": "https://i.ytimg.com/vi/QesRKLtT3nY/hqdefault.jpg",
    "kw": [],
-   "tier": ""
+   "tier": "",
+   "gain": 17
   },
   {
    "id": "HvLMH5rrIeY",
    "title": "#44교시생존수업 #사생수 #빼빼로데이 현준석오 키스 더빙 전석오",
    "ch": "yeoubi",
    "subs": 6600,
-   "views": 19352,
-   "hours": 31.4,
-   "likes": 556,
+   "views": 19406,
+   "hours": 31.6,
+   "likes": 557,
    "comments": 69,
    "cat": "season",
    "dur": 19,
    "thumb": "https://i.ytimg.com/vi/HvLMH5rrIeY/hqdefault.jpg",
    "kw": [],
-   "tier": ""
+   "tier": "",
+   "gain": 54
   },
   {
    "id": "QajW_TEsTF4",
    "title": "빼빼로 데이 왁뿌 뿌셨더니 ㄷㄷ",
    "ch": "오마이비키",
    "subs": 301000,
-   "views": 28999,
-   "hours": 52.6,
+   "views": 29067,
+   "hours": 52.8,
    "likes": 453,
    "comments": 18,
    "cat": "season",
    "dur": 58,
    "thumb": "https://i.ytimg.com/vi/QajW_TEsTF4/hqdefault.jpg",
    "kw": [],
-   "tier": ""
+   "tier": "",
+   "gain": 68
   },
   {
    "id": "Jo8XRmzYFXs",
    "title": "인지도 대비 비싸다는 치킨 브랜드",
    "ch": "꿀꺽",
    "subs": 10200,
-   "views": 12996,
-   "hours": 23.6,
+   "views": 13100,
+   "hours": 23.8,
    "likes": 60,
    "comments": 30,
    "cat": "ad",
@@ -4006,22 +5533,38 @@
    "thumb": "https://i.ytimg.com/vi/Jo8XRmzYFXs/hqdefault.jpg",
    "kw": [],
    "tier": "",
-   "gain": 674
+   "gain": 104
+  },
+  {
+   "id": "e_AdPv1LupI",
+   "title": "거침없이 말한 김병현은 편집을 믿고 있었다 ㅋㅋ",
+   "ch": "SON콕",
+   "subs": 22100,
+   "views": 44571,
+   "hours": 83.9,
+   "likes": 168,
+   "comments": 1,
+   "cat": "edit",
+   "dur": 50,
+   "thumb": "https://i.ytimg.com/vi/e_AdPv1LupI/hqdefault.jpg",
+   "kw": [],
+   "tier": ""
   },
   {
    "id": "1JvrNwp_nA0",
    "title": "이것은 빼빼로인가 크레용인가.. 빼빼로데이 특집 빼빼로로 그리기",
    "ch": "화방넷 그리다",
    "subs": 205000,
-   "views": 28146,
-   "hours": 53.0,
+   "views": 28186,
+   "hours": 53.2,
    "likes": 713,
    "comments": 15,
    "cat": "season",
    "dur": 85,
    "thumb": "https://i.ytimg.com/vi/1JvrNwp_nA0/hqdefault.jpg",
    "kw": [],
-   "tier": ""
+   "tier": "",
+   "gain": 40
   },
   {
    "id": "8YZq9EforwU",
@@ -4029,7 +5572,7 @@
    "ch": "[data-viz 빅스타] Bigxtar",
    "subs": 5310,
    "views": 24793,
-   "hours": 50.7,
+   "hours": 50.9,
    "likes": 671,
    "comments": 30,
    "cat": "ad",
@@ -4037,96 +5580,116 @@
    "thumb": "https://i.ytimg.com/vi/8YZq9EforwU/hqdefault.jpg",
    "kw": [],
    "tier": "",
-   "gain": 1
+   "gain": 0
   },
   {
    "id": "NmAbIfYGPfQ",
    "title": "리센느 팝업스토어 굿즈 가격이 왜 이 모양인지 알아?",
    "ch": "리마인더",
    "subs": 95,
-   "views": 37692,
-   "hours": 77.8,
+   "views": 37560,
+   "hours": 77.9,
    "likes": 808,
    "comments": 11,
    "cat": "product",
    "dur": 21,
    "thumb": "https://i.ytimg.com/vi/NmAbIfYGPfQ/hqdefault.jpg",
    "kw": [],
-   "tier": ""
+   "tier": "",
+   "gain": 0
   },
   {
    "id": "rIVr1lAYqh0",
    "title": "씹덕 와이프의 홍대 팝업 투어",
    "ch": "김모씨네",
    "subs": 161000,
-   "views": 59973,
-   "hours": 124.8,
-   "likes": 1989,
+   "views": 60026,
+   "hours": 124.9,
+   "likes": 1990,
    "comments": 23,
    "cat": "product",
    "dur": 78,
    "thumb": "https://i.ytimg.com/vi/rIVr1lAYqh0/hqdefault.jpg",
    "kw": [],
-   "tier": ""
-  },
-  {
-   "id": "qY5lBU-QSXI",
-   "title": "다이소 재료로 10분만에 치이카와 빼빼로 만들기✨",
-   "ch": "오닝oning",
-   "subs": 300000,
-   "views": 11245,
-   "hours": 23.5,
-   "likes": 191,
-   "comments": 8,
-   "cat": "season",
-   "dur": 59,
-   "thumb": "https://i.ytimg.com/vi/qY5lBU-QSXI/hqdefault.jpg",
-   "kw": [],
-   "tier": ""
+   "tier": "",
+   "gain": 53
   },
   {
    "id": "uM7aRpDN7Mc",
    "title": "브랜드 평판 지수 광고 모델 부문 2026년 11월",
    "ch": "SpoEntRank",
-   "subs": 87,
-   "views": 21313,
-   "hours": 44.6,
-   "likes": 338,
+   "subs": 88,
+   "views": 21328,
+   "hours": 44.7,
+   "likes": 337,
    "comments": 15,
    "cat": "ad",
    "dur": 46,
    "thumb": "https://i.ytimg.com/vi/uM7aRpDN7Mc/hqdefault.jpg",
    "kw": [],
    "tier": "",
-   "gain": 55
+   "gain": 15
+  },
+  {
+   "id": "qY5lBU-QSXI",
+   "title": "다이소 재료로 10분만에 치이카와 빼빼로 만들기✨",
+   "ch": "오닝oning",
+   "subs": 300000,
+   "views": 11269,
+   "hours": 23.7,
+   "likes": 193,
+   "comments": 8,
+   "cat": "season",
+   "dur": 59,
+   "thumb": "https://i.ytimg.com/vi/qY5lBU-QSXI/hqdefault.jpg",
+   "kw": [],
+   "tier": "",
+   "gain": 24
   },
   {
    "id": "WZI0L_5b7vQ",
    "title": "[빼빼로x스트레이 키즈] 📱리노에게 영상통화가 왔어요!",
    "ch": "맛깔스튜디오 by롯데웰푸드",
    "subs": 151000,
-   "views": 39651,
-   "hours": 83.6,
-   "likes": 6012,
+   "views": 39701,
+   "hours": 83.8,
+   "likes": 6018,
    "comments": 53,
    "cat": "season",
    "dur": 14,
    "thumb": "https://i.ytimg.com/vi/WZI0L_5b7vQ/hqdefault.jpg",
    "kw": [],
-   "tier": ""
+   "tier": "",
+   "gain": 50
   },
   {
    "id": "o4p975a2uVA",
    "title": "11월7일(토) 전량 매진!! CU 리센느 콜라보 팝업스토어 전 메뉴 쓸어오기! 빵 5종 + 도시락 극락 조합 추천 🍱🥐 #shorts",
    "ch": "먹테이블",
    "subs": 305,
-   "views": 44376,
-   "hours": 98.8,
-   "likes": 1294,
+   "views": 44417,
+   "hours": 98.9,
+   "likes": 1296,
    "comments": 161,
    "cat": "product",
    "dur": 51,
    "thumb": "https://i.ytimg.com/vi/o4p975a2uVA/hqdefault.jpg",
+   "kw": [],
+   "tier": "",
+   "gain": 41
+  },
+  {
+   "id": "aoDYyR4XvWU",
+   "title": "90년대 기자들이 들고 뛰었던 12kg 영상 편집",
+   "ch": "지식문",
+   "subs": 18200,
+   "views": 46189,
+   "hours": 104.6,
+   "likes": 262,
+   "comments": 19,
+   "cat": "edit",
+   "dur": 12,
+   "thumb": "https://i.ytimg.com/vi/aoDYyR4XvWU/hqdefault.jpg",
    "kw": [],
    "tier": ""
   },
@@ -4135,31 +5698,63 @@
    "title": "빼빼로데이 빼빼로 많이 받을 것 같은 쿠키 순위 TOP 10 | 쿠키런: 킹덤 [Cookie Run: Kingdom]",
    "ch": "호쿰이 Ho_kumee",
    "subs": 50900,
-   "views": 50224,
-   "hours": 119.8,
+   "views": 50254,
+   "hours": 120.0,
    "likes": 1370,
    "comments": 78,
    "cat": "season",
    "dur": 43,
    "thumb": "https://i.ytimg.com/vi/Kbt5DYOQGBs/hqdefault.jpg",
    "kw": [],
-   "tier": ""
+   "tier": "",
+   "gain": 30
   },
   {
    "id": "fcP7IDumur4",
    "title": "8만 원 가방으로 모델까지 된 원이",
    "ch": "덕력발전소",
    "subs": 2960,
-   "views": 14626,
-   "hours": 39.5,
-   "likes": 432,
+   "views": 14682,
+   "hours": 39.7,
+   "likes": 436,
    "comments": 0,
    "cat": "ad",
    "dur": 31,
    "thumb": "https://i.ytimg.com/vi/fcP7IDumur4/hqdefault.jpg",
    "kw": [],
    "tier": "",
-   "gain": 159
+   "gain": 56
+  },
+  {
+   "id": "x4D0WPBws7I",
+   "title": "600번 만에 성공했다는 레전드 광고 ㅋㅋ",
+   "ch": "웬지식",
+   "subs": 53500,
+   "views": 28142,
+   "hours": 76.6,
+   "likes": 518,
+   "comments": 12,
+   "cat": "ad",
+   "dur": 23,
+   "thumb": "https://i.ytimg.com/vi/x4D0WPBws7I/hqdefault.jpg",
+   "kw": [],
+   "tier": "",
+   "gain": 65
+  },
+  {
+   "id": "wuAYPt7b10Q",
+   "title": "편집샵 직원과 손님의 미묘한 신경전",
+   "ch": "잼꼬락",
+   "subs": 4830,
+   "views": 36802,
+   "hours": 101.9,
+   "likes": 203,
+   "comments": 3,
+   "cat": "edit",
+   "dur": 93,
+   "thumb": "https://i.ytimg.com/vi/wuAYPt7b10Q/hqdefault.jpg",
+   "kw": [],
+   "tier": ""
   },
   {
    "id": "BIG0iBKCzEA",
@@ -4167,7 +5762,7 @@
    "ch": "후련하냐",
    "subs": 6660,
    "views": 1549,
-   "hours": 4.2,
+   "hours": 4.4,
    "likes": 2,
    "comments": 1,
    "cat": "ad",
@@ -4175,20 +5770,20 @@
    "thumb": "https://i.ytimg.com/vi/BIG0iBKCzEA/hqdefault.jpg",
    "kw": [],
    "tier": "",
-   "gain": 363
+   "gain": 0
   },
   {
-   "id": "x4D0WPBws7I",
-   "title": "600번 만에 성공했다는 레전드 광고 ㅋㅋ",
-   "ch": "웬지식",
-   "subs": 53500,
-   "views": 28077,
-   "hours": 76.5,
-   "likes": 517,
-   "comments": 12,
-   "cat": "ad",
-   "dur": 23,
-   "thumb": "https://i.ytimg.com/vi/x4D0WPBws7I/hqdefault.jpg",
+   "id": "95VbmNKtYqo",
+   "title": "요즘 유행중인 편집 #jjs #jjk #jujutsushenanigans #주츠시네니건 #주츠",
+   "ch": "주인장",
+   "subs": 20500,
+   "views": 43969,
+   "hours": 124.9,
+   "likes": 579,
+   "comments": 39,
+   "cat": "edit",
+   "dur": 13,
+   "thumb": "https://i.ytimg.com/vi/95VbmNKtYqo/hqdefault.jpg",
    "kw": [],
    "tier": ""
   },
@@ -4197,13 +5792,29 @@
    "title": "[빼빼로x스트레이 키즈] 📱승민이에게 영상통화가 왔어요!",
    "ch": "맛깔스튜디오 by롯데웰푸드",
    "subs": 151000,
-   "views": 36701,
-   "hours": 107.6,
-   "likes": 4923,
+   "views": 36735,
+   "hours": 107.8,
+   "likes": 4929,
    "comments": 46,
    "cat": "season",
    "dur": 14,
    "thumb": "https://i.ytimg.com/vi/VFSxTUm3sCM/hqdefault.jpg",
+   "kw": [],
+   "tier": "",
+   "gain": 34
+  },
+  {
+   "id": "TNKr5YTIFyE",
+   "title": "북한 무인기 도발 삭제 영상 입수. 편집 영상 속 드러난 충격적 실체ㅣ 탈북감동사연",
+   "ch": "두만강감동극장",
+   "subs": 130000,
+   "views": 54060,
+   "hours": 158.9,
+   "likes": 990,
+   "comments": 7,
+   "cat": "edit",
+   "dur": 32,
+   "thumb": "https://i.ytimg.com/vi/TNKr5YTIFyE/hqdefault.jpg",
    "kw": [],
    "tier": ""
   },
@@ -4212,75 +5823,80 @@
    "title": "빼빼로x모나미 모나미빼빼로볼펜",
    "ch": "마델언니",
    "subs": 2500,
-   "views": 48994,
-   "hours": 152.1,
+   "views": 49008,
+   "hours": 152.3,
    "likes": 471,
    "comments": 5,
    "cat": "season",
    "dur": 13,
    "thumb": "https://i.ytimg.com/vi/Srtj68UdC18/hqdefault.jpg",
    "kw": [],
-   "tier": ""
+   "tier": "",
+   "gain": 14
   },
   {
    "id": "4vDehWuwoJA",
    "title": "《속보》원이도시락 최초 판매 시작!ㅣ[미미의 미미(美味)]",
    "ch": "CU [씨유튜브]",
    "subs": 1040000,
-   "views": 38448,
-   "hours": 128.8,
+   "views": 38462,
+   "hours": 128.9,
    "likes": 486,
    "comments": 18,
    "cat": "product",
    "dur": 22,
    "thumb": "https://i.ytimg.com/vi/4vDehWuwoJA/hqdefault.jpg",
    "kw": [],
-   "tier": ""
+   "tier": "",
+   "gain": 14
   },
   {
    "id": "wWI1DKcdBIQ",
    "title": "수제 빼빼로 만들기 🍫 #빼빼로 #쿠키 #과자 #빼빼로데이 #선물 #롯데 #해태 #오리온 #크라운 #쿠크다스 #엄마손파이 #화이트하임 #배배 #다이소",
    "ch": "5소정",
    "subs": 106,
-   "views": 23977,
-   "hours": 82.5,
-   "likes": 195,
+   "views": 24164,
+   "hours": 82.6,
+   "likes": 197,
    "comments": 16,
    "cat": "season",
    "dur": 30,
    "thumb": "https://i.ytimg.com/vi/wWI1DKcdBIQ/hqdefault.jpg",
    "kw": [],
-   "tier": ""
+   "tier": "",
+   "gain": 187
   },
   {
    "id": "dSd-AfRRqiE",
    "title": "씹덕 와이프의 홍대 마도카 팝업 후기",
    "ch": "김모씨네",
    "subs": 161000,
-   "views": 27919,
-   "hours": 100.8,
+   "views": 27935,
+   "hours": 100.9,
    "likes": 1005,
    "comments": 20,
    "cat": "product",
    "dur": 62,
    "thumb": "https://i.ytimg.com/vi/dSd-AfRRqiE/hqdefault.jpg",
    "kw": [],
-   "tier": ""
+   "tier": "",
+   "gain": 16
   },
   {
    "id": "Plx-95_Degc",
    "title": "일본 빼빼로가 한국한테 진 이유",
    "ch": "성소장",
    "subs": 31800,
-   "views": 20812,
-   "hours": 76.6,
-   "likes": 168,
+   "views": 20841,
+   "hours": 76.7,
+   "likes": 169,
    "comments": 37,
    "cat": "season",
    "dur": 35,
    "thumb": "https://i.ytimg.com/vi/Plx-95_Degc/hqdefault.jpg",
    "kw": [],
-   "tier": ""
+   "tier": "",
+   "gain": 29
   },
   {
    "id": "A1EH88s3lrQ",
@@ -4288,14 +5904,15 @@
    "ch": "야미팬더",
    "subs": 2960,
    "views": 32963,
-   "hours": 125.7,
+   "hours": 125.9,
    "likes": 841,
    "comments": 8,
    "cat": "season",
    "dur": 37,
    "thumb": "https://i.ytimg.com/vi/A1EH88s3lrQ/hqdefault.jpg",
    "kw": [],
-   "tier": ""
+   "tier": "",
+   "gain": 0
   },
   {
    "id": "ZNQQtmdgpvc",
@@ -4303,82 +5920,87 @@
    "ch": "입꼬리연구소",
    "subs": 38,
    "views": 1351,
-   "hours": 5.3,
+   "hours": 5.4,
    "likes": 6,
    "comments": 0,
    "cat": "ad",
    "dur": 24,
    "thumb": "https://i.ytimg.com/vi/ZNQQtmdgpvc/hqdefault.jpg",
    "kw": [],
-   "tier": ""
+   "tier": "",
+   "gain": 0
   },
   {
    "id": "y74FJnZjZJs",
    "title": "[빼빼로x스트레이 키즈] 📱찬이에게 영상통화가 왔어요!",
    "ch": "맛깔스튜디오 by롯데웰푸드",
    "subs": 151000,
-   "views": 32756,
-   "hours": 131.6,
-   "likes": 5504,
+   "views": 32782,
+   "hours": 131.8,
+   "likes": 5509,
    "comments": 40,
    "cat": "season",
    "dur": 17,
    "thumb": "https://i.ytimg.com/vi/y74FJnZjZJs/hqdefault.jpg",
    "kw": [],
-   "tier": ""
+   "tier": "",
+   "gain": 26
   },
   {
    "id": "IS0In_NEh_c",
    "title": "리센느 × CU 팝업 다녀왔어요! 덕연이딸 원이 도시락 RESCENE × CU #리센느 #PULSE #리센느펄스 #리센느pulse #CU리센느팝업스토어 #리센느cu팝업",
    "ch": "먹스타캠 ",
    "subs": 220,
-   "views": 24797,
-   "hours": 100.4,
+   "views": 24812,
+   "hours": 100.6,
    "likes": 733,
    "comments": 90,
    "cat": "product",
    "dur": 27,
    "thumb": "https://i.ytimg.com/vi/IS0In_NEh_c/hqdefault.jpg",
    "kw": [],
-   "tier": ""
+   "tier": "",
+   "gain": 15
   },
   {
    "id": "lNoSaFkV56k",
    "title": "먼작귀 치이카와 빼빼로 만들기💟",
    "ch": "맘에드로잉",
    "subs": 8130,
-   "views": 17989,
-   "hours": 75.8,
+   "views": 18012,
+   "hours": 75.9,
    "likes": 293,
    "comments": 12,
    "cat": "season",
    "dur": 25,
    "thumb": "https://i.ytimg.com/vi/lNoSaFkV56k/hqdefault.jpg",
    "kw": [],
-   "tier": ""
+   "tier": "",
+   "gain": 23
   },
   {
    "id": "LSVTHgapii4",
    "title": "성수동 알리팝업가봄 #팝업스토어 #성수동데이트 #성수팝업",
    "ch": "갱행구",
    "subs": 150000,
-   "views": 11589,
-   "hours": 49.3,
+   "views": 11607,
+   "hours": 49.5,
    "likes": 79,
    "comments": 6,
    "cat": "product",
    "dur": 32,
    "thumb": "https://i.ytimg.com/vi/LSVTHgapii4/hqdefault.jpg",
    "kw": [],
-   "tier": ""
+   "tier": "",
+   "gain": 18
   },
   {
    "id": "7Hi95Nqwa4c",
    "title": "코스트코가 PB에 집착하는 이유",
    "ch": "썰좋아요",
    "subs": 2460,
-   "views": 5395,
-   "hours": 23.5,
+   "views": 5426,
+   "hours": 23.7,
    "likes": 31,
    "comments": 0,
    "cat": "ad",
@@ -4386,22 +6008,23 @@
    "thumb": "https://i.ytimg.com/vi/7Hi95Nqwa4c/hqdefault.jpg",
    "kw": [],
    "tier": "",
-   "gain": 154
+   "gain": 31
   },
   {
    "id": "978-9JB7paI",
    "title": "[4K] 카리나, 힙하게 골반 노출? 가슴골은 ('MLB WINTER CITY : SAVE KARINA' 팝업스토어) #KARINA #에스파 #aespa #shorts",
    "ch": "NewsInStar",
    "subs": 319000,
-   "views": 8220,
-   "hours": 35.9,
-   "likes": 410,
+   "views": 8232,
+   "hours": 36.0,
+   "likes": 412,
    "comments": 7,
    "cat": "product",
    "dur": 83,
    "thumb": "https://i.ytimg.com/vi/978-9JB7paI/hqdefault.jpg",
    "kw": [],
-   "tier": ""
+   "tier": "",
+   "gain": 12
   },
   {
    "id": "x-Kliy_CZMQ",
@@ -4409,37 +6032,39 @@
    "ch": "무디룸",
    "subs": 893,
    "views": 7926,
-   "hours": 36.2,
+   "hours": 36.3,
    "likes": 108,
    "comments": 5,
    "cat": "season",
    "dur": 23,
    "thumb": "https://i.ytimg.com/vi/x-Kliy_CZMQ/hqdefault.jpg",
    "kw": [],
-   "tier": ""
+   "tier": "",
+   "gain": 0
   },
   {
    "id": "VzGBI3NHIvs",
    "title": "#RESCENE #PULSE #With #리센느 성수 팝업 스토어 (2026.11.06)",
    "ch": "SOJU Music",
    "subs": 73100,
-   "views": 11013,
-   "hours": 50.5,
+   "views": 11015,
+   "hours": 50.6,
    "likes": 322,
    "comments": 1,
    "cat": "product",
    "dur": 60,
    "thumb": "https://i.ytimg.com/vi/VzGBI3NHIvs/hqdefault.jpg",
    "kw": [],
-   "tier": ""
+   "tier": "",
+   "gain": 2
   },
   {
    "id": "rYOzWtGgDSw",
    "title": "😱 노스페이스에서 스파오로? 요즘 주목받는 브랜드 8가지!",
    "ch": "99%는 모른다",
-   "subs": 288,
-   "views": 7901,
-   "hours": 37.2,
+   "subs": 287,
+   "views": 7985,
+   "hours": 37.4,
    "likes": 5,
    "comments": 0,
    "cat": "ad",
@@ -4447,22 +6072,23 @@
    "thumb": "https://i.ytimg.com/vi/rYOzWtGgDSw/hqdefault.jpg",
    "kw": [],
    "tier": "",
-   "gain": 455
+   "gain": 84
   },
   {
    "id": "yXOEwU4R6oI",
    "title": "롯데가 빼빼로 데이에 목숨 거는 이유",
    "ch": "푸드도감",
    "subs": 6470,
-   "views": 30690,
-   "hours": 152.3,
+   "views": 30704,
+   "hours": 152.5,
    "likes": 352,
    "comments": 21,
    "cat": "season",
    "dur": 26,
    "thumb": "https://i.ytimg.com/vi/yXOEwU4R6oI/hqdefault.jpg",
    "kw": [],
-   "tier": ""
+   "tier": "",
+   "gain": 14
   },
   {
    "id": "kGLDJoAZ-WE",
@@ -4470,37 +6096,39 @@
    "ch": "콘텐츠크리에이터과",
    "subs": 209,
    "views": 28600,
-   "hours": 150.8,
+   "hours": 150.9,
    "likes": 172,
    "comments": 6,
    "cat": "season",
    "dur": 15,
    "thumb": "https://i.ytimg.com/vi/kGLDJoAZ-WE/hqdefault.jpg",
    "kw": [],
-   "tier": ""
+   "tier": "",
+   "gain": 0
   },
   {
    "id": "IbvpjxKwu04",
    "title": "먼작귀 치이키와 빼빼로 만들기💟 꿀팁 대방출!!",
    "ch": "맘에드로잉",
    "subs": 8130,
-   "views": 8919,
-   "hours": 51.8,
+   "views": 8969,
+   "hours": 51.9,
    "likes": 67,
    "comments": 23,
    "cat": "season",
    "dur": 72,
    "thumb": "https://i.ytimg.com/vi/IbvpjxKwu04/hqdefault.jpg",
    "kw": [],
-   "tier": ""
+   "tier": "",
+   "gain": 50
   },
   {
    "id": "5C9LSPTuYvQ",
    "title": "결국 방탄까지 넘었다는 리센느",
    "ch": "덕파민",
    "subs": 271,
-   "views": 5079,
-   "hours": 31.5,
+   "views": 5088,
+   "hours": 31.7,
    "likes": 179,
    "comments": 8,
    "cat": "ad",
@@ -4508,7 +6136,7 @@
    "thumb": "https://i.ytimg.com/vi/5C9LSPTuYvQ/hqdefault.jpg",
    "kw": [],
    "tier": "",
-   "gain": 103
+   "gain": 9
   },
   {
    "id": "WSG3U8um56w",
@@ -4516,29 +6144,31 @@
    "ch": "궁금하기 CuriousHagi",
    "subs": 182000,
    "views": 12410,
-   "hours": 77.7,
+   "hours": 77.9,
    "likes": 105,
    "comments": 14,
    "cat": "product",
    "dur": 27,
    "thumb": "https://i.ytimg.com/vi/WSG3U8um56w/hqdefault.jpg",
    "kw": [],
-   "tier": ""
+   "tier": "",
+   "gain": 0
   },
   {
    "id": "JFHrNk-C4uE",
    "title": "리센느 씨유 팝업스토어 다녀왔어요🩵 #리센느 #리센느빵 #씨유팝업 #팝업스토어 #씨유신상 #편의점신상 #편의점신상리뷰 #편의점도시락 #리센느굿즈 #편의점간식 #포카 #포토카드",
    "ch": "혀나쓰",
    "subs": 59,
-   "views": 12230,
-   "hours": 78.9,
-   "likes": 225,
+   "views": 12239,
+   "hours": 79.1,
+   "likes": 226,
    "comments": 18,
    "cat": "product",
    "dur": 28,
    "thumb": "https://i.ytimg.com/vi/JFHrNk-C4uE/hqdefault.jpg",
    "kw": [],
-   "tier": ""
+   "tier": "",
+   "gain": 9
   },
   {
    "id": "7Vix1J4irw8",
@@ -4546,44 +6176,47 @@
    "ch": "몬트쿠키 | 두바이쫀득쿠키 원조🧆",
    "subs": 17400,
    "views": 22890,
-   "hours": 148.2,
+   "hours": 148.4,
    "likes": 184,
    "comments": 12,
    "cat": "season",
    "dur": 17,
    "thumb": "https://i.ytimg.com/vi/7Vix1J4irw8/hqdefault.jpg",
    "kw": [],
-   "tier": ""
+   "tier": "",
+   "gain": 0
   },
   {
    "id": "jAwFaPgosO8",
    "title": "빼빼로데이 선물 산리오 한교동 빼빼로 #sanrio #한교동 #hangyodon #산리오 #빼빼로 #랜덤박스 #랜덤깡 #character #shorts",
    "ch": "지모캐",
    "subs": 402,
-   "views": 8175,
-   "hours": 54.8,
+   "views": 8184,
+   "hours": 54.9,
    "likes": 82,
    "comments": 1,
    "cat": "season",
    "dur": 26,
    "thumb": "https://i.ytimg.com/vi/jAwFaPgosO8/hqdefault.jpg",
    "kw": [],
-   "tier": ""
+   "tier": "",
+   "gain": 9
   },
   {
    "id": "JYW1wPUff68",
    "title": "눈알 튀어나오는 태국 과자 광고",
    "ch": "마삼봉팀장",
    "subs": 14700,
-   "views": 15081,
-   "hours": 103.3,
+   "views": 15110,
+   "hours": 103.4,
    "likes": 157,
    "comments": 0,
    "cat": "ad",
    "dur": 57,
    "thumb": "https://i.ytimg.com/vi/JYW1wPUff68/hqdefault.jpg",
    "kw": [],
-   "tier": ""
+   "tier": "",
+   "gain": 29
   },
   {
    "id": "y-cLxcS4dZQ",
@@ -4591,7 +6224,7 @@
    "ch": "오늘의썰집",
    "subs": 161,
    "views": 4687,
-   "hours": 34.8,
+   "hours": 34.9,
    "likes": 60,
    "comments": 4,
    "cat": "ad",
@@ -4606,30 +6239,32 @@
    "title": "진짜 도입될까 봐 다들 경악한 미친 킹받는 광고 💀",
    "ch": "우연히발견",
    "subs": 1,
-   "views": 6135,
-   "hours": 46.8,
+   "views": 6159,
+   "hours": 47.0,
    "likes": 24,
    "comments": 3,
    "cat": "ad",
    "dur": 18,
    "thumb": "https://i.ytimg.com/vi/ZCt9F2_oPZs/hqdefault.jpg",
    "kw": [],
-   "tier": ""
+   "tier": "",
+   "gain": 24
   },
   {
    "id": "cKmkXNXIXic",
    "title": "31기 경수 안경 팝스토어 대박 그리고 빨간 목도리",
    "ch": "나솔그후",
    "subs": 5260,
-   "views": 8119,
-   "hours": 63.0,
+   "views": 8130,
+   "hours": 63.2,
    "likes": 126,
    "comments": 29,
    "cat": "product",
    "dur": 131,
    "thumb": "https://i.ytimg.com/vi/cKmkXNXIXic/hqdefault.jpg",
    "kw": [],
-   "tier": ""
+   "tier": "",
+   "gain": 11
   },
   {
    "id": "VZJE7fRchug",
@@ -4637,44 +6272,47 @@
    "ch": "충지부부",
    "subs": 117000,
    "views": 9685,
-   "hours": 75.8,
+   "hours": 75.9,
    "likes": 335,
    "comments": 32,
    "cat": "product",
    "dur": 60,
    "thumb": "https://i.ytimg.com/vi/VZJE7fRchug/hqdefault.jpg",
    "kw": [],
-   "tier": ""
+   "tier": "",
+   "gain": 0
   },
   {
    "id": "nOfoYNISsdg",
    "title": "11초 안에 담으면 진짜 다 준다고요? 성수 알리 팝업스토어 다녀왔습니다 #알리익스프레스 #광군제 #알리가차쏜다",
    "ch": "승업키보드 SeungupKBD",
    "subs": 143000,
-   "views": 6843,
-   "hours": 54.2,
+   "views": 6861,
+   "hours": 54.4,
    "likes": 58,
    "comments": 3,
    "cat": "product",
    "dur": 67,
    "thumb": "https://i.ytimg.com/vi/nOfoYNISsdg/hqdefault.jpg",
    "kw": [],
-   "tier": ""
+   "tier": "",
+   "gain": 18
   },
   {
    "id": "KP6wVaHAyD8",
    "title": "오랜만에 컬투쇼 나온 쭈니형 ! 광고 읽기 여전히 레전드ㅋㅋ #와썹맨 #쭈니형 #박준형 #웃긴영상 #유머",
    "ch": "픽팡",
    "subs": 499,
-   "views": 6747,
-   "hours": 55.7,
+   "views": 6774,
+   "hours": 55.9,
    "likes": 65,
    "comments": 1,
    "cat": "ad",
    "dur": 81,
    "thumb": "https://i.ytimg.com/vi/KP6wVaHAyD8/hqdefault.jpg",
    "kw": [],
-   "tier": ""
+   "tier": "",
+   "gain": 27
   },
   {
    "id": "0ELldC33eIQ",
@@ -4682,14 +6320,15 @@
    "ch": "NewsInStar",
    "subs": 319000,
    "views": 4301,
-   "hours": 35.9,
+   "hours": 36.0,
    "likes": 159,
    "comments": 10,
    "cat": "product",
    "dur": 125,
    "thumb": "https://i.ytimg.com/vi/0ELldC33eIQ/hqdefault.jpg",
    "kw": [],
-   "tier": ""
+   "tier": "",
+   "gain": 0
   },
   {
    "id": "jbHOr4CU7q4",
@@ -4697,14 +6336,15 @@
    "ch": "티잼비 TJB",
    "subs": 45800,
    "views": 14559,
-   "hours": 123.8,
+   "hours": 123.9,
    "likes": 34,
    "comments": 0,
    "cat": "season",
    "dur": 62,
    "thumb": "https://i.ytimg.com/vi/jbHOr4CU7q4/hqdefault.jpg",
    "kw": [],
-   "tier": ""
+   "tier": "",
+   "gain": 0
   },
   {
    "id": "9Eh0GD1eS2U",
@@ -4712,14 +6352,15 @@
    "ch": "훅잉 HOOK-ING",
    "subs": 3530,
    "views": 4036,
-   "hours": 34.7,
+   "hours": 34.8,
    "likes": 31,
    "comments": 1,
    "cat": "product",
    "dur": 21,
    "thumb": "https://i.ytimg.com/vi/9Eh0GD1eS2U/hqdefault.jpg",
    "kw": [],
-   "tier": ""
+   "tier": "",
+   "gain": 0
   },
   {
    "id": "4RCRIVjPA60",
@@ -4727,30 +6368,31 @@
    "ch": "몬트쿠키 | 두바이쫀득쿠키 원조🧆",
    "subs": 17400,
    "views": 6361,
-   "hours": 55.9,
+   "hours": 56.0,
    "likes": 63,
    "comments": 3,
    "cat": "season",
    "dur": 25,
    "thumb": "https://i.ytimg.com/vi/4RCRIVjPA60/hqdefault.jpg",
    "kw": [],
-   "tier": ""
+   "tier": "",
+   "gain": 0
   },
   {
    "id": "XzYtanu3dxY",
    "title": "임영웅 광고 평판 48.5% 껑충…팬들은 장관상까지 받았다",
    "ch": "어쩌다 영웅 TV",
    "subs": 2630,
-   "views": 3664,
-   "hours": 33.8,
-   "likes": 794,
+   "views": 3700,
+   "hours": 33.9,
+   "likes": 801,
    "comments": 1,
    "cat": "ad",
    "dur": 38,
    "thumb": "https://i.ytimg.com/vi/XzYtanu3dxY/hqdefault.jpg",
    "kw": [],
    "tier": "",
-   "gain": 52
+   "gain": 36
   },
   {
    "id": "ZMG33mYOJ6Q",
@@ -4758,14 +6400,15 @@
    "ch": "잼프꼭연임",
    "subs": 61300,
    "views": 13488,
-   "hours": 124.7,
+   "hours": 124.9,
    "likes": 1422,
    "comments": 44,
    "cat": "ad",
    "dur": 28,
    "thumb": "https://i.ytimg.com/vi/ZMG33mYOJ6Q/hqdefault.jpg",
    "kw": [],
-   "tier": ""
+   "tier": "",
+   "gain": 0
   },
   {
    "id": "PC5j1EHWnSQ",
@@ -4773,14 +6416,15 @@
    "ch": "장박사의 구매중독",
    "subs": 339000,
    "views": 7972,
-   "hours": 77.8,
+   "hours": 77.9,
    "likes": 51,
    "comments": 2,
    "cat": "product",
    "dur": 62,
    "thumb": "https://i.ytimg.com/vi/PC5j1EHWnSQ/hqdefault.jpg",
    "kw": [],
-   "tier": ""
+   "tier": "",
+   "gain": 0
   },
   {
    "id": "5HMotboJkHs",
@@ -4788,7 +6432,7 @@
    "ch": "코믹크림",
    "subs": 28200,
    "views": 2841,
-   "hours": 30.7,
+   "hours": 30.8,
    "likes": 8,
    "comments": 0,
    "cat": "ad",
@@ -4804,14 +6448,15 @@
    "ch": "배달의 이슈",
    "subs": 5150,
    "views": 7589,
-   "hours": 83.1,
-   "likes": 191,
+   "hours": 83.2,
+   "likes": 192,
    "comments": 1,
    "cat": "season",
    "dur": 47,
    "thumb": "https://i.ytimg.com/vi/O7hQTjmmiME/hqdefault.jpg",
    "kw": [],
-   "tier": ""
+   "tier": "",
+   "gain": 0
   },
   {
    "id": "qbgJQOQ0rHM",
@@ -4819,22 +6464,23 @@
    "ch": "이거 먹을래?",
    "subs": 7140,
    "views": 6452,
-   "hours": 72.3,
+   "hours": 72.4,
    "likes": 58,
    "comments": 3,
    "cat": "season",
    "dur": 48,
    "thumb": "https://i.ytimg.com/vi/qbgJQOQ0rHM/hqdefault.jpg",
    "kw": [],
-   "tier": ""
+   "tier": "",
+   "gain": 0
   },
   {
    "id": "gnw3A7PX608",
    "title": "리센느 광고모델 브랜드평판 1위 해버림",
    "ch": "정단우 Danwoo Jung",
    "subs": 45400,
-   "views": 2811,
-   "hours": 33.2,
+   "views": 2820,
+   "hours": 33.3,
    "likes": 48,
    "comments": 0,
    "cat": "ad",
@@ -4842,7 +6488,7 @@
    "thumb": "https://i.ytimg.com/vi/gnw3A7PX608/hqdefault.jpg",
    "kw": [],
    "tier": "",
-   "gain": 165
+   "gain": 9
   },
   {
    "id": "YgCB2hL-8Fg",
@@ -4850,14 +6496,15 @@
    "ch": "몽몽홈",
    "subs": 45,
    "views": 9045,
-   "hours": 109.7,
+   "hours": 109.8,
    "likes": 46,
    "comments": 0,
    "cat": "season",
    "dur": 11,
    "thumb": "https://i.ytimg.com/vi/YgCB2hL-8Fg/hqdefault.jpg",
    "kw": [],
-   "tier": ""
+   "tier": "",
+   "gain": 0
   },
   {
    "id": "1pj7HZGS7ow",
@@ -4865,14 +6512,15 @@
    "ch": "김뿌잉뿌잉씨",
    "subs": 15800,
    "views": 5610,
-   "hours": 71.2,
+   "hours": 71.3,
    "likes": 57,
    "comments": 9,
    "cat": "season",
    "dur": 65,
    "thumb": "https://i.ytimg.com/vi/1pj7HZGS7ow/hqdefault.jpg",
    "kw": [],
-   "tier": ""
+   "tier": "",
+   "gain": 0
   },
   {
    "id": "HdIooQ2d1HQ",
@@ -4880,14 +6528,15 @@
    "ch": "박영감",
    "subs": 50500,
    "views": 9818,
-   "hours": 125.4,
+   "hours": 125.6,
    "likes": 92,
    "comments": 21,
    "cat": "product",
    "dur": 93,
    "thumb": "https://i.ytimg.com/vi/HdIooQ2d1HQ/hqdefault.jpg",
    "kw": [],
-   "tier": ""
+   "tier": "",
+   "gain": 0
   },
   {
    "id": "wEYRuASrACw",
@@ -4895,14 +6544,15 @@
    "ch": "뭐든TOP5",
    "subs": 35,
    "views": 2733,
-   "hours": 35.3,
+   "hours": 35.4,
    "likes": 10,
    "comments": 0,
    "cat": "ad",
    "dur": 56,
    "thumb": "https://i.ytimg.com/vi/wEYRuASrACw/hqdefault.jpg",
    "kw": [],
-   "tier": ""
+   "tier": "",
+   "gain": 0
   },
   {
    "id": "Dvqfjg7oomk",
@@ -4910,7 +6560,7 @@
    "ch": "브랜드 아카이브",
    "subs": 66800,
    "views": 4043,
-   "hours": 52.8,
+   "hours": 52.9,
    "likes": 53,
    "comments": 6,
    "cat": "ad",
@@ -4918,23 +6568,23 @@
    "thumb": "https://i.ytimg.com/vi/Dvqfjg7oomk/hqdefault.jpg",
    "kw": [],
    "tier": "",
-   "gain": 3
+   "gain": 0
   },
   {
    "id": "x7pzX0gdzLw",
    "title": "손태진, 광고주들이 주목하는 이유! 품격과 신뢰를 갖춘 가수, 매출증가 | 구독하고 응원하기",
    "ch": "힐링뮤즈 | Healing Muse",
    "subs": 1310,
-   "views": 2864,
-   "hours": 37.8,
-   "likes": 388,
+   "views": 2867,
+   "hours": 37.9,
+   "likes": 389,
    "comments": 6,
    "cat": "ad",
    "dur": 46,
    "thumb": "https://i.ytimg.com/vi/x7pzX0gdzLw/hqdefault.jpg",
    "kw": [],
    "tier": "",
-   "gain": 13
+   "gain": 3
   },
   {
    "id": "gHlB7QwykP0",
@@ -4942,7 +6592,7 @@
    "ch": "따라와세마넴",
    "subs": 903,
    "views": 2544,
-   "hours": 34.5,
+   "hours": 34.7,
    "likes": 145,
    "comments": 5,
    "cat": "ad",
@@ -4950,22 +6600,23 @@
    "thumb": "https://i.ytimg.com/vi/gHlB7QwykP0/hqdefault.jpg",
    "kw": [],
    "tier": "",
-   "gain": 3
+   "gain": 0
   },
   {
    "id": "SGELq-XhosY",
    "title": "담은 만큼 공짜?! 테슬라까지 걸린 알리 가챠 쏜다 팝업스토어",
    "ch": "대신남 말방구실험실",
    "subs": 256000,
-   "views": 5299,
-   "hours": 78.8,
+   "views": 5334,
+   "hours": 78.9,
    "likes": 37,
-   "comments": 3,
+   "comments": 4,
    "cat": "product",
    "dur": 37,
    "thumb": "https://i.ytimg.com/vi/SGELq-XhosY/hqdefault.jpg",
    "kw": [],
-   "tier": ""
+   "tier": "",
+   "gain": 35
   },
   {
    "id": "HXNGTl6X2js",
@@ -4973,14 +6624,15 @@
    "ch": "[data-viz 빅스타] Bigxtar",
    "subs": 5310,
    "views": 8820,
-   "hours": 131.3,
+   "hours": 131.4,
    "likes": 414,
    "comments": 9,
    "cat": "product",
    "dur": 40,
    "thumb": "https://i.ytimg.com/vi/HXNGTl6X2js/hqdefault.jpg",
    "kw": [],
-   "tier": ""
+   "tier": "",
+   "gain": 0
   },
   {
    "id": "MD6hFCwXduo",
@@ -4988,22 +6640,23 @@
    "ch": "이슈픽",
    "subs": 157,
    "views": 3422,
-   "hours": 54.2,
+   "hours": 54.4,
    "likes": 52,
    "comments": 0,
    "cat": "product",
    "dur": 26,
    "thumb": "https://i.ytimg.com/vi/MD6hFCwXduo/hqdefault.jpg",
    "kw": [],
-   "tier": ""
+   "tier": "",
+   "gain": 0
   },
   {
    "id": "prEJpXT18J4",
    "title": "리센느, 11월 광고모델 브랜드평판 1위 #RESCENE",
    "ch": "별별스타",
    "subs": 42,
-   "views": 3395,
-   "hours": 54.0,
+   "views": 3398,
+   "hours": 54.2,
    "likes": 141,
    "comments": 4,
    "cat": "ad",
@@ -5011,37 +6664,39 @@
    "thumb": "https://i.ytimg.com/vi/prEJpXT18J4/hqdefault.jpg",
    "kw": [],
    "tier": "",
-   "gain": 77
+   "gain": 3
   },
   {
    "id": "RkHxNdBb3lk",
    "title": "광고 촬영 현장에서 카라멜 팝콘 논쟁 터졌다 #리센느 #RESCENE #shorts #카사베르디 #광고비하인드 #원이 #미나미 #리브 #메이 #제나 #아이돌예능 #걸그룹 #웃긴영상",
    "ch": "리센느뭐하니?",
    "subs": 69,
-   "views": 1701,
-   "hours": 28.8,
+   "views": 1703,
+   "hours": 28.9,
    "likes": 47,
    "comments": 0,
    "cat": "ad",
    "dur": 98,
    "thumb": "https://i.ytimg.com/vi/RkHxNdBb3lk/hqdefault.jpg",
    "kw": [],
-   "tier": ""
+   "tier": "",
+   "gain": 2
   },
   {
    "id": "Es_zmYwDrxM",
    "title": "이번주이 성수에서 공짜로 싹 담아가세요 #알리가차쏜다 #110원테슬라추첨이벤트 #알리익스프레스 #11.11광군제 #성수팝업스토어",
    "ch": "복구천재 꼬마신발",
    "subs": 252000,
-   "views": 4263,
-   "hours": 75.0,
+   "views": 4266,
+   "hours": 75.1,
    "likes": 51,
    "comments": 4,
    "cat": "product",
    "dur": 47,
    "thumb": "https://i.ytimg.com/vi/Es_zmYwDrxM/hqdefault.jpg",
    "kw": [],
-   "tier": ""
+   "tier": "",
+   "gain": 3
   },
   {
    "id": "AiReBaycqsM",
@@ -5049,14 +6704,15 @@
    "ch": "셀픽연예",
    "subs": 18,
    "views": 3109,
-   "hours": 54.8,
+   "hours": 54.9,
    "likes": 73,
    "comments": 4,
    "cat": "product",
    "dur": 40,
    "thumb": "https://i.ytimg.com/vi/AiReBaycqsM/hqdefault.jpg",
    "kw": [],
-   "tier": ""
+   "tier": "",
+   "gain": 0
   },
   {
    "id": "EQQ7ARdHSVg",
@@ -5064,14 +6720,15 @@
    "ch": "20세기소년",
    "subs": 5000,
    "views": 6210,
-   "hours": 119.0,
+   "hours": 119.2,
    "likes": 81,
    "comments": 20,
    "cat": "product",
    "dur": 109,
    "thumb": "https://i.ytimg.com/vi/EQQ7ARdHSVg/hqdefault.jpg",
    "kw": [],
-   "tier": ""
+   "tier": "",
+   "gain": 0
   },
   {
    "id": "mEHkH8NzK-I",
@@ -5079,14 +6736,15 @@
    "ch": "웃기군",
    "subs": 1100,
    "views": 7610,
-   "hours": 147.0,
+   "hours": 147.2,
    "likes": 28,
    "comments": 0,
    "cat": "product",
    "dur": 48,
    "thumb": "https://i.ytimg.com/vi/mEHkH8NzK-I/hqdefault.jpg",
    "kw": [],
-   "tier": ""
+   "tier": "",
+   "gain": 0
   },
   {
    "id": "GV5m5asCEpI",
@@ -5094,14 +6752,15 @@
    "ch": "시네마 클럽",
    "subs": 94300,
    "views": 2625,
-   "hours": 51.9,
+   "hours": 52.0,
    "likes": 19,
    "comments": 1,
    "cat": "ad",
    "dur": 48,
    "thumb": "https://i.ytimg.com/vi/GV5m5asCEpI/hqdefault.jpg",
    "kw": [],
-   "tier": ""
+   "tier": "",
+   "gain": 0
   },
   {
    "id": "sE3zqm0dN_E",
@@ -5109,14 +6768,15 @@
    "ch": "아인",
    "subs": 12,
    "views": 4090,
-   "hours": 83.3,
+   "hours": 83.5,
    "likes": 32,
    "comments": 0,
    "cat": "ad",
    "dur": 19,
    "thumb": "https://i.ytimg.com/vi/sE3zqm0dN_E/hqdefault.jpg",
    "kw": [],
-   "tier": ""
+   "tier": "",
+   "gain": 0
   },
   {
    "id": "c_cdr_53EAw",
@@ -5124,7 +6784,7 @@
    "ch": "따라잡아경제",
    "subs": 18100,
    "views": 3005,
-   "hours": 61.4,
+   "hours": 61.5,
    "likes": 9,
    "comments": 0,
    "cat": "ad",
@@ -5132,7 +6792,7 @@
    "thumb": "https://i.ytimg.com/vi/c_cdr_53EAw/hqdefault.jpg",
    "kw": [],
    "tier": "",
-   "gain": 102
+   "gain": 0
   },
   {
    "id": "DdEQrZXJ-4g",
@@ -5140,22 +6800,23 @@
    "ch": "살림피디아",
    "subs": 4,
    "views": 1401,
-   "hours": 29.8,
+   "hours": 29.9,
    "likes": 7,
    "comments": 0,
    "cat": "ad",
    "dur": 58,
    "thumb": "https://i.ytimg.com/vi/DdEQrZXJ-4g/hqdefault.jpg",
    "kw": [],
-   "tier": ""
+   "tier": "",
+   "gain": 0
   },
   {
    "id": "OTZcBXPoI-o",
    "title": "성리 11월 6일 광고 모델 브랜드 평판",
    "ch": "SEONGRINEWS",
    "subs": 392,
-   "views": 2778,
-   "hours": 60.1,
+   "views": 2783,
+   "hours": 60.3,
    "likes": 671,
    "comments": 29,
    "cat": "ad",
@@ -5163,7 +6824,7 @@
    "thumb": "https://i.ytimg.com/vi/OTZcBXPoI-o/hqdefault.jpg",
    "kw": [],
    "tier": "",
-   "gain": 36
+   "gain": 5
   },
   {
    "id": "vJ0UtO2V-A0",
@@ -5171,29 +6832,15 @@
    "ch": "혜인 HEYNEE",
    "subs": 484000,
    "views": 5341,
-   "hours": 120.6,
+   "hours": 120.8,
    "likes": 87,
    "comments": 1,
    "cat": "product",
    "dur": 83,
    "thumb": "https://i.ytimg.com/vi/vJ0UtO2V-A0/hqdefault.jpg",
    "kw": [],
-   "tier": ""
-  },
-  {
-   "id": "oDTTX1xjVTw",
-   "title": "#뉴스해설 #시사토크 #정치브리핑 #이슈정리 #데일리뉴스 #정치유튜브",
-   "ch": "일간정치",
-   "subs": 129,
-   "views": 2234,
-   "hours": 52.5,
-   "likes": 53,
-   "comments": 1,
-   "cat": "issue",
-   "dur": 121,
-   "thumb": "https://i.ytimg.com/vi/oDTTX1xjVTw/hqdefault.jpg",
-   "kw": [],
-   "tier": ""
+   "tier": "",
+   "gain": 0
   },
   {
    "id": "do1srQJUfEs",
@@ -5201,14 +6848,15 @@
    "ch": "템스텔링",
    "subs": 103,
    "views": 6296,
-   "hours": 148.8,
+   "hours": 148.9,
    "likes": 168,
    "comments": 6,
    "cat": "product",
    "dur": 35,
    "thumb": "https://i.ytimg.com/vi/do1srQJUfEs/hqdefault.jpg",
    "kw": [],
-   "tier": ""
+   "tier": "",
+   "gain": 0
   },
   {
    "id": "ml4K76JcNn0",
@@ -5216,14 +6864,15 @@
    "ch": "COCOBELL_맘마코코",
    "subs": 78,
    "views": 1342,
-   "hours": 51.7,
+   "hours": 51.9,
    "likes": 0,
    "comments": 0,
    "cat": "edit",
    "dur": 12,
    "thumb": "https://i.ytimg.com/vi/ml4K76JcNn0/hqdefault.jpg",
    "kw": [],
-   "tier": ""
+   "tier": "",
+   "gain": 0
   },
   {
    "id": "XcwiwZI2tFc",
@@ -5231,59 +6880,15 @@
    "ch": "PICKIT",
    "subs": 147,
    "views": 1380,
-   "hours": 57.3,
+   "hours": 57.4,
    "likes": 16,
    "comments": 3,
    "cat": "edit",
    "dur": 41,
    "thumb": "https://i.ytimg.com/vi/XcwiwZI2tFc/hqdefault.jpg",
    "kw": [],
-   "tier": ""
-  },
-  {
-   "id": "g1SkoHUmYBQ",
-   "title": "#뉴스해설 #시사토크 #정치브리핑 #이슈정리 #데일리뉴스 #정치유튜브",
-   "ch": "일간정치",
-   "subs": 129,
-   "views": 1340,
-   "hours": 76.5,
-   "likes": 34,
-   "comments": 0,
-   "cat": "issue",
-   "dur": 155,
-   "thumb": "https://i.ytimg.com/vi/g1SkoHUmYBQ/hqdefault.jpg",
-   "kw": [],
-   "tier": ""
-  },
-  {
-   "id": "1h0UCMlDfXk",
-   "title": "#뉴스해설 #시사토크 #정치브리핑 #이슈정리 #데일리뉴스 #정치유튜브",
-   "ch": "일간정치",
-   "subs": 129,
-   "views": 1443,
-   "hours": 100.5,
-   "likes": 42,
-   "comments": 0,
-   "cat": "issue",
-   "dur": 154,
-   "thumb": "https://i.ytimg.com/vi/1h0UCMlDfXk/hqdefault.jpg",
-   "kw": [],
-   "tier": ""
-  },
-  {
-   "id": "KvCNVwF9Tis",
-   "title": "#뉴스해설 #시사토크 #정치브리핑 #이슈정리 #데일리뉴스 #정치유튜브",
-   "ch": "일간정치",
-   "subs": 129,
-   "views": 1708,
-   "hours": 124.5,
-   "likes": 56,
-   "comments": 0,
-   "cat": "issue",
-   "dur": 141,
-   "thumb": "https://i.ytimg.com/vi/KvCNVwF9Tis/hqdefault.jpg",
-   "kw": [],
-   "tier": ""
+   "tier": "",
+   "gain": 0
   },
   {
    "id": "z6gQQODtV9o",
@@ -5291,14 +6896,15 @@
    "ch": "모노코드",
    "subs": 27,
    "views": 1165,
-   "hours": 102.6,
+   "hours": 102.7,
    "likes": 3,
    "comments": 0,
    "cat": "edit",
    "dur": 21,
    "thumb": "https://i.ytimg.com/vi/z6gQQODtV9o/hqdefault.jpg",
    "kw": [],
-   "tier": ""
+   "tier": "",
+   "gain": 0
   },
   {
    "id": "OCCnJvLxWYY",
@@ -5306,14 +6912,15 @@
    "ch": "yongkyum kim",
    "subs": 2,
    "views": 1212,
-   "hours": 150.2,
+   "hours": 150.3,
    "likes": 2,
    "comments": 1,
    "cat": "edit",
    "dur": 23,
    "thumb": "https://i.ytimg.com/vi/OCCnJvLxWYY/hqdefault.jpg",
    "kw": [],
-   "tier": ""
+   "tier": "",
+   "gain": 0
   }
  ],
  "charts": [
@@ -5322,8 +6929,8 @@
    "title": "GEN vs IG | 녹아웃 스테이지 4강 Day5 | 2026 월드 챔피언십",
    "ch": "LCK",
    "subs": 1740000,
-   "views": 2245681,
-   "hours": 12.5,
+   "views": 2246292,
+   "hours": 12.6,
    "likes": 0,
    "comments": 151,
    "cat": null,
@@ -5338,124 +6945,58 @@
    "title": "back number - 히로인 [ヒロイン] 🎵\"저 가수 입니다🎤\" by 강남",
    "ch": "동네친구 강나미 [Kangnami]",
    "subs": 1580000,
-   "views": 1856567,
-   "hours": 75.8,
-   "likes": 23483,
+   "views": 1865933,
+   "hours": 75.9,
+   "likes": 23514,
    "comments": 1866,
    "cat": null,
    "dur": 271,
    "thumb": "https://i.ytimg.com/vi/nd3hpJ4oMpU/hqdefault.jpg",
    "kw": [],
    "tier": "hot",
-   "chart": 3,
-   "topComments": [
-    {
-     "text": "벌써 겨우리 온거가타❄️☃️ 강남콩들 모두 감기조시매!🧣❤️",
-     "likes": 1335
-    },
-    {
-     "text": "사무라이하트 해줄때까지 댓글단다",
-     "likes": 5475
-    },
-    {
-     "text": "헬로 미스터 마이 예스터데이 해줄 때까지 댓글단다",
-     "likes": 169
-    },
-    {
-     "text": "아....이 양아치 음색 헤어나올 수가 없네",
-     "likes": 1952
-    },
-    {
-     "text": "다들 노래얘기하니깐 난 착장 얘기해보겠음..지금까지중에 제일 찰떡임👍",
-     "likes": 345
-    }
-   ]
+   "chart": 3
   },
   {
    "id": "_tFYEhMN_a0",
    "title": "소개팅 나가서 1위 했습니다",
    "ch": "김재원의 즐거운 세상",
    "subs": 2020000,
-   "views": 506581,
-   "hours": 9.8,
-   "likes": 8989,
-   "comments": 1102,
+   "views": 509776,
+   "hours": 9.9,
+   "likes": 9039,
+   "comments": 1104,
    "cat": null,
    "dur": 1046,
    "thumb": "https://i.ytimg.com/vi/_tFYEhMN_a0/hqdefault.jpg",
    "kw": [],
    "tier": "rise",
-   "chart": 4,
-   "topComments": [
-    {
-     "text": "방송은 방송으로 봐주시고\n다른 방송,유튜브에 가서 언급은 금지입니다!!\n다른분들 방송에 방해될수있어요\n재미있게 봐주세요",
-     "likes": 1135
-    },
-    {
-     "text": "계속 나오는 늑대 사진 왜 이렇개 웃기냐ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ",
-     "likes": 2021
-    },
-    {
-     "text": "1:01 근데 진짜 드립 거르고 잘생기고 유쾌하고 속 깊은데다 몸도 좋아졌는데 여성분들이 안 고를 이유가 없음 ㅇㅇ",
-     "likes": 1913
-    },
-    {
-     "text": "진짜 솔직하게? 김재원 살 빠지고 얼굴도 호감상에 적당히 잼민미+찐따미가 잇는데 그게 또 웃겨서 진심으로 호감임ㅋㅋㅋㅋ 무엇보다 프로필사진 저렇게 찍은게 신의한수다 각잡고 찍은 느낌인데 그닥 안 잘생긴 것보다 증명사진마냥 3초컷 찍은 사진 + 순하게 생겨서 진심으로 꾸미면 예쁠얼굴\n\n(김재원 부계정 아님ㅋㅋㅋ)",
-     "likes": 621
-    },
-    {
-     "text": "",
-     "likes": 2327
-    }
-   ]
+   "chart": 4
   },
   {
    "id": "jx28RyWwi7k",
    "title": "🤣혜안져스 대환장 성대모사 게임🤣 20분 동안 웃겨드립니닼ㅋㅋㅋㅋㅋㅋㅋㅋㅋ",
    "ch": "혜안",
    "subs": 3120000,
-   "views": 766148,
-   "hours": 27.6,
-   "likes": 17263,
-   "comments": 1206,
+   "views": 768931,
+   "hours": 27.7,
+   "likes": 17296,
+   "comments": 1207,
    "cat": null,
    "dur": 1454,
    "thumb": "https://i.ytimg.com/vi/jx28RyWwi7k/hqdefault.jpg",
    "kw": [],
    "tier": "rise",
-   "chart": 6,
-   "topComments": [
-    {
-     "text": "(좋아요 누른 이용자에게만 보이는 댓글입니다.)",
-     "likes": 3429
-    },
-    {
-     "text": "5:48 아 ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ 평소의 혜안님 웃음소리잖아ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ",
-     "likes": 612
-    },
-    {
-     "text": "2일 연속 혜안져스영상은 사랑입니다",
-     "likes": 787
-    },
-    {
-     "text": "9:58 앞에 목소리 뺏기고 정작 본인은 문디 멘놈ㅋㅋㅋㅋㅋㅋㅋㅋ자막 댕 웃겨",
-     "likes": 238
-    },
-    {
-     "text": "19:40 에 듣고있다가 엄마가 “쌌네. 100퍼 쌌어.” 라고 해서 겁나 웃겼어요 ㅠ",
-     "likes": 58
-    }
-   ]
+   "chart": 6
   },
   {
    "id": "Eo_7emRrCkI",
    "title": "💖200만 대형유튜버들을 설레게한 커플 소개팅 리뷰 [결말포함ㅋㅋㅋ]",
    "ch": "김블루",
    "subs": 2310000,
-   "views": 599858,
-   "hours": 10.8,
-   "likes": 4881,
-   "comments": 254,
+   "views": 605467,
+   "hours": 10.9,
+   "likes": 4898,
+   "comments": 257,
    "cat": null,
    "dur": 2434,
    "thumb": "https://i.ytimg.com/vi/Eo_7emRrCkI/hqdefault.jpg",
@@ -5468,10 +7009,10 @@
    "title": "[LIVE] 11월 8일 AION2 1st ANNIVERSARY 생중계",
    "ch": "AION2",
    "subs": 283000,
-   "views": 186866,
-   "hours": 4.0,
-   "likes": 784,
-   "comments": 118,
+   "views": 188197,
+   "hours": 4.2,
+   "likes": 788,
+   "comments": 120,
    "cat": null,
    "dur": 9581,
    "thumb": "https://i.ytimg.com/vi/4uVJnglt8kk/hqdefault.jpg",
@@ -5484,48 +7025,26 @@
    "title": "[PLAVE BIRTHDAY GIFT] 하민 & 밤비 '0+0' (원곡 : 한로로)",
    "ch": "PLAVE 플레이브",
    "subs": 1220000,
-   "views": 122006,
-   "hours": 33.8,
-   "likes": 14077,
-   "comments": 1328,
+   "views": 122402,
+   "hours": 33.9,
+   "likes": 14097,
+   "comments": 1329,
    "cat": null,
    "dur": 184,
    "thumb": "https://i.ytimg.com/vi/7IZ79kGHCGM/hqdefault.jpg",
    "kw": [],
    "tier": "rise",
-   "chart": 11,
-   "topComments": [
-    {
-     "text": "댄라즈 입장에선 플리를 위해 커버한 노래겠지만 왠지모르게 댄라즈 서로를 향해 하는 가사같기도 한게 데뷔초때 거금주고 안무 맡겼는데 율동같은거 주는 바람에 둘이서 결국 안무를 만들기 시작했잖아 적어도 안무 창작에 있어서는 기댈곳이 서로 밖에 없었다는거지 그런 상황에 '난 널 버리지 않아 너도 같은 생각이지? 난 우리를 영영 잃지 않아 너도 영영 그럴거지' 이 가사가 너무 크게 와닿아서 눈물 날",
-     "likes": 1115
-    },
-    {
-     "text": "다른 노래도 아니고 이 곡을 밤비와 하민이 같이 불러줬다는게 참 깊은 울림을 주는 것 같음 원래 한로로 곡도 좋아하고 그 안에 담긴 서사도 좋아해서..단순하게 곡에대한 이야기만 한다면 0과 0이 만나서 8이 되어 무한이 되는 것처럼 하민이도 밤비도 서로가 따로 0으로 있었다가 이렇게 우연히 운명히 만나 플레이브라는 무한이 된거니까 특히 서로가 없으면 안되는 플레이브 담당 안무가로서의 서사를 ",
-     "likes": 187
-    },
-    {
-     "text": "아무것도 가진 것 없던 0과 0이 만나 서로에게 ‘영원한 희망’이 된다는 제목의 의미가 플레이브와 플리들을 보고 말하는 것 같아서 괜히 뭉클함...🥹",
-     "likes": 443
-    },
-    {
-     "text": "기교없이 담백한 하민이 보컬이 진짜 너무 좋음. 뭔가 이런 어쿠스틱 사운드에 특히 더 강점을 보임 ㅜㅜ 잔잔하게 다가와 깊은 울림을 준달까..",
-     "likes": 109
-    },
-    {
-     "text": "댄라즈 듀엣만을 백만년 기다렸어요",
-     "likes": 630
-    }
-   ]
+   "chart": 11
   },
   {
    "id": "_wxqlZJPaoc",
    "title": "최고 난이도 포켓몬 세계에서 포알못으로 살아남기",
    "ch": "동수칸TV",
    "subs": 602000,
-   "views": 417757,
-   "hours": 10.8,
-   "likes": 1445,
-   "comments": 296,
+   "views": 420235,
+   "hours": 10.9,
+   "likes": 1450,
+   "comments": 298,
    "cat": null,
    "dur": 4916,
    "thumb": "https://i.ytimg.com/vi/_wxqlZJPaoc/hqdefault.jpg",
@@ -5538,9 +7057,9 @@
    "title": "장갑 충격을 찾아서",
    "ch": "PAKA",
    "subs": 786000,
-   "views": 569226,
-   "hours": 29.3,
-   "likes": 1789,
+   "views": 571048,
+   "hours": 29.4,
+   "likes": 1792,
    "comments": 191,
    "cat": null,
    "dur": 1546,
@@ -5550,50 +7069,28 @@
    "chart": 14
   },
   {
-   "id": "5i1bixMALHM",
-   "title": "하루에 점멸 실수 5번하는 프로게이머 도란 l T1 vs KC",
-   "ch": "정글선생 진 영준",
-   "subs": 222000,
-   "views": 486142,
-   "hours": 31.8,
-   "likes": 4842,
-   "comments": 2457,
+   "id": "mDlfw7Y_VBc",
+   "title": "페케형님들 믿습니다.. [T1scord 2026 vs KC]",
+   "ch": "T1",
+   "subs": 1760000,
+   "views": 412751,
+   "hours": 6.5,
+   "likes": 4602,
+   "comments": 1181,
    "cat": null,
-   "dur": 1852,
-   "thumb": "https://i.ytimg.com/vi/5i1bixMALHM/hqdefault.jpg",
+   "dur": 878,
+   "thumb": "https://i.ytimg.com/vi/mDlfw7Y_VBc/hqdefault.jpg",
    "kw": [],
    "tier": "rise",
-   "chart": 16,
-   "topComments": [
-    {
-     "text": "4강 중계에서 뵙시다. \n좋아요 Hype 감사",
-     "likes": 806
-    },
-    {
-     "text": "진영준 최고의 시나리오다 오늘은 ㅋㅋ\n8강딱 하면 볼거리도 없고 컨텐츠도 ㅈ도 없는데 티원은 올라가고 \n도란은 부진 ㅋㅋㅋ",
-     "likes": 2880
-    },
-    {
-     "text": "영준이 슬슬 갈라하는데 도란이 손수 개같이 부활시켜주노 ㅋㅋㅋㅋㅋㅋ",
-     "likes": 2599
-    },
-    {
-     "text": "'프로게이머가' 게임을 잘하면 '방구석 유튜버'가 나락을간다\n이게 줜나웃기네 ㅋㅋㅋㅋㅋㅋㅋ",
-     "likes": 1009
-    },
-    {
-     "text": "도란이 못할때마다 영준이가 노래부르면서 춤추는거 상상하니까 집중이 안되더라 ㅋㅋㅋㅋㅋㅋㅋ",
-     "likes": 124
-    }
-   ]
+   "chart": 16
   },
   {
    "id": "t23bUf0YU4k",
    "title": "반창꼬",
    "ch": "DK - Topic",
    "subs": 10900,
-   "views": 191895,
-   "hours": 100.7,
+   "views": 192087,
+   "hours": 100.9,
    "likes": 846,
    "comments": 63,
    "cat": null,
@@ -5608,9 +7105,9 @@
    "title": "렁가",
    "ch": "괴물쥐 유튜브",
    "subs": 1210000,
-   "views": 585323,
-   "hours": 24.8,
-   "likes": 1721,
+   "views": 586787,
+   "hours": 24.9,
+   "likes": 1722,
    "comments": 242,
    "cat": null,
    "dur": 1378,
@@ -5620,57 +7117,57 @@
    "chart": 18
   },
   {
-   "id": "mDlfw7Y_VBc",
-   "title": "페케형님들 믿습니다.. [T1scord 2026 vs KC]",
-   "ch": "T1",
-   "subs": 1760000,
-   "views": 401896,
-   "hours": 6.4,
-   "likes": 4568,
-   "comments": 1159,
+   "id": "5i1bixMALHM",
+   "title": "하루에 점멸 실수 5번하는 프로게이머 도란 l T1 vs KC",
+   "ch": "정글선생 진 영준",
+   "subs": 222000,
+   "views": 488601,
+   "hours": 32.0,
+   "likes": 4843,
+   "comments": 2457,
    "cat": null,
-   "dur": 878,
-   "thumb": "https://i.ytimg.com/vi/mDlfw7Y_VBc/hqdefault.jpg",
+   "dur": 1852,
+   "thumb": "https://i.ytimg.com/vi/5i1bixMALHM/hqdefault.jpg",
    "kw": [],
    "tier": "rise",
    "chart": 20,
    "topComments": [
     {
-     "text": "그래그래 내일 잘해보자",
-     "likes": 1574
+     "text": "4강 중계에서 뵙시다. \n좋아요 Hype 감사",
+     "likes": 806
     },
     {
-     "text": "많은 거 안 바랄게...\n앞으로 넥서스 여섯 번만 더 깨주라...",
-     "likes": 1189
+     "text": "진영준 최고의 시나리오다 오늘은 ㅋㅋ\n8강딱 하면 볼거리도 없고 컨텐츠도 ㅈ도 없는데 티원은 올라가고 \n도란은 부진 ㅋㅋㅋ",
+     "likes": 2882
     },
     {
-     "text": "이 티스코드가 blg, geng 까지 이어지기를",
-     "likes": 225
+     "text": "영준이 슬슬 갈라하는데 도란이 손수 개같이 부활시켜주노 ㅋㅋㅋㅋㅋㅋ",
+     "likes": 2603
     },
     {
-     "text": "T1는 LPL에게 지지 않습니다\n꼭 이겨주십소",
-     "likes": 612
+     "text": "'프로게이머가' 게임을 잘하면 '방구석 유튜버'가 나락을간다\n이게 줜나웃기네 ㅋㅋㅋㅋㅋㅋㅋ",
+     "likes": 1011
     },
     {
-     "text": "도란아 힘 좀 내보자 진짜",
-     "likes": 892
+     "text": "도란이 못할때마다 영준이가 노래부르면서 춤추는거 상상하니까 집중이 안되더라 ㅋㅋㅋㅋㅋㅋㅋ",
+     "likes": 124
     }
    ]
   },
   {
-   "id": "TT-15GKX-ds",
-   "title": "새로운 문파 탄생?! 클상도 vs 낙저밧",
-   "ch": "클리드",
-   "subs": 356000,
-   "views": 292599,
-   "hours": 27.3,
-   "likes": 1098,
-   "comments": 165,
+   "id": "P0AhjCX4onA",
+   "title": "드디어 만난 베컴과 케인",
+   "ch": "이상호",
+   "subs": 1010000,
+   "views": 104533,
+   "hours": 2.5,
+   "likes": 1177,
+   "comments": 95,
    "cat": null,
-   "dur": 3756,
-   "thumb": "https://i.ytimg.com/vi/TT-15GKX-ds/hqdefault.jpg",
+   "dur": 1298,
+   "thumb": "https://i.ytimg.com/vi/P0AhjCX4onA/hqdefault.jpg",
    "kw": [],
-   "tier": "rise",
+   "tier": "",
    "chart": 22
   },
   {
@@ -5678,9 +7175,9 @@
    "title": "널 사랑했던 순간",
    "ch": "JI JIN SEOK - Topic",
    "subs": 6740,
-   "views": 51885,
-   "hours": 178.8,
-   "likes": 7254,
+   "views": 51949,
+   "hours": 178.9,
+   "likes": 7253,
    "comments": 0,
    "cat": null,
    "dur": 245,
@@ -5690,35 +7187,35 @@
    "chart": 23
   },
   {
+   "id": "TT-15GKX-ds",
+   "title": "새로운 문파 탄생?! 클상도 vs 낙저밧",
+   "ch": "클리드",
+   "subs": 356000,
+   "views": 293674,
+   "hours": 27.5,
+   "likes": 1099,
+   "comments": 165,
+   "cat": null,
+   "dur": 3756,
+   "thumb": "https://i.ytimg.com/vi/TT-15GKX-ds/hqdefault.jpg",
+   "kw": [],
+   "tier": "rise",
+   "chart": 24
+  },
+  {
    "id": "nJTi9um4X1w",
    "title": "시원한 웜보콤보로🧹🫧│T1 vs KC│2026 Worlds│울챔스 하이라이트",
    "ch": "Wolf",
    "subs": 445000,
-   "views": 361720,
-   "hours": 34.4,
-   "likes": 1698,
+   "views": 362490,
+   "hours": 34.6,
+   "likes": 1700,
    "comments": 197,
    "cat": null,
    "dur": 4629,
    "thumb": "https://i.ytimg.com/vi/nJTi9um4X1w/hqdefault.jpg",
    "kw": [],
    "tier": "rise",
-   "chart": 24
-  },
-  {
-   "id": "P0AhjCX4onA",
-   "title": "드디어 만난 베컴과 케인",
-   "ch": "이상호",
-   "subs": 1010000,
-   "views": 92252,
-   "hours": 2.3,
-   "likes": 1145,
-   "comments": 91,
-   "cat": null,
-   "dur": 1298,
-   "thumb": "https://i.ytimg.com/vi/P0AhjCX4onA/hqdefault.jpg",
-   "kw": [],
-   "tier": "",
    "chart": 26
   },
   {
@@ -5726,10 +7223,10 @@
    "title": "차원이 다른 체급｜GEN vs IG｜월즈 4강 하이라이트",
    "ch": "튜브김민교",
    "subs": 812000,
-   "views": 182044,
-   "hours": 9.8,
-   "likes": 512,
-   "comments": 115,
+   "views": 183630,
+   "hours": 9.9,
+   "likes": 517,
+   "comments": 116,
    "cat": null,
    "dur": 3488,
    "thumb": "https://i.ytimg.com/vi/tdkg4VqpjWs/hqdefault.jpg",
@@ -5742,10 +7239,10 @@
    "title": "261107 전설 무한의 계단",
    "ch": "전설",
    "subs": 38800,
-   "views": 2293917,
-   "hours": 14.3,
+   "views": 2293942,
+   "hours": 14.5,
    "likes": 4683,
-   "comments": 7,
+   "comments": 8,
    "cat": null,
    "dur": 22783,
    "thumb": "https://i.ytimg.com/vi/wsJgLiriygs/hqdefault.jpg",
@@ -5758,9 +7255,9 @@
    "title": "숲체정 타이틀을 위한 마지막 관문",
    "ch": "스맵",
    "subs": 264000,
-   "views": 191327,
-   "hours": 22.8,
-   "likes": 581,
+   "views": 191804,
+   "hours": 22.9,
+   "likes": 584,
    "comments": 77,
    "cat": null,
    "dur": 4168,
@@ -5770,57 +7267,35 @@
    "chart": 32
   },
   {
-   "id": "PRyId8bMcvc",
-   "title": "물에 닿기만해도 죽는 수영장에서 살아남기!!!",
-   "ch": "흔한남매",
-   "subs": 3080000,
-   "views": 532133,
-   "hours": 51.8,
-   "likes": 5807,
-   "comments": 829,
-   "cat": null,
-   "dur": 1299,
-   "thumb": "https://i.ytimg.com/vi/PRyId8bMcvc/hqdefault.jpg",
-   "kw": [],
-   "tier": "rise",
-   "chart": 34,
-   "topComments": [
-    {
-     "text": "아시죵? 반응좋으면 실사판 갑니다",
-     "likes": 575
-    },
-    {
-     "text": "0:06를 계속 눌러보시오.",
-     "likes": 339
-    },
-    {
-     "text": "안녕하세요 이 게임은 제 스팀 데모 게임(Infinite Shift)을 카피해서 만든 게임입니다. \n\nㅜ_ㅜ 저랑 저작권 분쟁중 저사람이 몰래 만든(ver2로) 게임이기도 하고요.. \n원작은 뭍히고 카피된 게임들만 더 잘 되는 것 같아 너무 속상하고 (지금 50개가 넘어갔네요)\n\n제 게임이 아니라 이 게임이 오리지널이란 소리 까지 듣고 있기도 하구요.\n\n아직 제 게임은 데모만 출시한 것인데 ",
-     "likes": 210
-    },
-    {
-     "text": "0:00초로 계속 돌려보세요 ㅋㅋ",
-     "likes": 23
-    },
-    {
-     "text": "0:01 계~속  눌러보세요ㅎㅋ",
-     "likes": 8
-    }
-   ]
-  },
-  {
    "id": "49KWszylQe8",
    "title": "곽튜브 본캐 다 팔았습니다 4000억 새팀 여행 시작합니다",
    "ch": "두치와뿌꾸",
    "subs": 909000,
-   "views": 157568,
-   "hours": 10.8,
-   "likes": 522,
+   "views": 159119,
+   "hours": 10.9,
+   "likes": 526,
    "comments": 93,
    "cat": null,
    "dur": 741,
    "thumb": "https://i.ytimg.com/vi/49KWszylQe8/hqdefault.jpg",
    "kw": [],
    "tier": "",
+   "chart": 34
+  },
+  {
+   "id": "PRyId8bMcvc",
+   "title": "물에 닿기만해도 죽는 수영장에서 살아남기!!!",
+   "ch": "흔한남매",
+   "subs": 3080000,
+   "views": 532673,
+   "hours": 51.9,
+   "likes": 5809,
+   "comments": 829,
+   "cat": null,
+   "dur": 1299,
+   "thumb": "https://i.ytimg.com/vi/PRyId8bMcvc/hqdefault.jpg",
+   "kw": [],
+   "tier": "rise",
    "chart": 36
   },
   {
@@ -5828,9 +7303,9 @@
    "title": "꿈꾸던 어른이 되었나요? (머무르) Covered by 하데스 챈나",
    "ch": "하데스 HADES",
    "subs": 35200,
-   "views": 28720,
-   "hours": 10.8,
-   "likes": 1584,
+   "views": 29055,
+   "hours": 10.9,
+   "likes": 1590,
    "comments": 251,
    "cat": null,
    "dur": 208,
@@ -5844,9 +7319,9 @@
    "title": "직접 캔 돈으로만 모낭사수 샤프뚫기 ㄱㄱㄱ!!!!",
    "ch": "레고77",
    "subs": 289000,
-   "views": 182344,
-   "hours": 12.3,
-   "likes": 377,
+   "views": 183716,
+   "hours": 12.4,
+   "likes": 378,
    "comments": 88,
    "cat": null,
    "dur": 1105,
@@ -5860,9 +7335,9 @@
    "title": "진캐가 룰렛을 승낙한다고? 혼내줘야게땅 [팡이요,  메이플스토리]",
    "ch": "팡이요",
    "subs": 590000,
-   "views": 191150,
-   "hours": 9.7,
-   "likes": 436,
+   "views": 193753,
+   "hours": 9.8,
+   "likes": 441,
    "comments": 91,
    "cat": null,
    "dur": 704,
@@ -5876,9 +7351,9 @@
    "title": "??? : 디오만데 그 정도 아니라니까?",
    "ch": "저라뎃 JUSTLIKETHAT",
    "subs": 729000,
-   "views": 228894,
-   "hours": 22.0,
-   "likes": 808,
+   "views": 230074,
+   "hours": 22.2,
+   "likes": 809,
    "comments": 130,
    "cat": null,
    "dur": 1791,
@@ -5892,9 +7367,9 @@
    "title": "TWS (투어스) '내 이름을 불러줘' Dance Practice (Fix ver.)",
    "ch": "TWS",
    "subs": 2400000,
-   "views": 71390,
-   "hours": 10.8,
-   "likes": 6148,
+   "views": 72515,
+   "hours": 10.9,
+   "likes": 6176,
    "comments": 299,
    "cat": null,
    "dur": 168,
@@ -5904,110 +7379,88 @@
    "chart": 43
   },
   {
-   "id": "RyCSAWTfznQ",
-   "title": "속이는 사람밖에 없는 보이스피싱게임 ㅋㅋ",
-   "ch": "잠뜰 TV",
-   "subs": 2400000,
-   "views": 230783,
-   "hours": 30.3,
-   "likes": 6435,
-   "comments": 365,
-   "cat": null,
-   "dur": 4649,
-   "thumb": "https://i.ytimg.com/vi/RyCSAWTfznQ/hqdefault.jpg",
-   "kw": [],
-   "tier": "rise",
-   "chart": 44
-  },
-  {
    "id": "T1d3GwCDG8w",
    "title": "캐릭터 PV 에이언즈★아하——「주사위를 날려라」|〈붕괴: 스타레일〉",
    "ch": "붕괴: 스타레일",
    "subs": 221000,
-   "views": 185321,
-   "hours": 9.8,
-   "likes": 4673,
-   "comments": 1724,
+   "views": 186247,
+   "hours": 9.9,
+   "likes": 4686,
+   "comments": 1727,
    "cat": null,
    "dur": 190,
    "thumb": "https://i.ytimg.com/vi/T1d3GwCDG8w/hqdefault.jpg",
    "kw": [],
    "tier": "rise",
-   "chart": 46,
-   "topComments": [
-    {
-     "text": "🎁신규 캐릭터 에이언즈★아하 출시 기념 이벤트!\n\n캐릭터 PV 유튜브 영상 댓글에 에이언즈★아하 출시를 축하하는 댓글을 달아주시면 2명을 추첨하여 에이언즈★아하 캐릭터의 CV 권다예 님의 친필 사인 보드를 보상으로 획득하실 수 있습니다!\n\n마감 시간: 2026년 11월 15일 23:59까지\n \n※ 당첨자 명단은 이벤트 종료 후 10 영업일 내에 발표할 예정입니다",
-     "likes": 264
-    },
-    {
-     "text": "2:26 공식에서 인정한 보존의 사도\n\" 신 호 등\"",
-     "likes": 978
-    },
-    {
-     "text": "0:24 나머지는 총을 겨누는 시늉만 하는데 폼폼은 진짜로 아하 쏴버리려 하고 잇음ㅋㅋㅋㅋㅋㅋ 근데 총 없어지니까 아하한테 주먹질 시작함ㅋㅋㅋㅋㅋ",
-     "likes": 425
-    },
-    {
-     "text": "🎭\n이또한 아하의 은총이겠죠",
-     "likes": 474
-    },
-    {
-     "text": "1:50 아하 개사기 몹들 데려가는 거 신호등이랑 이카 ㅋㅋㅋ",
-     "likes": 315
-    }
-   ]
+   "chart": 44
   },
   {
-   "id": "Qjv2ImsKL-I",
-   "title": "\"BLG나와!!!\" T1 6년 연속 4강행! | T1 vs  KC | 녹아웃 스테이지 8강 | 2026 Worlds",
-   "ch": "Untara",
-   "subs": 291000,
-   "views": 255969,
-   "hours": 34.8,
-   "likes": 1349,
-   "comments": 472,
+   "id": "RyCSAWTfznQ",
+   "title": "속이는 사람밖에 없는 보이스피싱게임 ㅋㅋ",
+   "ch": "잠뜰 TV",
+   "subs": 2400000,
+   "views": 231103,
+   "hours": 30.4,
+   "likes": 6437,
+   "comments": 366,
    "cat": null,
-   "dur": 6443,
-   "thumb": "https://i.ytimg.com/vi/Qjv2ImsKL-I/hqdefault.jpg",
+   "dur": 4649,
+   "thumb": "https://i.ytimg.com/vi/RyCSAWTfznQ/hqdefault.jpg",
    "kw": [],
    "tier": "rise",
-   "chart": 48
+   "chart": 46
   },
   {
    "id": "sf0__ulXvYg",
    "title": "엔드를 털어간 친구 집에 레일건을 쐈습니다",
    "ch": "라스 마인크래프트",
    "subs": 117000,
-   "views": 105235,
-   "hours": 12.8,
-   "likes": 1312,
+   "views": 105930,
+   "hours": 12.9,
+   "likes": 1314,
    "comments": 208,
    "cat": null,
    "dur": 1120,
    "thumb": "https://i.ytimg.com/vi/sf0__ulXvYg/hqdefault.jpg",
    "kw": [],
    "tier": "rise",
+   "chart": 48
+  },
+  {
+   "id": "Qjv2ImsKL-I",
+   "title": "\"BLG나와!!!\" T1 6년 연속 4강행! | T1 vs  KC | 녹아웃 스테이지 8강 | 2026 Worlds",
+   "ch": "Untara",
+   "subs": 291000,
+   "views": 256276,
+   "hours": 35.0,
+   "likes": 1350,
+   "comments": 472,
+   "cat": null,
+   "dur": 6443,
+   "thumb": "https://i.ytimg.com/vi/Qjv2ImsKL-I/hqdefault.jpg",
+   "kw": [],
+   "tier": "rise",
    "chart": 50
   }
  ],
  "commentIds": [
-  "5i1bixMALHM",
-  "nd3hpJ4oMpU",
-  "T1d3GwCDG8w",
-  "wmfCGc1fxpQ",
-  "7IZ79kGHCGM",
-  "jx28RyWwi7k",
-  "mDlfw7Y_VBc",
-  "_tFYEhMN_a0",
-  "vT-gCU3lKGw",
-  "PRyId8bMcvc",
-  "JTWLWrwFwAo",
-  "2ydUIhjkeoU"
+  "7oNbWJEDMPg",
+  "vlZjsJn2VXg",
+  "SUsYlgv8Y6Y",
+  "eayeQgmkuvI",
+  "vGASj4KmKEs",
+  "w05iQ8aTR0g",
+  "eURQOtMOEuw",
+  "ZRXdjalLwO0",
+  "QzwQ2jkktOw",
+  "OGhS-3MAfIw",
+  "2UpokGZBHEU",
+  "5i1bixMALHM"
  ],
  "formats": [
   {
    "name": "실험·반응형",
-   "lift": "+374%",
+   "lift": "+196%",
    "n": 2,
    "ex": "반응터진 이준 NEON 챌린지 풀버전, 맘마의 릴스 편집 도전,응원 한마디 ",
    "ids": [
@@ -6016,48 +7469,54 @@
    ]
   },
   {
-   "name": "질문형 제목",
-   "lift": "+1%",
-   "n": 24,
-   "ex": "요즘 난리 난 댄스 챌린지 중 지켜보, 소정우 샤넬챌린지 오랜만이죠?🥰",
-   "ids": [
-    "lNbqV0smZlE",
-    "lyphlyNeFLA",
-    "hUsNMMDNwnQ",
-    "DU3bREgEieM",
-    "JxMAn_GWZU8",
-    "kWJmjGVg9sA",
-    "fqfpB33Aask",
-    "t211qDkHI2w",
-    "cdrWB_ZR_WM",
-    "8YZq9EforwU",
-    "NmAbIfYGPfQ",
-    "A1EH88s3lrQ",
-    "978-9JB7paI",
-    "rYOzWtGgDSw",
-    "7Vix1J4irw8",
-    "nOfoYNISsdg",
-    "9Eh0GD1eS2U",
-    "4RCRIVjPA60",
-    "qbgJQOQ0rHM",
-    "SGELq-XhosY"
-   ]
-  },
-  {
    "name": "이슈·속보형",
-   "lift": "-62%",
-   "n": 4,
-   "ex": "일본이 레전드 뇌절광고를 만든 이유와, 신발 광고 찍은 멤버가 결국 바닥에 ",
+   "lift": "+14%",
+   "n": 10,
+   "ex": "결국 북한 유산이 된 태권도…유네스코, [자막뉴스] \"담배 하나 피우고 있을",
    "ids": [
+    "eayeQgmkuvI",
+    "yxNJ9DIKTMw",
+    "HJLUErfYv8Q",
+    "Y_2emzOLDzw",
+    "GYtBynXYWlU",
     "DU3bREgEieM",
     "cS397SCW6aE",
+    "TNKr5YTIFyE",
     "4vDehWuwoJA",
     "5C9LSPTuYvQ"
    ]
   },
   {
+   "name": "질문형 제목",
+   "lift": "-8%",
+   "n": 33,
+   "ex": "요즘 난리 난 댄스 챌린지 중 지켜보, 갤폴드8 펼치자 금이 쩍?…천만 조회",
+   "ids": [
+    "lNbqV0smZlE",
+    "6LBfugqJgWU",
+    "RhuYOg-vnTU",
+    "vlZjsJn2VXg",
+    "UB4TsJ9YDR0",
+    "MSqKYWsi8hE",
+    "SLfWOELjx4c",
+    "lyphlyNeFLA",
+    "8kjOwBx6Q7I",
+    "hUsNMMDNwnQ",
+    "DU3bREgEieM",
+    "JxMAn_GWZU8",
+    "kWJmjGVg9sA",
+    "JYMpEiXIOBw",
+    "fqfpB33Aask",
+    "RRgkkAVzUXA",
+    "t211qDkHI2w",
+    "cdrWB_ZR_WM",
+    "8YZq9EforwU",
+    "NmAbIfYGPfQ"
+   ]
+  },
+  {
    "name": "리스트·랭킹형",
-   "lift": "-72%",
+   "lift": "-82%",
    "n": 5,
    "ex": "부장님은 빼빼로데이마다 가래떡 200, 11월 광고모델 브랜드평판 TOP10",
    "ids": [
@@ -6070,40 +7529,35 @@
   },
   {
    "name": "요약·정리형",
-   "lift": "-90%",
-   "n": 7,
-   "ex": "대통령 돼서 싹 다 정리한다는 시사타, 다이소 재료로 10분만에 치이카와 빼",
+   "lift": "-95%",
+   "n": 2,
+   "ex": "다이소 재료로 10분만에 치이카와 빼, 11초 안에 담으면 진짜 다 준다고요",
    "ids": [
-    "lklDYRrQDTQ",
     "qY5lBU-QSXI",
-    "nOfoYNISsdg",
-    "oDTTX1xjVTw",
-    "g1SkoHUmYBQ",
-    "1h0UCMlDfXk",
-    "KvCNVwF9Tis"
+    "nOfoYNISsdg"
    ]
   }
  ],
  "lengths": [
   {
    "name": "15초 이하",
-   "n": 23,
-   "lift": "+165%"
+   "n": 27,
+   "lift": "+43%"
   },
   {
    "name": "16~30초",
-   "n": 55,
-   "lift": "-18%"
+   "n": 60,
+   "lift": "-50%"
   },
   {
    "name": "31~60초",
-   "n": 60,
-   "lift": "-12%"
+   "n": 75,
+   "lift": "-38%"
   },
   {
    "name": "61초 이상",
-   "n": 29,
-   "lift": "-72%"
+   "n": 66,
+   "lift": "+71%"
   }
  ],
  "season": [
