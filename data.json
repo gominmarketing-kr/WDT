@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-08T21:59+09:00",
+ "updatedAt": "2026-11-08T22:11+09:00",
  "cats": {
   "fun": {
    "label": "유머"
@@ -17,7 +17,7 @@
    "src": [
     "G"
    ],
-   "traffic": "200+",
+   "traffic": "500+",
    "news": [
     {
      "title": "Java United vs Persib Bandung Today: Live Score, Statistics, and Latest Match Updates",
@@ -30,7 +30,7 @@
      "source": "Aktualita.co"
     }
    ],
-   "chg": "new",
+   "chg": 0,
    "cat": null
   },
   {
@@ -56,7 +56,7 @@
      "source": "한스경제"
     }
    ],
-   "chg": "new",
+   "chg": 0,
    "cat": null
   },
   {
@@ -82,7 +82,7 @@
      "source": "연합뉴스"
     }
    ],
-   "chg": "new",
+   "chg": 0,
    "cat": null
   },
   {
@@ -92,7 +92,7 @@
    ],
    "traffic": "200+",
    "news": [],
-   "chg": "new",
+   "chg": 0,
    "cat": null
   },
   {
@@ -118,7 +118,7 @@
      "source": "WEC"
     }
    ],
-   "chg": "new",
+   "chg": 0,
    "cat": null
   },
   {
@@ -129,11 +129,6 @@
    "traffic": "2000+",
    "news": [
     {
-     "title": "내년에 25조 쏟아붓는 기초연금…생계급여 깎여 노인빈곤 개선 '헛바퀴'",
-     "url": "https://www.edaily.co.kr/News/Read?newsId=01908966645643752&mediaCodeNo=257",
-     "source": "이데일리"
-    },
-    {
      "title": "“연금 오르면 뭐하나”…생계급여 삭감에 빈곤노인 78만명은 답보 상태",
      "url": "https://www.segye.com/newsView/20261108504769",
      "source": "세계일보"
@@ -142,9 +137,14 @@
      "title": "기초연금 3만원 더 받는 저소득층, 생계급여 삭감…인상 효과 미미",
      "url": "https://www.donga.com/news/Society/article/all/20261108/134985262/1",
      "source": "동아일보"
+    },
+    {
+     "title": "“기초연금 인상분만큼 생계급여 삭감”…연금 개편에도 빈곤노인 소득은 그대로",
+     "url": "https://www.asiatoday.co.kr/kn/view.php?key=20261108010002778",
+     "source": "아시아투데이"
     }
    ],
-   "chg": -5,
+   "chg": 0,
    "cat": null
   },
   {
@@ -170,7 +170,7 @@
      "source": "뉴시스"
     }
    ],
-   "chg": -5,
+   "chg": 0,
    "cat": null
   },
   {
@@ -196,7 +196,7 @@
      "source": "제민일보"
     }
    ],
-   "chg": -5,
+   "chg": 0,
    "cat": null
   },
   {
@@ -207,6 +207,11 @@
    "traffic": "5000+",
    "news": [
     {
+     "title": "서울대 강단 선 최태원…“AI시대 복합 위기, ‘4대 해법’으로 뚫자”",
+     "url": "https://www.sedaily.com/article/20110913",
+     "source": "서울경제"
+    },
+    {
      "title": "맏형 최태원의 28년 궤적… SK 행복 씨앗으로 ‘국가 AI’ 설계",
      "url": "https://www.asiatoday.co.kr/kn/view.php?key=20261109010002998",
      "source": "아시아투데이"
@@ -215,14 +220,9 @@
      "title": "최태원 “돈이 너무 많이 풀려...롤러코스피 이어질 것”",
      "url": "https://www.mk.co.kr/news/business/12200335",
      "source": "매일경제"
-    },
-    {
-     "title": "서울대 강단 선 최태원…“AI시대 복합 위기, ‘4대 해법’으로 뚫자”",
-     "url": "https://www.sedaily.com/article/20110913",
-     "source": "서울경제"
     }
    ],
-   "chg": -5,
+   "chg": 0,
    "cat": null
   },
   {
@@ -243,12 +243,12 @@
      "source": "다나와 자동차"
     },
     {
-     "title": "기아, 12년만에 판매 목표 달성 눈앞…335만대 돌파 초읽기",
-     "url": "https://www.sedaily.com/article/20111553",
-     "source": "서울경제"
+     "title": "형보다 나은 기아, 역대 최대 판매 가시권…내년도 신차 공세",
+     "url": "https://www.ajunews.com/view/20261108133837460",
+     "source": "아주경제"
     }
    ],
-   "chg": -5,
+   "chg": 0,
    "cat": null
   }
  ],
@@ -261,16 +261,22 @@
     "time": "2026-11-08T21:20+09:00"
    },
    {
-    "title": "[속보]與 “정부에 ‘종부세 14억, 실거주 구분 없이 적용’ 강력 요구”",
-    "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE05WDRaaUVINzJfYmVkRy1TZy1PT2dYeHNiWVh0SnlOWTFZS1l6R2M2WDJoRDcwLTVsMkhWTDZnQTdVVFlsbndwOVZrRUlsWVBVUkdiZ3VjaGkyM2Z0cU5iRnBuVWlNV3g3eEx0TmpZWU1mN1N2ZVN30gFmQVVfeXFMUDRkR1dFbU85S3I3ejBGUDlod09ka2RyaXAycVZRblRrWXg0TC1oTDNlTkx5djlFZlZlNFhnOVU0S3lBZjBkX0t2SWdxd1NOV1dvaHVNOWsxbVE5N2t2cFRZMU40Z2Z3?oc=5",
+    "title": "[속보] 당정 “소방 필수투자에 2조원 재정지원…지방부담 완화 검토”",
+    "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE0tY3dMOEQ2RlFYbUpDUVFxSDFRQ1Y2ZWFoRElyeEU1MTFNX09VX2RfLXVkLU1nTnphZTBYOXVuRGZscG8xNk9EX01melQ4cDRJaTVqbHJqV3pMYkUyZjYwMUhlZldYd1c0XzFibWVhTzJYOFlUcGo40gFmQVVfeXFMTk9ObFZDeDRDM09xQVBORVlad0ttMVZtRzY4QXdzUkw4TDAydFRFNFQxUW1tQldzbV9kY2JTWXdyY0RXM3B2cC1nbVNpWkNNVEd4VGVDR0V3aV9QVnVvS2RIdjZGS2xR?oc=5",
     "source": "동아일보",
-    "time": "2026-11-08T20:56+09:00"
+    "time": "2026-11-08T21:06+09:00"
    },
    {
-    "title": "미 중간선거 투표율 49%…“역대 두 번째 투표율에 민주당 압승”",
-    "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1PQzFXM3BhdzUxZEU2RW5vS3E1LXpyYzZtQl9QZmgtRmZCb1g1Q3draTZMU1RQeGxFdy1FaDJHWDlmVmw0SUNTUzU5bUVaekVLWmpxVkpGYTE5UWs?oc=5",
-    "source": "KBS 뉴스",
-    "time": "2026-11-08T14:49+09:00"
+    "title": "종부세 '비거주 공제' 9억→12억→14억?…여론 악화에 움직인 與 [종합]",
+    "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBERzA3SUdKcXhoV0pNam45X2tkV2lLbF8xQnlrdFYxQ0d1M09zX2hEYTlIQmtpQndicHlreDNRS0RocEFqbFFmRlo2YkZSbUVubG05UEJ5VXVzdw?oc=5",
+    "source": "한국경제",
+    "time": "2026-11-08T21:44+09:00"
+   },
+   {
+    "title": "나라는 '돈벼락' 맞는데…\"난 왜 돈 없나\" 분노 폭발한 까닭",
+    "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9yNkVpM0JteUFiMVFoX3pONDY0X0dUVW9sZFlZazFOWUVWcjFoYVZHZGhpbDJPc29sd1B1ZEx3Zmp5c3VydlBYODdab0xab3NMMERvNmlzeWRzZw?oc=5",
+    "source": "한국경제",
+    "time": "2026-11-08T18:14+09:00"
    },
    {
     "title": "‘공소취소’ 부정안한 이용철 “입장 정리해 나중에 말할 것”",
@@ -282,37 +288,31 @@
     "title": "성급한 추위에 ‘서울 첫눈’ 내렸다…20년 만에 가장 일러",
     "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9IOUExTEkxRktsNTFTZmthZUg0ZERVTkRHQ0F3SVBHdzE3bVVzRHpnU3M5RHRKZHY5TkhNUEpSRE5Ib0I4enoySkJRczZaWjl5TFZzSVB3U2ZyOHpaU1JIZzhGaEYyTUZOVTM2OQ?oc=5",
     "source": "한겨레",
-    "time": "2026-11-08T12:25+09:00"
+    "time": "2026-11-08T20:19+09:00"
    },
    {
-    "title": "OECD, 한국 저출생 진단… \"지원 늘어도 직장 문화는 제자리\"",
-    "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOd2dqR2FDR3NLNXhVU0p0WDVSbnBwYkNDeEludXB2OFRTVXBYUUtoZkRLR2lKUDV3a3J1RURRaE45bTJHbG00WXpuVXdyakxCWHE2R2ZrMnRieDhBZGxIaWhzT3BPWnFfUHROR2pMSjBUNnRqekdTWlJrUE9VVmVhczNETm1aTENlZW9nQTlfWQ?oc=5",
-    "source": "조선일보",
-    "time": "2026-11-08T18:42+09:00"
-   },
-   {
-    "title": "‘복수혈전’ 완성한 사자 군단…삼성, 12년 만에 KS 우승",
-    "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBLbGc4RGVKQl9ubG9HcjZvNEpzYXBkWDB0TzFyYjBTXy1JRy1RbXlBbERPTjF3djNpaHFURmcyZTZpVUNRemQ3V2xQakppQUJDNVRMcmdlZERoVXM4Wk9qT0szLTZkYU0?oc=5",
+    "title": "노장 투혼·신예 기세…삼성 왕조 부활했다",
+    "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBUdU9yWWREVzRlOU9KVDZ3d1dPQlRDeWpDNEFVZEthdUowdnYxcG9ta0tSeVp3UVdGQWd3QUtvZWU2NENiQlREMjhTOXJVOEJraVRxZktzQUY5QjhST1ZwWXNZVVZxT0k?oc=5",
     "source": "한겨레",
-    "time": "2026-11-08T17:25+09:00"
+    "time": "2026-11-08T19:16+09:00"
    },
    {
-    "title": "임광현 \"소방재원 확보에 미래대응기금 활용, 국회와 긴밀 협의\"",
-    "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBUZGtZYTJCaDdRVXNSVmpxaWxITnM4dnhuSVZVemh5OXFZYWp0UFRTeEJ5cndoeXI0UTMzalI1cElyUWxybU00eENlZEllMjBzRVlBZzExcmpBaU3SAWBBVV95cUxPSDdRUlIyYWFLai1oSHkzcUVPcE5IMGRwQmVQV3FGSndFcC1IbTN2RlJMektyakRuWDVjMUZGUGV0RDZRZlFKeGNrQjdaTkdCMTFmLTFaVllMYUVuczdKcnI?oc=5",
+    "title": "韓 노인 부양 부담 44년 뒤 3.3배로",
+    "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBzaENRYXN5a1BSTzB4cl9CVHhqdk1lZ3RZTENWc0E0T1dPd2dCZkZyN2UzeWZiYUNUbmljMWZHVWpNLS1CTkNqYlduZGNfVjRaXzFfcVk2b3nSAVRBVV95cUxNRnljWkp1T1gxMEpoZkFJUUtJMFBwczN3MEFEOEhEcmhSYVdGZmptUDhFSENBUm5oSnFJbWZOUE01MWxyTWgzdktVNmxSeWJlLUJiUk4?oc=5",
+    "source": "세계일보",
+    "time": "2026-11-08T18:10+09:00"
+   },
+   {
+    "title": "장동혁 \"중도확장, 말로하는 연대·통합으로 되는 것 아니다\"",
+    "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBlY3YtMlA3MXBZcVRKWGlPMzNodVU5UUo0T2JGN1JCemZjVUNxOVBjOXJnRkxRSUJ5SDVPd1AxMW0wVmdOdFpOQ0hkZEFfMWI3enRJYnplVzliRW_SAWBBVV95cUxQWmRudy1YTGQ3RzBUYXEyUjhydlRyRzlOWXFaZUR3XzBjZFQ3Qk5BYUgyWGhtX3dqcV9jQUtPbEs3aUxKYnc5TXlOV01VdUpvVjNGVjRQWWtEMWtsOTNXU3o?oc=5",
     "source": "연합뉴스",
-    "time": "2026-11-08T16:56+09:00"
+    "time": "2026-11-08T12:56+09:00"
    },
    {
-    "title": "장동혁 \"중도확장, 누구 한 사람 데려온다고 되는 것 아냐\"",
-    "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5LT3lLaHk4NUUydW9PUW4xeW81bXdHcFJHX1pMUTNFUVJDU1NZd3EzZDVhTlMxamltTmZvX2xIUFVpYl9tUHQ2RXpjalNseDlraHllaFh1SlM5YUpJX2lVMWM4bnEwdmM?oc=5",
-    "source": "연합뉴스TV",
-    "time": "2026-11-08T14:12+09:00"
-   },
-   {
-    "title": "부산불꽃축제 120만명 모여 역대 2위…‘돈 내는’ 2만석도 완판",
-    "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5KN3NBaTYyM3NWRUVCc3haTG5JbmZ6UzFFeFdnVTF1ZEI2MmRpcUpreng4bmNQaURGVExJNHVLdEdvVEZvaFFzaTNtMlVNZ29kYWs4MnZHTFdPVkhaQjFyWXFmNGw?oc=5",
+    "title": "이 대통령 직격한 오세훈 “선거용 주식 도박…오만이 지옥문 열어”",
+    "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5CcndEak94Z2k2Y1cwWTE2d3FZbDBqWGtwbzRZTmZhd0U3bUZMemxGRFk0MnBnTW9WRHB4eS10bTJFaEFIZTJVQXpITGxiY3ZYZ09LaU1xcE1aWXdkbkNxVUl1dm9BM2xFdnhscW01UnFqRE41?oc=5",
     "source": "한겨레",
-    "time": "2026-11-08T16:47+09:00"
+    "time": "2026-11-08T11:52+09:00"
    },
    {
     "title": "사우디 '심장부' 금융지구 피격…\"후티 공격에 아람코타워 파손\"(종합)",
@@ -345,22 +345,22 @@
     "time": "2026-11-08T15:52+09:00"
    },
    {
-    "title": "‘1만피’ 간다더니 이제와 ‘5천피’라고?…황당한 증권사 고무줄 전망",
-    "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBrNGVxUGd3WVY1Tjl2NTZxcmtCQnBHNTN5MlVVZTJIWEE3SWwzVTczM1dsaVl6RzYxb2dDZEJrUjNRMnFTOU9jZ1V5WTRXZHlNWXc?oc=5",
+    "title": "근로소득이냐 복지혜택이냐 … 건강검진 지원금 '뜨거운 감자'",
+    "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBEU0ZsNG9keG4yQlZHcXV4aFF3UXJFZHFzZHloc1VNY0wzdXFUenhHd1VJRXJENVByaGpRaE5pcUdCRVdETUN0Y3djdFhzT09mOURTSQ?oc=5",
     "source": "매일경제",
-    "time": "2026-11-08T18:49+09:00"
+    "time": "2026-11-08T17:39+09:00"
    },
    {
-    "title": "수억대 '재초환 청구서' 현실화…'닥공 속도전' 제동 걸리나",
-    "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE0taHlMUmlyWWNEeUZoelhnQ0VEMDJuSkk2WmR5V3o2OGw5czJhc1BYcjFDTzBIaGFkVDlwdllpN0JEdVF0anRJejhtQUxaY19CVzFJNUVoSW1KUQ?oc=5",
+    "title": "외국인 삼성전자 보유율, 금융위기 이후 17년 만에 최저",
+    "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQYmtpM0xjWTl6UG1YaEVHVWhSSHBueU9oQW8tb3lEdzI2QjVBV212TllpdDdSTktKWWlaSlpRRmVtdXREbGcwMDFzMm13ZVgtb3RJUTFqb0VaVGhwVlJUNFYycjdWb05TX1ptbE1nVVBiVXVkQUhwUFVwRFVKMlpZeThmWXdHUGvSAZsBQVVfeXFMTjNtOUZIZWpmSGx6OWZzajZ2QjdKUTJUSHlvVmJsQTV4djl1aVJsMGQ5aXV4TUVrZFpPeWpMSlZvZ040OVJ1LVlVVDBkY1hCSDFwVEtXdlhuU3BkdDlGdTBWUDZBMkxRamcwODZoY1N4NFdicldHSENmS3pfLTl1aUo5V3h0YXU5d3FmOE1IVXFkOF9wTU04c2ZvM2M?oc=5",
+    "source": "Chosunbiz",
+    "time": "2026-11-08T09:28+09:00"
+   },
+   {
+    "title": "재건축 걸림돌 5조 재초환…부담 덜어내 공급 숨통 틔워야",
+    "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1Kb0stUnZtdkE2UWlOWjM3Q2YxRThBRXlWdnZubHVQM1dnSG9YTTdGMzZYVkdoSnZSYkN6eHlSU1RSOUZjTndzMUVyR1NGcHp1N2JpaHBZVFpRdw?oc=5",
     "source": "한국경제",
-    "time": "2026-11-08T17:30+09:00"
-   },
-   {
-    "title": "가상자산업계 잇단 해킹에…금융당국, 보안 책임자 소집",
-    "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9JTUo5RFBIeHpTbXdnelZtZkVWenFJWHEtZEtTQjNPUjVaUHJOY25mMEtaNThwRExqcDNyc2ZnYzZmZHVCNW14TFBNdUdQQXRVSkwtaTA2UVRBRWfSAWBBVV95cUxQemVhVUQ1UGRWSzg5WEJBbE1veG5kcXRZOGpkVWRIVmY4MXVmdzRPVDd3YkVyVUxNTkVxbTN2UEgwRzdGTER5ZnlMTElOUzFiS2FwNW5TQnBpYzFBYTBqTDU?oc=5",
-    "source": "연합뉴스",
-    "time": "2026-11-08T05:58+09:00"
+    "time": "2026-11-08T17:44+09:00"
    },
    {
     "title": "130억 년 된 별무리의 출생지는 어디인가…허블이 다시 펼친 우리은하의 역사",
@@ -389,10 +389,10 @@
     "time": "2026-11-08T21:05+09:00"
    },
    {
-    "title": "유재석 “대학 91학번인데 메인 피디가 91년생” 세월의 흐름에 깜짝 (식스센스)",
-    "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1iM1ZPTGlDRG0xU3NBMWdNWVRWbXlLaTlfN01IUWlVQ2huSXY3UkxyUVRfVFM0WElzNlZTU0tObzZmSzlvY0NQZGY5VDl4TFdQdThLdzhNMHZHbWZieFNEVFY3emVHZkRO?oc=5",
-    "source": "뉴스엔",
-    "time": "2026-11-08T20:39+09:00"
+    "title": "‘식스센스 비사이드’ 이색 김밥·와인 맛집 가짜?",
+    "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9yU2laX1dfcWpsakM3ay14VU1wN1Z6NnRzU3dYeUxSU3RseUU0WE9pS0ZlYURyMDlGX3lVb1FxUUs1c0xDWlRSVmlybDFjTWcwSG9hbDBsTzVBdTd1ZUFVWlRnelc?oc=5",
+    "source": "BNT뉴스",
+    "time": "2026-11-08T19:57+09:00"
    },
    {
     "title": "“량현량하 아니냐” 하하·양세찬 ‘NEON’ 챌린지에 유재석 한숨 (‘런닝맨’)",
@@ -469,6 +469,12 @@
   ],
   "pol": [
    {
+    "title": "與 “총선 직결” 비거주 1주택도 종부세 공제 14억 요구…靑 “불가”",
+    "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9kNXMwZVFVbm9xbGFxRVYxSU1WeUVncnk1alRDLTY4R19WWVlCVVdtMTRIMWhkRnFvclRrSW1WLV9PZmMtb080UkQwYkJzV3IxY0tJUm9oWkRrNkVVYVBUT0JUWjIyWk95UGVyTG5rYXFEWjA0Nmtr0gFmQVVfeXFMUGZqY1FSaGZuaWxUZXNNbjJWbFYtb1VkWEhMNko5WjMxc2xEY2RGS1BOYXRaMmxzUy1UQzZ4b0U4c3pQYlpCRDNTM3NQRnBxS3RYeTkyeGFmMFlDOWFGYURzcDY5WHJR?oc=5",
+    "source": "동아일보",
+    "time": "2026-11-08T21:43+09:00"
+   },
+   {
     "title": "與 “종부세 기본공제 14억원으로 통일”…정부에 강력 요구",
     "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPMTFYcF91VWJDQmIzbjJhRnh0V2cwUncwUzFnUEIzOUdoRE5ESldUTDNmVElHTlo0Vnp2X3Y4NEZ6Z1JsaEx5aGVrTXgzLUdPVDJsVDNtY05KVnR3cFB2Y0ZnVXN5ay1JbXNNODdmak1YVDhKTkIxTkNEbzg5RUpGcUh0UdIBlwFBVV95cUxQclNTbnB0akpvQnBBWF8zMXE1cmtVWTZPbUlyV1hweGVkM19BRUNIczE0WHNRNG1QYWdvdER0Y2xCN0sxNERGa1NMYXppazNwYWtNdTRkamc3MTVZOGJRVy1sNE42ZmhOb19GUTA1MHJBVThCa0hubEtVcER3MXhuUnNJeEVqVmZnUHNibWpVY0xBX09BMm9V?oc=5",
     "source": "Chosunbiz",
@@ -511,10 +517,10 @@
     "time": "2026-11-08T19:52+09:00"
    },
    {
-    "title": "與 \"정부에 '실거주 구분 없이 종부세 공제 14억' 강력히 요구\"",
-    "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9LdFRGVF93VmhzVUQtYklJSTMyVG9HNmc5ZEx4bWUzLWsxUVJLcG50dHdtRlpOZUpoYTUwcTF1SlRxcUNtb3o4d3lqaUVCMWwxQ1J3bGhHOGhKR2fSAWBBVV95cUxNR2pKbU83QXZmUXJDUWNqYlg0ekFaSi14Mkd2MGFCTGc2V0FwSVdMNzdNSGYyQU5tUWdBbGxnNGRIN1VVemE2VGlYTV9FdFhOSFJIeC1ZZVg5WWhvUDctNjA?oc=5",
-    "source": "연합뉴스",
-    "time": "2026-11-08T19:50+09:00"
+    "title": "민주 “정부에 ‘실거주 구분 없이 종부세 공제 14억’ 강력히 요구”",
+    "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFAzQV9JY1V0OXpHQ091dmxCZFNwM29xT1h1eXplZWM5RF9lRGNvXzR0cnVVRDJDWXdhSFBJWWszTkdQUHBXSGZ0Nm9tak9uSmRlOER0Mzk1TXVNRUZoaUE?oc=5",
+    "source": "주간경향",
+    "time": "2026-11-08T19:32+09:00"
    },
    {
     "title": "시장을 이길 수 있다던 정부, 결국 시장에 굴복하다",
@@ -523,10 +529,16 @@
     "time": "2026-11-08T19:28+09:00"
    },
    {
-    "title": "與, 정부에 '종부세 기본공제 14억' 확대 강력 요구…거주·비거주 구분 없이 적용",
-    "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBoTXcyX3c1aGdnZjVoVGd3YWZuMUJRbnNMVVlfb296a1BZZFJwblRVdFBOQVJCZWNlTGtqeXVCc2lFcnplYUEtNTVTREdoeDlqTTJ0NjZNMzN4dEh0?oc=5",
-    "source": "뉴스핌",
-    "time": "2026-11-08T19:25+09:00"
+    "title": "당정 \"소방 필수 투자에 2조원 재정지원…지방부담 완화 검토\"",
+    "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE16TUt5cnJ2c2JoUWVMUDE3cEJReDdtYTBxT1NXeTEwd2J4dzAwV1djWGN6Uk1ka2hGb210UEVWTHFFLTF4Z1NhaWx1eGZiSTh5NUtYRldxdnNEbFFIS21LQmtMeU40aGM?oc=5",
+    "source": "연합뉴스TV",
+    "time": "2026-11-08T19:23+09:00"
+   },
+   {
+    "title": "노장 투혼·신예 기세…삼성 왕조 부활했다",
+    "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBUdU9yWWREVzRlOU9KVDZ3d1dPQlRDeWpDNEFVZEthdUowdnYxcG9ta0tSeVp3UVdGQWd3QUtvZWU2NENiQlREMjhTOXJVOEJraVRxZktzQUY5QjhST1ZwWXNZVVZxT0k?oc=5",
+    "source": "한겨레",
+    "time": "2026-11-08T19:16+09:00"
    },
    {
     "title": "[속보] 당정 \"근본적 지방재정 확충 필요성 공감‥범정부 TF 재가동\"",
@@ -541,22 +553,10 @@
     "time": "2026-11-08T18:42+09:00"
    },
    {
-    "title": "[사설]‘성남 라인’ 이용철 법무장관 내정자, 공정성 우려 불식해야",
-    "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9mLTZibmU0U3Z3QlJESXYxQko1NGYxbnRMNk5OXzEwLW5uMnd6SUJ2SjMtTGlKM2x0TGZZMWh1VjVxNEw4bW5LWmNkWFRXWjhBelVzSXRGMWdFUdIBX0FVX3lxTE5uMld4d2xLdDVPbVVQeHFhVVlkZUg4QmVwOTRlSHNqYTB4MWhoQzJQOVIzeHFPZm9jRDV6RzZEV3JLWURSeGphQk5WN2I5RWpQLUdTZXNnVHViNF8tQm5j?oc=5",
-    "source": "경향신문",
+    "title": "韓 노인 부양 부담 44년 뒤 3.3배로",
+    "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBzaENRYXN5a1BSTzB4cl9CVHhqdk1lZ3RZTENWc0E0T1dPd2dCZkZyN2UzeWZiYUNUbmljMWZHVWpNLS1CTkNqYlduZGNfVjRaXzFfcVk2b3nSAVRBVV95cUxNRnljWkp1T1gxMEpoZkFJUUtJMFBwczN3MEFEOEhEcmhSYVdGZmptUDhFSENBUm5oSnFJbWZOUE01MWxyTWgzdktVNmxSeWJlLUJiUk4?oc=5",
+    "source": "세계일보",
     "time": "2026-11-08T18:10+09:00"
-   },
-   {
-    "title": "필버 등 혼돈 속 내년 예산안 심사 본격화…충청권 동력 확보 배수진",
-    "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9DUWdJTzlUSENSNnNwMllzQmtIdndfRzM2LWktSWxnRGs3aEhNQ0dGUl90MUlGVzNQZzgwOGM5VXZ5b1dSRGI0SFQtMXFIQkZFdWVhcjhBVkl0bnZJMGRjUjRlcDBockIwQm8zNl9PWdIBc0FVX3lxTE95SnlMRnNObGpaRnNPaXhnTVl2bERodXplX0dzQ2dDZGZibThLWEd5ZmhEX1NnMkFzZDE1dnJXNThnTVYtM2h1NTgyd04zTTJxSHRRRmxhbWo1Rjd3QXVuN0V1VnAxN3pyU19NRGNOM3hna0E?oc=5",
-    "source": "대전일보",
-    "time": "2026-11-08T17:32+09:00"
-   },
-   {
-    "title": "‘복수혈전’ 완성한 사자 군단…삼성, 12년 만에 KS 우승",
-    "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBLbGc4RGVKQl9ubG9HcjZvNEpzYXBkWDB0TzFyYjBTXy1JRy1RbXlBbERPTjF3djNpaHFURmcyZTZpVUNRemQ3V2xQakppQUJDNVRMcmdlZERoVXM4Wk9qT0szLTZkYU0?oc=5",
-    "source": "한겨레",
-    "time": "2026-11-08T17:25+09:00"
    }
   ],
   "ad": [
@@ -621,10 +621,10 @@
     "time": "2026-11-08T13:48+09:00"
    },
    {
-    "title": "애플은 왜 아직 일반 아이폰 18을 출시하지 않았을까요?",
-    "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE5ZUXFCNzRrTTA5Y0tCNS1yQkhSbDFnYnRBbHBhX2Z1NnZHV1J6T0hvN19EVkJXekR6U3ZDTWlyTzNNRGwwZGNaUGF3WDFwMk92elVXTGRHeG82VVppS1NYZjlVSmI1cDgzS3hwZU1TeVFPSTJrcVVKSHIxaw?oc=5",
-    "source": "Vietnam.vn",
-    "time": "2026-11-08T12:18+09:00"
+    "title": "수출 전문 공장까지…농심 '신라면' 해외 공략 가속",
+    "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1WS3hQRWxUTHV3YUFNTXBERXktLWJSbzFJdW4zaGFTT0EwcHBLb3EwRFJEcmlOVm1CMmZ3R09wVzBic2hvaVVzbDRFLXlvTmpDYW1SakpNTnhaNkpaaElXU0U3STl5cW1TbUdDUQ?oc=5",
+    "source": "비즈워치",
+    "time": "2026-11-08T12:00+09:00"
    },
    {
     "title": "[현장]\"한국의 맛 담아 세계로\" 농심, 글로벌 라면 시장 공략 박차",
@@ -655,19 +655,7 @@
  "issueWords": {
   "all": [
    {
-    "word": "요구",
-    "n": 2
-   },
-   {
-    "word": "민주당",
-    "n": 2
-   },
-   {
-    "word": "역대",
-    "n": 2
-   },
-   {
-    "word": "지원",
+    "word": "부담",
     "n": 2
    }
   ],
@@ -675,16 +663,12 @@
    {
     "word": "챌린지",
     "n": 5
-   },
-   {
-    "word": "유재석",
-    "n": 2
    }
   ],
   "pol": [
    {
     "word": "정부",
-    "n": 11
+    "n": 10
    },
    {
     "word": "종부세",
@@ -695,11 +679,15 @@
     "n": 7
    },
    {
-    "word": "강력",
-    "n": 6
+    "word": "요구",
+    "n": 5
    },
    {
-    "word": "요구",
+    "word": "공제",
+    "n": 5
+   },
+   {
+    "word": "강력",
     "n": 5
    },
    {
@@ -707,19 +695,15 @@
     "n": 5
    },
    {
-    "word": "공제",
-    "n": 4
-   },
-   {
     "word": "민주당",
     "n": 3
    },
    {
-    "word": "요청",
+    "word": "소방",
     "n": 3
    },
    {
-    "word": "적용",
+    "word": "요청",
     "n": 3
    }
   ],
@@ -733,6 +717,10 @@
     "n": 3
    },
    {
+    "word": "삼립",
+    "n": 2
+   },
+   {
     "word": "신제품",
     "n": 2
    },
@@ -741,328 +729,406 @@
     "n": 2
    },
    {
-    "word": "삼립",
-    "n": 2
-   },
-   {
     "word": "증가",
     "n": 2
    },
    {
-    "word": "애플",
+    "word": "확대",
     "n": 2
    },
    {
-    "word": "확대",
+    "word": "농심",
+    "n": 2
+   },
+   {
+    "word": "공략",
     "n": 2
    }
   ]
  },
  "videos": [
   {
-   "id": "ZRXdjalLwO0",
-   "title": "운전석 손 '삐죽' 내밀더니 '굉음'‥돌진 차량에 행인 '날벼락' #Shorts (MBC뉴스)",
-   "ch": "MBCNEWS",
-   "subs": 6210000,
-   "views": 1854098,
-   "hours": 72.0,
-   "likes": 8883,
-   "comments": 3386,
-   "cat": "pol",
-   "dur": 85,
-   "thumb": "https://i.ytimg.com/vi/ZRXdjalLwO0/hqdefault.jpg",
-   "kw": []
-  },
-  {
    "id": "n4PE_UeJKwg",
    "title": "'스카프 아저씨' 결국... #shorts / YTN",
    "ch": " YTN",
    "subs": 5430000,
-   "views": 646650,
-   "hours": 36.3,
-   "likes": 8090,
+   "views": 647370,
+   "hours": 36.5,
+   "likes": 8091,
    "comments": 526,
    "cat": "pol",
    "dur": 29,
    "thumb": "https://i.ytimg.com/vi/n4PE_UeJKwg/hqdefault.jpg",
    "kw": [],
-   "gain": 3517
+   "gain": 720
   },
   {
    "id": "jJtDlycEucA",
    "title": "엉덩이 끌며 기어가는데…요양병원 CCTV에 찍힌 충격 장면 #shorts / KBS",
    "ch": "KBS News",
    "subs": 3730000,
-   "views": 452678,
-   "hours": 34.0,
-   "likes": 5876,
-   "comments": 1376,
+   "views": 454988,
+   "hours": 34.2,
+   "likes": 5900,
+   "comments": 1378,
    "cat": "pol",
    "dur": 83,
    "thumb": "https://i.ytimg.com/vi/jJtDlycEucA/hqdefault.jpg",
    "kw": [],
-   "gain": 62876
+   "gain": 2310
+  },
+  {
+   "id": "VsIll10XkoQ",
+   "title": "운전자 대부분 몰랐다…자동차 유리의 비밀 #shorts / KBS",
+   "ch": "KBS News",
+   "subs": 3730000,
+   "views": 158354,
+   "hours": 12.2,
+   "likes": 549,
+   "comments": 222,
+   "cat": "pol",
+   "dur": 90,
+   "thumb": "https://i.ytimg.com/vi/VsIll10XkoQ/hqdefault.jpg",
+   "kw": []
   },
   {
    "id": "2b5dsozzTDc",
    "title": "\"'자유 한국'에서 술이 죄냐?!\"‥'금주령' 비웃듯 술 냄새 '진동' #Shorts (MBC뉴스)",
    "ch": "MBCNEWS",
    "subs": 6210000,
-   "views": 292719,
-   "hours": 25.0,
+   "views": 293275,
+   "hours": 25.2,
    "likes": 1803,
    "comments": 699,
    "cat": "pol",
    "dur": 101,
    "thumb": "https://i.ytimg.com/vi/2b5dsozzTDc/hqdefault.jpg",
    "kw": [],
-   "gain": 10629
+   "gain": 556
   },
   {
    "id": "PQaXvcmW8UY",
    "title": "작업 시간 지키려다‥20대 청소 노동자 참변 #Shorts (MBC뉴스)",
    "ch": "MBCNEWS",
    "subs": 6210000,
-   "views": 559545,
-   "hours": 48.0,
+   "views": 559675,
+   "hours": 48.2,
    "likes": 3254,
    "comments": 702,
    "cat": "pol",
    "dur": 81,
    "thumb": "https://i.ytimg.com/vi/PQaXvcmW8UY/hqdefault.jpg",
    "kw": [],
-   "gain": 892
+   "gain": 130
   },
   {
    "id": "wQCkpEMt1Jo",
    "title": "역대급 This is the end 랭킹 TOP4 #랭킹 #쇼츠 #웃긴영상",
    "ch": "랭킹강",
    "subs": 312000,
-   "views": 590321,
-   "hours": 52.0,
-   "likes": 10889,
+   "views": 590973,
+   "hours": 52.2,
+   "likes": 10895,
    "comments": 111,
    "cat": "fun",
    "dur": 26,
    "thumb": "https://i.ytimg.com/vi/wQCkpEMt1Jo/hqdefault.jpg",
-   "kw": []
+   "kw": [],
+   "gain": 652
   },
   {
    "id": "iFzXJx2rnQ0",
    "title": "\"운동회가 소음?\"‥안재욱, 주민 신고에 일침 #Shorts (MBC뉴스)",
    "ch": "MBCNEWS",
    "subs": 6210000,
-   "views": 362475,
-   "hours": 33.0,
-   "likes": 5462,
-   "comments": 1141,
+   "views": 362668,
+   "hours": 33.2,
+   "likes": 5469,
+   "comments": 1142,
    "cat": "pol",
    "dur": 58,
    "thumb": "https://i.ytimg.com/vi/iFzXJx2rnQ0/hqdefault.jpg",
    "kw": [],
-   "gain": 4704
+   "gain": 193
   },
   {
    "id": "zF_c1hMbt6c",
    "title": "\"그 양말 까봐요\" 털숭숭.. 3천 마리 공항 터졌다 #Shorts (MBC뉴스)",
    "ch": "MBCNEWS",
    "subs": 6210000,
-   "views": 548485,
-   "hours": 51.8,
-   "likes": 2138,
+   "views": 548892,
+   "hours": 52.0,
+   "likes": 2144,
    "comments": 143,
    "cat": "pol",
    "dur": 36,
    "thumb": "https://i.ytimg.com/vi/zF_c1hMbt6c/hqdefault.jpg",
-   "kw": []
+   "kw": [],
+   "gain": 407
   },
   {
    "id": "zPi_wM7zuS4",
    "title": "박유천, 일본 디너쇼 45만 원‥고가 논란 #Shorts (MBC뉴스)",
    "ch": "MBCNEWS",
    "subs": 6210000,
-   "views": 326571,
-   "hours": 31.0,
-   "likes": 739,
-   "comments": 647,
+   "views": 327028,
+   "hours": 31.2,
+   "likes": 742,
+   "comments": 648,
    "cat": "pol",
    "dur": 37,
    "thumb": "https://i.ytimg.com/vi/zPi_wM7zuS4/hqdefault.jpg",
    "kw": [],
-   "gain": 4863
+   "gain": 457
   },
   {
    "id": "C3cVVg6Jqm8",
    "title": "\"제발 좀 가져가세요\"…돈 주고 집 넘긴 이유 #shorts / KBS",
    "ch": "KBS News",
    "subs": 3730000,
-   "views": 365801,
-   "hours": 35.0,
-   "likes": 1171,
+   "views": 365931,
+   "hours": 35.2,
+   "likes": 1172,
    "comments": 348,
    "cat": "pol",
    "dur": 68,
    "thumb": "https://i.ytimg.com/vi/C3cVVg6Jqm8/hqdefault.jpg",
    "kw": [],
-   "gain": 2022
+   "gain": 130
   },
   {
    "id": "TdS84P4rjbE",
    "title": "역대급 This is the end 랭킹 TOP4  #랭킹 #쇼츠 #웃긴영상",
    "ch": "랭킹강",
    "subs": 312000,
-   "views": 234102,
-   "hours": 25.0,
-   "likes": 4476,
-   "comments": 72,
+   "views": 237196,
+   "hours": 25.2,
+   "likes": 4528,
+   "comments": 74,
    "cat": "fun",
    "dur": 29,
    "thumb": "https://i.ytimg.com/vi/TdS84P4rjbE/hqdefault.jpg",
    "kw": [],
-   "gain": 40705
+   "gain": 3094
   },
   {
    "id": "FIqSBUrBORU",
    "title": "\"이게 되네?\"…물 위를 달리는 오토바이 #shorts / KBS",
    "ch": "KBS News",
    "subs": 3730000,
-   "views": 197744,
-   "hours": 30.0,
-   "likes": 493,
+   "views": 197986,
+   "hours": 30.2,
+   "likes": 494,
    "comments": 229,
    "cat": "pol",
    "dur": 64,
    "thumb": "https://i.ytimg.com/vi/FIqSBUrBORU/hqdefault.jpg",
    "kw": [],
-   "gain": 4425
+   "gain": 242
   },
   {
    "id": "zqFCvkivsEM",
    "title": "\"아기야 제발.. 엄마 보러 가자..\" #shorts",
    "ch": "SBS 뉴스",
    "subs": 5310000,
-   "views": 322542,
-   "hours": 53.9,
-   "likes": 2750,
+   "views": 322939,
+   "hours": 54.1,
+   "likes": 2752,
    "comments": 62,
    "cat": "pol",
    "dur": 39,
    "thumb": "https://i.ytimg.com/vi/zqFCvkivsEM/hqdefault.jpg",
-   "kw": []
+   "kw": [],
+   "gain": 397
   },
   {
    "id": "fjX1HShiBco",
    "title": "움직이는 검은 봉지..\"이게 뭐야\" 열어보니 #shorts",
    "ch": "SBS 뉴스",
    "subs": 5310000,
-   "views": 386043,
-   "hours": 71.6,
-   "likes": 3116,
-   "comments": 770,
+   "views": 386664,
+   "hours": 71.8,
+   "likes": 3125,
+   "comments": 775,
    "cat": "pol",
    "dur": 71,
    "thumb": "https://i.ytimg.com/vi/fjX1HShiBco/hqdefault.jpg",
-   "kw": []
+   "kw": [],
+   "gain": 621
   },
   {
    "id": "_N6C1uQ1eFk",
    "title": "#한국바이럴#웃긴영상#코미디#꿀잼#유튜브쇼츠#쇼츠#바이럴#트렌드#재미#웃음#웃긴영상#개그#코미디#웃음#재미#꿀잼#웃겨요#유튜브#유튜브쇼츠#쇼츠#숏츠#영상추천",
    "ch": "Arif mondal",
    "subs": 34300,
-   "views": 336264,
-   "hours": 70.6,
-   "likes": 1689,
+   "views": 336876,
+   "hours": 70.8,
+   "likes": 1693,
    "comments": 2,
    "cat": "fun",
    "dur": 128,
    "thumb": "https://i.ytimg.com/vi/_N6C1uQ1eFk/hqdefault.jpg",
-   "kw": []
+   "kw": [],
+   "gain": 612
   },
   {
    "id": "sYt3-Yz5tkw",
    "title": "철로 위 트레일러 '멈칫'.. 순간 열차 경적 '발칵' #Shorts (MBC뉴스)",
    "ch": "MBCNEWS",
    "subs": 6210000,
-   "views": 241588,
-   "hours": 51.8,
-   "likes": 484,
+   "views": 241748,
+   "hours": 52.0,
+   "likes": 485,
    "comments": 108,
    "cat": "pol",
    "dur": 30,
    "thumb": "https://i.ytimg.com/vi/sYt3-Yz5tkw/hqdefault.jpg",
-   "kw": []
+   "kw": [],
+   "gain": 160
   },
   {
    "id": "_sQNmcEjpQI",
    "title": "역대급 This is the end 랭킹 TOP5 #랭킹 #쇼츠 #웃긴영상",
    "ch": "랭킹강",
    "subs": 312000,
-   "views": 138046,
-   "hours": 31.0,
-   "likes": 2952,
+   "views": 139009,
+   "hours": 31.2,
+   "likes": 2955,
    "comments": 38,
    "cat": "fun",
    "dur": 30,
    "thumb": "https://i.ytimg.com/vi/_sQNmcEjpQI/hqdefault.jpg",
    "kw": [],
-   "gain": 12598
+   "gain": 963
   },
   {
    "id": "VDbZs5kvwCI",
    "title": "해외에서 난리 난 레전드 반응🤣  #해외반응 #방귀레전드 #웃긴영상 #해외레전드 #유머영상 #반응영상 #웃음주의 #황당한순간 #재미있는영상 #쇼츠 #Shorts",
    "ch": "멍다큐",
    "subs": 97100,
-   "views": 194885,
-   "hours": 45.3,
-   "likes": 1182,
+   "views": 195088,
+   "hours": 45.5,
+   "likes": 1183,
    "comments": 28,
    "cat": "fun",
    "dur": 65,
    "thumb": "https://i.ytimg.com/vi/VDbZs5kvwCI/hqdefault.jpg",
    "kw": [],
-   "gain": 3596
+   "gain": 203
+  },
+  {
+   "id": "h4h3pSAAAKc",
+   "title": "안마의자 누워 \"언니~\" '무개념' 요양보호사 #제보는 #사건반장 #shorts #요양보호사 #안마의자 #휴대폰",
+   "ch": "사건반장",
+   "subs": 439000,
+   "views": 173714,
+   "hours": 47.7,
+   "likes": 1707,
+   "comments": 263,
+   "cat": "pol",
+   "dur": 107,
+   "thumb": "https://i.ytimg.com/vi/h4h3pSAAAKc/hqdefault.jpg",
+   "kw": []
   },
   {
    "id": "pcjGKTTGJQ0",
    "title": "역대급 태권도 발차기 랭킹 TOP5 #랭킹 #쇼츠 #웃긴영상",
    "ch": "랭킹강",
    "subs": 312000,
-   "views": 102074,
-   "hours": 28.0,
+   "views": 102304,
+   "hours": 28.2,
    "likes": 751,
    "comments": 22,
    "cat": "fun",
    "dur": 29,
    "thumb": "https://i.ytimg.com/vi/pcjGKTTGJQ0/hqdefault.jpg",
    "kw": [],
-   "gain": 3303
+   "gain": 230
+  },
+  {
+   "id": "XcuQfNmd4hc",
+   "title": "\"너무 심해\" 차이나타운 참변.. 배터리 화재? 뉴욕도 발칵 #Shorts (MBC뉴스)",
+   "ch": "MBCNEWS",
+   "subs": 6210000,
+   "views": 179316,
+   "hours": 51.7,
+   "likes": 1117,
+   "comments": 21,
+   "cat": "pol",
+   "dur": 97,
+   "thumb": "https://i.ytimg.com/vi/XcuQfNmd4hc/hqdefault.jpg",
+   "kw": []
+  },
+  {
+   "id": "sLVhekmFuW0",
+   "title": "\"빨리 줘\" 재촉한 손님에 커피 가루 들이부어 #Shorts (MBC뉴스)",
+   "ch": "MBCNEWS",
+   "subs": 6210000,
+   "views": 181567,
+   "hours": 55.9,
+   "likes": 474,
+   "comments": 151,
+   "cat": "pol",
+   "dur": 33,
+   "thumb": "https://i.ytimg.com/vi/sLVhekmFuW0/hqdefault.jpg",
+   "kw": []
+  },
+  {
+   "id": "-dhzIT7YCsQ",
+   "title": "\"심장이 아파\", \"예적금이나 할걸\"‥벼랑 끝 개미투자자들 #Shorts (MBC뉴스)",
+   "ch": "MBCNEWS",
+   "subs": 6210000,
+   "views": 105633,
+   "hours": 33.2,
+   "likes": 689,
+   "comments": 155,
+   "cat": "pol",
+   "dur": 90,
+   "thumb": "https://i.ytimg.com/vi/-dhzIT7YCsQ/hqdefault.jpg",
+   "kw": []
   },
   {
    "id": "L67kq4Dt_o4",
    "title": "\"중국 전기차를 왜 사?\" 그랬는데 '반전' #shorts",
    "ch": "SBS 뉴스",
    "subs": 5310000,
-   "views": 223336,
-   "hours": 71.0,
+   "views": 223443,
+   "hours": 71.2,
    "likes": 720,
-   "comments": 757,
+   "comments": 758,
    "cat": "pol",
    "dur": 124,
    "thumb": "https://i.ytimg.com/vi/L67kq4Dt_o4/hqdefault.jpg",
-   "kw": []
+   "kw": [],
+   "gain": 107
   },
   {
    "id": "JTmKJuXhrDo",
    "title": "김태규 ‘갈’ / 채널A #shorts #DLAB",
    "ch": "채널A News",
    "subs": 3550000,
-   "views": 215672,
-   "hours": 71.0,
-   "likes": 7603,
-   "comments": 980,
+   "views": 215924,
+   "hours": 71.2,
+   "likes": 7620,
+   "comments": 981,
    "cat": "pol",
    "dur": 79,
    "thumb": "https://i.ytimg.com/vi/JTmKJuXhrDo/hqdefault.jpg",
+   "kw": [],
+   "gain": 252
+  },
+  {
+   "id": "lrfV1OzBcXY",
+   "title": "이기인 \"이용철 후보자, 잘 알죠\"…\"누구 인사? 김현지 인사다\" #shorts",
+   "ch": "매일신문",
+   "subs": 911000,
+   "views": 149424,
+   "hours": 53.3,
+   "likes": 6508,
+   "comments": 275,
+   "cat": "pol",
+   "dur": 116,
+   "thumb": "https://i.ytimg.com/vi/lrfV1OzBcXY/hqdefault.jpg",
    "kw": []
   },
   {
@@ -1070,162 +1136,208 @@
    "title": "역대급 This is the end 인생 명언 랭킹 TOP5 #랭킹 #쇼츠 #웃긴영상",
    "ch": "랭킹강",
    "subs": 312000,
-   "views": 142306,
-   "hours": 55.0,
-   "likes": 3747,
+   "views": 142648,
+   "hours": 55.2,
+   "likes": 3749,
    "comments": 27,
    "cat": "fun",
    "dur": 32,
    "thumb": "https://i.ytimg.com/vi/_6GW8F8KtXE/hqdefault.jpg",
-   "kw": []
+   "kw": [],
+   "gain": 342
   },
   {
    "id": "cB8ra99ql4A",
    "title": "굳이 눈앞까지 와서 삐진 티 내는 강아지 #쇼츠 #공감 #웃긴영상 #유머 #animals #shorts",
    "ch": "빛나는곰튜브",
    "subs": 17200,
-   "views": 140130,
-   "hours": 58.0,
-   "likes": 2640,
+   "views": 141085,
+   "hours": 58.2,
+   "likes": 2656,
    "comments": 45,
    "cat": "fun",
    "dur": 15,
    "thumb": "https://i.ytimg.com/vi/cB8ra99ql4A/hqdefault.jpg",
-   "kw": []
+   "kw": [],
+   "gain": 955
   },
   {
    "id": "A3-DaOo_5T0",
    "title": "역대급 초보 지게차 운전사들 TOP5 ㅋㅋㅋ #웃긴영상 #쇼츠 #shorts #short",
    "ch": "숏랭킹",
    "subs": 51200,
-   "views": 28615,
-   "hours": 12.0,
-   "likes": 478,
+   "views": 29076,
+   "hours": 12.2,
+   "likes": 480,
    "comments": 10,
    "cat": "fun",
    "dur": 35,
    "thumb": "https://i.ytimg.com/vi/A3-DaOo_5T0/hqdefault.jpg",
    "kw": [],
-   "gain": 4946
+   "gain": 461
+  },
+  {
+   "id": "aKiN5WJAPxI",
+   "title": "차가운 세상을 녹인 뜨거운 손 #JTBC #Shorts",
+   "ch": "JTBC News",
+   "subs": 4910000,
+   "views": 115868,
+   "hours": 49.5,
+   "likes": 1833,
+   "comments": 48,
+   "cat": "pol",
+   "dur": 94,
+   "thumb": "https://i.ytimg.com/vi/aKiN5WJAPxI/hqdefault.jpg",
+   "kw": []
+  },
+  {
+   "id": "UXsKLpNLBRA",
+   "title": "\"논란 두렵지 않다\"‥이 대통령, 유튜브 첫 선 #Shorts (MBC뉴스)",
+   "ch": "MBCNEWS",
+   "subs": 6210000,
+   "views": 127669,
+   "hours": 59.8,
+   "likes": 7474,
+   "comments": 536,
+   "cat": "pol",
+   "dur": 122,
+   "thumb": "https://i.ytimg.com/vi/UXsKLpNLBRA/hqdefault.jpg",
+   "kw": []
   },
   {
    "id": "hXT-btL7wew",
    "title": "#한국바이럴 #웃긴영상 #코미디 #꿀잼 #유튜브쇼츠 #쇼츠 #바이럴 트렌드 # 재미 #웃음#웃긴영상#개그#코미디 웃음#재미#꿀잼#웃 겨요#유튜브#유튜브쇼 #쇼츠#수정#숶천",
    "ch": "MD UJJAL OFFICIAL",
    "subs": 107000,
-   "views": 49928,
-   "hours": 25.5,
-   "likes": 246,
+   "views": 50438,
+   "hours": 25.7,
+   "likes": 248,
    "comments": 0,
    "cat": "fun",
    "dur": 16,
    "thumb": "https://i.ytimg.com/vi/hXT-btL7wew/hqdefault.jpg",
    "kw": [],
-   "gain": 7971
+   "gain": 510
   },
   {
    "id": "0-0pEAxrEiM",
    "title": "시골에서 올라와 처음 본 좌변기… 급한데 앉을 방향부터 막혔다 #쇼츠 #웃긴영상 #코미디",
    "ch": "썰본색",
    "subs": 162000,
-   "views": 50236,
-   "hours": 26.7,
-   "likes": 561,
+   "views": 50666,
+   "hours": 26.9,
+   "likes": 564,
    "comments": 12,
    "cat": "fun",
    "dur": 13,
    "thumb": "https://i.ytimg.com/vi/0-0pEAxrEiM/hqdefault.jpg",
    "kw": [],
-   "gain": 4152
+   "gain": 430
   },
   {
    "id": "N6zhmeLYrpw",
    "title": "11월 광고모델 브랜드평판 TOP10 #리센느",
    "ch": "필소굿",
    "subs": 19200,
-   "views": 93296,
-   "hours": 52.2,
-   "likes": 2139,
+   "views": 93995,
+   "hours": 52.4,
+   "likes": 2152,
    "comments": 109,
    "cat": "ad",
    "dur": 31,
    "thumb": "https://i.ytimg.com/vi/N6zhmeLYrpw/hqdefault.jpg",
-   "kw": []
+   "kw": [],
+   "gain": 699
   },
   {
    "id": "cS397SCW6aE",
    "title": "신발 광고 찍은 멤버가 결국 바닥에 엎드린 이유",
    "ch": "삼촌의 덕질",
    "subs": 7840,
-   "views": 48849,
-   "hours": 29.0,
-   "likes": 861,
+   "views": 49024,
+   "hours": 29.2,
+   "likes": 862,
    "comments": 22,
    "cat": "ad",
    "dur": 77,
    "thumb": "https://i.ytimg.com/vi/cS397SCW6aE/hqdefault.jpg",
    "kw": [],
-   "gain": 3038
+   "gain": 175
   },
   {
    "id": "oj2fBuHxGE8",
    "title": "붐 버전 It's Me 인기에 원희의 속마음 ㅋㅋ #shorts #놀라운토요일 #아일릿 #원희",
    "ch": "불펌아님",
    "subs": 2320,
-   "views": 44481,
-   "hours": 27.0,
-   "likes": 279,
+   "views": 44631,
+   "hours": 27.2,
+   "likes": 281,
    "comments": 4,
    "cat": "fun",
    "dur": 39,
    "thumb": "https://i.ytimg.com/vi/oj2fBuHxGE8/hqdefault.jpg",
    "kw": [],
-   "gain": 2205
+   "gain": 150
   },
   {
    "id": "F3i9I2SsEgk",
    "title": "군기 잡던 선임이 신참 한마디에 말문 막힌 이유 #웃긴사연 #웃긴짤",
    "ch": "잼따리",
    "subs": 599,
-   "views": 47213,
-   "hours": 31.0,
-   "likes": 356,
+   "views": 47530,
+   "hours": 31.2,
+   "likes": 359,
    "comments": 3,
    "cat": "fun",
    "dur": 36,
    "thumb": "https://i.ytimg.com/vi/F3i9I2SsEgk/hqdefault.jpg",
    "kw": [],
-   "gain": 3461
+   "gain": 317
   },
   {
    "id": "zf3SoAXgomU",
    "title": "컴온만 듣고 정답 맞힌 엔믹스 설윤 ㄷㄷ #shorts #놀라운토요일 #엔믹스 #설윤",
    "ch": "불펌아님",
    "subs": 2320,
-   "views": 43709,
-   "hours": 31.0,
+   "views": 43730,
+   "hours": 31.2,
    "likes": 861,
    "comments": 24,
    "cat": "fun",
    "dur": 40,
    "thumb": "https://i.ytimg.com/vi/zf3SoAXgomU/hqdefault.jpg",
    "kw": [],
-   "gain": 401
+   "gain": 21
   },
   {
    "id": "UWNkRtM0WR4",
    "title": "#한국 #한국인 #한국어 #웃긴영상 #재미있는영상 #코미디 #개그 #웃음 #유머 #쇼츠 #한국쇼츠 #웃긴영상추천 #대박 #재밌다 #일상웃음",
    "ch": "Virul Entertainment 2.0",
    "subs": 112000,
-   "views": 32214,
-   "hours": 26.6,
-   "likes": 82,
+   "views": 32231,
+   "hours": 26.8,
+   "likes": 85,
    "comments": 0,
    "cat": "fun",
    "dur": 15,
    "thumb": "https://i.ytimg.com/vi/UWNkRtM0WR4/hqdefault.jpg",
    "kw": [],
-   "gain": 667
+   "gain": 17
+  },
+  {
+   "id": "9ylcoEy4I0Q",
+   "title": "역대급 천재 아기 모먼트 랭킹 TOP6 #랭킹 #쇼츠 #웃긴영상",
+   "ch": "랭킹긁",
+   "subs": 7420,
+   "views": 33415,
+   "hours": 28.2,
+   "likes": 276,
+   "comments": 2,
+   "cat": "fun",
+   "dur": 29,
+   "thumb": "https://i.ytimg.com/vi/9ylcoEy4I0Q/hqdefault.jpg",
+   "kw": [],
+   "gain": 346
   },
   {
    "id": "_-awsL_Y7xM",
@@ -1233,132 +1345,119 @@
    "ch": "normal video 0.21",
    "subs": 18900,
    "views": 45121,
-   "hours": 37.9,
+   "hours": 38.1,
    "likes": 268,
    "comments": 0,
    "cat": "fun",
    "dur": 23,
    "thumb": "https://i.ytimg.com/vi/_-awsL_Y7xM/hqdefault.jpg",
    "kw": [],
-   "gain": 77
-  },
-  {
-   "id": "9ylcoEy4I0Q",
-   "title": "역대급 천재 아기 모먼트 랭킹 TOP6 #랭킹 #쇼츠 #웃긴영상",
-   "ch": "랭킹긁",
-   "subs": 7420,
-   "views": 33069,
-   "hours": 28.0,
-   "likes": 272,
-   "comments": 1,
-   "cat": "fun",
-   "dur": 29,
-   "thumb": "https://i.ytimg.com/vi/9ylcoEy4I0Q/hqdefault.jpg",
-   "kw": [],
-   "gain": 3275
+   "gain": 0
   },
   {
    "id": "wR7eIQeskow",
    "title": "#한국바이럴 #웃긴영상 #코미디 #꿀잼 #유튜브쇼츠 #쇼츠 #바이럴 #트렌드 #재미 #웃음 #웃긴영상 #개그 #코미디 #웃음 #재미 #꿀잼 #웃겨요 #유튜브 #유튜브쇼츠 #쇼츠",
    "ch": "Fun family 199 \" 1\"",
    "subs": 48700,
-   "views": 37502,
-   "hours": 32.9,
+   "views": 37508,
+   "hours": 33.1,
    "likes": 207,
    "comments": 0,
    "cat": "fun",
    "dur": 15,
    "thumb": "https://i.ytimg.com/vi/wR7eIQeskow/hqdefault.jpg",
    "kw": [],
-   "gain": 109
+   "gain": 6
   },
   {
    "id": "8nyec94l4FQ",
    "title": "역대급 웃긴 회오리 필터 모먼트 랭킹 TOP6",
    "ch": "랭킹알",
-   "subs": 1090,
-   "views": 26781,
-   "hours": 26.0,
-   "likes": 823,
-   "comments": 4,
+   "subs": 1100,
+   "views": 27750,
+   "hours": 26.2,
+   "likes": 855,
+   "comments": 8,
    "cat": "fun",
    "dur": 48,
    "thumb": "https://i.ytimg.com/vi/8nyec94l4FQ/hqdefault.jpg",
    "kw": [],
-   "gain": 12676
+   "gain": 969
   },
   {
    "id": "SKvbCkg_cSw",
    "title": "광고 백 건 몰린 리센느 때문에 놀란 광고주들",
    "ch": "센느로그",
    "subs": 2090,
-   "views": 21759,
-   "hours": 21.5,
-   "likes": 508,
+   "views": 22171,
+   "hours": 21.7,
+   "likes": 516,
    "comments": 4,
    "cat": "ad",
    "dur": 34,
    "thumb": "https://i.ytimg.com/vi/SKvbCkg_cSw/hqdefault.jpg",
-   "kw": []
+   "kw": [],
+   "gain": 412
   },
   {
    "id": "-lfhVkLBuLY",
    "title": "#한국바이럴 #웃긴영상 #코미디 #꿀잼 #유튜브쇼츠 #쇼츠 #바이럴 #트렌드 #재미 #웃음#웃긴영상#개그#코미디#웃음#재미#꿀잼#웃겨요#유튜브#유튜브쇼츠#쇼츠#숏츠#영상추천",
    "ch": "Village Entertainment 2.0.2",
    "subs": 678000,
-   "views": 49622,
-   "hours": 49.2,
+   "views": 49633,
+   "hours": 49.4,
    "likes": 93,
    "comments": 0,
    "cat": "fun",
    "dur": 12,
    "thumb": "https://i.ytimg.com/vi/-lfhVkLBuLY/hqdefault.jpg",
    "kw": [],
-   "gain": 260
+   "gain": 11
   },
   {
    "id": "t211qDkHI2w",
    "title": "자동차 브랜드 신뢰도 1위는 렉서스… 만족도 1위는?",
    "ch": "하루세번지식쌓기",
    "subs": 42100,
-   "views": 25467,
-   "hours": 25.4,
+   "views": 25674,
+   "hours": 25.6,
    "likes": 12,
    "comments": 2,
    "cat": "ad",
    "dur": 6,
    "thumb": "https://i.ytimg.com/vi/t211qDkHI2w/hqdefault.jpg",
-   "kw": []
+   "kw": [],
+   "gain": 207
   },
   {
    "id": "fTpz8yBL2Qk",
    "title": "#한국바이럴 #웃긴영상 #코미디 #꿀잼 #유튜브쇼츠 #쇼츠 #바이럴 #트렌드 #재미 #웃음 #웃긴영상 #개그 #코미디 #웃음 #재미 #꿀잼 #웃겨요 #유튜브 #유튜브쇼츠 #쇼츠",
    "ch": "Pranto Official 0.5",
    "subs": 7790,
-   "views": 35029,
-   "hours": 35.0,
+   "views": 35022,
+   "hours": 35.2,
    "likes": 120,
    "comments": 0,
    "cat": "fun",
    "dur": 12,
    "thumb": "https://i.ytimg.com/vi/fTpz8yBL2Qk/hqdefault.jpg",
    "kw": [],
-   "gain": 88
+   "gain": 0
   },
   {
    "id": "tIPYO8bSvdM",
    "title": "역대급 고양이의 모성애 랭킹 TOP5 #랭킹 #쇼츠 #웃긴영상",
    "ch": "랭킹펫",
    "subs": 6970,
-   "views": 24705,
-   "hours": 25.0,
-   "likes": 558,
+   "views": 24853,
+   "hours": 25.2,
+   "likes": 559,
    "comments": 3,
    "cat": "fun",
    "dur": 26,
    "thumb": "https://i.ytimg.com/vi/tIPYO8bSvdM/hqdefault.jpg",
    "kw": [],
-   "gain": 3269
+   "gain": 148
   },
   {
    "id": "QDd5WH2NaDY",
@@ -1366,13 +1465,14 @@
    "ch": "@랭킹스낵",
    "subs": 2440,
    "views": 48512,
-   "hours": 53.0,
+   "hours": 53.2,
    "likes": 424,
    "comments": 0,
    "cat": "fun",
    "dur": 38,
    "thumb": "https://i.ytimg.com/vi/QDd5WH2NaDY/hqdefault.jpg",
-   "kw": []
+   "kw": [],
+   "gain": 0
   },
   {
    "id": "CHcMmmyCBFU",
@@ -1380,379 +1480,389 @@
    "ch": "Md Alamin Islam",
    "subs": 56100,
    "views": 30319,
-   "hours": 33.4,
+   "hours": 33.6,
    "likes": 219,
    "comments": 0,
    "cat": "fun",
    "dur": 17,
    "thumb": "https://i.ytimg.com/vi/CHcMmmyCBFU/hqdefault.jpg",
    "kw": [],
-   "gain": 64
-  },
-  {
-   "id": "I2I0xeSrzvI",
-   "title": "역대급 귀여운 강아지 랭킹 TOP5 #랭킹 #쇼츠 #웃긴영상",
-   "ch": "랭킹고슴이",
-   "subs": 3490,
-   "views": 25040,
-   "hours": 28.0,
-   "likes": 762,
-   "comments": 5,
-   "cat": "fun",
-   "dur": 30,
-   "thumb": "https://i.ytimg.com/vi/I2I0xeSrzvI/hqdefault.jpg",
-   "kw": [],
-   "gain": 463
+   "gain": 0
   },
   {
    "id": "fjT6g5CWsdg",
    "title": "한국어를 너무 잘 배운 베이비몬스터 루카 ㅋㅋ",
    "ch": "킼콬",
    "subs": 2110,
-   "views": 24971,
-   "hours": 28.0,
+   "views": 25102,
+   "hours": 28.2,
    "likes": 330,
    "comments": 4,
    "cat": "fun",
    "dur": 65,
    "thumb": "https://i.ytimg.com/vi/fjT6g5CWsdg/hqdefault.jpg",
    "kw": [],
-   "gain": 1868
+   "gain": 131
+  },
+  {
+   "id": "I2I0xeSrzvI",
+   "title": "역대급 귀여운 강아지 랭킹 TOP5 #랭킹 #쇼츠 #웃긴영상",
+   "ch": "랭킹고슴이",
+   "subs": 3490,
+   "views": 25078,
+   "hours": 28.2,
+   "likes": 762,
+   "comments": 5,
+   "cat": "fun",
+   "dur": 30,
+   "thumb": "https://i.ytimg.com/vi/I2I0xeSrzvI/hqdefault.jpg",
+   "kw": [],
+   "gain": 38
   },
   {
    "id": "324keT9nAfQ",
    "title": "#한국바이럴 #웃긴영상 #코미디 #꿀잼 #유튜브쇼츠 #쇼츠 #바이럴 #트렌드 #재미 #웃음 #웃긴영상 #개그 #코미디 #웃음 #재미 #꿀잼 #웃겨요 #유튜브 #유튜브쇼츠 #쇼츠",
    "ch": "Akikul Bro 10",
    "subs": 10400,
-   "views": 20990,
-   "hours": 24.2,
-   "likes": 116,
+   "views": 21581,
+   "hours": 24.4,
+   "likes": 117,
    "comments": 0,
    "cat": "fun",
    "dur": 16,
    "thumb": "https://i.ytimg.com/vi/324keT9nAfQ/hqdefault.jpg",
    "kw": [],
-   "gain": 3667
+   "gain": 591
   },
   {
    "id": "AB_hO4Eiv-Q",
    "title": "#한국바이럴 #웃긴영상 #코미디 #꿀잼 #유튜브쇼츠 #쇼츠 #바이럴 #트렌드 # 재미 #웃음#웃긴영상#개그#코미디#웃 음#재미#꿀잼#웃겨요#유튜브#유튜브 쇼츠#쇼츠#솟츠#영상추천",
    "ch": "USA Funny tv6794",
    "subs": 25000,
-   "views": 26627,
-   "hours": 32.0,
+   "views": 27477,
+   "hours": 32.2,
    "likes": 110,
    "comments": 0,
    "cat": "fun",
    "dur": 21,
    "thumb": "https://i.ytimg.com/vi/AB_hO4Eiv-Q/hqdefault.jpg",
    "kw": [],
-   "gain": 2651
+   "gain": 850
   },
   {
    "id": "zMamAbr_AYY",
    "title": "친구를 밟고 올라가려던 고양이의 최후 ㅋㅋㅋ #쇼츠  #고양이 #웃긴영상 #fyp",
    "ch": "동물농짤",
    "subs": 779,
-   "views": 25972,
-   "hours": 32.0,
+   "views": 26004,
+   "hours": 32.2,
    "likes": 200,
    "comments": 4,
    "cat": "fun",
    "dur": 18,
    "thumb": "https://i.ytimg.com/vi/zMamAbr_AYY/hqdefault.jpg",
    "kw": [],
-   "gain": 551
+   "gain": 32
   },
   {
    "id": "4WpaTRVkewk",
    "title": "#한국바이럴 #웃긴영상 #코미디 #꿀잼 #유튜브쇼츠 #쇼츠 #바이럴 #트렌드 #재미 #웃음#한국바이럴 #웃긴영상 #코미디 #꿀잼 #유튜브쇼츠 #쇼츠 #바이럴 #트렌드 #재미 #웃음",
    "ch": "নাজমুল ভাই ",
    "subs": 4010,
-   "views": 30559,
-   "hours": 37.7,
+   "views": 30604,
+   "hours": 37.9,
    "likes": 127,
    "comments": 0,
    "cat": "fun",
    "dur": 20,
    "thumb": "https://i.ytimg.com/vi/4WpaTRVkewk/hqdefault.jpg",
    "kw": [],
-   "gain": 1387
+   "gain": 45
   },
   {
    "id": "Pjuwd1QatSk",
    "title": "#웃긴영상 #대박 #추천 #추천영상 #꿀잼 #ㅋㅋㅋ #릴스 #쇼츠 #재미있는영상 #funny",
    "ch": "রাজু ভাই ১২০",
    "subs": 47000,
-   "views": 38388,
-   "hours": 48.5,
+   "views": 38389,
+   "hours": 48.7,
    "likes": 139,
    "comments": 0,
    "cat": "fun",
    "dur": 15,
    "thumb": "https://i.ytimg.com/vi/Pjuwd1QatSk/hqdefault.jpg",
    "kw": [],
-   "gain": 26
+   "gain": 1
   },
   {
    "id": "VH6ig7ZPe38",
    "title": "#한국바이럴 #웃긴영상 #코미디 #꿀잼 #유튜브쇼츠 #쇼츠 #바이럴 트렌드 #재미 #웃음#웃긴영상#개그#코미디 웃음#재미#꿀잼#웃 겨요#유튜브#유튜브쇼 #쇼츠#수정#숶천",
    "ch": "Sultan Official 99",
    "subs": 30100,
-   "views": 19849,
-   "hours": 25.4,
+   "views": 19816,
+   "hours": 25.5,
    "likes": 103,
    "comments": 0,
    "cat": "fun",
    "dur": 19,
    "thumb": "https://i.ytimg.com/vi/VH6ig7ZPe38/hqdefault.jpg",
    "kw": [],
-   "gain": 70
+   "gain": 0
   },
   {
    "id": "Jcb-4NOdN5s",
    "title": "역대급 탁구 명경기 랭킹 TOP4 #랭킹 #쇼츠 #웃긴영상",
    "ch": "랭킹곽",
    "subs": 1850,
-   "views": 39851,
-   "hours": 52.0,
-   "likes": 575,
+   "views": 40039,
+   "hours": 52.2,
+   "likes": 577,
    "comments": 3,
    "cat": "fun",
    "dur": 51,
    "thumb": "https://i.ytimg.com/vi/Jcb-4NOdN5s/hqdefault.jpg",
-   "kw": []
+   "kw": [],
+   "gain": 188
   },
   {
    "id": "LDSLryVhimk",
    "title": "의욕만 앞선헛당까미^^ #dogshorts #강아지쇼츠#댕댕이#subscribe#강아지웃긴영상#진똥개까미 #funnyshorts #구독과좋아요",
    "ch": "진똥개까미",
    "subs": 1910,
-   "views": 46286,
-   "hours": 61.0,
-   "likes": 745,
+   "views": 46425,
+   "hours": 61.2,
+   "likes": 746,
    "comments": 22,
    "cat": "fun",
    "dur": 11,
    "thumb": "https://i.ytimg.com/vi/LDSLryVhimk/hqdefault.jpg",
-   "kw": []
+   "kw": [],
+   "gain": 139
   },
   {
    "id": "BhdnlV_Wof0",
    "title": "#한국바이럴 #웃긴영상 #코미디 #꿀잼 #유튜브쇼츠 #쇼츠 #바이럴 트렌드 #재미 #웃음#웃긴영상#개그#코미디 웃음#재미#꿀잼#웃 겨요#유튜브#유튜브쇼 #쇼츠#수정#숶천",
    "ch": "Abu Taher",
    "subs": 97300,
-   "views": 19115,
-   "hours": 25.6,
-   "likes": 81,
+   "views": 19124,
+   "hours": 25.8,
+   "likes": 82,
    "comments": 0,
    "cat": "fun",
    "dur": 22,
    "thumb": "https://i.ytimg.com/vi/BhdnlV_Wof0/hqdefault.jpg",
    "kw": [],
-   "gain": 99
+   "gain": 9
   },
   {
    "id": "qJJgrEC27z0",
    "title": "역대급 무술 시범 대참사 랭킹 TOP3 #랭킹 #쇼츠 #웃긴영상",
    "ch": "랭킹강",
    "subs": 312000,
-   "views": 35413,
-   "hours": 49.0,
+   "views": 35454,
+   "hours": 49.2,
    "likes": 173,
    "comments": 4,
    "cat": "fun",
    "dur": 9,
    "thumb": "https://i.ytimg.com/vi/qJJgrEC27z0/hqdefault.jpg",
    "kw": [],
-   "gain": 623
+   "gain": 41
   },
   {
    "id": "F3RA9xqoDOc",
    "title": "#광고 홈헬스케어 브랜드 1위 세라젬을 이제이쿡에서 최초로 소개합니다 #New파우제M4 #리플렉스쇼파베드 #세라젬기획전",
    "ch": "오늘도이제이쿡",
    "subs": 294000,
-   "views": 20013,
-   "hours": 28.7,
+   "views": 20078,
+   "hours": 28.9,
    "likes": 209,
    "comments": 38,
    "cat": "ad",
    "dur": 76,
    "thumb": "https://i.ytimg.com/vi/F3RA9xqoDOc/hqdefault.jpg",
-   "kw": []
+   "kw": [],
+   "gain": 65
   },
   {
    "id": "IJYMKSP7wlQ",
    "title": "#한국바이럴 #웃긴영상 #코미디 #꿀잼 #유튜브쇼츠 #쇼츠 #바이럴 #트렌드 #재미 #웃음 #웃긴영상 #개그 #코미디 #웃음 #재미 #꿀잼 #웃겨요 #유튜브 #유튜브쇼츠 #쇼츠",
    "ch": "Fun Family 10  \" 2 \"",
    "subs": 53600,
-   "views": 33364,
-   "hours": 48.7,
+   "views": 33374,
+   "hours": 48.9,
    "likes": 186,
    "comments": 0,
    "cat": "fun",
    "dur": 16,
    "thumb": "https://i.ytimg.com/vi/IJYMKSP7wlQ/hqdefault.jpg",
    "kw": [],
-   "gain": 147
+   "gain": 10
   },
   {
    "id": "oe3lxzd-hZ8",
    "title": "엄마를 화나게 하는 방법 😂",
    "ch": "Kiki Pop Fun💕",
    "subs": 3860,
-   "views": 31736,
-   "hours": 47.5,
-   "likes": 191,
+   "views": 31974,
+   "hours": 47.7,
+   "likes": 192,
    "comments": 1,
    "cat": "fun",
    "dur": 18,
    "thumb": "https://i.ytimg.com/vi/oe3lxzd-hZ8/hqdefault.jpg",
    "kw": [],
-   "gain": 1836
-  },
-  {
-   "id": "h_Y-8IB1pNg",
-   "title": "아빠 의견은 몰살 당하는 이 집 ㅋㅋ #전화 #통화 #웃긴 #웃긴영상 #귀여운 #귀여움 #엄마 #아빠 #딸 #가족 #쇼츠 #쇼츠추천 #재미 #유머 #서열정리",
-   "ch": "당장들어",
-   "subs": 3100,
-   "views": 22716,
-   "hours": 34.0,
-   "likes": 281,
-   "comments": 10,
-   "cat": "fun",
-   "dur": 30,
-   "thumb": "https://i.ytimg.com/vi/h_Y-8IB1pNg/hqdefault.jpg",
-   "kw": [],
-   "gain": 492
+   "gain": 238
   },
   {
    "id": "98_n8i_j2zE",
    "title": "#한국바이럴 #웃긴영상 #코미디 #꿀잼 #유튜브쇼츠 #쇼츠 #바이럴 #트렌드 #재미 #웃음 #웃긴영상 #개그 #코미디 #웃음 #재미 #꿀잼 #웃겨요 #유튜브 #유튜브쇼츠 #쇼츠",
    "ch": "Fun family 199 \" 1\"",
    "subs": 48700,
-   "views": 32431,
-   "hours": 48.6,
-   "likes": 136,
+   "views": 32497,
+   "hours": 48.8,
+   "likes": 137,
    "comments": 0,
    "cat": "fun",
    "dur": 14,
    "thumb": "https://i.ytimg.com/vi/98_n8i_j2zE/hqdefault.jpg",
    "kw": [],
-   "gain": 2252
+   "gain": 66
+  },
+  {
+   "id": "h_Y-8IB1pNg",
+   "title": "아빠 의견은 몰살 당하는 이 집 ㅋㅋ #전화 #통화 #웃긴 #웃긴영상 #귀여운 #귀여움 #엄마 #아빠 #딸 #가족 #쇼츠 #쇼츠추천 #재미 #유머 #서열정리",
+   "ch": "당장들어",
+   "subs": 3100,
+   "views": 22729,
+   "hours": 34.2,
+   "likes": 282,
+   "comments": 10,
+   "cat": "fun",
+   "dur": 30,
+   "thumb": "https://i.ytimg.com/vi/h_Y-8IB1pNg/hqdefault.jpg",
+   "kw": [],
+   "gain": 13
   },
   {
    "id": "Jo8XRmzYFXs",
    "title": "인지도 대비 비싸다는 치킨 브랜드",
    "ch": "꿀꺽",
    "subs": 10200,
-   "views": 12193,
-   "hours": 22.8,
+   "views": 12322,
+   "hours": 23.0,
    "likes": 59,
    "comments": 27,
    "cat": "ad",
    "dur": 42,
    "thumb": "https://i.ytimg.com/vi/Jo8XRmzYFXs/hqdefault.jpg",
-   "kw": []
+   "kw": [],
+   "gain": 129
   },
   {
    "id": "8YZq9EforwU",
    "title": "리센느, 11월 광고모델 평판 몇 위?",
    "ch": "[data-viz 빅스타] Bigxtar",
    "subs": 5310,
-   "views": 24793,
-   "hours": 49.9,
+   "views": 24792,
+   "hours": 50.1,
    "likes": 671,
    "comments": 30,
    "cat": "ad",
    "dur": 31,
    "thumb": "https://i.ytimg.com/vi/8YZq9EforwU/hqdefault.jpg",
-   "kw": []
+   "kw": [],
+   "gain": 0
   },
   {
    "id": "uM7aRpDN7Mc",
    "title": "브랜드 평판 지수 광고 모델 부문 2026년 11월",
    "ch": "SpoEntRank",
    "subs": 87,
-   "views": 21248,
-   "hours": 43.8,
+   "views": 21258,
+   "hours": 44.0,
    "likes": 337,
    "comments": 15,
    "cat": "ad",
    "dur": 46,
    "thumb": "https://i.ytimg.com/vi/uM7aRpDN7Mc/hqdefault.jpg",
-   "kw": []
-  },
-  {
-   "id": "BIG0iBKCzEA",
-   "title": "마케팅 천재가 만든 탕수육, 직접 먹어봤습니다 #리뷰 #오뚜기 #쇼츠",
-   "ch": "후련하냐",
-   "subs": 6660,
-   "views": 1549,
-   "hours": 3.4,
-   "likes": 2,
-   "comments": 1,
-   "cat": "ad",
-   "dur": 33,
-   "thumb": "https://i.ytimg.com/vi/BIG0iBKCzEA/hqdefault.jpg",
    "kw": [],
-   "gain": 363
+   "gain": 10
   },
   {
    "id": "fcP7IDumur4",
    "title": "8만 원 가방으로 모델까지 된 원이",
    "ch": "덕력발전소",
    "subs": 2960,
-   "views": 14418,
-   "hours": 38.7,
+   "views": 14467,
+   "hours": 38.9,
    "likes": 424,
    "comments": 0,
    "cat": "ad",
    "dur": 31,
    "thumb": "https://i.ytimg.com/vi/fcP7IDumur4/hqdefault.jpg",
-   "kw": []
+   "kw": [],
+   "gain": 49
+  },
+  {
+   "id": "BIG0iBKCzEA",
+   "title": "마케팅 천재가 만든 탕수육, 직접 먹어봤습니다 #리뷰 #오뚜기 #쇼츠",
+   "ch": "후련하냐",
+   "subs": 6660,
+   "views": 1186,
+   "hours": 3.6,
+   "likes": 2,
+   "comments": 1,
+   "cat": "ad",
+   "dur": 33,
+   "thumb": "https://i.ytimg.com/vi/BIG0iBKCzEA/hqdefault.jpg",
+   "kw": [],
+   "gain": 0
   },
   {
    "id": "7Hi95Nqwa4c",
    "title": "코스트코가 PB에 집착하는 이유",
    "ch": "썰좋아요",
    "subs": 2460,
-   "views": 5217,
-   "hours": 22.7,
-   "likes": 30,
+   "views": 5241,
+   "hours": 22.9,
+   "likes": 31,
    "comments": 0,
    "cat": "ad",
    "dur": 47,
    "thumb": "https://i.ytimg.com/vi/7Hi95Nqwa4c/hqdefault.jpg",
-   "kw": []
+   "kw": [],
+   "gain": 24
   },
   {
    "id": "rYOzWtGgDSw",
    "title": "😱 노스페이스에서 스파오로? 요즘 주목받는 브랜드 8가지!",
    "ch": "99%는 모른다",
    "subs": 287,
-   "views": 7333,
-   "hours": 36.4,
+   "views": 7446,
+   "hours": 36.6,
    "likes": 5,
    "comments": 0,
    "cat": "ad",
    "dur": 12,
    "thumb": "https://i.ytimg.com/vi/rYOzWtGgDSw/hqdefault.jpg",
-   "kw": []
+   "kw": [],
+   "gain": 113
   },
   {
    "id": "5C9LSPTuYvQ",
    "title": "결국 방탄까지 넘었다는 리센느",
    "ch": "덕파민",
    "subs": 271,
-   "views": 4958,
-   "hours": 30.7,
-   "likes": 175,
+   "views": 4976,
+   "hours": 30.9,
+   "likes": 177,
    "comments": 8,
    "cat": "ad",
    "dur": 40,
    "thumb": "https://i.ytimg.com/vi/5C9LSPTuYvQ/hqdefault.jpg",
-   "kw": []
+   "kw": [],
+   "gain": 18
   },
   {
    "id": "y-cLxcS4dZQ",
@@ -1760,27 +1870,29 @@
    "ch": "오늘의썰집",
    "subs": 161,
    "views": 4687,
-   "hours": 34.0,
+   "hours": 34.2,
    "likes": 60,
    "comments": 4,
    "cat": "ad",
    "dur": 33,
    "thumb": "https://i.ytimg.com/vi/y-cLxcS4dZQ/hqdefault.jpg",
-   "kw": []
+   "kw": [],
+   "gain": 0
   },
   {
    "id": "XzYtanu3dxY",
    "title": "임영웅 광고 평판 48.5% 껑충…팬들은 장관상까지 받았다",
    "ch": "어쩌다 영웅 TV",
    "subs": 2630,
-   "views": 3603,
-   "hours": 33.0,
-   "likes": 774,
+   "views": 3612,
+   "hours": 33.2,
+   "likes": 777,
    "comments": 1,
    "cat": "ad",
    "dur": 38,
    "thumb": "https://i.ytimg.com/vi/XzYtanu3dxY/hqdefault.jpg",
-   "kw": []
+   "kw": [],
+   "gain": 9
   },
   {
    "id": "5HMotboJkHs",
@@ -1788,139 +1900,149 @@
    "ch": "코믹크림",
    "subs": 28200,
    "views": 2841,
-   "hours": 29.9,
+   "hours": 30.0,
    "likes": 8,
    "comments": 0,
    "cat": "ad",
    "dur": 10,
    "thumb": "https://i.ytimg.com/vi/5HMotboJkHs/hqdefault.jpg",
-   "kw": []
+   "kw": [],
+   "gain": 0
   },
   {
    "id": "gnw3A7PX608",
    "title": "리센느 광고모델 브랜드평판 1위 해버림",
    "ch": "정단우 Danwoo Jung",
    "subs": 45400,
-   "views": 2726,
-   "hours": 32.3,
+   "views": 2646,
+   "hours": 32.5,
    "likes": 46,
    "comments": 0,
    "cat": "ad",
    "dur": 36,
    "thumb": "https://i.ytimg.com/vi/gnw3A7PX608/hqdefault.jpg",
-   "kw": []
+   "kw": [],
+   "gain": 0
   },
   {
    "id": "Dvqfjg7oomk",
    "title": "장인정신을 잘 표현한 광고",
    "ch": "브랜드 아카이브",
    "subs": 66800,
-   "views": 4038,
-   "hours": 52.0,
+   "views": 4040,
+   "hours": 52.2,
    "likes": 53,
    "comments": 6,
    "cat": "ad",
    "dur": 33,
    "thumb": "https://i.ytimg.com/vi/Dvqfjg7oomk/hqdefault.jpg",
-   "kw": []
+   "kw": [],
+   "gain": 2
   },
   {
    "id": "x7pzX0gdzLw",
    "title": "손태진, 광고주들이 주목하는 이유! 품격과 신뢰를 갖춘 가수, 매출증가 | 구독하고 응원하기",
    "ch": "힐링뮤즈 | Healing Muse",
    "subs": 1310,
-   "views": 2826,
-   "hours": 37.0,
-   "likes": 376,
+   "views": 2851,
+   "hours": 37.2,
+   "likes": 381,
    "comments": 6,
    "cat": "ad",
    "dur": 46,
    "thumb": "https://i.ytimg.com/vi/x7pzX0gdzLw/hqdefault.jpg",
-   "kw": []
+   "kw": [],
+   "gain": 25
   },
   {
    "id": "gHlB7QwykP0",
    "title": "[SMN] 앰버서더라는 꿈을 이룬 토미 261106 히토미는 역시 날개가 떨어진 천사였어...🪽🤍✨｜Verries 광고 촬영 비하인드 #HITOMI",
    "ch": "따라와세마넴",
-   "subs": 904,
-   "views": 2478,
-   "hours": 33.7,
-   "likes": 143,
+   "subs": 903,
+   "views": 2541,
+   "hours": 33.9,
+   "likes": 145,
    "comments": 5,
    "cat": "ad",
    "dur": 24,
    "thumb": "https://i.ytimg.com/vi/gHlB7QwykP0/hqdefault.jpg",
-   "kw": []
+   "kw": [],
+   "gain": 63
   },
   {
    "id": "prEJpXT18J4",
    "title": "리센느, 11월 광고모델 브랜드평판 1위 #RESCENE",
    "ch": "별별스타",
    "subs": 42,
-   "views": 3367,
-   "hours": 53.2,
-   "likes": 140,
+   "views": 3318,
+   "hours": 53.4,
+   "likes": 137,
    "comments": 4,
    "cat": "ad",
    "dur": 33,
    "thumb": "https://i.ytimg.com/vi/prEJpXT18J4/hqdefault.jpg",
-   "kw": []
+   "kw": [],
+   "gain": 0
   },
   {
    "id": "T2wjVNX3qdA",
    "title": "24시간 필리버스터 특검법통과 #뉴스쇼츠 #시사쇼츠",
    "ch": "정국포착",
    "subs": 28,
-   "views": 2064,
-   "hours": 37.2,
+   "views": 2065,
+   "hours": 37.4,
    "likes": 64,
    "comments": 0,
    "cat": "pol",
    "dur": 28,
    "thumb": "https://i.ytimg.com/vi/T2wjVNX3qdA/hqdefault.jpg",
-   "kw": []
+   "kw": [],
+   "gain": 1
   },
   {
    "id": "c_cdr_53EAw",
    "title": "이번주가 마지막! 쓱데이 노브랜드 필수 장보기! 11일까지 이 가격 놓치면 다시는 안와요~전단 할인 세일 추천 상품들 놓치지 마세요~",
    "ch": "따라잡아경제",
    "subs": 18100,
-   "views": 3005,
-   "hours": 60.6,
+   "views": 2903,
+   "hours": 60.8,
    "likes": 9,
    "comments": 0,
    "cat": "ad",
    "dur": 47,
    "thumb": "https://i.ytimg.com/vi/c_cdr_53EAw/hqdefault.jpg",
-   "kw": []
+   "kw": [],
+   "gain": 0
   },
   {
    "id": "OTZcBXPoI-o",
    "title": "성리 11월 6일 광고 모델 브랜드 평판",
    "ch": "SEONGRINEWS",
-   "subs": 385,
-   "views": 2735,
-   "hours": 59.3,
-   "likes": 661,
-   "comments": 27,
+   "subs": 387,
+   "views": 2742,
+   "hours": 59.5,
+   "likes": 665,
+   "comments": 28,
    "cat": "ad",
    "dur": 61,
    "thumb": "https://i.ytimg.com/vi/OTZcBXPoI-o/hqdefault.jpg",
-   "kw": []
+   "kw": [],
+   "gain": 7
   },
   {
    "id": "qMi-Z9noQLE",
    "title": "네슬레도 못 뚫은 한국 커피믹스",
    "ch": "우지픽",
    "subs": 39,
-   "views": 2246,
-   "hours": 54.0,
+   "views": 2248,
+   "hours": 54.2,
    "likes": 19,
    "comments": 3,
    "cat": "ad",
    "dur": 31,
    "thumb": "https://i.ytimg.com/vi/qMi-Z9noQLE/hqdefault.jpg",
-   "kw": []
+   "kw": [],
+   "gain": 2
   },
   {
    "id": "puPnSUjFB_A",
@@ -1928,27 +2050,29 @@
    "ch": "설탕토마토",
    "subs": 5700,
    "views": 1993,
-   "hours": 51.2,
+   "hours": 51.4,
    "likes": 13,
    "comments": 1,
    "cat": "ad",
    "dur": 32,
    "thumb": "https://i.ytimg.com/vi/puPnSUjFB_A/hqdefault.jpg",
-   "kw": []
+   "kw": [],
+   "gain": 0
   },
   {
    "id": "Kh4RTv_bq5c",
    "title": "프링글스 발명가의 마지막 소원 #마케팅 #광고 #마케팅사례 #할로윈",
    "ch": "트렌드바이브",
    "subs": 596,
-   "views": 1820,
-   "hours": 51.2,
+   "views": 1821,
+   "hours": 51.4,
    "likes": 14,
    "comments": 0,
    "cat": "ad",
    "dur": 41,
    "thumb": "https://i.ytimg.com/vi/Kh4RTv_bq5c/hqdefault.jpg",
-   "kw": []
+   "kw": [],
+   "gain": 1
   },
   {
    "id": "rlYJsiLWIFE",
@@ -1956,13 +2080,14 @@
    "ch": "꼼고수",
    "subs": 22,
    "views": 1217,
-   "hours": 35.9,
+   "hours": 36.1,
    "likes": 4,
    "comments": 1,
    "cat": "ad",
    "dur": 62,
    "thumb": "https://i.ytimg.com/vi/rlYJsiLWIFE/hqdefault.jpg",
-   "kw": []
+   "kw": [],
+   "gain": 0
   },
   {
    "id": "XPVsYfaI1nk",
@@ -1970,27 +2095,29 @@
    "ch": "인물해부학",
    "subs": 20,
    "views": 1340,
-   "hours": 58.0,
+   "hours": 58.2,
    "likes": 13,
    "comments": 1,
    "cat": "ad",
    "dur": 50,
    "thumb": "https://i.ytimg.com/vi/XPVsYfaI1nk/hqdefault.jpg",
-   "kw": []
+   "kw": [],
+   "gain": 0
   },
   {
    "id": "KWEo3QGn77k",
    "title": "꼬리 자르기로 경쟁사 농락한 DHL?",
    "ch": "꼼고수",
    "subs": 22,
-   "views": 1342,
-   "hours": 58.5,
+   "views": 1344,
+   "hours": 58.7,
    "likes": 8,
    "comments": 1,
    "cat": "ad",
    "dur": 62,
    "thumb": "https://i.ytimg.com/vi/KWEo3QGn77k/hqdefault.jpg",
-   "kw": []
+   "kw": [],
+   "gain": 2
   },
   {
    "id": "_gBhB8N-K9o",
@@ -1998,36 +2125,37 @@
    "ch": "정국포착",
    "subs": 28,
    "views": 1388,
-   "hours": 61.5,
+   "hours": 61.7,
    "likes": 7,
    "comments": 0,
    "cat": "pol",
    "dur": 41,
    "thumb": "https://i.ytimg.com/vi/_gBhB8N-K9o/hqdefault.jpg",
-   "kw": []
+   "kw": [],
+   "gain": 0
   }
  ],
  "summary": {
   "lead": "상위 쇼츠 15개 중 12개가 정치/시사 분야예요.",
   "paras": [
-   "상위권 평균 길이는 62초예요.",
+   "상위권 평균 길이는 63초예요.",
    "구독자 수의 10배 넘게 조회된 영상이 21개 있어요. ‘작은 채널인데 터진 영상’에서 확인해 보세요."
   ],
   "tips": [
-   "지금 가장 잘 되는 제목 형식: 이슈·속보형 (평균보다 +214%)",
-   "길이는 52~72초 사이를 노려보세요"
+   "지금 가장 잘 되는 제목 형식: 이슈·속보형 (평균보다 +187%)",
+   "길이는 53~73초 사이를 노려보세요"
   ],
   "words": [
    "KBS",
+   "TOP4",
    "end",
-   "This",
-   "랭킹",
-   "is"
+   "역대급",
+   "the"
   ],
   "top": [
-   "ZRXdjalLwO0",
    "n4PE_UeJKwg",
    "jJtDlycEucA",
+   "VsIll10XkoQ",
    "2b5dsozzTDc",
    "PQaXvcmW8UY",
    "wQCkpEMt1Jo",
@@ -2046,27 +2174,30 @@
  "formats": [
   {
    "name": "이슈·속보형",
-   "lift": "+214%",
-   "n": 5,
+   "lift": "+187%",
+   "n": 6,
    "ex": "'스카프 아저씨' 결국...  / Y, 엉덩이 끌며 기어가는데…요양병원 CC",
    "ids": [
     "n4PE_UeJKwg",
     "jJtDlycEucA",
     "zPi_wM7zuS4",
+    "UXsKLpNLBRA",
     "cS397SCW6aE",
     "5C9LSPTuYvQ"
    ]
   },
   {
    "name": "질문형 제목",
-   "lift": "+12%",
-   "n": 11,
+   "lift": "+17%",
+   "n": 13,
    "ex": "\"'자유 한국'에서 술이 죄냐?!\"‥, \"운동회가 소음?\"‥안재욱, 주민 신",
    "ids": [
     "2b5dsozzTDc",
     "iFzXJx2rnQ0",
     "FIqSBUrBORU",
+    "XcuQfNmd4hc",
     "L67kq4Dt_o4",
+    "lrfV1OzBcXY",
     "t211qDkHI2w",
     "8YZq9EforwU",
     "rYOzWtGgDSw",
@@ -2078,7 +2209,7 @@
   },
   {
    "name": "리스트·랭킹형",
-   "lift": "+2%",
+   "lift": "+7%",
    "n": 15,
    "ex": "역대급 This is the end , 역대급 태권도 발차기 랭킹 TOP5",
    "ids": [
