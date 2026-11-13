@@ -258,6 +258,13 @@ dialog::backdrop{background:rgba(23,32,58,.45)}
 .vd dt{color:var(--muted)} .vd dd{margin:0;font-weight:600}
 .btn{display:inline-block;border-radius:10px;padding:9px 14px;font-weight:600;cursor:pointer;border:1.5px solid var(--ink);background:var(--ink);color:#fff;text-decoration:none;font-size:14px;margin-top:14px}
 .sh-body .cm{border:none;padding:0}
+.player{position:relative;width:100%;aspect-ratio:16/9;background:#000;border-radius:12px;overflow:hidden}
+.player.vert{aspect-ratio:9/16;max-height:62vh;width:auto;margin:0 auto}
+.player iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.player .ph-note{position:absolute;inset:0;display:grid;place-items:center;color:#fff;font-size:13px;padding:16px;text-align:center}
+.vd.vd-noimg{grid-template-columns:1fr}
+.vd.vd-noimg dl{grid-template-columns:auto 1fr auto 1fr}
+.btn-ghost{background:#fff;color:var(--ink)}
 
 @media (max-width:1100px){ .two{grid-template-columns:1fr} .chgrid{grid-template-columns:1fr} .brief{grid-template-columns:1fr} .side{border-left:none;padding-left:0;border-top:1px solid var(--line);padding-top:14px} }
 @media (max-width:860px){
@@ -274,6 +281,7 @@ dialog::backdrop{background:rgba(23,32,58,.45)}
   .hide-sm{display:none}
   dialog{width:100%;max-width:none;margin:auto 0 0;border-radius:18px 18px 0 0;max-height:88vh}
   .vd{grid-template-columns:100px 1fr}
+  .vd.vd-noimg dl{grid-template-columns:auto 1fr}
   .tiles{grid-template-columns:repeat(2,1fr)}
   .vrows button{grid-template-columns:96px 1fr}
   .vrows .th{width:96px}
@@ -396,7 +404,7 @@ dialog::backdrop{background:rgba(23,32,58,.45)}
 <div class="ptr" id="ptr" aria-live="polite">↓ 당겨서 새로고침</div>
 
 <script>
-const APP_VERSION='3.6';
+const APP_VERSION='3.7';
 /* 분야별 색 — 분야를 추가하면 여기에도 색을 하나 넣어주세요 */
 const CAT_STYLE={
   meme:{color:"#F4B400", ink:"#17203A"}, product:{color:"#12A37F", ink:"#fff"}, ad:{color:"#C7336F", ink:"#fff"},
@@ -445,7 +453,7 @@ function goLinks(q){
 const newsItems=items=>items.map(n=>`<li><a href="${esc(n.url)}" target="_blank" rel="noopener"><div class="h">${esc(n.title)}</div><div class="s">${esc(n.source||'')}${n.time?` · ${ago(n.time)}`:''}</div></a></li>`).join('');
 function vList(vs){
   if(!vs.length) return '<p class="empty">해당하는 영상이 아직 없어요.</p>';
-  return `<ul class="vlist">${vs.map(v=>`<li><a href="${ytUrl(v)}" target="_blank" rel="noopener">
+  return `<ul class="vlist">${vs.map(v=>`<li><a href="#" data-id="${esc(v.id)}">
     <span class="mini" style="${thumbBg(v)}">${miniImg(v)}</span>
     <span><span class="tt">${esc(v.title)}</span> ${tierBadge(v)}<br><span class="mm">${esc(v.ch)} · 조회 ${fmtN(v.views)} · 댓글 ${fmtN(v.comments)}</span></span></a></li>`).join('')}</ul>`;
 }
@@ -661,11 +669,38 @@ function renderHidden(){
 function renderAll(){ renderTabs(); renderBrief(); renderChannel(); renderKw(); renderIssues(); renderStrip(); renderComments(); renderChart(); renderUnder(); renderFmt(); renderHidden(); }
 
 /* ===== 상세 시트 ===== */
+let sheetPushed=false;
 function sheet(title,sub,body){
   const d=$('#dlg');
   d.innerHTML=`<div class="sh-head"><div><h3 id="shTitle">${title}</h3>${sub?`<p>${sub}</p>`:''}</div><button class="sh-x" data-close aria-label="닫기">✕</button></div><div class="sh-body">${body}</div>`;
-  if(!d.open) d.showModal();
+  if(!d.open){
+    d.showModal();
+    // 뒤로가기(갤럭시 뒤로 버튼·제스처, 브라우저 뒤로)를 누르면 이 창만 닫히고 W.D.T에 남아요
+    try{ history.pushState({wdtSheet:1},''); sheetPushed=true; }catch(e){ sheetPushed=false; }
+  }
   d.querySelector('.sh-body').scrollTop=0;
+}
+function hideSheet(){ const d=$('#dlg'); if(d.open) d.close(); d.innerHTML=''; }   // innerHTML 비우기 = 재생 중인 영상 멈춤
+function closeSheet(){
+  if(sheetPushed){ sheetPushed=false; try{ history.back(); return; }catch(e){} }
+  hideSheet();
+}
+window.addEventListener('popstate',()=>{ sheetPushed=false; hideSheet(); });
+$('#dlg').addEventListener('cancel',e=>{ e.preventDefault(); closeSheet(); });
+/* 아이폰: 창을 오른쪽으로 쓸면 닫혀요 */
+(function(){
+  const d=$('#dlg'); let x0=null,y0=null;
+  d.addEventListener('touchstart',e=>{ const t=e.touches[0]; x0=t.clientX; y0=t.clientY; },{passive:true});
+  d.addEventListener('touchend',e=>{
+    if(x0==null) return; const t=e.changedTouches[0], dx=t.clientX-x0, dy=Math.abs(t.clientY-y0);
+    if(dx>90 && dy<60 && !e.target.closest('.strip')) closeSheet();
+    x0=null;
+  });
+})();
+function playerHtml(v){
+  if(DATA.sample) return `<div class="player ${v.dur<=180?'vert':''}"><div class="ph-note">실제 사이트에서는 여기서 영상이 바로 재생돼요</div></div>`;
+  const src=`https://www.youtube-nocookie.com/embed/${encodeURIComponent(v.id)}?autoplay=1&playsinline=1&rel=0&modestbranding=1`;
+  return `<div class="player ${v.dur<=180?'vert':''}"><iframe src="${src}" title="${esc(v.title)}" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe></div>`;
 }
 const matchVideos=w=>{const k=w.replace(/\s+/g,'');return allVids().filter(v=>v.title.replace(/\s+/g,'').includes(k)).sort((a,b)=>b.comments-a.comments).slice(0,10);};
 const matchNews=w=>Object.values(DATA.issues||{}).flat().filter((n,i,a)=>a.findIndex(x=>x.url===n.url)===i).filter(n=>n.title.includes(w));
@@ -692,9 +727,11 @@ function commentsHtml(v){
 function openVideo(v){
   const c=catOf(v.cat);
   sheet(esc(v.title), `${esc(v.ch)} · ${esc(v.watch?'채널 워치':c.label)} ${tierBadge(v)}`,
-    `<div class="vd">${thumbHtml(v,null)}
+    `${playerHtml(v)}
+     <p class="help" style="margin:6px 0 12px">다 보고 나면 <b>뒤로가기</b>나 <b>✕</b>, 아이폰은 <b>오른쪽으로 쓸기</b>로 W.D.T로 돌아와요. 재생이 안 되는 영상은 아래 버튼으로 유튜브에서 보세요.</p>
+     <div class="vd vd-noimg">
       <dl class="num"><dt>조회수</dt><dd>${fmtN(v.views)}회</dd><dt>댓글</dt><dd>${fmtN(v.comments)}개 (${(v.cmtRate*100).toFixed(2)}%)</dd><dt>올라온 지</dt><dd>${v.hours>=48?Math.round(v.hours/24)+'일':Math.round(v.hours)+'시간'}</dd><dt>시간당</dt><dd>${fmtN(v.vph)}회</dd><dt>구독자</dt><dd>${fmtN(v.subs)} (×${Math.round(v.mult)})</dd><dt>좋아요율</dt><dd>${(v.likeRate*100).toFixed(1)}%</dd><dt>반응 점수</dt><dd>${v.score}/100</dd><dt>길이</dt><dd>${durTxt(v.dur)}</dd>${v.gain!=null?`<dt>지난 수집 후</dt><dd>+${fmtN(v.gain)}회</dd>`:''}</dl></div>
-     <a class="btn" href="${ytUrl(v)}" target="_blank" rel="noopener">유튜브에서 보기</a>
+     <a class="btn btn-ghost" href="${ytUrl(v)}" target="_blank" rel="noopener">유튜브 앱에서 보기</a>
      ${commentsHtml(v)}
      ${(v.kw||[]).length?`<h4>관련 검색어: ${esc(v.kw[0])}</h4>${goLinks(v.kw[0])}`:''}`);
 }
@@ -712,16 +749,16 @@ function openSeason(q,name,dday){
 /* ===== 이벤트 ===== */
 document.addEventListener('click',e=>{
   const t=e.target.closest('[data-chtab],[data-chi],[data-chsort],[data-chmore],[data-cat],[data-sort],[data-tier],[data-period],[data-kwi],[data-word],[data-season],[data-fi],[data-cmt],[data-id],[data-hide],[data-show],[data-scroll],[data-close],#kwMore,#issueMore,#chartMore,#cmtMore');
-  if(!t){ if(e.target.id==='dlg') $('#dlg').close(); return; }
+  if(!t){ if(e.target.id==='dlg') closeSheet(); return; }
   const ds=t.dataset;
-  if(ds.close!==undefined){ $('#dlg').close(); return; }
+  if(ds.close!==undefined){ closeSheet(); return; }
   if(ds.scroll){ const s=$('#strip'); s.scrollBy({left:ds.scroll*s.clientWidth*0.85}); return; }
   if(ds.kwi){ openKeyword(state._kw[+ds.kwi]); return; }
   if(ds.word){ openWord(ds.word); return; }
   if(ds.season){ openSeason(ds.season,ds.sname,ds.sday); return; }
   if(ds.fi){ openFormat(DATA.formats[+ds.fi]); return; }
-  if(ds.cmt){ openVideo(byId(ds.cmt)); return; }
-  if(ds.id){ openVideo(byId(ds.id)); return; }
+  if(ds.cmt){ e.preventDefault(); openVideo(byId(ds.cmt)); return; }
+  if(ds.id){ e.preventDefault(); openVideo(byId(ds.id)); return; }
   if(ds.chtab){ state.view='channel'; state.ch=+ds.chtab; window.scrollTo(0,0); }
   else if(ds.chi){ state.ch=+ds.chi; state.chAll=false; }
   else if(ds.chsort){ const [k,v]=ds.chsort.split(':'); state[k]=v; }
