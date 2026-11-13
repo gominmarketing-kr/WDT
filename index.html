@@ -404,7 +404,7 @@ dialog::backdrop{background:rgba(23,32,58,.45)}
 <div class="ptr" id="ptr" aria-live="polite">↓ 당겨서 새로고침</div>
 
 <script>
-const APP_VERSION='3.7';
+const APP_VERSION='3.8';
 /* 분야별 색 — 분야를 추가하면 여기에도 색을 하나 넣어주세요 */
 const CAT_STYLE={
   meme:{color:"#F4B400", ink:"#17203A"}, product:{color:"#12A37F", ink:"#fff"}, ad:{color:"#C7336F", ink:"#fff"},
@@ -525,18 +525,16 @@ function renderChannel(){
     </div>
     <div class="tiles">
       <div class="tile"><div class="k">구독자</div><div class="v num">${fmtN(c.subs)}</div>${d24?`<div class="d">24시간 ${delta(d24.subs)}</div>`:''}</div>
-      <div class="tile"><div class="k">업로드 (24시간)</div><div class="v num">${c.uploads24h}<span style="font-size:14px">개</span></div><div class="k">7일 ${c.uploads7d}개 · 쇼츠 ${shorts.length} / 롱폼 ${longs.length}</div></div>
+      <div class="tile"><div class="k">업로드 (24시간)</div><div class="v num">${c.uploads24h}<span style="font-size:14px">개</span></div><div class="k">7일 ${c.uploads7d}개 · 롱폼 ${longs.length} / 쇼츠 ${shorts.length}</div></div>
       <div class="tile"><div class="k">최근 10개 평균 조회</div><div class="v num">${fmtN(c.avgViews)}</div></div>
       <div class="tile"><div class="k">지난 수집 후 조회 증가</div><div class="v num">${c.gainSum?'+'+fmtN(c.gainSum):'–'}</div>${d7?`<div class="d">채널 7일 ${delta(d7.views)}</div>`:''}</div>
     </div>
     ${c.aiSummary?`<p class="chai">🤖 <b>요즘 이 채널은</b> · ${esc(c.aiSummary)}</p>`:''}
     ${(c.words||[]).length?`<div class="chips" style="margin-bottom:6px">${c.words.map(w=>`<button class="chipbtn" data-word="${esc(w.word)}">${esc(w.word)}<span class="n">${w.n}</span></button>`).join('')}</div>`:''}
 
-    ${chSection('① 쇼츠 · 지금 제일 핫한', `쇼츠 ${shorts.length}개 · 핫한 순 = 올라온 뒤 1시간에 평균 몇 번 조회됐는지`,
-      sortBar('chShort') + (showS.length?`<div class="strip">${showS.map((v,i)=>`<button class="short" data-id="${esc(v.id)}">${thumbHtml(v,i)}
-        <div class="stats"><div class="big num">${sVal(v)}</div><div class="sub num">조회 ${fmtN(v.views)} · 댓글 ${fmtN(v.comments)}</div>
-        <div class="bar"><span style="width:${Math.max(4,Math.round(100*(v[sKey]||0)/sMax))}%"></span></div><div class="ch">${agoTxt(v)}</div></div></button>`).join('')}</div>
-        ${shorts.length>12?`<button class="more" data-chmore="chShortAll">${state.chShortAll?'접기':`쇼츠 ${shorts.length-12}개 더 보기`}</button>`:''}`:'<p class="empty">최근 쇼츠가 없어요.</p>'))}
+    ${chSection('① 롱폼 · 지금 제일 핫한', `롱폼 ${longs.length}개 · 3분 넘는 영상`,
+      sortBar('chLong') + (showL.length?`<ul class="vrows">${showL.map(longRow).join('')}</ul>
+        ${longs.length>8?`<button class="more" data-chmore="chLongAll">${state.chLongAll?'접기':`롱폼 ${longs.length-8}개 더 보기`}</button>`:''}`:'<p class="empty">최근 롱폼이 없어요.</p>'))}
 
     ${chSection('② 이슈되는 영상 · 댓글 반응', '쇼츠·롱폼 합쳐서 댓글이 가장 많은 영상과 인기 댓글',
       issue.length?`<div class="cmts">${issue.map(v=>`<div class="cm"><div class="top"><div><div class="tt">${esc(v.title)}</div><div class="mm">${v.dur<=180?'쇼츠':'롱폼'} · ${agoTxt(v)} · 조회 ${fmtN(v.views)} · 댓글 <b>${fmtN(v.comments)}</b></div></div>${tierBadge(v)}</div>
@@ -544,9 +542,11 @@ function renderChannel(){
         ${(v.topComments||[]).slice(0,2).map(x=>`<q>${esc(x.text)}<span>👍 ${fmtN(x.likes)}</span></q>`).join('')}
         <button class="go" data-cmt="${esc(v.id)}">${(v.topComments||[]).length?`댓글 ${v.topComments.length}개 모두 보기`:'영상 자세히 보기'}</button></div>`).join('')}</div>`:'<p class="empty">아직 데이터가 없어요.</p>')}
 
-    ${chSection('③ 롱폼 · 지금 제일 핫한', `롱폼 ${longs.length}개 · 3분 넘는 영상`,
-      sortBar('chLong') + (showL.length?`<ul class="vrows">${showL.map(longRow).join('')}</ul>
-        ${longs.length>8?`<button class="more" data-chmore="chLongAll">${state.chLongAll?'접기':`롱폼 ${longs.length-8}개 더 보기`}</button>`:''}`:'<p class="empty">최근 롱폼이 없어요.</p>'))}
+    ${chSection('③ 쇼츠 · 지금 제일 핫한', `쇼츠 ${shorts.length}개 · 핫한 순 = 올라온 뒤 1시간에 평균 몇 번 조회됐는지`,
+      sortBar('chShort') + (showS.length?`<div class="strip">${showS.map((v,i)=>`<button class="short" data-id="${esc(v.id)}">${thumbHtml(v,i)}
+        <div class="stats"><div class="big num">${sVal(v)}</div><div class="sub num">조회 ${fmtN(v.views)} · 댓글 ${fmtN(v.comments)}</div>
+        <div class="bar"><span style="width:${Math.max(4,Math.round(100*(v[sKey]||0)/sMax))}%"></span></div><div class="ch">${agoTxt(v)}</div></div></button>`).join('')}</div>
+        ${shorts.length>12?`<button class="more" data-chmore="chShortAll">${state.chShortAll?'접기':`쇼츠 ${shorts.length-12}개 더 보기`}</button>`:''}`:'<p class="empty">최근 쇼츠가 없어요.</p>'))}
 
     ${chSection(`④ ${esc(c.label)} 보도를 다룬 기사`, '최근 3일 · 누르면 기사 원문으로 이동해요',
       (showN.length?`<ul class="news">${newsItems(showN)}</ul>${news.length>8?`<button class="more" data-chmore="chNewsAll">${state.chNewsAll?'접기':`기사 ${news.length-8}개 더 보기`}</button>`:''}`:'<p class="empty">최근 3일 기사가 아직 없어요.</p>')
