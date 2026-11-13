@@ -36,15 +36,19 @@ CATS = {
     "ad": {"label": "광고·캠페인",
            "searches": ["광고", "웃긴 광고", "광고 리뷰", "광고 비하인드", "CF 메이킹"],
            "news": ["광고 캠페인 OR 광고모델", "브랜드 캠페인 OR 마케팅 사례"]},
-    "edit": {"label": "숏폼 편집",
-             "searches": ["편집", "숏폼", "릴스", "캡컷", "쇼츠 꿀팁", "브이로그"],
-             "news": ["숏폼 마케팅 OR 릴스 마케팅", "숏폼 트렌드 OR 크리에이터 마케팅"]},
     "issue": {"label": "이슈 재킹",
               "searches": [{"q": "#shorts", "videoCategoryId": "25"}, {"q": "뉴스", "videoCategoryId": "25"},
                            "이슈", {"q": "속보", "videoCategoryId": "25"}, "논란"],
               "news": ["TOPIC:NATION", "TOP"]},
     "season": {"label": "시즌·캘린더", "searches": [], "news": []},  # 다가오는 날짜로 자동 채움
 }
+
+# 채널 워치: 한눈에 따로 지켜볼 유튜브 채널 (handle = 주소의 @ 뒤 부분)
+WATCH_CHANNELS = [
+    {"handle": "sabanfam", "label": "사건반장"},
+]
+WATCH_RECENT = 50         # 채널마다 가져올 최근 영상 수 (쇼츠+롱폼)
+WATCH_COMMENTS = 6        # 채널마다 인기 댓글을 가져올 영상 수
 
 # 시즌 캘린더 (월, 일, 이름, 검색어). 매년 같은 날짜
 FIXED_DAYS = [
@@ -248,6 +252,80 @@ def collect_comments(videos):
     return [v["id"] for v in pick if v.get("topComments")]
 
 
+# ───────── 1-2. 채널 워치 ─────────
+def collect_watch(prev):
+    prev_views = {v["id"]: v["views"] for ch in prev.get("channels", []) for v in ch.get("videos", [])}
+    out = []
+    for w in WATCH_CHANNELS:
+        try:
+            res = yt("channels", part="snippet,statistics,contentDetails", forHandle=w["handle"]).get("items", [])
+            if not res:
+                print(f"[경고] 채널을 찾지 못함: @{w['handle']}", file=sys.stderr)
+                continue
+            c = res[0]
+            st, sn = c.get("statistics", {}), c["snippet"]
+            uploads = c["contentDetails"]["relatedPlaylists"]["uploads"]
+            items = yt("playlistItems", part="contentDetails", playlistId=uploads,
+                       maxResults=WATCH_RECENT).get("items", [])
+            ids = [it["contentDetails"]["videoId"] for it in items]
+            subs = {c["id"]: int(st.get("subscriberCount", 0))}
+            vids = []
+            for v in video_items(ids):
+                r = to_record(v, "watch", subs, shorts_only=False)
+                if r:
+                    r["watch"] = w["handle"]
+                    if r["id"] in prev_views:
+                        r["gain"] = max(r["views"] - prev_views[r["id"]], 0)
+                    vids.append(r)
+            vids.sort(key=lambda v: v["hours"])
+            # 최근 3일 영상 중 댓글 많은 것의 인기 댓글
+            recent = [v for v in vids if v["hours"] <= 72] or vids
+            for v in sorted(recent, key=lambda v: v["comments"], reverse=True)[:WATCH_COMMENTS]:
+                try:
+                    r2 = yt("commentThreads", part="snippet", videoId=v["id"], order="relevance",
+                            maxResults=5, textFormat="plainText")
+                    v["topComments"] = [{
+                        "text": it["snippet"]["topLevelComment"]["snippet"]["textDisplay"][:220],
+                        "likes": it["snippet"]["topLevelComment"]["snippet"].get("likeCount", 0),
+                    } for it in r2.get("items", [])]
+                except Exception as e:
+                    print(f"[경고] 채널 댓글 실패 {v['id']}: {e}", file=sys.stderr)
+            words = Counter()
+            for v in vids:
+                for t in set(tokens(v["title"], {w["label"], sn.get("title", ""), "JTBC"})):
+                    words[t] += 1
+            day = [v for v in vids if v["hours"] <= 24]
+            week = [v for v in vids if v["hours"] <= 168]
+            th = (sn.get("thumbnails", {}).get("medium") or sn.get("thumbnails", {}).get("default") or {}).get("url", "")
+            out.append({
+                "handle": w["handle"], "label": w["label"], "id": c["id"], "title": sn.get("title", ""), "thumb": th,
+                "subs": int(st.get("subscriberCount", 0)), "totalViews": int(st.get("viewCount", 0)),
+                "videoCount": int(st.get("videoCount", 0)),
+                "uploads24h": len(day), "uploads7d": len(week),
+                "avgViews": round(sum(v["views"] for v in vids[:10]) / max(len(vids[:10]), 1)),
+                "gainSum": sum(v.get("gain", 0) for v in vids),
+                "words": [{"word": t, "n": n} for t, n in words.most_common(12) if n >= 2][:10],
+                "videos": vids,
+                # 이 채널 보도를 인용한 기사 (구글 뉴스, 최근 3일)
+                "news": news_feed(f'"{w["label"]}"', 20, "3d"),
+            })
+            print(f"채널 워치 @{w['handle']}: 최근 영상 {len(vids)}개")
+        except Exception as e:
+            print(f"[경고] 채널 워치 실패 @{w['handle']}: {e}", file=sys.stderr)
+    return out
+
+
+def channel_trend(hist, ch):
+    """구독자·총조회수 변화 (24시간, 7일)"""
+    pts = [(datetime.fromisoformat(r["t"]), r["ch"][ch["handle"]]) for r in hist["runs"] if ch["handle"] in r.get("ch", {})]
+    res = {}
+    for key, hrs in (("24h", 24), ("7d", 168)):
+        old = [p for t, p in pts if NOW - t <= timedelta(hours=hrs)]
+        if len(old) >= 2:
+            res[key] = {"subs": ch["subs"] - old[0][0], "views": ch["totalViews"] - old[0][1]}
+    return res
+
+
 # ───────── 2. 지금 뜨는 검색어 (구글 트렌드) + 관련 기사 ─────────
 def collect_google_trends():
     try:
@@ -271,13 +349,13 @@ def collect_google_trends():
 
 
 # ───────── 3. 요즘 뜨는 이슈 (구글 뉴스) ─────────
-def news_feed(spec, limit=15):
+def news_feed(spec, limit=15, when="1d"):
     if spec == "TOP":
         url, params = "https://news.google.com/rss", dict(NEWS_BASE)
     elif spec.startswith("TOPIC:"):
         url, params = f"https://news.google.com/rss/headlines/section/topic/{spec[6:]}", dict(NEWS_BASE)
     else:
-        url, params = "https://news.google.com/rss/search", dict(NEWS_BASE, q=f"{spec} when:1d")
+        url, params = "https://news.google.com/rss/search", dict(NEWS_BASE, q=f"{spec} when:{when}")
     try:
         root = ET.fromstring(get(url, params))
     except Exception as e:
@@ -405,7 +483,7 @@ def length_stats(videos):
 
 
 # ───────── 5. 7일 기록 + 기간별 집계 ─────────
-def update_history(hist, keywords, issue_words, videos, charts):
+def update_history(hist, keywords, issue_words, videos, charts, channels=()):
     runs = [r for r in hist.get("runs", [])
             if NOW - datetime.fromisoformat(r["t"]) <= timedelta(days=HISTORY_DAYS)]
     top = sorted(videos + charts, key=lambda v: v["views"] / v["hours"], reverse=True)[:40]
@@ -414,6 +492,7 @@ def update_history(hist, keywords, issue_words, videos, charts):
         "kw": [k["word"] for k in keywords],
         "iw": {c: [w["word"] for w in ws] for c, ws in issue_words.items()},
         "v": [[v["id"], v["views"], v["comments"], v.get("cat"), v["title"][:80], v["ch"], v["thumb"], v["dur"]] for v in top],
+        "ch": {c["handle"]: [c["subs"], c["totalViews"]] for c in channels},
     })
     return {"runs": runs}
 
@@ -492,8 +571,11 @@ def gemini(prompt):
     return None
 
 
-def build_briefing(videos, charts, issue_words, keywords, formats, season_days, comment_ids):
+def build_briefing(videos, charts, issue_words, keywords, formats, season_days, comment_ids, channels=()):
     by_id = {v["id"]: v for v in videos + charts}
+    for ch in channels:
+        for v in ch["videos"]:
+            by_id.setdefault(v["id"], v)
     vph = lambda v: v["views"] / v["hours"]
     best = sorted(videos, key=lambda v: (v["tier"] == "hot", v["tier"] == "rise", v["comments"] * 0.6 + vph(v) * 0.4), reverse=True)[:3]
     br = {
@@ -524,6 +606,14 @@ def build_briefing(videos, charts, issue_words, keywords, formats, season_days, 
         v = by_id[vid]
         cs = " / ".join(c["text"].replace("\n", " ")[:120] for c in v.get("topComments", []))
         cmt_block.append(f'- id={vid} | 제목: {v["title"][:60]} | 조회 {v["views"]:,} | 댓글 {v["comments"]:,} | 인기댓글: {cs}')
+    ch_lines = []
+    for ch in channels:
+        ch_lines.append(f"[지켜보는 채널: {ch['label']}] 최근 영상 제목: " + " / ".join(v["title"][:50] for v in ch["videos"][:15]))
+        for v in ch["videos"]:
+            if v.get("topComments"):
+                cs = " / ".join(c["text"].replace("\n", " ")[:100] for c in v["topComments"])
+                ch_lines.append(f'- id={v["id"]} | 제목: {v["title"][:60]} | 조회 {v["views"]:,} | 댓글 {v["comments"]:,} | 인기댓글: {cs}')
+    ch_block = "\n".join(ch_lines)
     prompt = f"""너는 한국 마케팅 회사의 트렌드 분석가야. 아래 오늘 데이터로 마케터용 브리핑을 써줘.
 과장하지 말고 데이터에 있는 것만 근거로 써. 정치적으로는 중립을 지켜. 문장은 짧고 쉽게, 존댓말(~해요)로.
 
@@ -535,19 +625,26 @@ def build_briefing(videos, charts, issue_words, keywords, formats, season_days, 
 [다가오는 시즌] {json.dumps([{"이름": d["name"], "D-day": d["dday"]} for d in season_days], ensure_ascii=False)}
 [댓글 많은 영상과 인기 댓글]
 {chr(10).join(cmt_block)}
+{ch_block}
 
 JSON으로만 답해:
 {{"headline": "오늘을 한 문장으로 (40자 이내)",
  "points": ["마케터가 알아야 할 핵심 3가지, 각 60자 이내"],
  "ideas": ["바로 써볼 콘텐츠/캠페인 아이디어 3가지, 각 60자 이내"],
  "mood": "댓글 전체 분위기 한두 문장",
- "comments": {{"영상id": "그 영상 댓글 반응 한 줄 요약 (긍정/부정/많이 나온 말)"}}}}"""
+ "comments": {{"영상id": "그 영상 댓글 반응 한 줄 요약 (긍정/부정/많이 나온 말)"}},
+ "channels": {{"채널 이름": "그 채널이 요즘 다루는 주제와 시청자 반응 2문장 + 마케터가 참고할 점 1문장"}}}}"""
     ai = gemini(prompt)
     if isinstance(ai, dict):
         br["ai"] = {k: ai.get(k) for k in ("headline", "points", "ideas", "mood")}
         for vid, s in (ai.get("comments") or {}).items():
             if vid in by_id and isinstance(s, str):
                 by_id[vid]["commentSummary"] = s[:160]
+        chs = ai.get("channels") or {}
+        for ch in channels:
+            txt = chs.get(ch["label"]) or chs.get(ch["title"]) or chs.get(ch["handle"])
+            if isinstance(txt, str):
+                ch["aiSummary"] = txt[:400]
     return br
 
 
@@ -566,6 +663,7 @@ def main():
         if v["id"] in prev_views:
             v["gain"] = max(v["views"] - prev_views[v["id"]], 0)
     comment_ids = collect_comments(videos + charts)
+    channels = collect_watch(prev)
 
     keywords = collect_google_trends()
     for i, k in enumerate(keywords):
@@ -577,8 +675,10 @@ def main():
     issues = collect_issues(season_days)
     issue_words = issue_keywords(issues)
     formats = analyze_formats(videos)
-    hist = update_history(hist, keywords, issue_words, videos, charts)
-    briefing = build_briefing(videos, charts, issue_words, keywords, formats, season_days, comment_ids)
+    hist = update_history(hist, keywords, issue_words, videos, charts, channels)
+    for ch in channels:
+        ch["trend"] = channel_trend(hist, ch)
+    briefing = build_briefing(videos, charts, issue_words, keywords, formats, season_days, comment_ids, channels)
 
     data = {
         "updatedAt": NOW.astimezone(KST).isoformat(timespec="minutes"),
@@ -595,13 +695,14 @@ def main():
         "formats": formats,
         "lengths": length_stats(videos),
         "season": season_days,
+        "channels": channels,
     }
     with open(OUT, "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=1)
     with open(HIST, "w", encoding="utf-8") as f:
         json.dump(hist, f, ensure_ascii=False, separators=(",", ":"))
     print(f"완료: 쇼츠 {len(videos)}개, 차트 {len(charts)}개, 댓글 영상 {len(comment_ids)}개, "
-          f"이슈 {sum(len(v) for v in issues.values())}건, AI {'O' if briefing.get('ai') else 'X'}")
+          f"이슈 {sum(len(v) for v in issues.values())}건, 채널 워치 {len(channels)}개, AI {'O' if briefing.get('ai') else 'X'}")
 
 
 if __name__ == "__main__":
