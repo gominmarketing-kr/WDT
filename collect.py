@@ -27,21 +27,21 @@ HIST = os.environ.get("WD_HIST", "history.json")
 # searches: 유튜브 쇼츠 검색어 — 실행마다 1개씩 돌아가며 씁니다 (검색 1번 = 할당량 100, 하루 무료 10,000)
 # news: 구글 뉴스 검색어 (무료, 제한 없음). "TOPIC:NATION" 같은 건 구글 뉴스 주제 섹션
 CATS = {
-    "meme": {"label": "밈·바이럴",
+    "meme": {"label": "밈·바이럴", "desc": "요즘 퍼지는 밈·챌린지·유행어 쇼츠와 SNS 화제·신조어 기사",
              "searches": ["밈", "챌린지", "유행어", "요즘 유행", "밈 모음"],
              "news": ["밈 OR 챌린지 OR 유행어", "SNS 화제 OR 신조어 OR 바이럴"]},
-    "product": {"label": "신제품·팝업",
+    "product": {"label": "신상·팝업 소식", "desc": "신상 리뷰·편의점 신상·팝업스토어·콜라보·한정판 쇼츠와 신제품 출시 기사",
                 "searches": ["신상 리뷰", "팝업스토어", "콜라보", "편의점 신상", "한정판"],
                 "news": ["신제품 출시 OR 한정판", "팝업스토어 OR 콜라보"]},
-    "ad": {"label": "광고·캠페인",
+    "ad": {"label": "광고 레퍼런스", "desc": "광고 영상·광고 리뷰·CF 메이킹 쇼츠와 광고 캠페인·광고모델·마케팅 사례 기사",
            "searches": ["광고", "웃긴 광고", "광고 리뷰", "광고 비하인드", "CF 메이킹"],
            "news": ["광고 캠페인 OR 광고모델", "브랜드 캠페인 OR 마케팅 사례"]},
-    "issue": {"label": "이슈 재킹",
+    "issue": {"label": "시사·이슈", "desc": "뉴스·속보·논란을 다룬 쇼츠와 오늘의 주요 뉴스 (브랜드가 올라탈 만한 이슈 찾기용)",
               "searches": [{"q": "#shorts", "videoCategoryId": "25"}, {"q": "뉴스", "videoCategoryId": "25"},
                            "이슈", {"q": "속보", "videoCategoryId": "25"}, "논란"],
               "news": ["TOPIC:NATION", "TOP"]},
-    "season": {"label": "시즌·캘린더", "searches": [], "news": []},  # 다가오는 날짜로 자동 채움
 }
+# 시즌·캘린더는 2026-11-25부터 ⏰ 시의성 탭으로 옮겼어요
 
 # 채널 워치: 한눈에 따로 지켜볼 유튜브 채널 (handle = 주소의 @ 뒤 부분)
 WATCH_CHANNELS = [
@@ -208,7 +208,6 @@ def collect_videos(prev, season_days):
     run = int(NOW.timestamp() // 7200)
     found = {v["id"]: v["cat"] for v in prev.get("videos", []) if v.get("cat") in CATS}
     searches = {k: list(c["searches"]) for k, c in CATS.items()}
-    searches["season"] = [d["q"] for d in season_days] or ["시즌 마케팅"]
     for cat, qs in searches.items():
         s = qs[run % len(qs)]
         s = s if isinstance(s, dict) else {"q": s}
@@ -422,7 +421,6 @@ def news_feed(spec, limit=15, when="1d"):
 
 def collect_issues(season_days):
     specs = {k: list(c["news"]) for k, c in CATS.items()}
-    specs["season"] = [f"{d['q']} 마케팅 OR {d['q']} 프로모션" for d in season_days[:2]] or ["시즌 마케팅"]
     issues = {"all": news_feed("TOP", 20)}
     for cat, sp in specs.items():
         seen, merged = set(), []
@@ -892,7 +890,7 @@ def main():
 
     data = {
         "updatedAt": NOW.astimezone(KST).isoformat(timespec="minutes"),
-        "cats": {k: {"label": c["label"]} for k, c in CATS.items()},
+        "cats": {k: {"label": c["label"], "desc": c.get("desc", "")} for k, c in CATS.items()},
         "thresholds": {"hot": [HOT_VIEWS, HOT_COMMENTS], "rise": [RISE_VIEWS, RISE_COMMENTS]},
         "briefing": briefing,
         "keywords": keywords,
