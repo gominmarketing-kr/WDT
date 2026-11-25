@@ -56,12 +56,17 @@ FIXED_DAYS = [
     (4, 14, "블랙데이", "블랙데이"), (5, 5, "어린이날", "어린이날"), (5, 8, "어버이날", "어버이날"),
     (5, 15, "스승의날", "스승의날"), (10, 31, "할로윈", "할로윈"), (11, 11, "빼빼로데이", "빼빼로데이"),
     (12, 25, "크리스마스", "크리스마스"), (12, 31, "연말", "연말"),
+    (3, 1, "삼일절", "삼일절"), (5, 1, "근로자의날", "근로자의날"), (6, 6, "현충일", "현충일"),
+    (8, 15, "광복절", "광복절"), (10, 3, "개천절", "개천절"), (10, 9, "한글날", "한글날"),
 ]
 # 해마다 날짜가 바뀌는 날 — 필요하면 여기에 추가
 EXTRA_DAYS = [
     ("2026-11-19", "수능", "수능"), ("2027-02-06", "설날", "설날"), ("2027-09-15", "추석", "추석"),
-    ("2027-11-18", "수능", "수능"),
+    ("2027-11-18", "수능", "수능"), ("2026-12-22", "동지", "동지"), ("2027-12-22", "동지", "동지"),
 ]
+# 민감 이슈: 브랜드가 올라타면 역풍 맞기 쉬운 말 (시의성 탭의 🔴 주의 표시)
+SENSITIVE = re.compile(r"사망|숨져|숨진|참사|사고|화재|추락|살인|살해|폭행|성범죄|성폭|실종|지진|전쟁|테러|유족|피해자|극단|흉기|붕괴|폭발|침몰|학대|자살|별세|부고|추모|희생")
+WEATHER_CITY = {"name": "서울", "lat": 37.5665, "lon": 126.978}
 
 # 대세 기준
 HOT_VIEWS, HOT_COMMENTS = 1_000_000, 1_000        # 🔥 대세
@@ -120,7 +125,7 @@ def ctext(el, name):
 
 
 # ───────── 시즌 ─────────
-def upcoming_days(within=45):
+def upcoming_days(within=45, limit=5):
     today = NOW.astimezone(KST).date()
     out = []
     for y in (today.year, today.year + 1):
@@ -137,7 +142,17 @@ def upcoming_days(within=45):
         dd = (dt - today).days
         if 0 <= dd <= within:
             res.append({"name": name, "q": q, "date": dt.isoformat(), "dday": dd})
-    return res[:5]
+    return res[:limit]
+
+
+def season_action(dd):
+    if dd <= 3:
+        return "지금 올리기"
+    if dd <= 13:
+        return "업로드 준비"
+    if dd <= 29:
+        return "제작 들어갈 때"
+    return "기획 시작"
 
 
 # ───────── 1. 유튜브 쇼츠 + 인기 차트 ─────────
@@ -344,8 +359,36 @@ def collect_google_trends():
                 t, u = ctext(el, "news_item_title"), ctext(el, "news_item_url")
                 if t and u:
                     news.append({"title": t, "url": u, "source": ctext(el, "news_item_source")})
-        kws.append({"word": word, "traffic": ctext(item, "approx_traffic"), "news": news[:5]})
+        if keep_keyword(word):
+            kws.append({"word": word, "traffic": ctext(item, "approx_traffic"), "news": news[:5]})
     return kws[:15]
+
+
+def keep_keyword(w):
+    """한국 마케팅에 의미 없는 외국어 검색어(태국어·베트남어 경기명 등) 거르기"""
+    if HANGUL.search(w):
+        return True
+    return bool(re.fullmatch(r"[A-Za-z0-9 .&'-]+", w)) and len(w.split()) <= 2
+
+
+def keyword_news(words, have=None, limit=6):
+    """검색어마다 최근 3일 기사 (구글 뉴스, 무료). 화면에서 검색어를 누르면 이 기사가 나와요"""
+    import time
+    have = have or {}
+    out = {}
+    for w in words:
+        items = list(have.get(w, []))
+        if len(items) < 3:
+            try:
+                for it in news_feed(f'"{w}"', limit, "3d"):
+                    if all(it["url"] != x["url"] and it["title"][:20] != x["title"][:20] for x in items):
+                        items.append(it)
+            except Exception as e:
+                print(f"[경고] 검색어 기사 실패 {w}: {e}", file=sys.stderr)
+            time.sleep(0.2)
+        if items:
+            out[w] = items[:limit]
+    return out
 
 
 # ───────── 3. 요즘 뜨는 이슈 (구글 뉴스) ─────────
@@ -482,6 +525,126 @@ def length_stats(videos):
     return out
 
 
+# ───────── 4-2. 시의성: 날씨 + 이슈 타이밍 ─────────
+WMO = {0: ("☀️", "맑음"), 1: ("🌤️", "대체로 맑음"), 2: ("⛅", "구름 조금"), 3: ("☁️", "흐림"), 45: ("🌫️", "안개"), 48: ("🌫️", "안개")}
+
+
+def wmo(code):
+    if code in WMO:
+        return WMO[code]
+    if 51 <= code <= 67 or 80 <= code <= 82:
+        return ("🌧️", "비")
+    if 71 <= code <= 77 or 85 <= code <= 86:
+        return ("🌨️", "눈")
+    if code >= 95:
+        return ("⛈️", "뇌우")
+    return ("☁️", "흐림")
+
+
+def collect_weather():
+    c = WEATHER_CITY
+    try:
+        f = json.loads(get("https://api.open-meteo.com/v1/forecast", {
+            "latitude": c["lat"], "longitude": c["lon"], "timezone": "Asia/Seoul", "forecast_days": 7,
+            "daily": "weather_code,temperature_2m_max,temperature_2m_min,precipitation_sum,snowfall_sum"}))
+    except Exception as e:
+        print(f"[경고] 날씨 실패: {e}", file=sys.stderr)
+        return None
+    pm = {}
+    try:
+        a = json.loads(get("https://air-quality-api.open-meteo.com/v1/air-quality", {
+            "latitude": c["lat"], "longitude": c["lon"], "timezone": "Asia/Seoul", "forecast_days": 5,
+            "hourly": "pm10,pm2_5"}))
+        h = a.get("hourly", {})
+        for t, p10, p25 in zip(h.get("time", []), h.get("pm10", []), h.get("pm2_5", [])):
+            d = t[:10]
+            cur = pm.setdefault(d, [0, 0])
+            cur[0] = max(cur[0], p10 or 0)
+            cur[1] = max(cur[1], p25 or 0)
+    except Exception as e:
+        print(f"[경고] 미세먼지 실패: {e}", file=sys.stderr)
+    d = f.get("daily", {})
+    days = []
+    for i, day in enumerate(d.get("time", [])):
+        code = int(d["weather_code"][i] or 0)
+        icon, desc = wmo(code)
+        days.append({"date": day, "icon": icon, "desc": desc,
+                     "tmax": round(d["temperature_2m_max"][i]), "tmin": round(d["temperature_2m_min"][i]),
+                     "rain": round(d["precipitation_sum"][i] or 0, 1), "snow": round(d["snowfall_sum"][i] or 0, 1),
+                     "pm10": round(pm.get(day, [0, 0])[0]), "pm25": round(pm.get(day, [0, 0])[1])})
+    signals = []
+    for i, x in enumerate(days):
+        when = x["date"]
+        if x["tmin"] <= -10:
+            signals.append({"date": when, "type": "cold", "label": "🥶 한파", "detail": f"아침 {x['tmin']}°C", "q": "한파"})
+        elif x["tmin"] <= -5:
+            signals.append({"date": when, "type": "cold", "label": "🧣 강추위", "detail": f"아침 {x['tmin']}°C", "q": "추위"})
+        if i > 0 and days[i - 1]["tmin"] - x["tmin"] >= 7:
+            signals.append({"date": when, "type": "drop", "label": "📉 기온 뚝", "detail": f"하루 새 {days[i-1]['tmin'] - x['tmin']}°C 떨어짐", "q": "기온 급강하"})
+        if x["snow"] > 0:
+            signals.append({"date": when, "type": "snow", "label": "❄️ 눈 소식", "detail": f"적설 {x['snow']}cm 예상", "q": "첫눈"})
+        if x["rain"] >= 10:
+            signals.append({"date": when, "type": "rain", "label": "☔ 많은 비", "detail": f"{x['rain']}mm", "q": "비 소식"})
+        if x["tmax"] >= 33:
+            signals.append({"date": when, "type": "heat", "label": "🔥 폭염", "detail": f"낮 {x['tmax']}°C", "q": "폭염"})
+        if x["tmax"] - x["tmin"] >= 12:
+            signals.append({"date": when, "type": "gap", "label": "🌡️ 큰 일교차", "detail": f"{x['tmax'] - x['tmin']}°C 차이", "q": "일교차"})
+        if x["pm10"] >= 81 or x["pm25"] >= 36:
+            lv = "매우 나쁨" if x["pm10"] >= 151 or x["pm25"] >= 76 else "나쁨"
+            signals.append({"date": when, "type": "dust", "label": "😷 미세먼지 " + lv, "detail": f"PM10 {x['pm10']} · PM2.5 {x['pm25']}", "q": "미세먼지"})
+    # 같은 종류는 첫날 하나로 묶기 (예: 미세먼지 나쁨 3일 → "11/15 외 2일")
+    merged = {}
+    for sg in signals:
+        k = sg["type"]
+        if k not in merged:
+            merged[k] = dict(sg, more=0)
+        else:
+            merged[k]["more"] += 1
+    return {"city": c["name"], "days": days, "signals": sorted(merged.values(), key=lambda x: x["date"])}
+
+
+def first_seen(hist):
+    """검색어·이슈 키워드가 기록에 처음 나타난 시각"""
+    seen = {}
+    for r in hist.get("runs", []):
+        t = r["t"]
+        words = list(r.get("kw", [])) + [w for ws in r.get("iw", {}).values() for w in ws]
+        for w in words:
+            seen.setdefault(w, t)
+    return seen
+
+
+def timely_issues(keywords, issue_words, hist, kw_news, videos):
+    seen = first_seen(hist)
+    runs24 = [r for r in hist.get("runs", []) if NOW - datetime.fromisoformat(r["t"]) <= timedelta(hours=24)]
+    cands = {}
+    for k in keywords:
+        cands[k["word"]] = {"word": k["word"], "traffic": k.get("traffic", ""), "src": "검색 급상승"}
+    for w in (issue_words.get("all") or [])[:10]:
+        cands.setdefault(w["word"], {"word": w["word"], "traffic": "", "src": "언론 동시 보도"})["press"] = w["n"]
+    out = []
+    for w, c in cands.items():
+        t0 = seen.get(w)
+        hrs = round((NOW - datetime.fromisoformat(t0)).total_seconds() / 3600, 1) if t0 else 0
+        news = kw_news.get(w, [])
+        key = w.replace(" ", "")
+        shorts = sum(1 for v in videos if key in v["title"].replace(" ", ""))
+        hits24 = sum(1 for r in runs24 if w in r.get("kw", []) or any(w in ws for ws in r.get("iw", {}).values()))
+        text = w + " " + " ".join(n["title"] for n in news[:4])
+        if SENSITIVE.search(text):
+            status = "caution"
+        elif hrs <= 24 and shorts <= 3:
+            status = "go"
+        elif hrs > 48 or shorts > 5:
+            status = "late"
+        else:
+            status = "go" if hrs <= 36 else "late"
+        out.append(dict(c, firstSeen=t0, hours=hrs, news=len(news), shorts=shorts, hits24=hits24, status=status))
+    rank = {"go": 0, "late": 1, "caution": 2}
+    out.sort(key=lambda x: (rank[x["status"]], x["hours"]))
+    return out[:14]
+
+
 # ───────── 5. 7일 기록 + 기간별 집계 ─────────
 def update_history(hist, keywords, issue_words, videos, charts, channels=()):
     runs = [r for r in hist.get("runs", [])
@@ -523,7 +686,7 @@ def periods(hist):
             "runs": len(rs),
             "keywords": [{"word": w, "runs": c, "days": len(kw_days[w]),
                           "steady": c >= max(3, n * 0.5) or len(kw_days[w]) >= 2}
-                         for w, c in kw_runs.most_common(15)],
+                         for w, c in kw_runs.most_common(40) if keep_keyword(w)][:15],
             "issueWords": {c: [{"word": w, "n": k, "days": len(iw_days[c][w]),
                                 "steady": k >= max(3, n * 0.5) or len(iw_days[c][w]) >= 2}
                                for w, k in cnt.most_common(10)] for c, cnt in iw.items()},
@@ -571,7 +734,7 @@ def gemini(prompt):
     return None
 
 
-def build_briefing(videos, charts, issue_words, keywords, formats, season_days, comment_ids, channels=()):
+def build_briefing(videos, charts, issue_words, keywords, formats, season_days, comment_ids, channels=(), timely=None):
     by_id = {v["id"]: v for v in videos + charts}
     for ch in channels:
         for v in ch["videos"]:
@@ -614,6 +777,15 @@ def build_briefing(videos, charts, issue_words, keywords, formats, season_days, 
                 cs = " / ".join(c["text"].replace("\n", " ")[:100] for c in v["topComments"])
                 ch_lines.append(f'- id={v["id"]} | 제목: {v["title"][:60]} | 조회 {v["views"]:,} | 댓글 {v["comments"]:,} | 인기댓글: {cs}')
     ch_block = "\n".join(ch_lines)
+    tm = timely or {}
+    tm_lines = []
+    for x in tm.get("issues", [])[:12]:
+        tm_lines.append(f'- {x["word"]} | 처음 뜬 지 {x["hours"]}시간 | 기사 {x["news"]} | 관련 쇼츠 {x["shorts"]} | 출처 {x["src"]}')
+    for d in tm.get("seasons", [])[:8]:
+        tm_lines.append(f'- [시즌] {d["name"]} D-{d["dday"]}')
+    for w in ((tm.get("weather") or {}).get("signals") or [])[:5]:
+        tm_lines.append(f'- [날씨] {w["date"]} {w["label"]} {w["detail"]}')
+    tm_block = "\n".join(tm_lines)
     prompt = f"""너는 한국 마케팅 회사의 트렌드 분석가야. 아래 오늘 데이터로 마케터용 브리핑을 써줘.
 과장하지 말고 데이터에 있는 것만 근거로 써. 정치적으로는 중립을 지켜. 문장은 짧고 쉽게, 존댓말(~해요)로.
 
@@ -626,6 +798,8 @@ def build_briefing(videos, charts, issue_words, keywords, formats, season_days, 
 [댓글 많은 영상과 인기 댓글]
 {chr(10).join(cmt_block)}
 {ch_block}
+[시의성 후보 (이슈·시즌·날씨)]
+{tm_block}
 
 JSON으로만 답해:
 {{"headline": "오늘을 한 문장으로 (40자 이내)",
@@ -633,13 +807,34 @@ JSON으로만 답해:
  "ideas": ["바로 써볼 콘텐츠/캠페인 아이디어 3가지, 각 60자 이내"],
  "mood": "댓글 전체 분위기 한두 문장",
  "comments": {{"영상id": "그 영상 댓글 반응 한 줄 요약 (긍정/부정/많이 나온 말)"}},
- "channels": {{"채널 이름": "그 채널이 요즘 다루는 주제와 시청자 반응 2문장 + 마케터가 참고할 점 1문장"}}}}"""
+ "channels": {{"채널 이름": "그 채널이 요즘 다루는 주제와 시청자 반응 2문장 + 마케터가 참고할 점 1문장"}},
+ "timely": {{"headline": "시의성 관점에서 오늘 한 문장 (40자 이내)",
+            "issues": {{"이슈 단어": {{"status": "go(지금 타이밍) / late(이미 늦음) / caution(사고·참사·정치 등 브랜드가 피해야 함) 중 하나", "idea": "브랜드 활용 아이디어 40자 이내 (caution이면 피해야 하는 이유)"}}}},
+            "seasons": {{"시즌 이름": "그 시즌에 해볼 콘텐츠 아이디어 40자 이내"}},
+            "weather": "이번 주 날씨로 해볼 콘텐츠 아이디어 1~2문장"}}}}"""
     ai = gemini(prompt)
     if isinstance(ai, dict):
         br["ai"] = {k: ai.get(k) for k in ("headline", "points", "ideas", "mood")}
         for vid, s in (ai.get("comments") or {}).items():
             if vid in by_id and isinstance(s, str):
                 by_id[vid]["commentSummary"] = s[:160]
+        ta = ai.get("timely") or {}
+        if isinstance(ta, dict) and timely:
+            timely["headline"] = ta.get("headline") if isinstance(ta.get("headline"), str) else None
+            iss = ta.get("issues") or {}
+            for x in timely.get("issues", []):
+                a = iss.get(x["word"])
+                if isinstance(a, dict):
+                    if a.get("status") in ("go", "late", "caution") and x["status"] != "caution":
+                        x["status"] = a["status"]   # 규칙상 주의(🔴)는 AI가 풀지 못하게
+                    if isinstance(a.get("idea"), str):
+                        x["idea"] = a["idea"][:120]
+            si = ta.get("seasons") or {}
+            for d in timely.get("seasons", []):
+                if isinstance(si.get(d["name"]), str):
+                    d["idea"] = si[d["name"]][:120]
+            if timely.get("weather") and isinstance(ta.get("weather"), str):
+                timely["weather"]["idea"] = ta["weather"][:240]
         chs = ai.get("channels") or {}
         for ch in channels:
             txt = chs.get(ch["label"]) or chs.get(ch["title"]) or chs.get(ch["handle"])
@@ -678,7 +873,22 @@ def main():
     hist = update_history(hist, keywords, issue_words, videos, charts, channels)
     for ch in channels:
         ch["trend"] = channel_trend(hist, ch)
-    briefing = build_briefing(videos, charts, issue_words, keywords, formats, season_days, comment_ids, channels)
+    per = periods(hist)
+    seasons = upcoming_days(within=75, limit=10)
+    for d in seasons:
+        d["action"] = season_action(d["dday"])
+    words = [k["word"] for k in keywords]
+    for p in per.values():
+        words += [k["word"] for k in p["keywords"]]
+        for ws in p["issueWords"].values():
+            words += [w["word"] for w in ws[:6]]
+    for ws in issue_words.values():
+        words += [w["word"] for w in ws[:6]]
+    words = list(dict.fromkeys(words))[:70] + [d["q"] for d in seasons]
+    kw_news = keyword_news(list(dict.fromkeys(words)), {k["word"]: k.get("news", []) for k in keywords})
+    timely = {"issues": timely_issues(keywords, issue_words, hist, kw_news, videos),
+              "seasons": seasons, "weather": collect_weather()}
+    briefing = build_briefing(videos, charts, issue_words, keywords, formats, season_days, comment_ids, channels, timely)
 
     data = {
         "updatedAt": NOW.astimezone(KST).isoformat(timespec="minutes"),
@@ -688,7 +898,8 @@ def main():
         "keywords": keywords,
         "issues": issues,
         "issueWords": issue_words,
-        "periods": periods(hist),
+        "periods": per,
+        "kwNews": kw_news,
         "videos": videos,
         "charts": charts,
         "commentIds": comment_ids,
@@ -696,13 +907,14 @@ def main():
         "lengths": length_stats(videos),
         "season": season_days,
         "channels": channels,
+        "timely": timely,
     }
     with open(OUT, "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=1)
     with open(HIST, "w", encoding="utf-8") as f:
         json.dump(hist, f, ensure_ascii=False, separators=(",", ":"))
     print(f"완료: 쇼츠 {len(videos)}개, 차트 {len(charts)}개, 댓글 영상 {len(comment_ids)}개, "
-          f"이슈 {sum(len(v) for v in issues.values())}건, 채널 워치 {len(channels)}개, AI {'O' if briefing.get('ai') else 'X'}")
+          f"이슈 {sum(len(v) for v in issues.values())}건, 채널 워치 {len(channels)}개, 검색어 기사 {len(kw_news)}개, 날씨 {'O' if timely.get('weather') else 'X'}, AI {'O' if briefing.get('ai') else 'X'}")
 
 
 if __name__ == "__main__":
